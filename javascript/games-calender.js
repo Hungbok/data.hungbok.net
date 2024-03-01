@@ -163,6 +163,12 @@ if (!y || !m) {
 
         window.addEventListener('load', function() {
             loadAsyncScripts();
+
+            $(".pc").append('<img src="https://data.hungbok.net/image/icon/display.svg">');
+            $(".ps").append('<img src="https://data.hungbok.net/image/icon/playstation.svg">');
+            $(".xb").append('<img src="https://data.hungbok.net/image/icon/xbox.svg">');
+            $(".ns").append('<img src="https://data.hungbok.net/image/icon/nintendo.svg">');
+            $(".mo").append('<img src="https://data.hungbok.net/image/icon/phone.svg">');
         });
     })
     .catch(error => {
