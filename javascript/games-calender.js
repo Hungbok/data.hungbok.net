@@ -105,10 +105,9 @@ if (!y || !m) {
                                                  new Date(x.date).getDate() === day);
                     calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
-                        var title = item.title;
-                        var image = item.image;
+                        var platform = item.platform;
                         var url = item.url;
-                        calendar += (url ? " <a class='calendar-item' href='https://www.hungbok.com/games?q=" + url + "'>" : "") + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_thumbnail.jpg' onerror='this.src=`//data.hungbok.net/image/hb/hb_error_vertical.svg`;'/>" : "") + "<div class='calender-item-info'><p class='calendar-item-title'>" + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_logo.png' onerror='this.src=`//data.hungbok.net/image/hb/hb_error.svg`;'/>" : "") + "</p>" + (image ? " <p class='calendar-item-text " + image + "'></p>" : "") + "</div></a>";
+                        calendar += (url ? " <a class='calendar-item' href='https://www.hungbok.com/games?q=" + url + "'>" : "") + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_thumbnail.jpg' onerror='this.src=`//data.hungbok.net/image/hb/hb_error_vertical.svg`;'/>" : "") + "<div class='calender-item-info'><p class='calendar-item-title'>" + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_logo.png' onerror='this.src=`//data.hungbok.net/image/hb/hb_error.svg`;'/>" : "") + "</p>" + (platform ? " <p class='calendar-item-text " + platform + "'></p>" : "") + "</div></a>";
                     });
                     calendar += "</div></div>";
                 }
@@ -128,10 +127,9 @@ if (!y || !m) {
                                              new Date(x.date).getDate() === day);
                 calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                 items.forEach(item => {
-                    var title = item.title;
-                    var image = item.image;
+                    var platform = item.platform;
                     var url = item.url;
-                    calendar += (url ? " <a class='calendar-item' href='https://www.hungbok.com/games?q=" + url + "'>" : "") + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_thumbnail.jpg' onerror='this.src=`//data.hungbok.net/image/hb/hb_error_vertical.svg`;'/>" : "") + "<div class='calender-item-info'><p class='calendar-item-title'>" + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_logo.png' onerror='this.src=`//data.hungbok.net/image/hb/hb_error.svg`;'/>" : "") + "</p>" + (image ? " <p class='calendar-item-text " + image + "'></p>" : "") + "</div></a>";
+                    calendar += (url ? " <a class='calendar-item' href='https://www.hungbok.com/games?q=" + url + "'>" : "") + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_thumbnail.jpg' onerror='this.src=`//data.hungbok.net/image/hb/hb_error_vertical.svg`;'/>" : "") + "<div class='calender-item-info'><p class='calendar-item-title'>" + (url ? " <img class='calendar-image' src='https://data.hungbok.net/image/games/" + url + "/hb_logo.png' onerror='this.src=`//data.hungbok.net/image/hb/hb_error.svg`;'/>" : "") + "</p>" + (platform ? " <p class='calendar-item-text " + platform + "'></p>" : "") + "</div></a>";
                 });
                 calendar += "</div></div>";
             }
