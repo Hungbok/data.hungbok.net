@@ -1,0 +1,146 @@
+[
+    {
+        "title": {
+            "en": "Fortnite",
+            "ja": "フォートナイト",
+            "ko": "포트나이트"
+        },
+        "subtitle": {
+            "en": "",
+            "ko": "포나"
+        },
+        "type": "games",
+        "url": "https://www.hungbok.com/games?q=fortnite",
+        "image": "https://data.hungbok.net/image/games/fortnite/hb_capsule.jpg"
+    },
+    {
+        "title": {
+            "en": "HITMAN: World of Assassination",
+            "ko": "히트맨: 암살의 세계"
+        },
+        "subtitle": {
+            "en": "HITMAN World of Assassination",
+            "en-2": "HITMAN 3",
+            "en-3": "HITMAN III",
+            "en-4": "HITMAN Ⅲ",
+            "ko": "히트맨 암살의 세계",
+            "ko-2": "히트맨 3",
+            "ko-3": "히트맨 III",
+            "ko-4": "히트맨 Ⅲ"
+        },
+        "type": "games",
+        "url": "https://www.hungbok.com/games?q=hitman-world-of-assassination",
+        "image": "https://data.hungbok.net/image/games/hitman-world-of-assassination/hb_capsule.jpg"
+    },
+    {
+        "title": {
+            "en": "Werewolf: The Apocalypse - Heart of the Forest"
+        },
+        "subtitle": {
+            "en": "Werewolf The Apocalypse Heart of the Forest"
+        },
+        "type": "games",
+        "url": "https://www.hungbok.com/games?q=werewolf-the-apocalypse-heart-of-the-forest",
+        "image": "https://data.hungbok.net/image/games/werewolf-the-apocalypse-heart-of-the-forest/hb_capsule.jpg"
+    },
+    {
+        "title": {
+            "en": "Erased",
+            "ja": "僕だけがいない街",
+            "ko": "나만이 없는 거리"
+        },
+        "subtitle": {
+            "en": "Boku dake ga Inai Machi",
+            "en-2": "The Town Where Only I Am Missing",
+            "en-3": "BokuMachi",
+            "ja": "僕街",
+            "ja-2": "ぼくだけがいないまち"
+        },
+        "type": "anime",
+        "url": "https://www.hungbok.com/anime?q=boku-dake-ga-inai-machi",
+        "image": "https://data.hungbok.net/image/anime/boku-dake-ga-inai-machi/hb_capsule.jpg"
+    },
+    {
+        "title": {
+            "en": "Erased",
+            "ja": "僕だけがいない街",
+            "ko": "나만이 없는 거리"
+        },
+        "subtitle": {
+            "en": "Boku dake ga Inai Machi",
+            "en-2": "The Town Where Only I Am Missing",
+            "en-3": "BokuMachi",
+            "ja": "僕街",
+            "ja-2": "ぼくだけがいないまち"
+        },
+        "type": "tv",
+        "url": "https://www.hungbok.com/tv?q=boku-dake-ga-inai-machi",
+        "image": "https://data.hungbok.net/image/tv/boku-dake-ga-inai-machi/hb_capsule.jpg"
+    },
+    {
+        "title": {
+            "en": "Erased",
+            "ja": "僕だけがいない街",
+            "ko": "나만이 없는 거리"
+        },
+        "subtitle": {
+            "en": "Boku dake ga Inai Machi",
+            "en-2": "The Town Where Only I Am Missing",
+            "en-3": "BokuMachi",
+            "ja": "僕街",
+            "ja-2": "ぼくだけがいないまち"
+        },
+        "type": "movie",
+        "url": "https://www.hungbok.com/movie?q=boku-dake-ga-inai-machi",
+        "image": "https://data.hungbok.net/image/movie/boku-dake-ga-inai-machi/hb_capsule.jpg"
+    },
+    {
+        "title": {
+            "en": "Pokémon LEGENDS Z-A"
+        },
+        "subtitle": {
+            "en": "Pokémon LEGENDS ZA",
+            "en-2": "Pokémon Z-A",
+            "en-3": "Pokémon ZA",
+            "en-4": "Pokemon LEGENDS Z-A",
+            "en-5": "Pokemon LEGENDS ZA",
+            "en-6": "Pokemon Z-A",
+            "en-7": "Pokemon ZA",
+            "ja": "ポケモンレジェンズゼットエー",
+            "ja-2": "ポケットモンスターレジェンズゼットエー",
+            "ja-3": "ポケモンレジェンズZ-A",
+            "ja-4": "ポケモンレジェンズZA",
+            "ja-5": "ポケットモンスターレジェンズZ-A",
+            "ja-6": "ポケットモンスターレジェンズZA",
+            "ja-7": "ポケモン LEGENDS Z-A",
+            "ja-8": "ポケモン LEGENDS ZA",
+            "ja-9": "ポケットモンスター LEGENDS Z-A",
+            "ja-10": "ポケットモンスター LEGENDS ZA",
+            "ja-11": "ポケモンゼットエー",
+            "ja-12": "ポケットモンスターゼットエー",
+            "ja-13": "ポケモン Z-A",
+            "ja-14": "ポケモン ZA",
+            "ja-15": "ポケットモンスター Z-A",
+            "ja-16": "ポケットモンスター ZA",
+            "ko": "포켓몬 레전드 제트에이",
+            "ko-2": "포켓몬스터 레전드 제트에이",
+            "ko-3": "포켓몬 레전드 Z-A",
+            "ko-4": "포켓몬 레전드 ZA",
+            "ko-5": "포켓몬스터 레전드 Z-A",
+            "ko-6": "포켓몬스터 레전드 ZA",
+            "ko-7": "포켓몬 LEGENDS Z-A",
+            "ko-8": "포켓몬 LEGENDS ZA",
+            "ko-9": "포켓몬스터 LEGENDS Z-A",
+            "ko-10": "포켓몬스터 LEGENDS ZA",
+            "ko-11": "포켓몬 제트에이",
+            "ko-12": "포켓몬스터 제트에이",
+            "ko-13": "포켓몬 Z-A",
+            "ko-14": "포켓몬 ZA",
+            "ko-15": "포켓몬스터 Z-A",
+            "ko-16": "포켓몬스터 ZA"
+        },
+        "type": "games",
+        "url": "https://www.hungbok.com/games?q=pokemon-legends-z-a",
+        "image": "https://data.hungbok.net/image/games/pokemon-legends-z-a/hb_capsule.jpg"
+    }
+]

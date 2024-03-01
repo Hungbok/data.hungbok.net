@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d21034;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #007e3a;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="mv" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="mv-2" data-name="mv">
+      <g>
+        <path class="cls-3" d="M600,600.1h2400v1200H600V600.1Z"/>
+        <circle class="cls-2" cx="1950" cy="1200.1" r="400"/>
+        <circle class="cls-3" cx="2100" cy="1200.1" r="400"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9d90f;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #dc171d;
+      }
+
+      .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #eee;
+      }
+
+      .cls-4 {
+        fill: #012a87;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="bq-sa" class="cls-2" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="nl">
+      <g id="bq-sa-2" data-name="bq-sa">
+        <path id="pl" class="cls-4" d="M400,2400.1h2800c220,0,400-180,400-400v-800H0v800C0,2220.1,180,2400.1,400,2400.1Z"/>
+        <path class="cls-3" d="M1800,2400.1L0,1200.1,1800,.1l1800,1200-1800,1200Z"/>
+        <g id="f">
+          <g id="t">
+            <path id="o" class="cls-1" d="M1800,520.9l-209.884,645.958,324.12,105.313-114.236-751.271Z"/>
+            <path id="o-2" data-name="o" class="cls-1" d="M1800,520.9l209.884,645.958-324.12,105.313,114.236-751.271Z"/>
+          </g>
+          <g id="t-2" data-name="t">
+            <path id="o-3" data-name="o" class="cls-1" d="M2445.958,990.216h-679.2v340.8l679.2-340.8Z"/>
+            <path id="o-4" data-name="o" class="cls-1" d="M2445.958,990.216l-549.484,399.224-200.317-275.713,749.802-123.511Z"/>
+          </g>
+        </g>
+        <g id="t-3" data-name="t">
+          <path id="o-5" data-name="o" class="cls-1" d="M1154.042,990.216l549.484,399.224,200.317-275.713-749.802-123.511Z"/>
+          <path id="o-6" data-name="o" class="cls-1" d="M1154.042,990.216h679.2v340.8l-679.2-340.8Z"/>
+        </g>
+        <g id="f-2" data-name="f">
+          <g id="t-4" data-name="t">
+            <path id="o-7" data-name="o" class="cls-1" d="M2199.224,1749.584l-209.884-645.958-324.12,105.313,534.004,540.645Z"/>
+            <path id="o-8" data-name="o" class="cls-1" d="M2199.224,1749.584l-549.484-399.224,200.317-275.713,349.167,674.937Z"/>
+          </g>
+          <g id="t-5" data-name="t">
+            <path id="o-9" data-name="o" class="cls-1" d="M1400.776,1749.584l549.484-399.224-200.317-275.713-349.167,674.937Z"/>
+            <path id="o-10" data-name="o" class="cls-1" d="M1400.776,1749.584l209.884-645.958,324.12,105.313-534.004,540.645Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 2400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #242424;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path id="none" class="cls-1" d="M400,0h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400c-220,0-400-180-400-400V400C0,180,180,0,400,0Z"/>
+</svg>

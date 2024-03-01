@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cc162b;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #3c762c;
+      }
+
+      .cls-3 {
+        fill: #eee;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #0d218a;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="gm" class="cls-3" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="gm-2" data-name="gm">
+      <path class="cls-1" d="M3200,.1H400C180,.1,0,180.1,0,400.1v400h3600v-400C3600,180.1,3420,.1,3200,.1Z"/>
+      <rect class="cls-4" x="0" y="933.433" width="3600" height="533.333"/>
+      <path class="cls-2" d="M0,2000.1C0,2220.1,180,2400.1,400,2400.1h2800c220,0,400-180,400-400v-400H0v400Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: indigo;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="jp13" class="cls-3" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="jp">
+      <g id="_13" data-name="13">
+        <g id="b">
+          <path id="a" class="cls-2" d="M1800,2000.1l66.667-64.099v-469.235h-133.333v469.235l66.667,64.099Z"/>
+          <path id="a-2" data-name="a" class="cls-2" d="M1107.18,1600.1l88.845,25.686,406.369-234.617-66.667-115.47-406.369,234.617-22.178,89.784Z"/>
+          <path id="a-3" data-name="a" class="cls-2" d="M2492.82,1600.1l-22.178-89.784-406.369-234.617-66.667,115.47,406.369,234.617,88.845-25.686Z"/>
+        </g>
+        <g id="b-2" data-name="b">
+          <path id="a-4" data-name="a" class="cls-2" d="M1800,400.1l66.667,64.099v469.235h-133.333v-469.235l66.667-64.099Z"/>
+          <path id="a-5" data-name="a" class="cls-2" d="M1107.18,800.1l88.845-25.686,406.369,234.617-66.667,115.47-406.369-234.617-22.178-89.784Z"/>
+          <path id="a-6" data-name="a" class="cls-2" d="M2492.82,800.1l-22.178,89.784-406.369,234.617-66.667-115.47,406.369-234.617,88.845,25.686Z"/>
+        </g>
+        <circle class="cls-2" cx="1800" cy="1200.1" r="400"/>
+        <circle class="cls-1" cx="1800" cy="1200.1" r="266.667"/>
+        <circle class="cls-2" cx="1800" cy="1200.1" r="133.333"/>
+      </g>
+    </g>
+  </g>
+</svg>

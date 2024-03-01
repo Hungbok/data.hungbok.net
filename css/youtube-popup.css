@@ -1,0 +1,140 @@
+.grtyoutube-popup {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.grtyoutube-popup-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 95%;
+    max-width: 854px;
+    max-height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+.grtyoutube-popup-content:first-child {
+    margin-top: 150px;
+}
+
+.grtyoutube-popup-content:last-child {
+    margin-bottom: 150px;
+}
+
+.grtyoutube-popup-close {
+	position:absolute;
+    bottom: -50px;
+    right: 4px;
+	color:#FFF;
+	font-size:25px;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+    opacity: .7;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.grtyoutube-popup-close:hover {
+    opacity: 1;
+}
+
+.grtyoutube-title {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'noto sans';
+    margin-left: 7.5px;
+    margin-bottom: 5px;
+    margin-right: 7.5px;
+    color: #2f2f2f;
+}
+
+.youtube-iframe {
+    width: 532px!important;
+    height: 300px!important;
+}
+
+.grtyoutube-iframe {
+    width: 854px;
+    height: 480px;
+    z-index: 2;
+    position: relative;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px var(--shadow));
+}
+
+@media (max-width:767px) {
+	.grtyoutube-iframe {
+		width:100%;
+		height:350px;
+	}
+}
+
+.grtyoutube-dark-theme{
+	background: rgba(0,0,0, 0.8);
+}
+
+.grtyoutube-popup-close {
+    width: 30px;
+    height: 30px;
+    background: url(//data.hungbok.net/image/icon/close.svg) center no-repeat;
+    background-size: 40px;
+}
+
+.grtyoutube-loading {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 402px;
+    top: 215px;
+    background: url(//data.hungbok.net/image/icon/progress.svg) no-repeat;
+    background-size: 50px;
+    animation: loading 2s linear infinite;
+    z-index: 1;
+}
+
+.grtyoutube-popup a {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    color: #aaaaaa;
+}
+
+.grtyoutube-popup a:hover {
+    color: #dddddd;
+}
+
+.grtyoutube-popup.fadeIn {
+    animation: fadeIn 0.5s;
+}
+
+.grtyoutube-popup.fadeOut {
+    animation: fadeOut 0.5s;
+}
+
+@media(max-width:1000px) {
+    .grtyoutube-popup-content {
+        position: relative;
+        width: 100%;
+        max-width: inherit;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    .grtyoutube-iframe {
+        position: absolute;
+        left: 5px;
+        width: calc(100% - 10px);
+        height: calc(100% - 37px);
+        vertical-align: bottom;
+    }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4189dd;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="so" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="so-2" data-name="so">
+      <g>
+        <g id="b">
+          <path id="a" class="cls-2" d="M1800.003,622.3l-178.543,549.499,274.75,89.272-96.207-638.771Z"/>
+          <path id="a-2" data-name="a" class="cls-2" d="M1799.997,622.3l178.543,549.499-274.75,89.272,96.207-638.771Z"/>
+        </g>
+        <g id="b-2" data-name="b">
+          <path id="a-3" data-name="a" class="cls-2" d="M2349.521,1021.553h-577.778v288.889l577.778-288.889Z"/>
+          <path id="a-4" data-name="a" class="cls-2" d="M2349.519,1021.547l-467.432,339.609-169.805-233.716,637.237-105.893Z"/>
+        </g>
+        <g id="b-3" data-name="b">
+          <path id="a-5" data-name="a" class="cls-2" d="M1250.481,1021.547l467.432,339.609,169.805-233.716-637.237-105.893Z"/>
+          <path id="a-6" data-name="a" class="cls-2" d="M1250.479,1021.553h577.778v288.889l-577.778-288.889Z"/>
+        </g>
+        <g id="b-4" data-name="b">
+          <path id="a-7" data-name="a" class="cls-2" d="M2139.62,1667.552l-178.543-549.499-274.75,89.272,453.293,460.228Z"/>
+          <path id="a-8" data-name="a" class="cls-2" d="M2139.625,1667.548l-467.432-339.609,169.805-233.716,297.627,573.325Z"/>
+        </g>
+        <g id="b-5" data-name="b">
+          <path id="a-9" data-name="a" class="cls-2" d="M1460.375,1667.548l467.432-339.609-169.805-233.716-297.627,573.325Z"/>
+          <path id="a-10" data-name="a" class="cls-2" d="M1460.38,1667.552l178.543-549.499,274.75,89.272-453.293,460.228Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

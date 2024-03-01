@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" sodipodi:docname="a.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+	 style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F6B704;}
+	.st1{fill:#E54335;}
+	.st2{fill:#4280EF;}
+	.st3{fill:#34A353;}
+</style>
+<path id="path25" inkscape:connector-curvature="0" class="st0" d="M250,227.6c138,0,250,112,250,250v23H23c-12.4,0-22.4-10-23-23
+	C0,339.6,112,227.6,250,227.6z"/>
+<path id="path27" inkscape:connector-curvature="0" class="st1" d="M772.4,250c0,138-112,250-250,250H500V23c0-12.4,10-23,22.4-23
+	C661,0,772.4,112,772.4,250z"/>
+<path id="path29" inkscape:connector-curvature="0" class="st2" d="M750,773c-138,0-250-112-250-250v-23h477c12.4,0,23,10,23,22.4
+	C1000,661,888,773,750,773L750,773z"/>
+<path id="path31" inkscape:connector-curvature="0" class="st3" d="M227.6,750c0-138,112-250,250-250H500v477c0,12.4-10,22.4-23,23
+	C339,1000,227.6,888,227.6,750z"/>
+</svg>

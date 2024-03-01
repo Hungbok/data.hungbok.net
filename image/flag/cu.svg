@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #002a8f;
+      }
+
+      .cls-1, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #cf142b;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="cu" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="cu-2" data-name="cu">
+      <rect class="cls-3" x="0" y="802.446" width="3600" height="795.308"/>
+      <polygon class="cls-2" points="0 1920.1 3600 1920.1 3600 1440.1 240 1440.1 240 960.1 3600 960.1 3600 480.1 0 480.1 0 1920.1"/>
+      <path class="cls-4" d="M0,2000.1V400.1C0,280.1,50,180.1,130,100.1l1570,1100L130,2300.1C50,2220.1,0,2120.1,0,2000.1Z"/>
+      <path class="cls-2" d="M692.64,840.1l-211.2,651.36,553.92-402.72H350.4l553.92,402.72-211.68-651.36Z"/>
+    </g>
+  </g>
+</svg>

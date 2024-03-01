@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c10000;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #eee;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="to" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="to-2" data-name="to">
+      <g>
+        <path class="cls-2" d="M1600,.1v1200H0V400.1C0,180.1,180,.1,400,.1h1200Z"/>
+        <path class="cls-1" d="M681.669,241.727h240.042v716.746h-240.042V241.727Z"/>
+        <path class="cls-1" d="M441.627,481.769h720.127v240.042H441.627v-240.042Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

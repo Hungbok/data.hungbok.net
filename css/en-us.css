@@ -1,0 +1,419 @@
+/* 헤더 */
+
+.language-select[data-lang="en"] {
+    pointer-events: none;
+}
+
+.language-select[data-lang="en"]::before {
+    content: "";
+}
+
+.side-panel-menu-text,
+.language-text::after {
+    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
+}
+
+/* 활성 언어 */
+
+.language-en:after,
+.language-select[data-lang="en"] .language-text::after {
+    content: "English";
+}
+
+.language-ja:after,
+.language-select[data-lang="ja"] .language-text::after {
+    content: "Japanese";
+}
+
+.language-ko:after,
+.language-select[data-lang="ko"] .language-text::after {
+    content: "Korean";
+}
+
+/* 비활성 언어 */
+
+.language-en-gb:after,
+.language-select[data-lang="en-gb"] .language-text::after {
+    content: "English (British)";
+}
+
+.language-en-ca:after,
+.language-select[data-lang="en-ca"] .language-text::after {
+    content: "English (Canada)";
+}
+
+.language-en-au:after,
+.language-select[data-lang="en-au"] .language-text::after {
+    content: "English (Australia)";
+}
+
+.language-id:after,
+.language-select[data-lang="id"] .language-text::after {
+    content: "Indonesian";
+}
+
+.language-ms:after,
+.language-select[data-lang="ms"] .language-text::after {
+    content: "Malay";
+}
+
+.language-cs:after,
+.language-select[data-lang="cs"] .language-text::after {
+    content: "Czech";
+}
+
+.language-da:after,
+.language-select[data-lang="da"] .language-text::after {
+    content: "Danish";
+}
+
+.language-de:after,
+.language-select[data-lang="de"] .language-text::after {
+    content: "German";
+}
+
+.language-es:after,
+.language-select[data-lang="es"] .language-text::after {
+    content: "Spanish";
+}
+
+.language-es-mx:after,
+.language-select[data-lang="es-mx"] .language-text::after {
+    content: "Spanish (Mexico)";
+}
+
+.language-fr:after,
+.language-select[data-lang="fr"] .language-text::after {
+    content: "French";
+}
+
+.language-fr-ca:after,
+.language-select[data-lang="fr-ca"] .language-text::after {
+    content: "French (Canada)";
+}
+
+.language-it:after,
+.language-select[data-lang="it"] .language-text::after {
+    content: "Italian";
+}
+
+.language-hu:after,
+.language-select[data-lang="hu"] .language-text::after {
+    content: "Hungarian";
+}
+
+.language-nl:after,
+.language-select[data-lang="nl"] .language-text::after {
+    content: "Dutch";
+}
+
+.language-no:after,
+.language-select[data-lang="no"] .language-text::after {
+    content: "Norwegian";
+}
+
+.language-pl:after,
+.language-select[data-lang="pl"] .language-text::after {
+    content: "Polish";
+}
+
+.language-pt:after,
+.language-select[data-lang="pt"] .language-text::after {
+    content: "Portuguese";
+}
+
+.language-pt-br:after,
+.language-select[data-lang="pt-br"] .language-text::after {
+    content: "Portuguese (Brazil)";
+}
+
+.language-ro:after,
+.language-select[data-lang="ro"] .language-text::after {
+    content: "Romanian";
+}
+
+.language-fi:after,
+.language-select[data-lang="fi"] .language-text::after {
+    content: "Finnish";
+}
+
+.language-sv:after,
+.language-select[data-lang="sv"] .language-text::after {
+    content: "Swedish";
+}
+
+.language-vi:after,
+.language-select[data-lang="vi"] .language-text::after {
+    content: "Vietnamese";
+}
+
+.language-tr:after,
+.language-select[data-lang="tr"] .language-text::after {
+    content: "Turkish";
+}
+
+.language-bg:after,
+.language-select[data-lang="bg"] .language-text::after {
+    content: "Bulgarian";
+}
+
+.language-ru:after,
+.language-select[data-lang="ru"] .language-text::after {
+    content: "Russian";
+}
+
+.language-uk:after,
+.language-select[data-lang="uk"] .language-text::after {
+    content: "Ukrainian";
+}
+
+.language-el:after,
+.language-select[data-lang="el"] .language-text::after {
+    content: "Greek";
+}
+
+.language-ar:after,
+.language-select[data-lang="ar"] .language-text::after {
+    content: "Arabic";
+}
+
+.language-hi:after,
+.language-select[data-lang="hi"] .language-text::after {
+    content: "Hindi";
+}
+
+.language-th:after,
+.language-select[data-lang="th"] .language-text::after {
+    content: "Thai";
+}
+
+.language-zh-cn:after,
+.language-select[data-lang="zh-cn"] .language-text::after {
+    content: "Chinese (Simplified)";
+}
+
+.language-zh-tw:after,
+.language-select[data-lang="zh-tw"] .language-text::after {
+    content: "Chinese (Traditional)";
+}
+
+/* 미사용
+
+.language-select[data-lang="en-us"] .language-text::after {
+    content: "영어(미국)";
+}
+
+.language-select[data-lang="cs-cz"] .language-text::after {
+    content: "체코어(체코)";
+}
+
+.language-select[data-lang="de-de"] .language-text::after {
+    content: "독일어(독일)";
+}
+
+.language-select[data-lang="es-es"] .language-text::after {
+    content: "스페인어(스페인)";
+}
+
+.language-select[data-lang="fi-fi"] .language-text::after {
+    content: "핀란드어(핀란드)";
+}
+
+.language-select[data-lang="fr-fr"] .language-text::after {
+    content: "프랑스어(프랑스)";
+}
+
+.language-select[data-lang="hu-hu"] .language-text::after {
+    content: "헝가리어(헝가리)";
+}
+
+.language-select[data-lang="hi-in"] .language-text::after {
+    content: "힌디어(인도)";
+}
+
+.language-select[data-lang="it-it"] .language-text::after {
+    content: "이탈리아어(이탈리아)";
+}
+
+.language-select[data-lang="nl-nl"] .language-text::after {
+    content: "네덜란드어(네덜란드)";
+}
+
+.language-select[data-lang="pl-pl"] .language-text::after {
+    content: "폴란드어(폴란드)";
+}
+
+.language-select[data-lang="pt-pt"] .language-text::after {
+    content: "포르투갈어(포르투갈)";
+}
+
+.language-select[data-lang="ru-ru"] .language-text::after {
+    content: "러시아어(러시아)";
+}
+
+.language-select[data-lang="ar-sa"] .language-text::after {
+    content: "아랍어(사우디아라비아)";
+}
+
+.language-select[data-lang="th-th"] .language-text::after {
+    content: "태국어(태국)";
+}
+
+.language-select[data-lang="tr-tr"] .language-text::after {
+    content: "튀르키예어(튀르키예)";
+}
+
+.language-select[data-lang="uk-ua"] .language-text::after {
+    content: "우크라이나어(우크라이나)";
+}
+
+.language-select[data-lang="zh"] .language-text::after {
+    content: "중국어";
+}
+
+.language-select[data-lang="ja-jp"] .language-text::after {
+    content: "일본어(일본)";
+}
+
+.language-select[data-lang="ko-kr"] .language-text::after {
+    content: "한국어(대한민국)";
+}
+
+.language-select[data-lang="zh-hans"] .language-text::after {
+    content: "중국어(간체)";
+}
+
+.language-select[data-lang="zh-hant"] .language-text::after {
+    content: "중국어(번체)";
+}
+
+.language-select[data-lang="bg-bg"] .language-text::after {
+    content: "불가리아어(불가리아)";
+}
+
+.language-select[data-lang="ms-id"] .language-text::after {
+    content: "인도네시아어(인도네시아)";
+}
+
+.language-select[data-lang="el-gr"] .language-text::after {
+    content: "그리스어(그리스)";
+}
+
+.language-select[data-lang="no-no"] .language-text::after {
+    content: "노르웨이어(노르웨이)";
+}
+
+.language-select[data-lang="da-dk"] .language-text::after {
+    content: "덴마크어(덴마크)";
+}
+
+.language-select[data-lang="sv-se"] .language-text::after {
+    content: "스웨덴어(스웨덴)";
+}
+
+.language-select[data-lang="ro-ro"] .language-text::after {
+    content: "루마니아어(루마니아)";
+}
+
+.language-select[data-lang="vi-vn"] .language-text::after {
+    content: "베트남어(베트남)";
+} */
+
+.info-th > p::after {
+    content: "Details";
+}
+
+.early-access-date::before {
+    content: "Early Access | ";
+}
+
+.full-release-date::before {
+    content: "Full Release | ";
+}
+
+.description-source::before {
+    content: "Source | ";
+}
+
+.description-update::before {
+    content: "Last Update | ";
+}
+
+.show-more::after {
+    content: "Show More";
+}
+
+.show-more.open::after {
+    content: "Show Less";
+}
+
+.franchise > .details > summary::after {
+    content: "[ Show · Hide ]";
+}
+
+.text-report-title::after {
+    content: "Report";
+}
+
+.text-report-text::after {
+    content: "Please select the reason for reporting.";
+}
+
+.report-item#option1 p::after {
+    content: "Inappropriate Content";
+}
+.report-item#option1::after {
+    content: "Content that violates public order or moral standards, or is deemed unsuitable. This includes sexually explicit content, violent images or language, hate speech, etc.";
+}
+.report-item#option2 p::after {
+    content: "Threatening Content";
+}
+.report-item#option2::after {
+    content: "Content that threatens or attacks individuals or groups. This can range from direct physical threats to language or actions that may indirectly incite violence or harassment.";
+}
+.report-item#option3 p::after {
+    content: "Illegal and Unlawful Content";
+}
+.report-item#option3::after {
+    content: "Content that violates local laws, including infringement of copyright, trademarks, privacy rights, etc.";
+}
+.report-item#option4 p::after {
+    content: "Harmful Content";
+}
+.report-item#option4::after {
+    content: "Content that is psychologically or emotionally harmful. This includes defamation, abuse, discrimination, hate speech, child exploitation, etc.";
+}
+.report-item#option5 p::after {
+    content: "Privacy Violation and Defamation";
+}
+.report-item#option5::after {
+    content: "Actions that unlawfully expose personal information or damage reputation.";
+}
+.report-item#option6 p::after {
+    content: "Spam and Fraudulent Content";
+}
+.report-item#option6::after {
+    content: "Improper marketing or advertising, spam links, security threats, and content intended to deceive or harm users.";
+}
+.report-item#option7 p::after {
+    content: "Misinformation or False Information";
+}
+.report-item#option7::after {
+    content: "Providing false information, fake news, rumors, or information requiring fact-checking.";
+}
+
+.text-report-more::before {
+    content: "Need more help?";
+}
+
+.text-report-help::after {
+    content: "Contact Us";
+}
+
+.text-share-title::after {
+    content: "Share";
+}
+
+.text-share-text::after {
+    content: "Please select the service to share.";
+}

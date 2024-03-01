@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #141414;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #1eb53a;
+      }
+
+      .cls-3 {
+        fill: #fbd035;
+      }
+
+      .cls-4 {
+        fill: #00a3dd;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="tz" class="cls-2" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="tz-2" data-name="tz">
+      <path id="Path" class="cls-4" d="M3458.232,94.612c86.713,73.374,141.768,183.002,141.768,305.488v1600c0,220.914-179.086,400-400,400H400c-98.427,0-188.551-35.551-258.232-94.512L3458.232,94.612h0Z"/>
+      <path id="Path-2" data-name="Path" class="cls-3" d="M2940,.1h260c220.914,0,400,179.086,400,400v161.765L623.81,2400.1h-223.81C179.086,2400.1,0,2221.014,0,2000.1v-162.5L2940,.1Z"/>
+      <path id="Path-3" data-name="Path" class="cls-1" d="M3200,.1c220.914,0,400,179.086,400,400L400,2400.1C179.086,2400.1,0,2221.014,0,2000.1L3200,.1Z"/>
+    </g>
+  </g>
+</svg>

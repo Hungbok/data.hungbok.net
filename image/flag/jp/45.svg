@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #159939;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ffff01;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="jp45" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="jp">
+      <g id="_45" data-name="45">
+        <path class="cls-2" d="M869.063,516.1h940.057l-310.08,456h912l-310.08,456h964.852l-308.438,420h-968.415l310.08-456h-912l310.08-456h-936.495l308.438-420Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

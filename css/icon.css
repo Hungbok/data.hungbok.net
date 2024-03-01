@@ -1,0 +1,1844 @@
+/* header menu */
+
+.home .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/home.svg) no-repeat center / 30px 30px;
+}
+
+.tv .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/tv.svg) no-repeat center / 30px 30px;
+}
+
+.movie .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/theaters.svg) no-repeat center / 30px 30px;
+}
+
+.anime .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/smart_toy.svg) no-repeat center / 30px 30px;
+}
+
+.games .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/game.svg) no-repeat center / 30px 30px;
+}
+
+.books .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/book.svg) no-repeat center / 30px 30px;
+}
+
+.music .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/music.svg) no-repeat center / 30px 30px;
+}
+
+.help .side-panel-menu-icon {
+    background: url(//data.hungbok.net/image/icon/help.svg) no-repeat center / 30px 30px;
+}
+
+/* language flag */
+
+/* 활성 언어 */
+
+.language-select[data-lang="en"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/us.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ja"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/jp.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ko"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/kr.svg) no-repeat center / 30px 20px;
+}
+
+/* 비활성 언어 */
+
+.language-select[data-lang="en-gb"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/gb.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="en-ca"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ca.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="en-au"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/au.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="cs"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/cz.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="de"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/de.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="es"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/es.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="es-mx"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/mx.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="fi"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/fi.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="fr"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/fr.svg) no-repeat center / 30px 20px; 
+}
+
+.language-select[data-lang="fr-ca"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ca.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="hu"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/hu.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="hi"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/in.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="it"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/it.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="nl"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/nl.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="pl"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/pl.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="pt"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/pt.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="pt-br"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/br.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ru"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ru.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ar"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/sa.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="th"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/th.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="tr"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/tr.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="uk"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ua.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="zh-cn"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/cn.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="zh-tw"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/tw.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="bg"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/bg.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ms"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/my.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="el"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/gr.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="no"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/no.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="da"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/dk.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="sv"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/se.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ro"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ro.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="vi"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/vn.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="id"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/id.svg) no-repeat center / 30px 20px;
+}
+
+/* 미사용
+
+.language-select[data-lang="en-us"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/us.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="cs-cz"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/cz.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="de-de"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/de.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="es-es"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/es.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="fi-fi"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/fi.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="fr-fr"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/fr.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="hu-hu"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/hu.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="hi-in"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/in.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="it-it"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/it.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="nl-nl"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/nl.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="pl-pl"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/pl.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="pt-pt"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/pt.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ru-ru"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ru.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ar-sa"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/sa.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="th-th"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/th.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="tr-tr"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/tr.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="uk-ua"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ua.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="zh"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/cn.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ja-jp"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/jp.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ko-kr"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/kr.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="zh-hans"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/cn.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="zh-hant"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/tw.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="bg-bg"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/bg.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ms-id"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/id.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="el-gr"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/gr.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="no-no"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/no.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="da-dk"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/dk.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="sv-se"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/se.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="ro-ro"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/ro.svg) no-repeat center / 30px 20px;
+}
+
+.language-select[data-lang="vi-vn"] .language-flag {
+    background: url(//data.hungbok.net/image/flag/vn.svg) no-repeat center / 30px 20px;
+} */
+
+/* menu */
+
+.icon-home {
+    background: url(//data.hungbok.net/image/icon/home.svg) no-repeat center / 30px 30px, #e6c300;
+}
+
+.icon-website {
+    background: url(//data.hungbok.net/image/icon/public.svg) no-repeat center / 30px 30px, #222222;
+}
+
+.icon-code {
+    background: url(//data.hungbok.net/image/icon/code.svg) no-repeat center / 30px 30px, #444444;
+}
+
+.icon-mail {
+    background: url(//data.hungbok.net/image/icon/mail.svg) no-repeat center / 30px 30px, #666666;
+}
+
+/* age rating */
+
+/* general */
+
+.icon-ageall {
+    background: url(//data.hungbok.net/image/age/all.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-age7 {
+    background: url(//data.hungbok.net/image/age/7.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-age10 {
+    background: url(//data.hungbok.net/image/age/10.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-age13 {
+    background: url(//data.hungbok.net/image/age/13.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-age16 {
+    background: url(//data.hungbok.net/image/age/16.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-age18 {
+    background: url(//data.hungbok.net/image/age/18.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+/* apple app store */
+
+.icon-appstoreage4 {
+    background: url(//data.hungbok.net/image/age/games/apple_4.svg) no-repeat center / 30px 30px, #222222;
+}
+
+.icon-appstoreage9 {
+    background: url(//data.hungbok.net/image/age/games/apple_9.svg) no-repeat center / 30px 30px, #222222;
+}
+
+.icon-appstoreage12 {
+    background: url(//data.hungbok.net/image/age/games/apple_12.svg) no-repeat center / 30px 30px, #222222;
+}
+
+.icon-appstoreage17 {
+    background: url(//data.hungbok.net/image/age/games/apple_17.svg) no-repeat center / 30px 30px, #222222;
+}
+
+/* cero (japan) */
+
+.icon-ceroa {
+    background: url(//data.hungbok.net/image/age/games/cero_a.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-cerob {
+    background: url(//data.hungbok.net/image/age/games/cero_b.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-ceroc {
+    background: url(//data.hungbok.net/image/age/games/cero_c.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-cerod {
+    background: url(//data.hungbok.net/image/age/games/cero_d.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-ceroz {
+    background: url(//data.hungbok.net/image/age/games/cero_z.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-ceroec {
+    background: url(//data.hungbok.net/image/age/games/cero_ec.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-cerorp {
+    background: url(//data.hungbok.net/image/age/games/cero_rp.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-cerorating {
+    background: url(//data.hungbok.net/image/age/games/CERO_rating.svg) no-repeat center / 30px 30px, #000000;
+}
+
+/* esrb (united state) */
+
+.icon-esrbe {
+    background: url(//data.hungbok.net/image/age/games/esrb_e.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-esrb10 {
+    background: url(//data.hungbok.net/image/age/games/esrb_10.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-esrbt {
+    background: url(//data.hungbok.net/image/age/games/esrb_t.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-esrbm {
+    background: url(//data.hungbok.net/image/age/games/esrb_m.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-esrbao {
+    background: url(//data.hungbok.net/image/age/games/esrb_ao.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-esrbrp {
+    background: url(//data.hungbok.net/image/age/games/esrb_rp.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+/* grac (korea) */
+
+.icon-gracall {
+    background: url(//data.hungbok.net/image/age/games/grac_all.svg) no-repeat center / 30px 30px, #41a13f;
+}
+
+.icon-grac12 {
+    background: url(//data.hungbok.net/image/age/games/grac_12.svg) no-repeat center / 30px 30px, #4268ae;
+}
+
+.icon-grac15 {
+    background: url(//data.hungbok.net/image/age/games/grac_15.svg) no-repeat center / 30px 30px, #f8b845;
+}
+
+.icon-grac18 {
+    background: url(//data.hungbok.net/image/age/games/grac_18.svg) no-repeat center / 30px 30px, #a11438;
+}
+
+.icon-grac19 {
+    background: url(//data.hungbok.net/image/age/games/grac_19.svg) no-repeat center / 30px 30px, #a11438;
+}
+
+.icon-gracr {
+    background: url(//data.hungbok.net/image/age/games/grac_r.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-gracre {
+    background: url(//data.hungbok.net/image/age/games/grac_re.svg) no-repeat center / 30px 30px, #f8c52b;
+}
+
+.icon-gractest {
+    background: url(//data.hungbok.net/image/age/games/grac_test.svg) no-repeat center / 30px 30px, #f57f1e;
+}
+
+/* iarc (international) */
+
+.icon-iarc3 {
+    background: url(//data.hungbok.net/image/age/games/iarc_3.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-iarc7 {
+    background: url(//data.hungbok.net/image/age/games/iarc_7.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-iarc12 {
+    background: url(//data.hungbok.net/image/age/games/iarc_12.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-iarc16 {
+    background: url(//data.hungbok.net/image/age/games/iarc_16.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-iarc18 {
+    background: url(//data.hungbok.net/image/age/games/iarc_18.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+/* pegi (europe) */
+
+.icon-pegi3 {
+    background: url(//data.hungbok.net/image/age/games/pegi_3.svg) no-repeat center / 30px 30px, #a5c400;
+}
+
+.icon-pegi7 {
+    background: url(//data.hungbok.net/image/age/games/pegi_7.svg) no-repeat center / 30px 30px, #A5C400;
+}
+
+.icon-pegi12 {
+    background: url(//data.hungbok.net/image/age/games/pegi_12.svg) no-repeat center / 30px 30px, #f5a200;
+}
+
+.icon-pegi16 {
+    background: url(//data.hungbok.net/image/age/games/pegi_16.svg) no-repeat center / 30px 30px, #f5a200;
+}
+
+.icon-pegi18 {
+    background: url(//data.hungbok.net/image/age/games/pegi_18.svg) no-repeat center / 30px 30px, #E2011A;
+}
+
+.icon-pegiparental {
+    background: url(//data.hungbok.net/image/age/games/pegi_parental.svg) no-repeat center / 30px 30px, #F5A200;
+}
+
+/* acb (australia) */
+
+.icon-acbg {
+    background: url(//data.hungbok.net/image/age/games/acb_g.svg) no-repeat center / 30px 30px, #33a02b;
+}
+
+.icon-acbpg {
+    background: url(//data.hungbok.net/image/age/games/acb_pg.svg) no-repeat center / 30px 30px, #ffff01;
+}
+
+.icon-acbm {
+    background: url(//data.hungbok.net/image/age/games/acb_m.svg) no-repeat center / 30px 30px, #009fc6;
+}
+
+.icon-acbma {
+    background: url(//data.hungbok.net/image/age/games/acb_ma.svg) no-repeat center / 30px 30px, #fe0000;
+}
+
+.icon-acbr {
+    background: url(//data.hungbok.net/image/age/games/acb_r.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-acbrc {
+    background: url(//data.hungbok.net/image/age/games/acb_rc.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+/* usk (germany) */
+
+.icon-usk0 {
+    background: url(//data.hungbok.net/image/age/games/usk_0.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-usk6 {
+    background: url(//data.hungbok.net/image/age/games/usk_6.svg) no-repeat center / 30px 30px, #f5f582;
+}
+
+.icon-usk12 {
+    background: url(//data.hungbok.net/image/age/games/usk_12.svg) no-repeat center / 30px 30px, #28c864;
+}
+
+.icon-usk16 {
+    background: url(//data.hungbok.net/image/age/games/usk_16.svg) no-repeat center / 30px 30px, #3cbee6;
+}
+
+.icon-usk18 {
+    background: url(//data.hungbok.net/image/age/games/usk_18.svg) no-repeat center / 30px 30px, #e65a50;
+}
+
+/* rars (russia) */
+
+.icon-rars0 {
+    background: url(//data.hungbok.net/image/age/games/rars_0.svg) no-repeat center / 30px 30px, #f9f9f9;
+}
+
+.icon-rars6 {
+    background: url(//data.hungbok.net/image/age/games/rars_6.svg) no-repeat center / 30px 30px, #00d24a;
+}
+
+.icon-rars12 {
+    background: url(//data.hungbok.net/image/age/games/rars_12.svg) no-repeat center / 30px 30px, #efc600;
+}
+
+.icon-rars16 {
+    background: url(//data.hungbok.net/image/age/games/rars_16.svg) no-repeat center / 30px 30px, #f24c04;
+}
+
+.icon-rars18 {
+    background: url(//data.hungbok.net/image/age/games/rars_18.svg) no-repeat center / 30px 30px, #000000;
+}
+
+/* gsrr (taiwan) */
+
+.icon-gsrr0 {
+    background: url(//data.hungbok.net/image/age/games/gsrr_0.svg) no-repeat center / 30px 30px, #4fad26;
+}
+
+.icon-gsrr6 {
+    background: url(//data.hungbok.net/image/age/games/gsrr_6.svg) no-repeat center / 30px 30px, #0197b5;
+}
+
+.icon-gsrr12 {
+    background: url(//data.hungbok.net/image/age/games/gsrr_12.svg) no-repeat center / 30px 30px, #ffd600;
+}
+
+.icon-gsrr15 {
+    background: url(//data.hungbok.net/image/age/games/gsrr_15.svg) no-repeat center / 30px 30px, #ff7800;
+}
+
+.icon-gsrr18 {
+    background: url(//data.hungbok.net/image/age/games/gsrr_18.svg) no-repeat center / 30px 30px, #f20017;
+}
+
+/* classind (brazil) */
+
+.icon-classindl {
+    background: url(//data.hungbok.net/image/age/games/classind_l.svg) no-repeat center / 30px 30px, #00af51;
+}
+
+.icon-classind10 {
+    background: url(//data.hungbok.net/image/age/games/classind_10.svg) no-repeat center / 30px 30px, #00ccff;
+}
+
+.icon-classind12 {
+    background: url(//data.hungbok.net/image/age/games/classind_12.svg) no-repeat center / 30px 30px, #ffcc00;
+}
+
+.icon-classind14 {
+    background: url(//data.hungbok.net/image/age/games/classind_14.svg) no-repeat center / 30px 30px, #ff6600;
+}
+
+.icon-classind16 {
+    background: url(//data.hungbok.net/image/age/games/classind_16.svg) no-repeat center / 30px 30px, #fe0000;
+}
+
+.icon-classind18 {
+    background: url(//data.hungbok.net/image/age/games/classind_18.svg) no-repeat center / 30px 30px, #000000;
+}
+
+/* social */
+
+.icon-facebook {
+    background: url(//data.hungbok.net/image/icon/facebook.svg) no-repeat center / 30px 30px, #1778f2;
+}
+
+.icon-instagram {
+    background: url(//data.hungbok.net/image/icon/instagram.svg) no-repeat center / 30px 30px, radial-gradient(circle farthest-corner at 38% 104%, #FCDF8F 0%, #fbd377 14%, #fa8e37 28%, #F73344 39%, transparent 86%), linear-gradient(145deg, #6319ff 10%, #c92bb7 24%);
+}
+
+.icon-x {
+    background: url(//data.hungbok.net/image/icon/x.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-discord {
+    background: url(//data.hungbok.net/image/icon/discord.svg) no-repeat center / 30px 30px, #5865f2;
+}
+
+.icon-kakaotalk {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/kakaotalk.svg) no-repeat center / 30px 30px, #fbe300;
+}
+
+.icon-line {
+    background: url(//data.hungbok.net/image/icon/line.svg) no-repeat center / 30px 30px, #06c755;
+}
+
+.icon-threads {
+    background: url(//data.hungbok.net/image/icon/threads.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-linkedin {
+    background: url(//data.hungbok.net/image/icon/linkedin.svg) no-repeat center / 30px 30px, #0a66c2;
+}
+
+.icon-navercafe {
+    background: url(//data.hungbok.net/image/icon/navercafe.svg) no-repeat center / 30px 30px, #03C75A;
+}
+
+.icon-skype {
+    background: url(//data.hungbok.net/image/icon/skype.svg) no-repeat center / 30px 30px, linear-gradient(#01bbf1, #007ad5);
+}
+
+.icon-bluesky {
+    background: url(//data.hungbok.net/image/icon/bluesky.svg) no-repeat center / 30px 30px, linear-gradient(2.35619rad, #0a7bff, #58b9fe);
+}
+
+.icon-kakaostory {
+    background: url(//data.hungbok.net/image/icon/kakaostory.svg) no-repeat center / 30px 30px, #6a5cff;
+}
+
+.icon-tumblr {
+    background: url(//data.hungbok.net/image/icon/tumblr.svg) no-repeat center / 30px 30px, #001935;
+}
+
+.icon-pinterest {
+    background: url(//data.hungbok.net/image/icon/pinterest.svg) no-repeat center / 30px 30px, #e60023;
+}
+
+.icon-snapchat {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/snapchat.svg) no-repeat center / 30px 30px, #fffc00;
+}
+
+.icon-whatsapp {
+    background: url(//data.hungbok.net/image/icon/whatsapp.svg) no-repeat center / 30px 30px, linear-gradient(#60d66a, #20b038);
+}
+
+.icon-wechat {
+    background: url(//data.hungbok.net/image/icon/wechat.svg) no-repeat center / 30px 30px, #00c70a;
+}
+
+.icon-telegram {
+    background: url(//data.hungbok.net/image/icon/telegram.svg) no-repeat center / 30px 30px, linear-gradient(#2AABEE, #229ED9);
+}
+
+.icon-qq {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/qq.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-vk {
+    background: url(//data.hungbok.net/image/icon/vk.svg) no-repeat center / 30px 30px, #0077ff;
+}
+
+.icon-waibo {
+    background: url(//data.hungbok.net/image/icon/waibo.svg) no-repeat center / 30px 30px, #E6162D;
+}
+
+.icon-mastodon {
+    background: url(//data.hungbok.net/image/icon/mastodon.svg) no-repeat center / 30px 30px, linear-gradient(#6364ff, #563acc);
+}
+
+.icon-viber {
+    background: url(//data.hungbok.net/image/icon/viber.svg) no-repeat center / 30px 30px, #7360f2;
+}
+
+.icon-messenger {
+    background: url(//data.hungbok.net/image/icon/messenger.svg) no-repeat center / 30px 30px, linear-gradient(45deg, #0099FF 0%, #A033FF 60%, #FF5280 93%, #FF7061 100%);
+}
+
+.icon-reddit {
+    background: url(//data.hungbok.net/image/icon/reddit.svg) no-repeat center / 30px 30px, #ff4500;
+}
+
+.icon-dcinside {
+    background: url(//data.hungbok.net/image/icon/dcinside.svg) no-repeat center / 30px 30px, #3b468f;
+}
+
+.icon-onnada {
+    background: url(//data.hungbok.net/image/icon/onnada.svg) no-repeat center / 30px 30px, #fe729b;
+}
+
+.icon-minimap {
+    background: url(//data.hungbok.net/image/icon/minimap.svg) no-repeat center / 30px 30px, #3b4757;
+}
+
+.icon-hoyolab {
+    background: url(//data.hungbok.net/image/icon/hoyolab.svg) no-repeat center / 30px 30px, #556de5;
+}
+
+/* service */
+
+.icon-pixiv {
+    background: url(//data.hungbok.net/image/icon/pixiv.svg) no-repeat center / 30px 30px, #0096fa;
+}
+
+.icon-imdb {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/imdb.svg) no-repeat center / 30px 30px, #f6c700;
+}
+
+.icon-rottentomatoes {
+    background: url(//data.hungbok.net/image/icon/rottentomatoes.svg) no-repeat center / 30px 30px, #f93208;
+}
+
+.icon-metacritic {
+    background: url(//data.hungbok.net/image/icon/metacritic.svg) no-repeat center / 30px 30px, #33333f;
+}
+
+.icon-opencritic {
+    background: url(//data.hungbok.net/image/icon/opencritic.svg) no-repeat center / 30px 30px, #fc3e04;
+}
+
+.icon-tmdb {
+    background: url(//data.hungbok.net/image/icon/tmdb.svg) no-repeat center / 30px 30px, linear-gradient(90deg, #90cea1 0%, #3cbec9 56%, #00b3e5 100%);
+}
+
+.icon-letterboxd {
+    background: url(//data.hungbok.net/image/icon/letterboxd.svg) no-repeat center / 30px 30px, #556677;
+}
+
+.icon-filmarks {
+    background: url(//data.hungbok.net/image/icon/filmarks.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-eigacom {
+    background: url(//data.hungbok.net/image/icon/eigacom.svg) no-repeat center / 30px 30px, #2474d2;
+}
+
+.icon-douban {
+    background: url(//data.hungbok.net/image/icon/douban.svg) no-repeat center / 30px 30px, #2e963d;
+}
+
+.icon-anikore {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/anikore.svg) no-repeat center / 30px 30px, #fee500;
+}
+
+.icon-anilist {
+    background: url(//data.hungbok.net/image/icon/anilist.svg) no-repeat center / 30px 30px, #19212d;
+}
+
+.icon-myanimelist {
+    background: url(//data.hungbok.net/image/icon/myanimelist.svg) no-repeat center / 30px 30px, #2e51a1;
+}
+
+.icon-mydramalist {
+    background: url(//data.hungbok.net/image/icon/mydramalist.svg) no-repeat center / 30px 30px, #0d629b;
+}
+
+.icon-watchapedia {
+    background: url(//data.hungbok.net/image/icon/watchapedia.svg) no-repeat center / 30px 30px, #fe0658;
+}
+
+.icon-kinolights {
+    background: url(//data.hungbok.net/image/icon/kinolights.svg) no-repeat center / 30px 30px, #101322;
+}
+
+.icon-justwatch {
+    background: url(//data.hungbok.net/image/icon/justwatch.svg) no-repeat center / 30px 30px, #060d17;
+}
+
+.icon-amazonprime {
+    background: url(//data.hungbok.net/image/icon/amazonprime.svg) no-repeat center / 30px 30px, #1a98ff;
+}
+
+.icon-adobecreativecloud {
+    /* background: url(//data.hungbok.net/image/icon/adobecreativecloud.svg) no-repeat center / 30px 30px, radial-gradient(circle farthest-corner at 50% 50%, #f67f6c 5%, transparent 50%), conic-gradient(from 90deg,#feb100, #afde3e, #8abf9d, #3288ff, #ba48fb, #fe119a, #f90004, #fb4200, #feb100); */
+    background: url(//data.hungbok.net/image/icon/adobecreativecloud.svg) no-repeat center / 30px 30px, radial-gradient(circle farthest-corner at 50% 50%, #f67f6c 5%, transparent 50%), conic-gradient(from 90deg, #faae00, #eacf0d, #73e046, #acd06b, #96b9a2, #4496f3, #258cfe, #6d6cff, #c245fa, #f91cbe, #ff098c, #fe0653, #f90004, #f91d00, #f84000, #fd6200, #faae00);
+}
+
+.icon-googledrive {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/googledrive.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-googlephotos {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/googlephotos.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-onedrive {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/onedrive.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-icloud {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/icloud.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-dropbox {
+    background: url(//data.hungbok.net/image/icon/dropbox.svg) no-repeat center / 30px 30px, #0061ff;
+}
+
+.icon-mega {
+    background: url(//data.hungbok.net/image/icon/mega.svg) no-repeat center / 30px 30px, #d9272e;
+}
+
+.icon-booth {
+    background: url(//data.hungbok.net/image/icon/booth.svg) no-repeat center / 30px 30px, #fc4d50;
+}
+
+.icon-nexusmods {
+    background: url(//data.hungbok.net/image/icon/nexusmods.svg) no-repeat center / 30px 30px, #d98f40;
+}
+
+.icon-namemc {
+    background: url(//data.hungbok.net/image/icon/namemc.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-fortnitegg {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/fortnitegg.svg) no-repeat center / 30px 30px, #fec628;
+}
+
+.icon-github {
+    background: url(//data.hungbok.net/image/icon/github.svg) no-repeat center / 30px 30px, linear-gradient(#1b1f23, #050505);
+}
+
+.icon-fanbox {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/fanbox.svg) no-repeat center / 30px 30px, #faf18a;
+}
+
+/* wiki */
+
+.icon-wikipedia {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/wikipedia.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-fandom {
+    background: url(//data.hungbok.net/image/icon/fandom.svg) no-repeat center / 30px 30px, #520044;
+}
+
+.icon-namuwiki {
+    background: url(//data.hungbok.net/image/icon/namuwiki.svg) no-repeat center / 30px 30px, linear-gradient(to right, #00a495 30%, #13ad65);
+}
+
+.icon-niconicodaihyakka {
+    background: url(//data.hungbok.net/image/icon/niconicodaihyakka.svg) no-repeat center / 30px 30px, #b90102;
+}
+
+.icon-pixivhyakkajiten {
+    background: url(//data.hungbok.net/image/icon/pixivhyakkajiten.svg) no-repeat center / 30px 30px, #1f1f1f;
+}
+
+.icon-baidubaike {
+    background: url(//data.hungbok.net/image/icon/baidubaike.svg) no-repeat center / 30px 30px, #2830e1;
+}
+
+/* video streaming */
+
+.icon-youtube {
+    background: url(//data.hungbok.net/image/icon/youtube.svg) no-repeat center / 30px 30px, #ff0000;
+}
+
+.icon-tiktok {
+    background: url(//data.hungbok.net/image/icon/tiktok.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-chzzk {
+    background: url(//data.hungbok.net/image/icon/chzzk.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-kick {
+    background: url(//data.hungbok.net/image/icon/kick.svg) no-repeat center / 30px 30px, #53FC19;
+}
+
+.icon-twitch {
+    background: url(//data.hungbok.net/image/icon/twitch.svg) no-repeat center / 30px 30px, #9146ff;
+}
+
+.icon-niconicodouga {
+    background: url(//data.hungbok.net/image/icon/niconicodouga.svg) no-repeat center / 30px 30px, #231916;
+}
+
+.icon-bilibili {
+    background: url(//data.hungbok.net/image/icon/bilibili.svg) no-repeat center / 30px 30px, #07A3D7;
+}
+
+.icon-netflix {
+    background: url(//data.hungbok.net/image/icon/netflix.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-primevideo {
+    background: url(//data.hungbok.net/image/icon/primevideo.svg) no-repeat center / 30px 30px, #17a6df;
+}
+
+.icon-appletv {
+    background: url(//data.hungbok.net/image/icon/appletv.svg) no-repeat center / 30px 30px, linear-gradient(#333333, #111111);
+}
+
+.icon-appletvplus {
+    background: url(//data.hungbok.net/image/icon/appletvplus.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-disneyplus {
+    background: url(//data.hungbok.net/image/icon/disneyplus.svg) no-repeat center / 30px 30px, linear-gradient(#071240, #175ec3);
+}
+
+.icon-paramountplus {
+    background: url(//data.hungbok.net/image/icon/paramountplus.svg) no-repeat center / 30px 30px, #0064ff;
+}
+
+.icon-hulu {
+    background: url(//data.hungbok.net/image/icon/hulu.svg) no-repeat center / 30px 30px, linear-gradient(225deg, #163645, #040809);
+}
+
+.icon-max {
+    background: url(//data.hungbok.net/image/icon/max.svg) no-repeat center / 30px 30px, radial-gradient(circle farthest-corner at 50% 50%, #0131fd 33%, #0124d4 57%, #0018ad 70%, #000f96 78%, #000066 96%);
+}
+
+.icon-crunchyroll {
+    background: url(//data.hungbok.net/image/icon/crunchyroll.svg) no-repeat center / 30px 30px, #f47521;
+}
+
+.icon-hulujapan {
+    background: url(//data.hungbok.net/image/icon/hulujapan.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-unext {
+    background: url(//data.hungbok.net/image/icon/unext.svg) no-repeat center / 30px 30px, linear-gradient(45deg, #000000 50%, #1a222e 50%, #1a222e 75%, #333b45 75%);
+}
+
+.icon-abema {
+    background: url(//data.hungbok.net/image/icon/abema.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-fod {
+    background: url(//data.hungbok.net/image/icon/fod.svg) no-repeat center / 30px 30px, #b9002b;
+}
+
+.icon-animehodai {
+    background: url(//data.hungbok.net/image/icon/animehodai.svg) no-repeat center / 30px 30px, #01afee;
+}
+
+.icon-danimestore {
+    background: url(//data.hungbok.net/image/icon/danimestore.svg) no-repeat center / 30px 30px, #eb5528;
+}
+
+.icon-bandaichannel {
+    background: url(//data.hungbok.net/image/icon/bandaichannel.svg) no-repeat center / 30px 30px, #30386E;
+}
+
+.icon-dmmtv {
+    background: url(//data.hungbok.net/image/icon/dmmtv.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-jcom {
+    background: url(//data.hungbok.net/image/icon/jcom.svg) no-repeat center / 30px 30px, #E73817;
+}
+
+.icon-telasa {
+    background: url(//data.hungbok.net/image/icon/telasa.svg) no-repeat center / 30px 30px, #eb5505;
+}
+
+.icon-milplus {
+    background: url(//data.hungbok.net/image/icon/milplus.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-lemino {
+    background: url(//data.hungbok.net/image/icon/lemino.svg) no-repeat center / 30px 30px, linear-gradient(45deg, #FFBE28 0%, #FF9439 20%, #FF4759 59%, #FF176E 86%, #FF0576 100%);
+}
+
+.icon-tver {
+    background: url(//data.hungbok.net/image/icon/tver.svg) no-repeat center / 30px 30px, linear-gradient(135deg, #00FFFF 0%, #00B4DC 43%, #009FD3 51%, #007AC2 67%, #0062B8 81%, #005AB4 90%);
+}
+
+.icon-wowow {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/wowow.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-wavve {
+    background: url(//data.hungbok.net/image/icon/wavve.svg) no-repeat center / 30px 30px, #0050ff;
+}
+
+.icon-tving {
+    background: url(//data.hungbok.net/image/icon/tving.svg) no-repeat center / 30px 30px, #ff153c;
+}
+
+.icon-watcha {
+    background: url(//data.hungbok.net/image/icon/watcha.svg) no-repeat center / 30px 30px, #ff0558;
+}
+
+.icon-coupangplay {
+    background: url(//data.hungbok.net/image/icon/coupangplay.svg) no-repeat center / 30px 30px, radial-gradient(ellipse farthest-corner at -1% 108%, #ff7d37 15%, transparent 44%), radial-gradient(circle farthest-corner at 5% 8%, #4ff4f7 -6%, transparent 37%), radial-gradient(circle farthest-corner at 45% 3%, #4ff4f7 -6%, transparent 37%), linear-gradient(190deg, #62aaff 46%, #7394fd 50%, #fd9bfc 62%);
+}
+
+.icon-serieson {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/serieson.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-laftel {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/laftel.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-aniplus {
+    background: url(//data.hungbok.net/image/icon/aniplus.svg) no-repeat center / 30px 30px, #ff5d24;
+}
+
+.icon-uplusmobiletv {
+    background: url(//data.hungbok.net/image/icon/uplusmobiletv.svg) no-repeat center / 30px 30px, linear-gradient(#f243bf, #e30181);
+}
+
+.icon-cinefox {
+    background: url(//data.hungbok.net/image/icon/cinefox.svg) no-repeat center / 30px 30px, #171721;
+}
+
+.icon-jbox {
+    background: url(//data.hungbok.net/image/icon/jbox.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-googletv {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/googletv.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-vimeo {
+    background: url(//data.hungbok.net/image/icon/vimeo.svg) no-repeat center / 30px 30px, #00adef;
+}
+
+.icon-afreecatv {
+    background: url(//data.hungbok.net/image/icon/afreecatv.svg) no-repeat center / 30px 30px, #0545b1;
+}
+
+.icon-rakutenviki {
+    background: url(//data.hungbok.net/image/icon/rakuten.svg) no-repeat center / 30px 30px, #0c9bff;
+}
+
+/* music streaming */
+
+.icon-spotify {
+    background: url(//data.hungbok.net/image/icon/spotify.svg) no-repeat center / 30px 30px, #1ed760;
+}
+
+.icon-applemusic {
+    background: url(//data.hungbok.net/image/icon/applemusic.svg) no-repeat center / 30px 30px, linear-gradient(#fb5c74, #fa233b);
+}
+
+.icon-youtubemusic {
+    background: url(//data.hungbok.net/image/icon/youtubemusic.svg) no-repeat center / 30px 30px, #ff0000;
+}
+
+.icon-amazonmusic {
+    background: url(//data.hungbok.net/image/icon/amazonmusic.svg) no-repeat center / 30px 30px, linear-gradient(45deg, #0C6CB3, #4CC0EF);
+}
+
+.icon-soundcloud {
+    background: url(//data.hungbok.net/image/icon/soundcloud.svg) no-repeat center / 30px 30px, linear-gradient(#ff9436, #ff433a);
+}
+
+.icon-googleplaymusic {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/googleplaymusic.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+/* os */
+
+.icon-windows {
+    background: url(//data.hungbok.net/image/icon/windows.svg) no-repeat center / 30px 30px, #0078d4;
+}
+
+.icon-mac {
+    background: url(//data.hungbok.net/image/icon/mac.svg) no-repeat center / 30px 30px, #888888;
+}
+
+.icon-macos {
+    background: url(//data.hungbok.net/image/icon/macos.svg) no-repeat center / 30px 30px, linear-gradient(#7e7e7e, #565757);
+}
+
+.icon-ipados {
+    background: url(//data.hungbok.net/image/icon/ipados.svg) no-repeat center / 30px 30px, linear-gradient(#7e7e7e, #565757);
+}
+
+.icon-ios {
+    background: url(//data.hungbok.net/image/icon/ios.svg) no-repeat center / 30px 30px, linear-gradient(#7e7e7e, #565757);
+}
+
+.icon-android {
+    background: url(//data.hungbok.net/image/icon/android.svg) no-repeat center / 30px 30px, #34a853;
+}
+
+.icon-linux {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/linux.svg) no-repeat center / 30px 30px, #f5bd0c;
+}
+
+/* system */
+
+.icon-pc {
+    background: url(//data.hungbok.net/image/icon/display.svg) no-repeat center / 30px 30px, #333333;
+}
+
+.icon-tablet {
+    background: url(//data.hungbok.net/image/icon/tablet.svg) no-repeat center / 30px 30px, #333333;
+}
+
+.icon-mobile {
+    background: url(//data.hungbok.net/image/icon/phone.svg) no-repeat center / 30px 30px, #333333;
+}
+
+.icon-vr {
+    background: url(//data.hungbok.net/image/icon/headset-vr.svg) no-repeat center / 30px 30px, #333333;
+}
+
+.icon-arcade {
+    background: url(//data.hungbok.net/image/icon/joystick.svg) no-repeat center / 30px 30px, #333333;
+}
+
+.icon-playstation {
+    background: url(//data.hungbok.net/image/icon/playstation.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstationvr2 {
+    background: url(//data.hungbok.net/image/icon/playstationvr2.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstation5 {
+    background: url(//data.hungbok.net/image/icon/playstation5.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstation4pro {
+    background: url(//data.hungbok.net/image/icon/playstation4pro.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstationvr {
+    background: url(//data.hungbok.net/image/icon/playstationvr.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstation4 {
+    background: url(//data.hungbok.net/image/icon/playstation4.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstationvita {
+    background: url(//data.hungbok.net/image/icon/playstationvita.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstation3 {
+    background: url(//data.hungbok.net/image/icon/playstation3.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstationportable {
+    background: url(//data.hungbok.net/image/icon/playstationportable.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstation2 {
+    background: url(//data.hungbok.net/image/icon/playstation2.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-playstation1 {
+    background: url(//data.hungbok.net/image/icon/playstation1.svg) no-repeat center / 30px 30px, #013791;
+}
+
+.icon-xbox {
+    background: url(//data.hungbok.net/image/icon/xbox.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xboxseriesxs {
+    background: url(//data.hungbok.net/image/icon/xboxseriesxs.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xboxseriesx {
+    background: url(//data.hungbok.net/image/icon/xboxseriesx.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xboxseriess {
+    background: url(//data.hungbok.net/image/icon/xboxseriess.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xboxonex {
+    background: url(//data.hungbok.net/image/icon/xboxonex.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xboxone {
+    background: url(//data.hungbok.net/image/icon/xboxone.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xbox360 {
+    background: url(//data.hungbok.net/image/icon/xbox360.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-xbox1 {
+    background: url(//data.hungbok.net/image/icon/xbox1.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-nintendo {
+    background: url(//data.hungbok.net/image/icon/nintendo.svg) no-repeat center / 30px 30px, #e60012;
+}
+
+.icon-nintendoswitch {
+    background: url(//data.hungbok.net/image/icon/nintendoswitch.svg) no-repeat center / 30px 30px, #e60012;
+}
+
+.icon-newnintendo3ds {
+    background: url(//data.hungbok.net/image/icon/newnintendo3ds.svg) no-repeat center / 30px 30px, #e60012;
+}
+
+.icon-wiiu {
+    background: url(//data.hungbok.net/image/icon/wiiu.svg) no-repeat center / 30px 30px, #0D97C6;
+}
+
+.icon-nintendo3ds {
+    background: url(//data.hungbok.net/image/icon/nintendo3ds.svg) no-repeat center / 30px 30px, #e60012;
+}
+
+.icon-nintendodsi {
+    background: url(//data.hungbok.net/image/icon/nintendodsi.svg) no-repeat center / 30px 30px, #FD468B;
+}
+
+.icon-wii {
+    background: url(//data.hungbok.net/image/icon/wii.svg) no-repeat center / 30px 30px, #0D97C6;
+}
+
+.icon-nintendods {
+    background: url(//data.hungbok.net/image/icon/nintendods.svg) no-repeat center / 30px 30px, #FD468B;
+}
+
+.icon-nintendogamecube {
+    background: url(//data.hungbok.net/image/icon/nintendogamecube.svg) no-repeat center / 30px 30px, linear-gradient(to right, #5A46A8, #7764BF);
+}
+
+.icon-gameboyadvance {
+    background: url(//data.hungbok.net/image/icon/gameboyadvance.svg) no-repeat center / 30px 30px, linear-gradient(to right, #5A46A8, #7764BF);
+}
+
+.icon-gameboycolor {
+    background: url(//data.hungbok.net/image/icon/gameboycolor.svg) no-repeat center / 30px 30px, #2e3192;
+}
+
+.icon-nintendo64 {
+    background: url(//data.hungbok.net/image/icon/nintendo64.svg) no-repeat center / 30px 30px, #666666;
+}
+
+.icon-virtualboy {
+    background: url(//data.hungbok.net/image/icon/virtualboy.svg) no-repeat center / 30px 30px, #e60012;
+}
+
+.icon-superfamicom {
+    background: url(//data.hungbok.net/image/icon/superfamicom.svg) no-repeat center / 30px 30px, #666666;
+}
+
+.icon-gameboy {
+    background: url(//data.hungbok.net/image/icon/gameboy.svg) no-repeat center / 30px 30px, #2e3192;
+}
+
+.icon-familycomputer {
+    background: url(//data.hungbok.net/image/icon/familycomputer.svg) no-repeat center / 30px 30px, #e6361e;
+}
+
+.icon-gameandwatch {
+    background: url(//data.hungbok.net/image/icon/gameandwatch.svg) no-repeat center / 30px 30px, #ff0000;
+}
+
+.icon-metaquest {
+    background: url(//data.hungbok.net/image/icon/metaquest.svg) no-repeat center / 30px 30px, linear-gradient(#0064e0, #0081fa);
+}
+
+.icon-oculusquest {
+    background: url(//data.hungbok.net/image/icon/oculusquest.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-valveindex {
+    background: url(//data.hungbok.net/image/icon/valveindex.svg) no-repeat center / 30px 30px, #0d0d0d;
+}
+
+.icon-htcvive {
+    background: url(//data.hungbok.net/image/icon/htcvive.svg) no-repeat center / 30px 30px, #00b3e3;
+}
+
+.icon-steamdeck {
+    background: url(//data.hungbok.net/image/icon/steamdeck.svg) no-repeat center / 30px 30px, linear-gradient(135deg, #C957E6 10%, #1A9FFF 100%);
+}
+
+/* ESD */
+
+.icon-steam {
+    background: url(//data.hungbok.net/image/icon/steam.svg) no-repeat center / 30px 30px, linear-gradient(#111D2E 0%, #051839 21%, #0A1B48 40%, #132E62 58%, #144B7E 73%, #136497 87%, #1387B8 100%);
+}
+
+.icon-epicgamesstore {
+    background: url(//data.hungbok.net/image/icon/epicgamesstore.svg) no-repeat center / 30px 30px, #18181c;
+}
+
+.icon-gogcom {
+    background: url(//data.hungbok.net/image/icon/gogcom.svg) no-repeat center / 30px 30px, #1a1a1a;
+}
+
+.icon-eaapp {
+    background: url(//data.hungbok.net/image/icon/ea.svg) no-repeat center / 30px 30px, #fe4747;
+}
+
+.icon-ubisoftconnect {
+    background: url(//data.hungbok.net/image/icon/ubisoft.svg) no-repeat center / 30px 30px, radial-gradient(circle farthest-corner at 50% 50%, #050c15 5%, transparent 50%), conic-gradient(from 90deg,#727f22, #247f22, #227f6f, #22557f, #24227f, #6d227f, #7f2242, #7f4c22, #727f22);
+}
+
+.icon-battlenet {
+    background: url(//data.hungbok.net/image/icon/battlenet.svg) no-repeat center / 30px 30px, #0074e0;
+}
+
+.icon-rockstargameslauncher {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/rockstargames.svg) no-repeat center / 30px 30px, #ffab00;
+}
+
+.icon-stove {
+    background: url(//data.hungbok.net/image/icon/stove.svg) no-repeat center / 30px 30px, linear-gradient(135deg, #ff2000, #ff722f);
+}
+
+.icon-xboxgamesstore {
+    background: url(//data.hungbok.net/image/icon/microsoftstore.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-playstationstore {
+    background: url(//data.hungbok.net/image/icon/playstationstore.svg) no-repeat center / 30px 30px, #0072ce;
+}
+
+.icon-nintendoeshop {
+    background: url(//data.hungbok.net/image/icon/nintendoeshop.svg) no-repeat center / 30px 30px, #ff7f00;
+}
+
+.icon-metastore {
+    background: url(//data.hungbok.net/image/icon/metaquest.svg) no-repeat center / 30px 30px, linear-gradient(#0064e0, #0081fa);
+}
+
+.icon-googleplay {
+    background: url(//data.hungbok.net/image/icon/googleplay.svg) no-repeat center / 30px 30px, #100f0d;
+}
+
+.icon-appstore {
+    background: url(//data.hungbok.net/image/icon/appstore.svg) no-repeat center / 30px 30px, linear-gradient(#18bffb, #2072f3);
+}
+
+.icon-microsoftstore {
+    background: url(//data.hungbok.net/image/icon/microsoftstore.svg) no-repeat center / 30px 30px, linear-gradient(135deg, #0669bc 0%, #1b4779 71%, #233b61 100%);
+}
+
+.icon-amazongamesapp {
+    background: url(//data.hungbok.net/image/icon/amazongames.svg) no-repeat center / 30px 30px, #0b0c0c;
+}
+
+.icon-fanatical {
+    background: url(//data.hungbok.net/image/icon/fanatical.svg) no-repeat center / 30px 30px, #ff9800;
+}
+
+.icon-humblebundle {
+    background: url(//data.hungbok.net/image/icon/humblebundle.svg) no-repeat center / 30px 30px, #CB272C;
+}
+
+.icon-indiegala {
+    background: url(//data.hungbok.net/image/icon/indiegala.svg) no-repeat center / 30px 30px, #eb222a;
+}
+
+.icon-itchio {
+    background: url(//data.hungbok.net/image/icon/itchio.svg) no-repeat center / 30px 30px, #ff5555;
+}
+
+.icon-directgames {
+    background: url(//data.hungbok.net/image/icon/directgames.svg) no-repeat center / 30px 30px, #0C7CEC;
+}
+
+.icon-dmmcom {
+    background: url(//data.hungbok.net/image/icon/dmmcom.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-dlsite {
+    background: url(//data.hungbok.net/image/icon/dlsite.svg) no-repeat center / 30px 30px, #0a2a82;
+}
+
+.icon-primegaming {
+    background: url(//data.hungbok.net/image/icon/primegaming.svg) no-repeat center / 30px 30px, #9146ff;
+}
+
+.icon-humblechoice {
+    background: url(//data.hungbok.net/image/icon/humblechoice.svg) no-repeat center / 30px 30px, #CB272C;
+}
+
+.icon-playstationplus {
+    background: url(//data.hungbok.net/image/icon/playstationplus.svg) no-repeat center / 30px 30px, #0070d1;
+}
+
+.icon-nintendoswitchonline {
+    background: url(//data.hungbok.net/image/icon/nintendo.svg) no-repeat center / 30px 30px, #e60012;
+}
+
+.icon-xboxgamepass {
+    background: url(//data.hungbok.net/image/icon/xbox.svg) no-repeat center / 30px 30px, #107c11;
+}
+
+.icon-steamvr {
+    background: url(//data.hungbok.net/image/icon/steam.svg) no-repeat center / 30px 30px, linear-gradient(160deg, #101c2e, #061837, #261d60, #602962, #a43e65);
+}
+
+.icon-amazonluna {
+    background: url(//data.hungbok.net/image/icon/amazonluna.svg) no-repeat center / 30px 30px, #9148fc;
+}
+
+.icon-stadia {
+    background: url(//data.hungbok.net/image/icon/stadia.svg) no-repeat center / 30px 30px, linear-gradient(90deg, #FF4C1D, #9B0063);
+}
+
+.icon-geforcenow {
+    background: url(//data.hungbok.net/image/icon/geforcenow.svg) no-repeat center / 30px 30px, #1e1e1e;
+}
+
+.icon-bethesdanet {
+    background: url(//data.hungbok.net/image/icon/bethesdanet.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-applearcade {
+    background: url(//data.hungbok.net/image/icon/applearcade.svg) no-repeat center / 30px 30px, linear-gradient(#ff7355, #ff2d50);
+}
+
+.icon-googleplaypass {
+    background: url(//data.hungbok.net/image/icon/googleplaypass.svg) no-repeat center / 30px 30px, conic-gradient(from 45deg, #fbbc05 0 25%, #ea4335 25% 50%, #4285f4 50% 75%, #34a853 75% 100%);
+}
+
+.icon-googleplaygames {
+    background: url(//data.hungbok.net/image/icon/googleplaygames.svg) no-repeat center / 30px 30px, #1a8039;
+}
+
+.icon-googleplaybooks {
+    background: url(//data.hungbok.net/image/icon/googleplaybooks.svg) no-repeat center / 30px 30px, #1c51a4;
+}
+
+.icon-googleplaymovies {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/googleplaymovies.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-galaxystore {
+    background: url(//data.hungbok.net/image/icon/galaxystore.svg) no-repeat center / 30px 30px, linear-gradient(160deg, #fe276b 32%, #fa371f 100%);
+}
+
+.icon-dmmgames {
+    background: url(//data.hungbok.net/image/icon/dmmcom.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-xboxcloudgaming {
+    background: url(//data.hungbok.net/image/icon/xboxcloud.svg) no-repeat center / 30px 30px, #107b0f;
+}
+
+/* company */
+
+.icon-nvidia {
+    background: url(//data.hungbok.net/image/icon/nvidia.svg) no-repeat center / 30px 30px, #76b900;
+}
+
+.icon-niconico {
+    background: url(//data.hungbok.net/image/icon/niconico.svg) no-repeat center / 30px 30px, #252525;
+}
+
+.icon-apple {
+    background: url(//data.hungbok.net/image/icon/apple.svg) no-repeat center / 30px 30px, #888888;
+}
+
+.icon-meta {
+    background: url(//data.hungbok.net/image/icon/meta.svg) no-repeat center / 30px 30px, #1c1e20;
+}
+
+.icon-oculus {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/meta.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-epicgames {
+    background: url(//data.hungbok.net/image/icon/epicgames.svg) no-repeat center / 30px 30px, #18181c;
+}
+
+.icon-ea {
+    background: url(//data.hungbok.net/image/icon/ea.svg) no-repeat center / 30px 30px, #fe4747;
+}
+
+.icon-ubisoft {
+    background: url(//data.hungbok.net/image/icon/ubisoft.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-rockstargames {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/rockstargames.svg) no-repeat center / 30px 30px, #ffab00;
+}
+
+.icon-amazongames {
+    background: url(//data.hungbok.net/image/icon/amazongames.svg) no-repeat center / 30px 30px, #ff9900;
+}
+
+.icon-bethesda {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/bethesda.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-naver {
+    background: url(//data.hungbok.net/image/icon/naver.svg) no-repeat center / 30px 30px, linear-gradient(#03ef66, #03b366);
+}
+
+.icon-yahoo {
+    background: url(//data.hungbok.net/image/icon/yahoo.svg) no-repeat center / 30px 30px, #5f01d1;
+}
+
+.icon-yahoojapan {
+    background: url(//data.hungbok.net/image/icon/yahoojapan.svg) no-repeat center / 30px 30px, #fe0335;
+}
+
+.icon-google {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/google.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-rakuten {
+    background: url(//data.hungbok.net/image/icon/rakuten.svg) no-repeat center / 30px 30px, #bf0000;
+}
+
+.icon-adobe {
+    background: url(//data.hungbok.net/image/icon/adobe.svg) no-repeat center / 30px 30px, #fa0f00;
+}
+
+.icon-riotgames {
+    background: url(//data.hungbok.net/image/icon/riotgames.svg) no-repeat center / 30px 30px, #eb0029;
+}
+
+.icon-hoyoverse {
+    background: url(//data.hungbok.net/image/icon/hoyoverse.svg) no-repeat center / 30px 30px, radial-gradient(circle farthest-corner at 73% 6%, #a6fdff 0%, transparent 29%), radial-gradient(circle farthest-corner at 93% 19%, #e6e9ff 10%, transparent 20%), radial-gradient(circle farthest-corner at 81% 83%, #b1a9ff 13%, transparent 51%), radial-gradient(circle farthest-corner at 91% 52%, #febdf0 17%, transparent 32%), #7bb1ff;
+}
+
+.icon-amazon {
+    background: url(//data.hungbok.net/image/icon/amazon.svg) no-repeat center / 30px 30px, #ff9900;
+}
+
+.icon-microsoft {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/microsoft.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+/* payments */
+
+.icon-paypal {
+    background: url(//data.hungbok.net/image/icon/paypal.svg) no-repeat center / 30px 30px, #003087;
+}
+
+.icon-patreon {
+    background: url(//data.hungbok.net/image/icon/patreon.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-buymeacoffee {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/buymeacoffee.svg) no-repeat center / 30px 30px, #ffdd00;
+}
+
+.icon-kofi {
+    background: url(//data.hungbok.net/image/icon/kofi.svg) no-repeat center / 30px 30px, #00b9fe;
+}
+
+.icon-bitcoin {
+    background: url(//data.hungbok.net/image/icon/bitcoin.svg) no-repeat center / 30px 30px, #f7931a;
+}
+
+.icon-ethereum {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/ethereum.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-alipay {
+    background: url(//data.hungbok.net/image/icon/alipay.svg) no-repeat center / 30px 30px, #1677ff;
+}
+
+.icon-toss {
+    background: url(//data.hungbok.net/image/icon/toss.svg) no-repeat center / 30px 30px, #0064FF;
+}
+
+.icon-kakaopay {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/kakaopay.svg) no-repeat center / 30px 30px, #ffe000;
+}
+
+.icon-naverpay {
+    background: url(//data.hungbok.net/image/icon/naverpay.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-linepay {
+    background: url(//data.hungbok.net/image/icon/linepay.svg) no-repeat center / 30px 30px, #08bf5b;
+}
+
+.icon-twip {
+    background: url(//data.hungbok.net/image/icon/twip.svg) no-repeat center / 30px 30px, #801fe8;
+}
+
+.icon-toonation {
+    background: url(//data.hungbok.net/image/icon/toonation.svg) no-repeat center / 30px 30px, #212529;
+}
+
+.icon-cashapp {
+    background: url(//data.hungbok.net/image/icon/cashapp.svg) no-repeat center / 30px 30px, #00d632;
+}
+
+.icon-venmo {
+    background: url(//data.hungbok.net/image/icon/venmo.svg) no-repeat center / 30px 30px, #3396cd;
+}
+
+.icon-applepay {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/applepay.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-paypay {
+    background: url(//data.hungbok.net/image/icon/paypay.svg) no-repeat center / 30px 30px, #ff0033;
+}
+
+.icon-samsungpay {
+    background: url(//data.hungbok.net/image/icon/samsungpay.svg) no-repeat center / 30px 30px, #1e4bc6;
+}
+
+.icon-wechatpay {
+    background: url(//data.hungbok.net/image/icon/wechatpay.svg) no-repeat center / 30px 30px, #22ac38;
+}
+
+.icon-googlepay {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/googlepay.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-visa {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/visa.svg) no-repeat center / 30px 30px, #1434cb;
+}
+
+.icon-mastercard {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/mastercard.svg) no-repeat center / 30px 30px, #141413;
+}
+
+.icon-americanexpress {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/americanexpress.svg) no-repeat center / 30px 30px, #016fd0;
+}
+
+.icon-discover {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/discover.svg) no-repeat center / 30px 30px, linear-gradient(135deg, #8b271c, #f49114);
+}
+
+.icon-jcb {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/jcb.svg) no-repeat center / 30px 30px, linear-gradient(90deg, #1D2970 0%, #006DBA 33%, #6E2B2F 33%, #E30138 66%, #007B40 66%, #55B330 100%);
+}
+
+.icon-unionpay {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/unionpay.svg) no-repeat center / 30px 30px, linear-gradient(103deg, #E21836 33%, #00447C 33% 66%, #007B84 66%);
+}
+
+
+
+
+
+.icon-pasmo {
+    height: 15px;
+    background: url(//data.hungbok.net/image/icon/pasmo.svg) no-repeat center / 30px 30px, #eb6ea5;
+}
+
+.icon-parler {
+    background: url(//data.hungbok.net/image/icon/parler.svg) no-repeat center / 30px 30px, #dd2740;
+}
+
+.icon-paidy {
+    background: url(//data.hungbok.net/image/icon/paidy.svg) no-repeat center / 30px 30px, linear-gradient(135deg, rgb(229, 37, 140) 0%, rgb(130, 60, 215) 100%);
+}
+
+.icon-misskey {
+    background: url(//data.hungbok.net/image/icon/misskey.svg) no-repeat center / 30px 30px, linear-gradient(90deg, #86b300, #4ab300, #4ab300);
+}
+
+.icon-kyash {
+    background: url(//data.hungbok.net/image/icon/kyash.svg) no-repeat center / 30px 30px, #2ad1ff;
+}
+
+.icon-jrgroup {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #000000;
+}
+
+.icon-jrhokkaido {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #44AF35;
+}
+
+.icon-jreast {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #0A8C0D;
+}
+
+.icon-jrcentral {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #EE6D00;
+}
+
+.icon-jrwest {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #0068B7;
+}
+
+.icon-jrshikoku {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #309AC3;
+}
+
+.icon-jrkyushu {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #E50012;
+}
+
+.icon-jrfreight {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #367193;
+}
+
+.icon-jrsystems {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #C11B41;
+}
+
+.icon-jrrtri {
+    background: url(//data.hungbok.net/image/icon/jr.svg) no-repeat center / 30px 30px, #8F7ED5;
+}
+
+.icon-mercari {
+    background: url(//data.hungbok.net/image/icon/mercari.svg) no-repeat center / 30px 30px, #222222;
+}
+
+.icon-amazonpay {
+    background: url(//data.hungbok.net/image/icon/amazonpay.svg) no-repeat center / 30px 30px, #39444e;
+}
+
+.icon-nexon {
+    background: url(//data.hungbok.net/image/icon/nexon.svg) no-repeat center / 30px 30px, #0077ff;
+}
+
+.icon-id {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/id.svg) no-repeat center / 30px 30px, #eac900;
+}
+
+.icon-dbarai {
+    background: url(//data.hungbok.net/image/icon/dbarai.svg) no-repeat center / 30px 30px, #d00f31;
+}
+
+.icon-alipayplus {
+    background: url(//data.hungbok.net/image/icon/alipayplus.svg) no-repeat center / 30px 30px, #1677ff;
+}
+
+.icon-rakutenpay {
+    background: url(//data.hungbok.net/image/icon/rakutenpay.svg) no-repeat center / 30px 30px, #bf0101;
+}
+
+.icon-suica {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/suica.svg) no-repeat center / 30px 30px, #e4e4e3;
+}
+
+.icon-truthsocial {
+    background: url(//data.hungbok.net/image/icon/truthsocial.svg) no-repeat center / 30px 30px, linear-gradient(225deg, #4762ee, #5347ef);
+}
+
+.icon-ic {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/ic.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-aupay {
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/aupay.svg) no-repeat center / 30px 30px, linear-gradient(#ffffff 50%, #eb5505 50%);
+}
+
+.icon-quicpay {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/quicpay.svg) no-repeat center / 30px 30px, #ffffff;
+}
+
+.icon-quicpayplus {
+    height: 15px;
+    color: #000000!important;
+    background: url(//data.hungbok.net/image/icon/quicpayplus.svg) no-repeat center / 30px 30px, #ffffff;
+}

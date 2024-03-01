@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 3600 2400" style="enable-background:new 0 0 3600 2400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#EEEEEE;}
+	.st1{fill:#C60C30;}
+	.st2{fill:#003478;}
+	.st3{fill:#141414;}
+</style>
+<g id="background">
+	<path id="bg" class="st0" d="M400,0h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400c-220,0-400-180-400-400V400
+		C0,180,180,0,400,0z"/>
+</g>
+<g id="country">
+	<g id="kr">
+		<g>
+			<circle class="st1" cx="1799.9" cy="1199.9" r="600"/>
+			<path class="st2" d="M1300.7,867.1c-91.9,137.9-54.7,324.1,83.2,416s324.1,54.7,416-83.2s278.2-175.1,416-83.2
+				c137.9,91.9,175.1,278.2,83.2,416c-183.8,275.7-556.3,350.2-832.1,166.4S1116.9,1142.8,1300.7,867.1L1300.7,867.1L1300.7,867.1z"
+				/>
+		</g>
+		<g>
+			<g>
+				
+					<rect x="2667.9" y="1624.8" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -144.1698 3080.1545)" class="st3" width="275" height="100"/>
+				
+					<rect x="2792.7" y="1708" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -157.823 3221.0535)" class="st3" width="275" height="100"/>
+				
+					<rect x="2543.1" y="1541.6" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -130.5203 2939.2578)" class="st3" width="275" height="100"/>
+				
+					<rect x="2362.9" y="1812" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -435.8282 2909.6785)" class="st3" width="275" height="100"/>
+				
+					<rect x="2612.5" y="1978.4" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -463.1313 3191.4749)" class="st3" width="275" height="100"/>
+				
+					<rect x="2487.7" y="1895.2" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -449.4773 3050.5737)" class="st3" width="275" height="100"/>
+			</g>
+			<g>
+				
+					<rect x="2700" y="233.9" transform="matrix(0.8321 -0.5547 0.5547 0.8321 255.8011 1587.7032)" class="st3" width="100" height="275"/>
+				
+					<rect x="2630.7" y="670.7" transform="matrix(0.8321 -0.5547 0.5547 0.8321 1.8751 1622.6024)" class="st3" width="100" height="275"/>
+				
+					<rect x="2450.4" y="400.3" transform="matrix(0.8321 -0.5547 0.5547 0.8321 121.584 1477.1888)" class="st3" width="100" height="275"/>
+				
+					<rect x="2880.3" y="504.3" transform="matrix(0.8321 -0.5547 0.5547 0.8321 136.0921 1733.1163)" class="st3" width="100" height="275"/>
+				
+					<rect x="2665.4" y="289.8" transform="matrix(0.8321 -0.5547 0.5547 0.8321 128.8599 1605.1716)" class="st3" width="100" height="600"/>
+			</g>
+			<g>
+				
+					<rect x="744.6" y="1537.5" transform="matrix(0.8321 -0.5547 0.5547 0.8321 -795.6542 722.0288)" class="st3" width="100" height="275"/>
+				
+					<rect x="709.9" y="1593.5" transform="matrix(0.8321 -0.5547 0.5547 0.8321 -922.6387 739.46)" class="st3" width="100" height="600"/>
+				
+					<rect x="924.9" y="1807.9" transform="matrix(0.8321 -0.5547 0.5547 0.8321 -915.3633 867.4418)" class="st3" width="100" height="275"/>
+				
+					<rect x="959.6" y="1427" transform="matrix(0.8321 -0.5547 0.5547 0.8321 -788.3787 850.0107)" class="st3" width="100" height="600"/>
+			</g>
+			<g>
+				
+					<rect x="584.7" y="539.7" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -96.6458 998.7473)" class="st3" width="600" height="100"/>
+				
+					<rect x="459.9" y="456.5" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -83.0884 857.8391)" class="st3" width="600" height="100"/>
+				
+					<rect x="709.5" y="622.9" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -110.2965 1139.6434)" class="st3" width="600" height="100"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

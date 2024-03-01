@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5b1c1f;
+        stroke-width: 240px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #eee;
+      }
+
+      .cls-3 {
+        fill: #5b1c1f;
+      }
+
+      .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="bg" class="cls-4" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="jp">
+      <g id="_29" data-name="29">
+        <circle class="cls-3" cx="1710" cy="1200.1" r="660"/>
+        <circle class="cls-2" cx="1290" cy="1200.1" r="228"/>
+        <line class="cls-1" x1="1290" y1="1200.1" x2="2550" y2="1200.1"/>
+        <rect class="cls-2" x="1020" y="1185.1" width="75" height="30"/>
+      </g>
+    </g>
+  </g>
+</svg>

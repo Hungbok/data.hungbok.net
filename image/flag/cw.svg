@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f9e814;
+      }
+
+      .cls-3 {
+        fill: #002b7f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="cw" class="cls-3" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="cw-2" data-name="cw">
+      <rect class="cls-2" x="0" y="1500.1" width="3600" height="300"/>
+      <g id="d">
+        <g id="c">
+          <g id="b">
+            <path id="a" class="cls-1" d="M800,533.433l-82.405,253.615,126.808,41.202-44.403-294.817Z"/>
+            <path id="a-2" data-name="a" class="cls-1" d="M800,533.433l82.405,253.615-126.808,41.202,44.403-294.817Z"/>
+          </g>
+          <g id="b-2" data-name="b">
+            <path id="a-3" data-name="a" class="cls-1" d="M1053.615,717.695h-266.667v133.333l266.667-133.333Z"/>
+            <path id="a-4" data-name="a" class="cls-1" d="M1053.615,717.695l-215.738,156.743-78.371-107.869,294.109-48.874Z"/>
+          </g>
+        </g>
+        <g id="b-3" data-name="b">
+          <path id="a-5" data-name="a" class="cls-1" d="M546.385,717.696l215.738,156.743,78.371-107.869-294.109-48.874Z"/>
+          <path id="a-6" data-name="a" class="cls-1" d="M546.385,717.696h266.667v133.333l-266.667-133.333Z"/>
+        </g>
+        <g id="c-2" data-name="c">
+          <g id="b-4" data-name="b">
+            <path id="a-7" data-name="a" class="cls-1" d="M956.743,1015.838l-82.405-253.615-126.808,41.202,209.212,212.413Z"/>
+            <path id="a-8" data-name="a" class="cls-1" d="M956.743,1015.838l-215.738-156.743,78.371-107.869,137.366,264.612Z"/>
+          </g>
+          <g id="b-5" data-name="b">
+            <path id="a-9" data-name="a" class="cls-1" d="M643.257,1015.838l215.738-156.743-78.371-107.869-137.367,264.612Z"/>
+            <path id="a-10" data-name="a" class="cls-1" d="M643.257,1015.838l82.405-253.615,126.808,41.202-209.212,212.413Z"/>
+          </g>
+        </g>
+      </g>
+      <g id="d-2" data-name="d">
+        <g id="c-3" data-name="c">
+          <g id="b-6" data-name="b">
+            <path id="a-11" data-name="a" class="cls-1" d="M400,200.1l-61.803,190.211,95.106,30.902-33.302-221.113Z"/>
+            <path id="a-12" data-name="a" class="cls-1" d="M400,200.1l61.803,190.211-95.106,30.902,33.302-221.113Z"/>
+          </g>
+          <g id="b-7" data-name="b">
+            <path id="a-13" data-name="a" class="cls-1" d="M590.211,338.297h-200v100l200-100Z"/>
+            <path id="a-14" data-name="a" class="cls-1" d="M590.211,338.297l-161.803,117.557-58.779-80.902,220.582-36.655Z"/>
+          </g>
+        </g>
+        <g id="b-8" data-name="b">
+          <path id="a-15" data-name="a" class="cls-1" d="M209.789,338.297l161.803,117.557,58.779-80.902-220.582-36.655Z"/>
+          <path id="a-16" data-name="a" class="cls-1" d="M209.789,338.297h200v100l-200-100Z"/>
+        </g>
+        <g id="c-4" data-name="c">
+          <g id="b-9" data-name="b">
+            <path id="a-17" data-name="a" class="cls-1" d="M517.557,561.903l-61.803-190.211-95.106,30.902,156.909,159.31Z"/>
+            <path id="a-18" data-name="a" class="cls-1" d="M517.557,561.903l-161.803-117.557,58.779-80.902,103.025,198.459Z"/>
+          </g>
+          <g id="b-10" data-name="b">
+            <path id="a-19" data-name="a" class="cls-1" d="M282.443,561.903l161.803-117.557-58.779-80.902-103.025,198.459Z"/>
+            <path id="a-20" data-name="a" class="cls-1" d="M282.443,561.903l61.803-190.211,95.106,30.902-156.909,159.31Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

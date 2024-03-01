@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170.8 159.3"
+	 style="enable-background:new 0 0 170.8 159.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_00000143580214659946361400000004254833128977403530_);}
+	
+		.st1{clip-path:url(#SVGID_00000051385565557918342790000010776628905696280982_);fill:url(#XMLID_00000093154454208779035370000011785219492428074906_);}
+	.st2{fill:#231F20;}
+	.st3{opacity:0.4392;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" height="364.89999px" id="namedview33" inkscape:current-layer="layer1" inkscape:cx="284.03113" inkscape:cy="-3.5652443" inkscape:pagecheckerboard="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="1046" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-11" inkscape:window-y="-11" inkscape:zoom="0.84145707" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g id="XMLID_23_" transform="translate(-114.73518,-67.438576)">
+	
+		<linearGradient id="XMLID_00000088853178804338029130000012954068052306689947_" gradientUnits="userSpaceOnUse" x1="-441.6135" y1="663.7405" x2="-440.6134" y2="663.7405" gradientTransform="matrix(0 -159.29 159.29 0 -105527.2969 -70117.8672)">
+		<stop  offset="0" style="stop-color:#1A7CB4"/>
+		<stop  offset="1" style="stop-color:#17E2FE"/>
+	</linearGradient>
+	<path id="XMLID_27_" style="fill:url(#XMLID_00000088853178804338029130000012954068052306689947_);" d="M272.8,226.7H127
+		c-6.6,0-12-5.4-12-12V79.4c0-6.6,5.4-12,12-12h145.8c6.6,0,12,5.4,12,12v135.3C284.8,221.3,279.4,226.7,272.8,226.7z"/>
+	<g id="XMLID_35_">
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M273.5,226.7H126.7c-6.6,0-12-5.4-12-12V79.4c0-6.6,5.4-12,12-12h146.8c6.6,0,12,5.4,12,12v135.3
+					C285.5,221.3,280.1,226.7,273.5,226.7L273.5,226.7z"/>
+			</defs>
+			<clipPath id="SVGID_00000127039635836733933200000008645593704061898126_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="XMLID_00000006705399007969734460000014705939188191431575_" gradientUnits="userSpaceOnUse" x1="-441.2187" y1="663.2267" x2="-440.2187" y2="663.2267" gradientTransform="matrix(0 -190.1608 190.1608 0 -125874.9141 -83663.7969)">
+				<stop  offset="0" style="stop-color:#D8E3EF"/>
+				<stop  offset="1" style="stop-color:#F4F4F5"/>
+			</linearGradient>
+			
+				<path id="XMLID_36_" style="clip-path:url(#SVGID_00000127039635836733933200000008645593704061898126_);fill:url(#XMLID_00000006705399007969734460000014705939188191431575_);" d="
+				M211.8,48.5c0,0-14.7,18.7-22.4,69.4c-5.9,39.1-6.2,41.8,2.3,41.8c8.6,0,18.9-1.5,19.3,1.6s0.8,46.5,6.7,66.6
+				c5.9,20.1,70.6,5.9,70.6,5.9l16.1-92.3l-11.2-79L211.8,48.5z"/>
+		</g>
+	</g>
+	<path id="XMLID_33_" class="st2" d="M161.7,125.8c-1.8,0-3.2-1.4-3.2-3.2v-10c0-1.8,1.4-3.2,3.2-3.2s3.2,1.4,3.2,3.2v10
+		C164.9,124.4,163.5,125.8,161.7,125.8z"/>
+	<path id="XMLID_37_" class="st2" d="M237.4,125.8c-1.8,0-3.2-1.4-3.2-3.2v-10c0-1.8,1.4-3.2,3.2-3.2c1.8,0,3.2,1.4,3.2,3.2v10
+		C240.6,124.4,239.2,125.8,237.4,125.8z"/>
+	<path id="XMLID_38_" class="st2" d="M200.1,194.8c-20.9,0-38.3-7.4-51.8-21.9c-1-1.1-1-2.9,0.1-3.9s2.9-1,3.9,0.1
+		c12.4,13.3,28.5,20.1,47.7,20.1c18.9,0,34.9-6.7,47.6-19.9c1.1-1.1,2.8-1.2,3.9-0.1c1.1,1.1,1.2,2.8,0.1,3.9
+		C238,187.5,220.6,194.8,200.1,194.8L200.1,194.8z"/>
+</g>
+<g id="layer1" transform="translate(-114.73518,-67.438576)" inkscape:groupmode="layer" inkscape:label="Layer 1" class="st3">
+</g>
+</svg>

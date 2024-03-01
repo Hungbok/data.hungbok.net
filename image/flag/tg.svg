@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #d21034;
+      }
+
+      .cls-3 {
+        fill: #006a4e;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #ffce00;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="tg" class="cls-3" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="tg-2" data-name="tg">
+      <g>
+        <rect class="cls-4" x="0" y="1440.1" width="3600" height="480"/>
+        <rect class="cls-4" x="0" y="480.1" width="3600" height="480"/>
+      </g>
+      <path class="cls-2" d="M1440,.1H400C180,.1,0,180.1,0,400.1v1040h1440V.1Z"/>
+      <g>
+        <g id="b">
+          <path id="a" class="cls-1" d="M720,264.1l-140.912,433.682,228.254,74.164"/>
+          <path id="a-2" data-name="a" class="cls-1" d="M720,264.1l140.912,433.682-228.254,74.164"/>
+        </g>
+        <g id="b-2" data-name="b">
+          <path id="a-3" data-name="a" class="cls-1" d="M1153.682,579.188h-456v240"/>
+          <path id="a-4" data-name="a" class="cls-1" d="M1153.682,579.188l-368.912,268.03-141.068-194.164"/>
+        </g>
+        <g id="b-3" data-name="b">
+          <path id="a-5" data-name="a" class="cls-1" d="M988.03,1089.012l-140.912-433.682-228.254,74.164"/>
+          <path id="a-6" data-name="a" class="cls-1" d="M988.03,1089.012l-368.912-268.03,141.068-194.164"/>
+        </g>
+        <g id="b-4" data-name="b">
+          <path id="a-7" data-name="a" class="cls-1" d="M451.97,1089.012l368.912-268.03-141.068-194.164"/>
+          <path id="a-8" data-name="a" class="cls-1" d="M451.97,1089.012l140.912-433.682,228.254,74.164"/>
+        </g>
+        <g id="b-5" data-name="b">
+          <path id="a-9" data-name="a" class="cls-1" d="M286.318,579.188l368.912,268.03,141.068-194.164"/>
+          <path id="a-10" data-name="a" class="cls-1" d="M286.318,579.188h456v240"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

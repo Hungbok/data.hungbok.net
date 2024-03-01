@@ -1,0 +1,419 @@
+/* 헤더 */
+
+.language-select[data-lang="ko"] {
+    pointer-events: none;
+}
+
+.language-select[data-lang="ko"]::before {
+    content: "";
+}
+
+.side-panel-menu-text,
+.language-text::after {
+    font-family: 'Nanum Gothic', 'Lato', "Noto Sans KR", "Open Sans", "Lucida Grande", Tahoma, sans-serif;
+}
+
+/* 활성 언어 */
+
+.language-en:after,
+.language-select[data-lang="en"] .language-text::after {
+    content: "영어";
+}
+
+.language-ja:after,
+.language-select[data-lang="ja"] .language-text::after {
+    content: "일본어";
+}
+
+.language-ko:after,
+.language-select[data-lang="ko"] .language-text::after {
+    content: "한국어";
+}
+
+/* 비활성 언어 */
+
+.language-en-gb:after,
+.language-select[data-lang="en-gb"] .language-text::after {
+    content: "영어(영국)";
+}
+
+.language-en-ca:after,
+.language-select[data-lang="en-ca"] .language-text::after {
+    content: "영어(캐나다)";
+}
+
+.language-en-au:after,
+.language-select[data-lang="en-au"] .language-text::after {
+    content: "영어(호주)";
+}
+
+.language-id:after,
+.language-select[data-lang="id"] .language-text::after {
+    content: "인도네시아어";
+}
+
+.language-ms:after,
+.language-select[data-lang="ms"] .language-text::after {
+    content: "말레이어";
+}
+
+.language-cs:after,
+.language-select[data-lang="cs"] .language-text::after {
+    content: "체코어";
+}
+
+.language-da:after,
+.language-select[data-lang="da"] .language-text::after {
+    content: "덴마크어";
+}
+
+.language-de:after,
+.language-select[data-lang="de"] .language-text::after {
+    content: "독일어";
+}
+
+.language-es:after,
+.language-select[data-lang="es"] .language-text::after {
+    content: "스페인어";
+}
+
+.language-es-mx:after,
+.language-select[data-lang="es-mx"] .language-text::after {
+    content: "스페인어(멕시코)";
+}
+
+.language-fr:after,
+.language-select[data-lang="fr"] .language-text::after {
+    content: "프랑스어";
+}
+
+.language-fr-ca:after,
+.language-select[data-lang="fr-ca"] .language-text::after {
+    content: "프랑스어(캐나다)";
+}
+
+.language-it:after,
+.language-select[data-lang="it"] .language-text::after {
+    content: "이탈리아어";
+}
+
+.language-hu:after,
+.language-select[data-lang="hu"] .language-text::after {
+    content: "헝가리어";
+}
+
+.language-nl:after,
+.language-select[data-lang="nl"] .language-text::after {
+    content: "네덜란드어";
+}
+
+.language-no:after,
+.language-select[data-lang="no"] .language-text::after {
+    content: "노르웨이어";
+}
+
+.language-pl:after,
+.language-select[data-lang="pl"] .language-text::after {
+    content: "폴란드어";
+}
+
+.language-pt:after,
+.language-select[data-lang="pt"] .language-text::after {
+    content: "포르투갈어";
+}
+
+.language-pt-br:after,
+.language-select[data-lang="pt-br"] .language-text::after {
+    content: "포르투갈어(브라질)";
+}
+
+.language-ro:after,
+.language-select[data-lang="ro"] .language-text::after {
+    content: "루마니아어";
+}
+
+.language-fi:after,
+.language-select[data-lang="fi"] .language-text::after {
+    content: "핀란드어";
+}
+
+.language-sv:after,
+.language-select[data-lang="sv"] .language-text::after {
+    content: "스웨덴어";
+}
+
+.language-vi:after,
+.language-select[data-lang="vi"] .language-text::after {
+    content: "베트남어";
+}
+
+.language-tr:after,
+.language-select[data-lang="tr"] .language-text::after {
+    content: "튀르키예어";
+}
+
+.language-bg:after,
+.language-select[data-lang="bg"] .language-text::after {
+    content: "불가리아어";
+}
+
+.language-ru:after,
+.language-select[data-lang="ru"] .language-text::after {
+    content: "러시아어";
+}
+
+.language-uk:after,
+.language-select[data-lang="uk"] .language-text::after {
+    content: "우크라이나어";
+}
+
+.language-el:after,
+.language-select[data-lang="el"] .language-text::after {
+    content: "그리스어";
+}
+
+.language-ar:after,
+.language-select[data-lang="ar"] .language-text::after {
+    content: "아랍어";
+}
+
+.language-hi:after,
+.language-select[data-lang="hi"] .language-text::after {
+    content: "힌디어";
+}
+
+.language-th:after,
+.language-select[data-lang="th"] .language-text::after {
+    content: "태국어";
+}
+
+.language-zh-cn:after,
+.language-select[data-lang="zh-cn"] .language-text::after {
+    content: "중국어(간체)";
+}
+
+.language-zh-tw:after,
+.language-select[data-lang="zh-tw"] .language-text::after {
+    content: "중국어(번체)";
+}
+
+/* 미사용
+
+.language-select[data-lang="en-us"] .language-text::after {
+    content: "영어(미국)";
+}
+
+.language-select[data-lang="cs-cz"] .language-text::after {
+    content: "체코어(체코)";
+}
+
+.language-select[data-lang="de-de"] .language-text::after {
+    content: "독일어(독일)";
+}
+
+.language-select[data-lang="es-es"] .language-text::after {
+    content: "스페인어(스페인)";
+}
+
+.language-select[data-lang="fi-fi"] .language-text::after {
+    content: "핀란드어(핀란드)";
+}
+
+.language-select[data-lang="fr-fr"] .language-text::after {
+    content: "프랑스어(프랑스)";
+}
+
+.language-select[data-lang="hu-hu"] .language-text::after {
+    content: "헝가리어(헝가리)";
+}
+
+.language-select[data-lang="hi-in"] .language-text::after {
+    content: "힌디어(인도)";
+}
+
+.language-select[data-lang="it-it"] .language-text::after {
+    content: "이탈리아어(이탈리아)";
+}
+
+.language-select[data-lang="nl-nl"] .language-text::after {
+    content: "네덜란드어(네덜란드)";
+}
+
+.language-select[data-lang="pl-pl"] .language-text::after {
+    content: "폴란드어(폴란드)";
+}
+
+.language-select[data-lang="pt-pt"] .language-text::after {
+    content: "포르투갈어(포르투갈)";
+}
+
+.language-select[data-lang="ru-ru"] .language-text::after {
+    content: "러시아어(러시아)";
+}
+
+.language-select[data-lang="ar-sa"] .language-text::after {
+    content: "아랍어(사우디아라비아)";
+}
+
+.language-select[data-lang="th-th"] .language-text::after {
+    content: "태국어(태국)";
+}
+
+.language-select[data-lang="tr-tr"] .language-text::after {
+    content: "튀르키예어(튀르키예)";
+}
+
+.language-select[data-lang="uk-ua"] .language-text::after {
+    content: "우크라이나어(우크라이나)";
+}
+
+.language-select[data-lang="zh"] .language-text::after {
+    content: "중국어";
+}
+
+.language-select[data-lang="ja-jp"] .language-text::after {
+    content: "일본어(일본)";
+}
+
+.language-select[data-lang="ko-kr"] .language-text::after {
+    content: "한국어(대한민국)";
+}
+
+.language-select[data-lang="zh-hans"] .language-text::after {
+    content: "중국어(간체)";
+}
+
+.language-select[data-lang="zh-hant"] .language-text::after {
+    content: "중국어(번체)";
+}
+
+.language-select[data-lang="bg-bg"] .language-text::after {
+    content: "불가리아어(불가리아)";
+}
+
+.language-select[data-lang="ms-id"] .language-text::after {
+    content: "인도네시아어(인도네시아)";
+}
+
+.language-select[data-lang="el-gr"] .language-text::after {
+    content: "그리스어(그리스)";
+}
+
+.language-select[data-lang="no-no"] .language-text::after {
+    content: "노르웨이어(노르웨이)";
+}
+
+.language-select[data-lang="da-dk"] .language-text::after {
+    content: "덴마크어(덴마크)";
+}
+
+.language-select[data-lang="sv-se"] .language-text::after {
+    content: "스웨덴어(스웨덴)";
+}
+
+.language-select[data-lang="ro-ro"] .language-text::after {
+    content: "루마니아어(루마니아)";
+}
+
+.language-select[data-lang="vi-vn"] .language-text::after {
+    content: "베트남어(베트남)";
+} */
+
+.info-th > p::after {
+    content: "상세 정보";
+}
+
+.early-access-date::before {
+    content: "앞서 해보기 | ";
+}
+
+.full-release-date::before {
+    content: "정식 출시 | ";
+}
+
+.description-source::before {
+    content: "출처 | ";
+}
+
+.description-update::before {
+    content: "최종 업데이트 | ";
+}
+
+.show-more::after {
+    content: "펼치기";
+}
+
+.show-more.open::after {
+    content: "접기";
+}
+
+.franchise > .details > summary::after {
+    content: "[ 펼치기 · 접기 ]";
+}
+
+.text-report-title::after {
+    content: "신고";
+}
+
+.text-report-text::after {
+    content: "신고 사유를 선택해 주세요.";
+}
+
+.report-item#option1 p::after {
+    content: "부적절한 콘텐츠";
+}
+.report-item#option1::after {
+    content: "공공 질서나 도덕적 기준에 어긋나거나 적합하지 않은 내용을 포함합니다. 이는 기준에 따라 다르지만, 보편적으로 성적 콘텐츠, 폭력적인 이미지 또는 언어, 혐오 발언 등을 포함합니다.";
+}
+.report-item#option2 p::after {
+    content: "위협적인 콘텐츠";
+}
+.report-item#option2::after {
+    content: "다른 개인이나 단체를 위협하거나 공격하는 내용을 포함합니다. 이는 직접적인 물리적 위협이 될 수도 있고, 간접적으로 폭력이나 괴롭힘이 이루어질 수 있는 언어 또는 행동을 포함합니다.";
+}
+.report-item#option3 p::after {
+    content: "법률 위반 및 불법적 콘텐츠";
+}
+.report-item#option3::after {
+    content: "해당 지역의 법률을 위반하는 콘텐츠를 포함하며, 저작권, 상표권, 개인 정보 보호 등의 권리를 침해하는 콘텐츠도 이에 속합니다.";
+}
+.report-item#option4 p::after {
+    content: "유해한 콘텐츠";
+}
+.report-item#option4::after {
+    content: "정신적이나 심리적으로 해로운 내용을 포함합니다. 이는 모욕, 학대, 차별, 혐오 발언, 아동 학대 등을 포함합니다.";
+}
+.report-item#option5 p::after {
+    content: "개인 정보 침해 및 명예 훼손";
+}
+.report-item#option5::after {
+    content: "개인의 개인 정보를 불법적으로 노출하거나 명예를 훼손하는 행위를 포함합니다.";
+}
+.report-item#option6 p::after {
+    content: "스팸 및 사기성 콘텐츠";
+}
+.report-item#option6::after {
+    content: "부적절한 마케팅 또는 광고, 스팸 링크, 보안 위협을 포함하며, 사용자를 속이거나 손상시키는 의도를 가진 콘텐츠를 포함합니다.";
+}
+.report-item#option7 p::after {
+    content: "잘못된 정보 또는 잘못된 사실 제공";
+}
+.report-item#option7::after {
+    content: "가짜 뉴스, 소문, 또는 사실 확인이 필요한 잘못된 정보를 제공하는 경우입니다.";
+}
+
+.text-report-more::before {
+    content: "다른 문제가 있나요?";
+}
+
+.text-report-help::after {
+    content: "문의하기";
+}
+
+.text-share-title::after {
+    content: "공유";
+}
+
+.text-share-text::after {
+    content: "공유할 서비스를 선택해 주세요.";
+}

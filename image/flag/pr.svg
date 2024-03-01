@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e00;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #eee;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #0f55ec;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="bg" class="cls-3" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="pr">
+      <g>
+        <path class="cls-1" d="M0,2000.1C0,2220.1,180,2400.1,400,2400.1h2800c220,0,400-180,400-400v-80H0v80Z"/>
+        <rect class="cls-1" x="0" y="960.1" width="3600" height="480"/>
+        <path class="cls-1" d="M3200,.1H400C180,.1,0,180.1,0,400.1v80h3600v-80C3600,180.1,3420,.1,3200,.1Z"/>
+      </g>
+      <path id="l-t" class="cls-4" d="M0,2000.1V400.1C0,280.1,50,180.1,130,100.1l1570,1100L130,2300.1C50,2220.1,0,2120.1,0,2000.1Z"/>
+      <path class="cls-2" d="M372.692,1468.177l192.885-598.269,192.885,598.269-506.731-369.423h627.692"/>
+    </g>
+  </g>
+</svg>

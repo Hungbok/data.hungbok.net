@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f66637;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #f66637;
+        stroke-width: 200px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="jp20" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="jp">
+      <g id="_20" data-name="20">
+        <circle class="cls-2" cx="1200" cy="1200.1" r="1000"/>
+        <path class="cls-3" d="M40,1200.1h2400M600,100.1c607.513,0,1100,492.487,1100,1100s-492.487,1100-1100,1100"/>
+      </g>
+    </g>
+  </g>
+</svg>

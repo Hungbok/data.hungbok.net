@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e31b23;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fdef42;
+      }
+
+      .cls-3 {
+        fill: #00853f;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="sn" class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="sn-2" data-name="sn">
+      <g id="v">
+        <path class="cls-2" d="M400,.1C180,.1,0,180.1,0,400.1v1600C0,2220.1,180,2400.1,400,2400.1h2000V.1H400Z"/>
+        <path class="cls-3" d="M400,.1C180,.1,0,180.1,0,400.1v1600C0,2220.1,180,2400.1,400,2400.1h800V.1H400Z"/>
+      </g>
+      <g>
+        <g id="b">
+          <path id="a" class="cls-3" d="M1800,800.1l-123.607,380.423,190.211,61.803-66.605-442.226Z"/>
+          <path id="a-2" data-name="a" class="cls-3" d="M1800,800.1l123.607,380.423-190.211,61.803,66.605-442.226Z"/>
+        </g>
+        <g id="b-2" data-name="b">
+          <path id="a-3" data-name="a" class="cls-3" d="M2180.423,1076.493h-400v200l400-200Z"/>
+          <path id="a-4" data-name="a" class="cls-3" d="M2180.423,1076.493l-323.607,235.114-117.557-161.803,441.164-73.311Z"/>
+        </g>
+        <g id="b-3" data-name="b">
+          <path id="a-5" data-name="a" class="cls-3" d="M2035.114,1523.707l-123.607-380.423-190.211,61.803,313.818,318.619Z"/>
+          <path id="a-6" data-name="a" class="cls-3" d="M2035.114,1523.707l-323.607-235.114,117.557-161.803,206.05,396.918Z"/>
+        </g>
+        <g id="b-4" data-name="b">
+          <path id="a-7" data-name="a" class="cls-3" d="M1564.886,1523.707l323.607-235.114-117.557-161.803-206.05,396.918Z"/>
+          <path id="a-8" data-name="a" class="cls-3" d="M1564.886,1523.707l123.607-380.423,190.211,61.803-313.818,318.619Z"/>
+        </g>
+        <g id="b-5" data-name="b">
+          <path id="a-9" data-name="a" class="cls-3" d="M1419.577,1076.493l323.607,235.114,117.557-161.803-441.164-73.311Z"/>
+          <path id="a-10" data-name="a" class="cls-3" d="M1419.577,1076.493h400v200l-400-200Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+main {
+    margin: 0;
+    overflow: hidden;
+}
+
+.language-selecter {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.container {
+    position: relative;
+    display: contents;
+    overflow: hidden;
+}
+
+.lang-title {
+    font-size: 50px;
+    line-height: 73px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.lang-selecter {
+    display: none;
+    text-align: left;
+    height: 24px;
+    font-size: 16px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.lang-selecter:hover {
+    height: 264px;
+}
+
+.lang-selecter > div {
+    line-height: 24px;
+}
+
+.lang-option {
+    line-height: 24px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.lang-data {
+    width: 800px;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lang-data span {
+    line-height: 44px;
+    min-width: 50%;
+    text-transform: capitalize;
+}
+
+#ip {
+    font-size: 100px;
+    line-height: 121px;
+    width: 100%;
+}
+
+.lang-background {
+    white-space: nowrap;
+    position: absolute;
+    font-size: 300px;
+    font-weight: bold;
+    pointer-events: none;
+    opacity: 0.1;
+    left: 50%;
+    top: 50%;
+    z-index: -10;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #007a4d;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #141414;
+      }
+
+      .cls-3 {
+        fill: #de3830;
+      }
+
+      .cls-4 {
+        fill: #ffb612;
+      }
+
+      .cls-5 {
+        fill: #eee;
+      }
+
+      .cls-6 {
+        fill: #002395;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="bg" class="cls-5" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="za">
+      <path id="Path" class="cls-6" d="M1266.7,1700.1h2333.3v300c0,220.914-179.086,400-400,400H400c-20.606,0-40.848-1.558-60.615-4.563l927.315-695.437Z"/>
+      <path id="Path-2" data-name="Path" class="cls-3" d="M3600,700.1H1266.7L339.385,4.663C359.152,1.658,379.394.1,400,.1h2800c220.914,0,400,179.086,400,400v300Z"/>
+      <path id="Path-3" data-name="Path" class="cls-1" d="M134.462,2299.254C52.028,2226.03.069,2119.252,0,2000.336V399.864c.069-118.915,52.028-225.694,134.462-298.917l1065.538,799.154h2400v600H1200L134.462,2299.254h0Z"/>
+      <polygon id="Shape" class="cls-4" points="1000 1200.1 0 1900.1 0 500.1 1000 1200.1"/>
+      <polygon id="Shape-2" data-name="Shape" class="cls-2" points="714.3 1200.1 0 1700.1 0 700.1 714.3 1200.1"/>
+    </g>
+  </g>
+</svg>

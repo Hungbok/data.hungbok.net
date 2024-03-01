@@ -1,0 +1,27 @@
+[
+    {
+        "date": "2023-01-01",
+        "title": "신년",
+        "image": "https://example.com/images/new_year.png"
+    },
+    {
+        "date": "2023-01-01",
+        "title": "휴가 시작",
+        "image": "https://example.com/images/vacation_start.png"
+    },
+    {
+        "date": "2023-01-15",
+        "title": "중간 일정",
+        "image": "https://example.com/images/mid.png"
+    },
+    {
+        "date": "2023-01-31",
+        "title": "월말",
+        "image": "https://example.com/images/end_month.png"
+    },
+    {
+        "date": "2023-01-31",
+        "title": "휴가 종료",
+        "image": "https://example.com/images/vacation_end.png"
+    }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="symbolmark_딈" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.574 121.712">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M111.072,121.712,50.233,0H0v121.712h60.885c30.269,0,65.688-13.829,65.688-60.856S84.52,0,50.233,0ZM53.641,79.489v-37.934c9.207,0,23.205.415,23.205,18.888,0,18.881-13.465,19.046-23.205,19.046Z"/>
+</svg>

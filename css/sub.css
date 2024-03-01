@@ -1,0 +1,199 @@
+/* ISO 3166-1 alpha-2 flag */
+.flag-lists {
+    display: grid;
+    grid-template-columns: repeat(26,1fr);
+    grid-gap: 5px;
+}
+
+.flag-lists > div {
+    height: 25px;
+}
+
+/* ISO 3166-2 flag */
+
+.state-flag-lists {
+    display: flex;
+    align-items: flex-start;
+}
+
+.state-flag-lists > div:first-child {
+    width: 45px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.state-flag-list {
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-gap: 5px;
+    width: 100%;
+}
+
+.state-flag-list > div {
+    height: 40px;
+}
+
+/* county flag */
+
+.state-flag-lists-two-tier {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.state-flag-lists-two-tier > div:first-child {
+    width: 45px;
+    height: 30px;
+    margin: 0px 0px 0px 2.5px;
+}
+
+.state-flag-list-two-tier {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    grid-gap: 5px;
+    padding: 10px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: var(--background-9);
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.state-flag-lists-two-tier:hover > .state-flag-list-two-tier {
+    display: flex;
+}
+
+.state-flag-list-two-tier > div {
+    height: 30px;
+    line-height: 30px;
+    flex: 0 0 45px;
+}
+
+.state-flag-list-two-tier .state-flag-lists-two-tier > div:first-child,
+.state-flag-list-two-tier .state-flag-lists-three-tier > div:first-child {
+    margin: 0;
+}
+
+.state-flag-lists-three-tier {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.state-flag-lists-three-tier > div:first-child {
+    width: 45px;
+    height: 30px;
+    margin-left: 2.5px;
+}
+
+.state-flag-list-three-tier {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    grid-gap: 5px;
+    padding: 10px;
+    width: 145px;
+    border-radius: 10px;
+    background-color: var(--background-9);
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.state-flag-lists-three-tier:hover > .state-flag-list-three-tier {
+    display: flex;
+}
+
+.state-flag-list-three-tier > div {
+    height: 30px;
+    line-height: 30px;
+    flex: 0 0 45px;
+}
+
+/* icon page */
+
+.icon-section {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.icon-container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.section-title .image {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 5px;
+    vertical-align: sub;
+    font-size: 16px;
+}
+
+a.section-title {
+    padding: 10px 15px;
+    border-radius: 10px;
+    filter: brightness(0.75);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+a.section-title:hover {
+    filter: brightness(1);
+    background-color: var(--background-8);
+}
+
+div.section-title {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 25px 0px;
+}
+
+h1.section-title {
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+h2.section-title > .image {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin: 0 5px 0 5px;
+    vertical-align: sub;
+    font-size: 16px;
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-content .external-link-text .external-link-button {
+    background-position: 10px center, center, center, center, center;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.icon-text > h2,
+.icon-text > h3 {
+    margin: 0;
+}

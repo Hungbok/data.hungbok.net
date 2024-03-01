@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea2839;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #1a206d;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #ffd500;
+      }
+
+      .cls-4 {
+        fill: #00a551;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="mu" class="cls-2" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="mu-2" data-name="mu">
+      <path id="_3_4" data-name="3/4" class="cls-3" d="M0,2000.1C0,2220.1,180,2400.1,400,2400.1h2800c220,0,400-180,400-400v-800H0v800Z"/>
+      <path id="_4_4" data-name="4/4" class="cls-4" d="M0,2000.1C0,2220.1,180,2400.1,400,2400.1h2800c220,0,400-180,400-400v-200H0v200Z"/>
+      <path id="_1_4" data-name="1/4" class="cls-1" d="M3200,.1H400C180,.1,0,180.1,0,400.1v200h3600v-200C3600,180.1,3420,.1,3200,.1Z"/>
+    </g>
+  </g>
+</svg>

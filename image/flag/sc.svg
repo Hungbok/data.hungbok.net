@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.818 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d62828;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #003f87;
+      }
+
+      .cls-3 {
+        fill: #007a3d;
+      }
+
+      .cls-4 {
+        fill: #fcd856;
+      }
+
+      .cls-5 {
+        fill: #eee;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="sc" class="cls-3" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="sc-2" data-name="sc">
+      <path id="Path" class="cls-2" d="M1400,.1L87.598,2249.933C32.783,2181.479,0,2094.618,0,2000.1V400.1C0,179.186,179.086.1,400,.1h1000Z"/>
+      <path id="Path-2" data-name="Path" class="cls-4" d="M1400,.1h1300L124.137,2289.756c-13.05-12.433-25.261-25.738-36.54-39.823L1400,.1Z"/>
+      <path id="Path-3" data-name="Path" class="cls-1" d="M2700,.1h500c220.914,0,400,179.086,400,400v500L171.669,2328.571c-16.833-11.723-32.723-24.707-47.532-38.815L2700,.1Z"/>
+      <path id="Path-4" data-name="Path" class="cls-5" d="M3600,900.1v700L211.647,2353.067c-13.831-7.396-27.177-15.582-39.977-24.496L3600,900.1Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.1 2401.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00abc9;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fae042;
+      }
+
+      .cls-3 {
+        fill: #141414;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path id="bs" class="cls-2" d="M400,.1h2800c220,0,400,180,400,400v1600c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1V400.1C0,180.1,180,.1,400,.1Z"/>
+  </g>
+  <g id="country">
+    <g id="bs-2" data-name="bs">
+      <path class="cls-1" d="M0,1600.1h3600v400c0,220-180,400-400,400H400C180,2400.1,0,2220.1,0,2000.1v-400Z"/>
+      <path class="cls-1" d="M400,.1h2800c220,0,400,180,400,400v400H0v-400C0,180.1,180,.1,400,.1Z"/>
+      <path id="_왼_삼각" data-name="왼 삼각" class="cls-3" d="M0,2000.1V400.1C0,280.1,50,180.1,130,100.1l1570,1100L130,2300.1C50,2220.1,0,2120.1,0,2000.1Z"/>
+    </g>
+  </g>
+</svg>
