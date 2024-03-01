@@ -327,7 +327,8 @@
 }
 
 .slick-disabled {
+    opacity: 0.8;
     filter: brightness(0.5);
     cursor: not-allowed;
-    background-color: #ffffff!important;
+    background-color: #aaaaaa!important;
 }
