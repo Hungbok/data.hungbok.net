@@ -35,7 +35,21 @@ if (year && season && monthRange) {
 
       // 선택된 데이터를 #calendar에 출력
       var calendarDiv = document.getElementById('calendar');
+      var lastMonth = null;
       filteredData.forEach(item => {
+        var year = item.date.split('-')[0];
+        var month = item.date.split('-')[1];
+      
+        if (month !== lastMonth) {
+          // 월이 바뀌는 경우 월을 출력
+          var div = document.createElement('div');
+          div.innerHTML = `
+            <p>${year}</p>
+            <p>${month}</p>
+          `;
+          calendarDiv.appendChild(div);
+          lastMonth = month;
+        }
         // 'url' 필드 값을 이용하여 '/games/[url값].json' 파일 불러오기
         fetch('//data.hungbok.net/data/games/' + item.url + '.json')
           .then(response => {
