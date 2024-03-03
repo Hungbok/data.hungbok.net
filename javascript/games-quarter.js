@@ -47,7 +47,7 @@ if (year && season && monthRange) {
       var calendarDiv = document.getElementById('calendar');
     
       let sections = {};
-
+    
       filteredData.forEach(item => {
         let dateParts = item.date.split('-');
         let year = dateParts[0];
@@ -69,13 +69,13 @@ if (year && season && monthRange) {
           let daysInSection = month !== '13' ? new Date(year, month, 0).getDate() : 31;
           for (let i = 1; i <= daysInSection; i++) {
             let dayDiv = document.createElement('div');
-            dayDiv.id = sectionKey + '-' + String(i).padStart(2, '00');
+            dayDiv.id = 'day-' + sectionKey + '-' + String(i).padStart(2, '00');
             sectionDiv.appendChild(dayDiv);
           }
     
           // 32일 섹션 생성
           let day32Div = document.createElement('div');
-          day32Div.id = sectionKey + '-32';
+          day32Div.id = 'day-' + sectionKey + '-32';
           sectionDiv.appendChild(day32Div);
     
           sections[sectionKey] = {
@@ -84,7 +84,7 @@ if (year && season && monthRange) {
           };
         }
     
-        let targetDayDiv = sections[sectionKey].div.querySelector('#' + sectionKey + '-' + day);
+        let targetDayDiv = sections[sectionKey].div.querySelector('#day-' + sectionKey + '-' + day);
         appendData(item, targetDayDiv);
       });
     
