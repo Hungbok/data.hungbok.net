@@ -34,122 +34,137 @@ $(document).ready(function(){
             $('body').addClass('body-' + data.type + ' ' + data['en'].lang);
             $('#report-title').attr('value', 'https://www.hungbok.com' + data.page);
 
-            document.body.innerHTML = document.body.innerHTML.replace(/{type}/g, data.type);
-            document.body.innerHTML = document.body.innerHTML.replace(/{title}/g, data['en'].title);
-            document.body.innerHTML = document.body.innerHTML.replace(/{developer}/g, data['en'].developer);
-            document.body.innerHTML = document.body.innerHTML.replace(/{info_developer}/g, data['en'].info_developer);
-            document.body.innerHTML = document.body.innerHTML.replace(/{publisher}/g, data['en'].publisher);
-            document.body.innerHTML = document.body.innerHTML.replace(/{info_publisher}/g, data['en'].info_publisher);
-            document.body.innerHTML = document.body.innerHTML.replace(/{platform}/g, data.platform);
-            document.body.innerHTML = document.body.innerHTML.replace(/{release}/g, data['en'].release);
-            document.body.innerHTML = document.body.innerHTML.replace(/{genre}/g, data['en'].genre);
-            document.body.innerHTML = document.body.innerHTML.replace(/{mode}/g, data['en'].mode);
-            document.body.innerHTML = document.body.innerHTML.replace(/{franchise}/g, data['en'].franchise);
-
-            document.body.innerHTML = document.body.innerHTML.replace(/{pc}/g, data.pc);
-            document.body.innerHTML = document.body.innerHTML.replace(/{console}/g, data.console);
-            document.body.innerHTML = document.body.innerHTML.replace(/{mobile}/g, data.mobile);
-            document.body.innerHTML = document.body.innerHTML.replace(/{esd}/g, data.esd);
-            document.body.innerHTML = document.body.innerHTML.replace(/{release_date}/g, data['en'].release_date);
-            document.body.innerHTML = document.body.innerHTML.replace(/{engine}/g, data['en'].engine);
-            document.body.innerHTML = document.body.innerHTML.replace(/{age}/g, data.age);
-            document.body.innerHTML = document.body.innerHTML.replace(/{esrb}/g, data.esrb);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pegi}/g, data.pegi);
-            document.body.innerHTML = document.body.innerHTML.replace(/{iarc}/g, data.iarc);
-            document.body.innerHTML = document.body.innerHTML.replace(/{cero}/g, data.cero);
-            document.body.innerHTML = document.body.innerHTML.replace(/{grac}/g, data.grac);
-            document.body.innerHTML = document.body.innerHTML.replace(/{usk}/g, data.usk);
-            document.body.innerHTML = document.body.innerHTML.replace(/{acb}/g, data.acb);
-            document.body.innerHTML = document.body.innerHTML.replace(/{gsrr}/g, data.gsrr);
-            document.body.innerHTML = document.body.innerHTML.replace(/{rars}/g, data.rars);
-            document.body.innerHTML = document.body.innerHTML.replace(/{classind}/g, data.classind);
-            document.body.innerHTML = document.body.innerHTML.replace(/{appstoreage}/g, data.appstoreage);
-
-            document.body.innerHTML = document.body.innerHTML.replace(/{en_audio}/g, data.en_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{en_text}/g, data.en_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{id_audio}/g, data.id_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{id_text}/g, data.id_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ms_audio}/g, data.ms_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ms_text}/g, data.ms_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{cs_audio}/g, data.cs_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{cs_text}/g, data.cs_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{da_audio}/g, data.da_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{da_text}/g, data.da_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{de_audio}/g, data.de_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{de_text}/g, data.de_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{es_audio}/g, data.es_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{es_text}/g, data.es_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{fr_audio}/g, data.fr_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{fr_text}/g, data.fr_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{es_mx_audio}/g, data.es_mx_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{es_mx_text}/g, data.es_mx_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{it_audio}/g, data.it_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{it_text}/g, data.it_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{hu_audio}/g, data.hu_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{hu_text}/g, data.hu_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{nl_audio}/g, data.nl_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{nl_text}/g, data.nl_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{no_audio}/g, data.no_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{no_text}/g, data.no_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pl_audio}/g, data.pl_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pl_text}/g, data.pl_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pt_audio}/g, data.pt_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pt_text}/g, data.pt_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ro_audio}/g, data.ro_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ro_text}/g, data.ro_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{fi_audio}/g, data.fi_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{fi_text}/g, data.fi_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{sv_audio}/g, data.sv_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{sv_text}/g, data.sv_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{vi_audio}/g, data.vi_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{vi_text}/g, data.vi_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{tr_audio}/g, data.tr_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{tr_text}/g, data.tr_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{bg_audio}/g, data.bg_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{bg_text}/g, data.bg_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ru_audio}/g, data.ru_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ru_text}/g, data.ru_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{uk_audio}/g, data.uk_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{uk_text}/g, data.uk_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{el_audio}/g, data.el_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{el_text}/g, data.el_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ar_audio}/g, data.ar_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ar_text}/g, data.ar_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{hi_audio}/g, data.hi_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{hi_text}/g, data.hi_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{th_audio}/g, data.th_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{th_text}/g, data.th_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ja_audio}/g, data.ja_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ja_text}/g, data.ja_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ko_audio}/g, data.ko_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{ko_text}/g, data.ko_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pt_br_audio}/g, data.pt_br_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{pt_br_text}/g, data.pt_br_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{zh_cn_audio}/g, data.zh_cn_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{zh_cn_text}/g, data.zh_cn_text);
-            document.body.innerHTML = document.body.innerHTML.replace(/{zh_tw_audio}/g, data.zh_tw_audio);
-            document.body.innerHTML = document.body.innerHTML.replace(/{zh_tw_text}/g, data.zh_tw_text);
-
-            document.body.innerHTML = document.body.innerHTML.replace(/{social}/g, data.social);
-            document.body.innerHTML = document.body.innerHTML.replace(/{store}/g, data.store);
-
-            document.body.innerHTML = document.body.innerHTML.replace(/{attention}/g, data.attention);
-            document.body.innerHTML = document.body.innerHTML.replace(/{plot}/g, data['en'].plot);
-            document.body.innerHTML = document.body.innerHTML.replace(/{source}/g, data['en'].source);
-            document.body.innerHTML = document.body.innerHTML.replace(/{update}/g, data['en'].update);
-
-            document.body.innerHTML = document.body.innerHTML.replace(/{url}/g, data.url);
-            document.body.innerHTML = document.body.innerHTML.replace(/{share}/g, data.share);
-            document.body.innerHTML = document.body.innerHTML.replace(/{page}/g, data.page);
-            document.body.innerHTML = document.body.innerHTML.replace(/{logo}/g, data.logo);
-            document.body.innerHTML = document.body.innerHTML.replace(/{capsule}/g, data.capsule);
-            document.body.innerHTML = document.body.innerHTML.replace(/{poster}/g, data.poster);
-            document.body.innerHTML = document.body.innerHTML.replace(/{thumbnail}/g, data.thumbnail);
-            document.body.innerHTML = document.body.innerHTML.replace(/{franchise1}/g, data.franchise1);
-            document.body.innerHTML = document.body.innerHTML.replace(/{franchise2}/g, data.franchise2);
-            document.body.innerHTML = document.body.innerHTML.replace(/{franchise3}/g, data.franchise3);
-            document.body.innerHTML = document.body.innerHTML.replace(/{franchise4}/g, data.franchise4);
-            document.body.innerHTML = document.body.innerHTML.replace(/{franchise5}/g, data.franchise5);
+            // 대체할 값들을 저장한 객체
+            var replacement = {
+                '{type}': data.type,
+                '{title}': data['en'].title,
+                '{developer}': data['en'].developer,
+                '{info_developer}': data['en'].info_developer,
+                '{publisher}': data['en'].publisher,
+                '{info_publisher}': data['en'].info_publisher,
+                '{platform}': data.platform,
+                '{release}': data['en'].release,
+                '{genre}': data['en'].genre,
+                '{mode}': data['en'].mode,
+                '{franchise}': data['en'].franchise,
+  
+                '{pc}': data.pc,
+                '{console}': data.console,
+                '{mobile}': data.mobile,
+                '{esd}': data.esd,
+                '{release_date}': data['en'].release_date,
+                '{engine}': data['en'].engine,
+                '{age}': data.age,
+                '{esrb}': data.esrb,
+                '{pegi}': data.pegi,
+                '{iarc}': data.iarc,
+                '{cero}': data.cero,
+                '{grac}': data.grac,
+                '{usk}': data.usk,
+                '{acb}': data.acb,
+                '{gsrr}': data.gsrr,
+                '{rars}': data.rars,
+                '{classind}': data.classind,
+                '{appstoreage}': data.appstoreage,
+  
+                '{en_audio}': data.en_audio,
+                '{en_text}': data.en_text,
+                '{id_audio}': data.id_audio,
+                '{id_text}': data.id_text,
+                '{ms_audio}': data.ms_audio,
+                '{ms_text}': data.ms_text,
+                '{cs_audio}': data.cs_audio,
+                '{cs_text}': data.cs_text,
+                '{da_audio}': data.da_audio,
+                '{da_text}': data.da_text,
+                '{de_audio}': data.de_audio,
+                '{de_text}': data.de_text,
+                '{es_audio}': data.es_audio,
+                '{es_text}': data.es_text,
+                '{fr_audio}': data.fr_audio,
+                '{fr_text}': data.fr_text,
+                '{es_mx_audio}': data.es_mx_audio,
+                '{es_mx_text}': data.es_mx_text,
+                '{it_audio}': data.it_audio,
+                '{it_text}': data.it_text,
+                '{hu_audio}': data.hu_audio,
+                '{hu_text}': data.hu_text,
+                '{nl_audio}': data.nl_audio,
+                '{nl_text}': data.nl_text,
+                '{no_audio}': data.no_audio,
+                '{no_text}': data.no_text,
+                '{pl_audio}': data.pl_audio,
+                '{pl_text}': data.pl_text,
+                '{pt_audio}': data.pt_audio,
+                '{pt_text}': data.pt_text,
+                '{ro_audio}': data.ro_audio,
+                '{ro_text}': data.ro_text,
+                '{fi_audio}': data.fi_audio,
+                '{fi_text}': data.fi_text,
+                '{sv_audio}': data.sv_audio,
+                '{sv_text}': data.sv_text,
+                '{vi_audio}': data.vi_audio,
+                '{vi_text}': data.vi_text,
+                '{tr_audio}': data.tr_audio,
+                '{tr_text}': data.tr_text,
+                '{bg_audio}': data.bg_audio,
+                '{bg_text}': data.bg_text,
+                '{ru_audio}': data.ru_audio,
+                '{ru_text}': data.ru_text,
+                '{uk_audio}': data.uk_audio,
+                '{uk_text}': data.uk_text,
+                '{el_audio}': data.el_audio,
+                '{el_text}': data.el_text,
+                '{ar_audio}': data.ar_audio,
+                '{ar_text}': data.ar_text,
+                '{hi_audio}': data.hi_audio,
+                '{hi_text}': data.hi_text,
+                '{th_audio}': data.th_audio,
+                '{th_text}': data.th_text,
+                '{ja_audio}': data.ja_audio,
+                '{ja_text}': data.ja_text,
+                '{ko_audio}': data.ko_audio,
+                '{ko_text}': data.ko_text,
+                '{pt_br_audio}': data.pt_br_audio,
+                '{pt_br_text}': data.pt_br_text,
+                '{zh_cn_audio}': data.zh_cn_audio,
+                '{zh_cn_text}': data.zh_cn_text,
+                '{zh_tw_audio}': data.zh_tw_audio,
+                '{zh_tw_text}': data.zh_tw_text,
+  
+                '{social}': data.social,
+                '{store}': data.store,
+  
+                '{attention}': data.attention,
+                '{plot}': data['en'].plot,
+                '{source}': data['en'].source,
+                '{update}': data['en'].update,
+  
+                '{url}': data.url,
+                '{share}': data.share,
+                '{page}': data.page,
+                '{logo}': data.logo,
+                '{capsule}': data.capsule,
+                '{poster}': data.poster,
+                '{thumbnail}': data.thumbnail,
+                '{franchise1}': data.franchise1,
+                '{franchise2}': data.franchise2,
+                '{franchise3}': data.franchise3,
+                '{franchise4}': data.franchise4,
+                '{franchise5}': data.franchise5,
+            };
+            
+            // body의 HTML 가져오기
+            var htmlContent = document.body.innerHTML;
+            
+            // 각 키에 대응하는 값을 대체
+            for (var key in replacement) {
+              var re = new RegExp(key, 'g');
+              htmlContent = htmlContent.replace(re, replacement[key]);
+            }
+            
+            // 변경된 HTML 설정
+            document.body.innerHTML = htmlContent;
 
             // 통합 const
             const url = data.url;
