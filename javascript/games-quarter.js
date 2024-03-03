@@ -67,6 +67,7 @@ if (year && season && monthRange) {
           // 새로운 섹션 생성
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
+          sectionDiv.className = 'elevator-contents';
           sectionDiv.innerHTML = `
             <h2>${year}년 ${month !== '13' ? month + '월' : '기타'}</h2>
           `;

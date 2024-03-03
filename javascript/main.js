@@ -143,6 +143,27 @@ $(document).ready(function(){
             });
         }
     });
+    
+    var contents = $('.elevator-contents');
+    var currentIndex = 0;
+
+    $('.elevator-up').click(function() {
+        if(currentIndex > 0) {
+            currentIndex -= 1;
+        }
+        $('html, body').animate({
+            scrollTop: $(contents[currentIndex]).offset().top
+        }, 500);
+    });
+
+    $('.elevator-down').click(function() {
+        if(currentIndex < contents.length - 1) {
+            currentIndex += 1;
+        }
+        $('html, body').animate({
+            scrollTop: $(contents[currentIndex]).offset().top
+        }, 500);
+    });
 });
 
 // 문서 클릭 시 Language 열려있으면 닫기 / .side-panel-overlay 클릭 시 Sidepanel 열려있으면 닫기
