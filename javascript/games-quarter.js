@@ -47,7 +47,7 @@ if (year && season && monthRange) {
       var calendarDiv = document.getElementById('calendar');
     
       let sections = {};
-    
+
       filteredData.forEach(item => {
         let dateParts = item.date.split('-');
         let year = dateParts[0];
@@ -85,7 +85,9 @@ if (year && season && monthRange) {
         }
     
         let targetDayDiv = sections[sectionKey].div.querySelector('#day-' + sectionKey + '-' + day);
-        appendData(item, targetDayDiv);
+        if(targetDayDiv) {
+          appendData(item, targetDayDiv);
+        }
       });
     
       // 데이터 출력 함수
