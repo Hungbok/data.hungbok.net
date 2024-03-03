@@ -64,10 +64,13 @@ if (year && season && monthRange) {
           `;
           calendarDiv.appendChild(sectionDiv);
     
-          // 32일 섹션 생성
-          let day32Div = document.createElement('div');
-          day32Div.id = 'day-' + sectionKey + '-32';
-          sectionDiv.appendChild(day32Div);
+          // 일자별 섹션 생성, '13월'인 경우에만 '32일' 섹션 생성
+          let daysInSection = month !== '13' ? new Date(year, month, 0).getDate() : 32;
+          for (let i = 1; i <= daysInSection; i++) {
+            let dayDiv = document.createElement('div');
+            dayDiv.id = 'day-' + sectionKey + '-' + String(i).padStart(2, '00');
+            sectionDiv.appendChild(dayDiv);
+          }
     
           sections[sectionKey] = {
             div: sectionDiv,
