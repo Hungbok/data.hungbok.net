@@ -30,55 +30,47 @@ if (year && season && monthRange) {
     
       // 날짜 형식에 따라 정렬
       filteredData.sort((a, b) => {
-        let aDateParts = a.date.split('-').map(Number);
-        let bDateParts = b.date.split('-').map(Number);
-      
-        aDateParts[1] = aDateParts[1] || 13; // 월이 없는 경우 13월로 처리
-        aDateParts[2] = aDateParts[2] || 32; // 일이 없는 경우 32일로 처리
-      
-        bDateParts[1] = bDateParts[1] || 13;
-        bDateParts[2] = bDateParts[2] || 32;
-      
-        for (let i = 0; i < 3; i++) {
-          if (aDateParts[i] !== bDateParts[i]) {
-            return aDateParts[i] - bDateParts[i];
-          }
-        }
-        return 0;
-      });
+        let aDateParts = a.date.split('-').map(part => part.padStart(2, '00'));
+        let bDateParts = b.date.split('-').map(part => part.padStart(2, '00'));
     
-      // 언어 코드 결정
-      var languageCode = document.body.className || 'en';
+        // 월과 일이 없는 경우를 위해 기본값 설정
+        aDateParts[1] = aDateParts[1] || '13'; // 월이 없는 경우 13월로 처리
+        aDateParts[2] = aDateParts[2] || '32'; // 일이 없는 경우 32일로 처리
+    
+        bDateParts[1] = bDateParts[1] || '13';
+        bDateParts[2] = bDateParts[2] || '32';
+    
+        return aDateParts.join('-').localeCompare(bDateParts.join('-'));
+      });
     
       // 선택된 데이터를 #calendar에 출력
       var calendarDiv = document.getElementById('calendar');
     
       let sections = {};
-
+    
       filteredData.forEach(item => {
         let dateParts = item.date.split('-');
         let year = dateParts[0];
         let month = dateParts[1] || '13'; // 월이 없는 경우 13월로 처리
         let day = dateParts[2] || '32'; // 일이 없는 경우 32일로 처리
-      
+    
         let sectionKey = year + '-' + month;
-      
+    
         if (!sections[sectionKey]) {
           // 새로운 섹션 생성
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.innerHTML = `
-            <p>${year}</p>
-            ${month !== '13' ? `<p>${month}</p>` : ''}
+            <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
           calendarDiv.appendChild(sectionDiv);
-      
+    
           sections[sectionKey] = {
             div: sectionDiv,
             lastDay: day
           };
         }
-      
+    
         appendData(item, sections[sectionKey].div);
       });
     
