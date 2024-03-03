@@ -32,15 +32,13 @@ if (year && season && monthRange) {
       filteredData.sort((a, b) => {
         let aDateParts = a.date.split('-').map(Number);
         let bDateParts = b.date.split('-').map(Number);
-    
-        // 월과 일이 없는 경우를 위해 기본값 설정
+      
         aDateParts[1] = aDateParts[1] || 13; // 월이 없는 경우 13월로 처리
         aDateParts[2] = aDateParts[2] || 32; // 일이 없는 경우 32일로 처리
-    
+      
         bDateParts[1] = bDateParts[1] || 13;
         bDateParts[2] = bDateParts[2] || 32;
-    
-        // 년, 월, 일 순으로 비교
+      
         for (let i = 0; i < 3; i++) {
           if (aDateParts[i] !== bDateParts[i]) {
             return aDateParts[i] - bDateParts[i];
@@ -56,15 +54,15 @@ if (year && season && monthRange) {
       var calendarDiv = document.getElementById('calendar');
     
       let sections = {};
-    
+
       filteredData.forEach(item => {
         let dateParts = item.date.split('-');
         let year = dateParts[0];
         let month = dateParts[1] || '13'; // 월이 없는 경우 13월로 처리
         let day = dateParts[2] || '32'; // 일이 없는 경우 32일로 처리
-    
+      
         let sectionKey = year + '-' + month;
-    
+      
         if (!sections[sectionKey]) {
           // 새로운 섹션 생성
           let sectionDiv = document.createElement('div');
@@ -74,16 +72,13 @@ if (year && season && monthRange) {
             ${month !== '13' ? `<p>${month}</p>` : ''}
           `;
           calendarDiv.appendChild(sectionDiv);
-    
+      
           sections[sectionKey] = {
             div: sectionDiv,
             lastDay: day
           };
-        } else if (day > sections[sectionKey].lastDay) {
-          // 섹션 내에서 일자 순으로 정렬
-          sections[sectionKey].lastDay = day;
         }
-    
+      
         appendData(item, sections[sectionKey].div);
       });
     
