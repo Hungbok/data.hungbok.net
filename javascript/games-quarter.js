@@ -10,7 +10,7 @@ var monthRanges = {
   'spring': ['04', '06'],
   'summer': ['07', '09'],
   'autumn': ['10', '12'],
-  'all': ['01', '12']
+  'all': ['01', '13']
 };
 var monthRange = monthRanges[season] || null;
 
