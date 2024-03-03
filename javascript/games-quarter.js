@@ -110,6 +110,12 @@ if (year && season && monthRange) {
         .then(gameData => {
           var div = document.createElement('div');
           div.className = 'calendar-item';
+      
+          // 값이 없는 경우 'Unknown'으로 대체
+          var url = item.url || 'Unknown';
+          var platform = item.platform || 'Unknown';
+          var title = gameData[languageCode]?.title || 'Unknown';
+      
           div.innerHTML = `
             <a href="https://www.hungbok.com/games?q=${item.url}">
               <div class="calendar-item-background">
