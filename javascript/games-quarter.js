@@ -23,10 +23,13 @@ if (year && season && monthRange) {
     })
     .then(data => {
       // '월' 값이 없거나 '13'인 데이터를 '13월 32일'로 취급
+      // '월' 값은 있지만 '일' 값이 없는 경우 해당 '월'의 '32일'로 취급
       var filteredData = data.map(item => {
         var dateParts = item.date.split('-');
         if (!dateParts[1] || dateParts[1] === '13') {
           dateParts[1] = '13';
+          dateParts[2] = '32';
+        } else if (!dateParts[2]) {
           dateParts[2] = '32';
         }
         return {...item, date: dateParts.join('-')};
@@ -64,13 +67,16 @@ if (year && season && monthRange) {
           `;
           calendarDiv.appendChild(sectionDiv);
     
-          // 일자별 섹션 생성, '13월'인 경우에만 '32일' 섹션 생성
-          let daysInSection = month !== '13' ? new Date(year, month, 0).getDate() : 32;
+          // 일자별 섹션 생성, '32일' 섹션은 항상 생성
+          let daysInSection = new Date(year, month, 0).getDate();
           for (let i = 1; i <= daysInSection; i++) {
             let dayDiv = document.createElement('div');
             dayDiv.id = 'day-' + sectionKey + '-' + String(i).padStart(2, '00');
             sectionDiv.appendChild(dayDiv);
           }
+          let day32Div = document.createElement('div');
+          day32Div.id = 'day-' + sectionKey + '-32';
+          sectionDiv.appendChild(day32Div);
     
           sections[sectionKey] = {
             div: sectionDiv,
