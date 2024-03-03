@@ -45,7 +45,7 @@ if (year && season && monthRange) {
             div.innerHTML = `
               <a href="https://www.hungbok.com/games?q=${item.url}">
                 <div class="calendar-item-background">
-                  <img src="https://data.hungbok.net/image/games/${item.url}/hb_thumbnail.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+                  <img src="https://data.hungbok.net/image/games/${item.url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
                 </div>
                 <div class="calendar-item-info">
                   <div class="calendar-item-title">
@@ -61,6 +61,15 @@ if (year && season && monthRange) {
               </a>
             `;
             calendarDiv.appendChild(div);
+
+            window.addEventListener('load', function() {
+                $(".pc").append('<img src="https://data.hungbok.net/image/icon/display.svg">');
+                $(".ps").append('<img src="https://data.hungbok.net/image/icon/playstation.svg">');
+                $(".xb").append('<img src="https://data.hungbok.net/image/icon/xbox.svg">');
+                $(".ns").append('<img src="https://data.hungbok.net/image/icon/nintendo.svg">');
+                $(".mo").append('<img src="https://data.hungbok.net/image/icon/phone.svg">');
+                $(".cl").append('<img src="https://data.hungbok.net/image/icon/cloud.svg">');
+            });
           })
           .catch(error => {
             console.error('Error:', error);

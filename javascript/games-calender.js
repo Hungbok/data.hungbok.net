@@ -167,6 +167,7 @@ if (!y || !m) {
             $(".xb").append('<img src="https://data.hungbok.net/image/icon/xbox.svg">');
             $(".ns").append('<img src="https://data.hungbok.net/image/icon/nintendo.svg">');
             $(".mo").append('<img src="https://data.hungbok.net/image/icon/phone.svg">');
+            $(".cl").append('<img src="https://data.hungbok.net/image/icon/cloud.svg">');
         });
     })
     .catch(error => {
