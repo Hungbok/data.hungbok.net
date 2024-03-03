@@ -63,5 +63,30 @@
         "date": "2024-04-01",
         "platform": "ns",
         "url": "pokemon-legends-z-a"
+    },
+    {
+        "date": "2024-05-01",
+        "platform": "pc ps xb",
+        "url": "fortnite"
+    },
+    {
+        "date": "2024-08-01",
+        "platform": "pc ps xb",
+        "url": "fortnite"
+    },
+    {
+        "date": "2024-10-01",
+        "platform": "pc ps xb",
+        "url": "fortnite"
+    },
+    {
+        "date": "2024-11-01",
+        "platform": "pc ps xb",
+        "url": "fortnite"
+    },
+    {
+        "date": "2024-06",
+        "platform": "pc ps xb",
+        "url": "fortnite"
     }
 ]

@@ -50,7 +50,7 @@ if (year && season && monthRange) {
       monthData.forEach(item => {
         var year = item.date.split('-')[0];
         var month = item.date.split('-')[1];
-
+      
         if (month !== lastMonth || year !== lastYear) {
           monthDiv = document.createElement('div');
           monthDiv.id = 'section-' + month;
@@ -62,13 +62,14 @@ if (year && season && monthRange) {
           lastMonth = month;
           lastYear = year;
         }
+      
         appendData(item, monthDiv);
       });
 
       // 연도별 데이터 출력
       yearData.forEach(item => {
         var year = item.date.split('-')[0];
-
+      
         if (year !== lastYear) {
           yearDiv = document.createElement('div');
           yearDiv.id = 'section-' + year;
@@ -78,6 +79,7 @@ if (year && season && monthRange) {
           calendarDiv.appendChild(yearDiv);
           lastYear = year;
         }
+      
         appendData(item, yearDiv);
       });
 
