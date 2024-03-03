@@ -40,6 +40,12 @@ if (year && season && monthRange) {
       var lastYear = null;
       var monthDiv = null;
       var yearDiv = null;
+      
+      // 데이터를 월별, 연도별로 분류
+      var monthData = filteredData.filter(item => item.date.split('-').length > 2);
+      var yearData = filteredData.filter(item => item.date.split('-').length == 2);
+      var onlyYearData = filteredData.filter(item => item.date.split('-').length == 1);
+      
 
       // 월별 데이터 출력
       monthData.forEach(item => {
