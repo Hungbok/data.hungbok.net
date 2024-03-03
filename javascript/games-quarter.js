@@ -231,3 +231,27 @@ if (year && season && monthRange) {
   // 연도나 계절 클래스가 없는 경우
   $('main > .top-backgrounds').remove();
 }
+
+$(document).ready(function() {
+    var currentIndex = 0;
+
+    $(document).on('click', '.elevator-up', function() {
+        var contents = $('.elevator-contents');
+        if(currentIndex > 0) {
+            currentIndex -= 1;
+        }
+        $('html, body').animate({
+            scrollTop: $(contents[currentIndex]).offset().top
+        }, 500);
+    });
+
+    $(document).on('click', '.elevator-down', function() {
+        var contents = $('.elevator-contents');
+        if(currentIndex < contents.length - 1) {
+            currentIndex += 1;
+        }
+        $('html, body').animate({
+            scrollTop: $(contents[currentIndex]).offset().top
+        }, 500);
+    });
+});

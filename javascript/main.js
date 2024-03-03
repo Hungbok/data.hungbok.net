@@ -143,22 +143,6 @@ $(document).ready(function(){
             });
         }
     });
-
-    var currentIndex = 0;
-
-    $('body').on('click', '.elevator-up', function() {
-        var contents = $('.elevator-contents');
-        if(currentIndex > 0) {
-            currentIndex -= 1;
-        }
-    });
-
-    $('body').on('click', '.elevator-down', function() {
-        var contents = $('.elevator-contents');
-        if(currentIndex < contents.length - 1) {
-            currentIndex += 1;
-        }
-    });
 });
 
 // 문서 클릭 시 Language 열려있으면 닫기 / .side-panel-overlay 클릭 시 Sidepanel 열려있으면 닫기
