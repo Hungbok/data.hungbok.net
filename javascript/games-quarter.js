@@ -116,32 +116,102 @@ if (year && season && monthRange) {
           var yyyy = dateParts[0] || 'Unknown';
           var mm = dateParts[1] || 'Unknown';
           var dd = dateParts[2] || 'Unknown';
-      
-          div.innerHTML = `
-            <a href="https://www.hungbok.com/games?q=${url}">
-              <div class="calendar-item-background">
-                <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+  
+          let template = '';
+          if (dd === '32' && mm === '13') {
+            template = `<a href="https://www.hungbok.com/games?q=${url}">
+            <div class="calendar-item-background">
+              <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+            </div>
+            <div class="calendar-item-info">
+              <div class="calendar-item-title">
+                <p>${title}</p>
               </div>
-              <div class="calendar-item-info">
-                <div class="calendar-item-title">
-                  <p>${title}</p>
-                </div>
-                <div class="calendar-item-date">
-                  <p class="calendar-item-year">${yyyy}</p>
-                  <p class="calendar-item-month">${mm}</p>
-                  <p class="calendar-item-day">${dd}</p>
-                </div>
-                <div class="calendar-item-platform ${platform}">
-                  <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
-                  <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
-                  <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
-                  <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
-                  <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
-                  <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
-                </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
               </div>
-            </a>
-          `;
+              <div class="calendar-item-platform ${platform}">
+                <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+            </div>
+          </a>`; // dd가 32이고 mm이 13인 경우의 템플릿
+          } else if (mm === '13') {
+            template = `<a href="https://www.hungbok.com/games?q=${url}">
+            <div class="calendar-item-background">
+              <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+            </div>
+            <div class="calendar-item-info">
+              <div class="calendar-item-title">
+                <p>${title}</p>
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
+              </div>
+              <div class="calendar-item-platform ${platform}">
+                <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+            </div>
+          </a>`; // mm이 13인 경우의 템플릿
+          } else if (dd === '32') {
+            template = `<a href="https://www.hungbok.com/games?q=${url}">
+            <div class="calendar-item-background">
+              <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+            </div>
+            <div class="calendar-item-info">
+              <div class="calendar-item-title">
+                <p>${title}</p>
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
+                <p class="calendar-item-month">${mm}</p>
+              </div>
+              <div class="calendar-item-platform ${platform}">
+                <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+            </div>
+          </a>`; // dd가 32인 경우의 템플릿
+          } else {
+            template = `<a href="https://www.hungbok.com/games?q=${url}">
+            <div class="calendar-item-background">
+              <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+            </div>
+            <div class="calendar-item-info">
+              <div class="calendar-item-title">
+                <p>${title}</p>
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
+                <p class="calendar-item-month">${mm}</p>
+                <p class="calendar-item-day">${dd}</p>
+              </div>
+              <div class="calendar-item-platform ${platform}">
+                <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+            </div>
+          </a>`; // 그 외의 경우의 템플릿
+          }
+  
+          div.innerHTML = template;
           parentDiv.appendChild(div);
         })
         .catch(error => {
