@@ -114,7 +114,7 @@ if (year && season && monthRange) {
           // 값이 없는 경우 'Unknown'으로 대체
           var url = item.url || 'Unknown';
           var platform = item.platform || 'Unknown';
-          var title = gameData[languageCode]?.title || 'Unknown';
+          var title = gameData[languageCode].title || 'Unknown';
 
           // yyyy, mm, dd 값 추가
           var dateParts = item.date.split('-');
