@@ -41,45 +41,58 @@ if (year && season && monthRange) {
       var monthDiv = null;
       var yearDiv = null;
 
-      filteredData.forEach(item => {
-        var dateParts = item.date.split('-');
-        var year = dateParts[0];
-        var month = dateParts[1];
-        
-        // 월별 데이터 출력
-        if (dateParts.length > 2) {
-          if (month !== lastMonth || year !== lastYear) {
-            monthDiv = document.createElement('div');
-            monthDiv.id = 'section-' + month;
-            monthDiv.innerHTML = `
-              <p>${year}</p>
-              <p>${month}</p>
-            `;
-            calendarDiv.appendChild(monthDiv);
-            lastMonth = month;
-            lastYear = year;
-          }
+      // 월별 데이터 출력
+      monthData.forEach(item => {
+        var year = item.date.split('-')[0];
+        var month = item.date.split('-')[1];
       
-          appendData(item, monthDiv);
-        } 
-        // 연도별 데이터 출력
-        else if (dateParts.length == 2) {
-          if (year !== lastYear) {
-            yearDiv = document.createElement('div');
-            yearDiv.id = 'section-' + year;
-            yearDiv.innerHTML = `
-              <p>${year}</p>
-            `;
-            calendarDiv.appendChild(yearDiv);
-            lastYear = year;
-          }
-      
-          appendData(item, yearDiv);
-        } 
-        // 연도만 있는 데이터 출력
-        else if (dateParts.length == 1) {
-          appendData(item, calendarDiv);
+        if (month !== lastMonth || year !== lastYear) {
+          monthDiv = document.createElement('div');
+          monthDiv.id = 'section-' + month;
+          monthDiv.innerHTML = `
+            <p>${year}</p>
+            <p>${month}</p>
+          `;
+          calendarDiv.appendChild(monthDiv);
+          lastMonth = month;
+          lastYear = year;
         }
+      
+        appendData(item, monthDiv);
+      });
+
+      // 연도별 데이터 출력
+      yearData.forEach(item => {
+        var year = item.date.split('-')[0];
+      
+        if (year !== lastYear) {
+          yearDiv = document.createElement('div');
+          yearDiv.id = 'section-' + year;
+          yearDiv.innerHTML = `
+            <p>${year}</p>
+          `;
+          calendarDiv.appendChild(yearDiv);
+          lastYear = year;
+        }
+      
+        appendData(item, yearDiv);
+      });
+
+      // 연도만 있는 데이터 출력
+      onlyYearData.forEach(item => {
+        var year = item.date.split('-')[0];
+      
+        if (year !== lastYear) {
+          yearDiv = document.createElement('div');
+          yearDiv.id = 'section-' + year;
+          yearDiv.innerHTML = `
+            <p>${year}</p>
+          `;
+          calendarDiv.appendChild(yearDiv);
+          lastYear = year;
+        }
+      
+        appendData(item, yearDiv);
       });
 
       // 데이터 출력 함수
