@@ -27,7 +27,7 @@ if (year && season && monthRange) {
         var month = item.date.split('-')[1];
         return month >= monthRange[0] && month <= monthRange[1];
       });
-    
+
       // 날짜 형식에 따라 정렬
       filteredData.sort((a, b) => {
         let aDateParts = a.date.split('-').map(part => part.padStart(2, '00'));
@@ -65,13 +65,28 @@ if (year && season && monthRange) {
           `;
           calendarDiv.appendChild(sectionDiv);
     
+          // 일자별 섹션 생성
+          let daysInSection = month !== '13' ? new Date(year, month, 0).getDate() : 31;
+          for (let i = 1; i <= daysInSection; i++) {
+            let dayDiv = document.createElement('div');
+            dayDiv.id = sectionKey + '-' + String(i).padStart(2, '00');
+            dayDiv.innerHTML = `<h3>${i}일</h3>`;
+            sectionDiv.appendChild(dayDiv);
+          }
+    
+          // 32일 섹션 생성
+          let day32Div = document.createElement('div');
+          day32Div.id = sectionKey + '-32';
+          day32Div.innerHTML = `<h3>기타</h3>`;
+          sectionDiv.appendChild(day32Div);
+    
           sections[sectionKey] = {
             div: sectionDiv,
-            lastDay: day
+            dayDivs: Array.from(sectionDiv.children)
           };
         }
     
-        appendData(item, sections[sectionKey].div);
+        appendData(item, sections[sectionKey].div.querySelector('#' + sectionKey + '-' + day));
       });
     
       // 데이터 출력 함수
