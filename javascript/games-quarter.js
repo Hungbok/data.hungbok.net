@@ -241,7 +241,7 @@ $(document).ready(function() {
             currentIndex -= 1;
         }
         $('html, body').animate({
-            scrollTop: $(contents[currentIndex]).offset().top
+            scrollTop: $(contents[currentIndex]).offset().top - 90
         }, 500);
     });
 
@@ -251,7 +251,7 @@ $(document).ready(function() {
             currentIndex += 1;
         }
         $('html, body').animate({
-            scrollTop: $(contents[currentIndex]).offset().top
+            scrollTop: $(contents[currentIndex]).offset().top - 90
         }, 500);
     });
 });

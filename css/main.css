@@ -480,25 +480,6 @@ details {
     width: calc(100% - 60px);
 }
 
-/* elevator */
-
-.elevator {
-    position: fixed;
-    right: 10px;
-    padding: 10px;
-    background: #666666;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.elevator-up {
-    top: 10px;
-}
-
-.elevator-down {
-    top: 50px;
-}
-
 /* Popup */
 
 .popup {
