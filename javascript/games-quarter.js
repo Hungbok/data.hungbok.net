@@ -35,8 +35,60 @@ if (year && season && monthRange) {
 
       // 선택된 데이터를 #calendar에 출력
       var calendarDiv = document.getElementById('calendar');
-      filteredData.forEach(item => {
-        // 'url' 필드 값을 이용하여 '/games/[url값].json' 파일 불러오기
+      var lastMonth = null;
+      var lastYear = null;
+      var monthDiv = null;
+      var yearDiv = null;
+
+      // 데이터를 월별, 연도별로 분류
+      var monthData = filteredData.filter(item => item.date.split('-').length > 2);
+      var yearData = filteredData.filter(item => item.date.split('-').length == 2);
+      var onlyYearData = filteredData.filter(item => item.date.split('-').length == 1);
+      
+      // 월별 데이터 출력
+      monthData.forEach(item => {
+        var year = item.date.split('-')[0];
+        var month = item.date.split('-')[1];
+      
+        if (month !== lastMonth || year !== lastYear) {
+          monthDiv = document.createElement('div');
+          monthDiv.id = 'section-' + month;
+          monthDiv.innerHTML = `
+            <p>${year}</p>
+            <p>${month}</p>
+          `;
+          calendarDiv.appendChild(monthDiv);
+          lastMonth = month;
+          lastYear = year;
+        }
+      
+        appendData(item, monthDiv);
+      });
+      
+      // 연도별 데이터 출력
+      yearData.forEach(item => {
+        var year = item.date.split('-')[0];
+      
+        if (year !== lastYear) {
+          yearDiv = document.createElement('div');
+          yearDiv.id = 'section-' + year;
+          yearDiv.innerHTML = `
+            <p>${year}</p>
+          `;
+          calendarDiv.appendChild(yearDiv);
+          lastYear = year;
+        }
+      
+        appendData(item, yearDiv);
+      });
+      
+      // 연도만 있는 데이터 출력
+      onlyYearData.forEach(item => {
+        appendData(item, calendarDiv);
+      });
+
+      // 데이터 출력 함수
+      function appendData(item, parentDiv) {
         fetch('//data.hungbok.net/data/games/' + item.url + '.json')
         .then(response => {
           if (!response.ok) throw new Error('Not Found');
@@ -77,7 +129,7 @@ if (year && season && monthRange) {
           // '/games/[url값].json' 파일이 없는 경우
           $('main > .top-backgrounds').remove();
         });
-      });
+      };
     })
     .catch(error => {
       console.error('Error:', error);
