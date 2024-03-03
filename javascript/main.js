@@ -144,10 +144,10 @@ $(document).ready(function(){
         }
     });
     
-    var contents = $('.elevator-contents');
     var currentIndex = 0;
 
-    $('.elevator-up').click(function() {
+    $(document).on('click', '.elevator-up', function() {
+        var contents = $('.elevator-contents');
         if(currentIndex > 0) {
             currentIndex -= 1;
         }
@@ -156,7 +156,8 @@ $(document).ready(function(){
         }, 500);
     });
 
-    $('.elevator-down').click(function() {
+    $(document).on('click', '.elevator-down', function() {
+        var contents = $('.elevator-contents');
         if(currentIndex < contents.length - 1) {
             currentIndex += 1;
         }
