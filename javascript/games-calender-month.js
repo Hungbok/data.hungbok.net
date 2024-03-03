@@ -35,14 +35,38 @@ if (year && season && monthRange) {
       filteredData.forEach(item => {
         // 'url' 필드 값을 이용하여 '/games/[url값].json' 파일 불러오기
         fetch('//data.hungbok.net/data/games/' + item.url + '.json')
-          .then(response => response.json())
-          .then(gameData => {
-            var p = document.createElement('p');
-            // 'title' 값을 '/games/[url값].json' 파일의 해당 언어의 'title' 값으로 설정
-            p.textContent = "Title: " + gameData[languageCode].title + ", URL: " + item.url + ", Platform: " + item.platform;
-            calendarDiv.appendChild(p);
+          .then(response => {
+            if (!response.ok) throw new Error('Not Found');
+            return response.json();
           })
-          .catch(error => console.error('Error:', error));
+          .then(gameData => {
+            var div = document.createElement('div');
+            div.className = 'calendar-item';
+            div.innerHTML = `
+              <a href="https://www.hungbok.com/games?q=${item.url}">
+                <div class="calendar-item-background">
+                  <img src="https://data.hungbok.net/image/games/${item.url}/hb_thumbnail.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+                </div>
+                <div class="calendar-item-info">
+                  <div class="calendar-item-title">
+                    <p>${gameData[languageCode].title}</p>
+                  </div>
+                  <div class="calendar-item-date">
+                    <p>${item.date.split('-')[0]}</p>
+                    <p>${item.date.split('-')[1]}</p>
+                    <p>${item.date.split('-')[2]}</p>
+                  </div>
+                  <div class="calendar-item-platform ${item.platform}"></div>
+                </div>
+              </a>
+            `;
+            calendarDiv.appendChild(div);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            // '/games/[url값].json' 파일이 없는 경우
+            $('main > .top-backgrounds').remove();
+          });
       });
     })
     .catch(error => {
