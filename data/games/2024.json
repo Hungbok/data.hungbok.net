@@ -60,6 +60,11 @@
         "url": "werewolf-the-apocalypse-heart-of-the-forest"
     },
     {
+        "date": "2024-03-32",
+        "platform": "ns",
+        "url": "werewolf-the-apocalypse-heart-of-the-forest"
+    },
+    {
         "date": "2024-04-01",
         "platform": "ns",
         "url": "pokemon-legends-z-a"
@@ -100,12 +105,17 @@
         "url": "fortnite"
     },
     {
-        "date": "2024",
+        "date": "2024-13",
         "platform": "pc ps xb",
         "url": "fortnite"
     },
     {
         "date": "2024-12",
+        "platform": "pc ps xb",
+        "url": "fortnite"
+    },
+    {
+        "date": "2024",
         "platform": "pc ps xb",
         "url": "fortnite"
     }
