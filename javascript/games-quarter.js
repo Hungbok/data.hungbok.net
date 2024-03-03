@@ -36,7 +36,7 @@ if (year && season && monthRange) {
       // 선택된 데이터를 #calendar에 출력
       var calendarDiv = document.getElementById('calendar');
       var lastMonth = null;
-      filteredData.forEach(item => {
+      filteredData.forEach((item, index) => {
         var year = item.date.split('-')[0];
         var month = item.date.split('-')[1];
 
@@ -74,7 +74,7 @@ if (year && season && monthRange) {
               div.appendChild(nextButton);
             }
           }
-
+      
           lastMonth = month;
         }
         
@@ -119,7 +119,7 @@ if (year && season && monthRange) {
             // '/games/[url값].json' 파일이 없는 경우
             $('main > .top-backgrounds').remove();
           });
-      });
+        });
     })
     .catch(error => {
       console.error('Error:', error);
