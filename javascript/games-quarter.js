@@ -55,6 +55,11 @@ if (year && season && monthRange) {
         let year = dateParts[0];
         let month = dateParts[1];
         let day = dateParts[2];
+
+        // 계절에 따른 월 범위 결정
+        if (monthRange && (month < monthRange[0] || month > monthRange[1])) {
+          return; // 요청하신 계절에 속하지 않는 월의 데이터는 건너뜁니다
+        }
     
         let sectionKey = year + '-' + month;
     
