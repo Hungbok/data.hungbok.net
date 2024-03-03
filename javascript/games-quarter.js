@@ -31,6 +31,9 @@ if (year && season && monthRange) {
       // 언어 코드 결정
       var languageCode = document.body.className || 'en';
 
+      // 선택된 데이터를 #calendar에 출력
+      var calendarDiv = document.getElementById('calendar');
+
       // 날짜 형식에 따라 정렬
       filteredData.sort((a, b) => {
         let aDateParts = a.date.split('-').map(Number);
