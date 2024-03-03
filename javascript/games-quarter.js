@@ -52,11 +52,18 @@ if (year && season && monthRange) {
                     <p>${gameData[languageCode].title}</p>
                   </div>
                   <div class="calendar-item-date">
-                    <p>${item.date.split('-')[0]}</p>
-                    <p>${item.date.split('-')[1]}</p>
-                    <p>${item.date.split('-')[2]}</p>
+                    <p class="calendar-item-year">${item.date.split('-')[0]}</p>
+                    <p class="calendar-item-month">${item.date.split('-')[1]}</p>
+                    <p class="calendar-item-day">${item.date.split('-')[2]}</p>
                   </div>
-                  <div class="calendar-item-platform ${item.platform}"></div>
+                  <div class="calendar-item-platform ${item.platform}">
+                    <img class="display" src="https://data.hungbok.net/image/icon/display.svg">
+                    <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg">
+                    <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg">
+                    <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg">
+                    <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg">
+                    <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg">
+                  </div>
                 </div>
               </a>
             `;
@@ -78,12 +85,3 @@ if (year && season && monthRange) {
   // 연도나 계절 클래스가 없는 경우
   $('main > .top-backgrounds').remove();
 }
-
-window.addEventListener('load', function() {
-    $(".pc").append('<img src="https://data.hungbok.net/image/icon/display.svg">');
-    $(".ps").append('<img src="https://data.hungbok.net/image/icon/playstation.svg">');
-    $(".xb").append('<img src="https://data.hungbok.net/image/icon/xbox.svg">');
-    $(".ns").append('<img src="https://data.hungbok.net/image/icon/nintendo.svg">');
-    $(".mo").append('<img src="https://data.hungbok.net/image/icon/phone.svg">');
-    $(".cl").append('<img src="https://data.hungbok.net/image/icon/cloud.svg">');
-});

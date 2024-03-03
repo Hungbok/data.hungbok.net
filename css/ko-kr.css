@@ -417,3 +417,15 @@
 .text-share-text::after {
     content: "공유할 서비스를 선택해 주세요.";
 }
+
+.calendar-item-year::after {
+    content: "년";
+}
+
+.calendar-item-month::after {
+    content: "월";
+}
+
+.calendar-item-day::after {
+    content: "일";
+}
