@@ -8,8 +8,12 @@
     gap: 5px;
 }
 
-#calendar > div > p {
+div#calendar > div > h2 {
     width: 100%;
+}
+
+div#calendar > div > div {
+    display: contents;
 }
 
 .calendar-item {

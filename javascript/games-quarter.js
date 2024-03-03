@@ -22,24 +22,20 @@ if (year && season && monthRange) {
       return response.json();
     })
     .then(data => {
-      // 월에 따른 데이터 선택
-      var filteredData = data.filter(item => {
-        var month = item.date.split('-')[1];
-        return month >= monthRange[0] && month <= monthRange[1];
+      // '월' 값이 없거나 '13'인 데이터를 '13월 32일'로 취급
+      var filteredData = data.map(item => {
+        var dateParts = item.date.split('-');
+        if (!dateParts[1] || dateParts[1] === '13') {
+          dateParts[1] = '13';
+          dateParts[2] = '32';
+        }
+        return {...item, date: dateParts.join('-')};
       });
 
       // 날짜 형식에 따라 정렬
       filteredData.sort((a, b) => {
         let aDateParts = a.date.split('-').map(part => part.padStart(2, '00'));
         let bDateParts = b.date.split('-').map(part => part.padStart(2, '00'));
-    
-        // 월과 일이 없는 경우를 위해 기본값 설정
-        aDateParts[1] = aDateParts[1] || '13'; // 월이 없는 경우 13월로 처리
-        aDateParts[2] = aDateParts[2] || '32'; // 일이 없는 경우 32일로 처리
-    
-        bDateParts[1] = bDateParts[1] || '13';
-        bDateParts[2] = bDateParts[2] || '32';
-    
         return aDateParts.join('-').localeCompare(bDateParts.join('-'));
       });
 
@@ -54,8 +50,8 @@ if (year && season && monthRange) {
       filteredData.forEach(item => {
         let dateParts = item.date.split('-');
         let year = dateParts[0];
-        let month = dateParts[1] || '13'; // 월이 없는 경우 13월로 처리
-        let day = dateParts[2] || '32'; // 일이 없는 경우 32일로 처리
+        let month = dateParts[1];
+        let day = dateParts[2];
     
         let sectionKey = year + '-' + month;
     
@@ -64,17 +60,9 @@ if (year && season && monthRange) {
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.innerHTML = `
-            <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
+            <h2>${year}년 ${month !== '13' ? month + '월' : '기타'}</h2>
           `;
           calendarDiv.appendChild(sectionDiv);
-    
-          // 일자별 섹션 생성
-          let daysInSection = month !== '13' ? new Date(year, month, 0).getDate() : 31;
-          for (let i = 1; i <= daysInSection; i++) {
-            let dayDiv = document.createElement('div');
-            dayDiv.id = 'day-' + sectionKey + '-' + String(i).padStart(2, '00');
-            sectionDiv.appendChild(dayDiv);
-          }
     
           // 32일 섹션 생성
           let day32Div = document.createElement('div');
