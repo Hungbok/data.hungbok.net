@@ -134,11 +134,11 @@ $(document).ready(function(){
         var details = $(this).parent();
         if(details.attr('open')) {
             e.preventDefault();
-            details.find('.franchise-contents').slideUp(function() {
+            details.find('.franchise-contents, .details-contents').slideUp(function() {
                 details.removeAttr('open');
             });
         } else {
-            details.find('.franchise-contents').slideDown(function() {
+            details.find('.franchise-contents, .details-contents').slideDown(function() {
                 details.attr('open', '');
             });
         }
