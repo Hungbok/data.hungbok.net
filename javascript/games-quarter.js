@@ -27,6 +27,9 @@ if (year && season && monthRange) {
         return month >= monthRange[0] && month <= monthRange[1];
       });
 
+      // 날짜 순으로 정렬
+      filteredData.sort((a, b) => new Date(a.date) - new Date(b.date));
+
       // 언어 코드 결정
       var languageCode = document.body.className || 'en';
 
@@ -57,12 +60,12 @@ if (year && season && monthRange) {
                     <p class="calendar-item-day">${item.date.split('-')[2]}</p>
                   </div>
                   <div class="calendar-item-platform ${item.platform}">
-                    <img class="display" src="https://data.hungbok.net/image/icon/display.svg">
-                    <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg">
-                    <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg">
-                    <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg">
-                    <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg">
-                    <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg">
+                    <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                    <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                    <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                    <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                    <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+                    <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                   </div>
                 </div>
               </a>
