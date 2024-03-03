@@ -114,7 +114,7 @@ if (year && season && monthRange) {
           // 값이 없는 경우 'Unknown'으로 대체
           var url = item.url || 'Unknown';
           var platform = item.platform || 'Unknown';
-          var title = gameData[languageCode].title || 'Unknown';
+          var title = gameData[languageCode]?.title || 'Unknown';
 
           // yyyy, mm, dd 값 추가
           var dateParts = item.date.split('-');
@@ -129,7 +129,7 @@ if (year && season && monthRange) {
               </div>
               <div class="calendar-item-info">
                 <div class="calendar-item-title">
-                  <p${title}</p>
+                  <p>${title}</p>
                 </div>
                 <div class="calendar-item-date">
                   <p class="calendar-item-year">${yyyy}</p>
