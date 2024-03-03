@@ -28,81 +28,43 @@ if (year && season && monthRange) {
         return month >= monthRange[0] && month <= monthRange[1];
       });
 
-      // 날짜 순으로 정렬
-      filteredData.sort((a, b) => new Date(a.date) - new Date(b.date));
-
       // 언어 코드 결정
       var languageCode = document.body.className || 'en';
 
       // 선택된 데이터를 #calendar에 출력
       var calendarDiv = document.getElementById('calendar');
-      var lastMonth = null;
-      var lastYear = null;
-      var monthDiv = null;
-      var yearDiv = null;
-
+      
+      let sections = {};
+      
       filteredData.forEach(item => {
-        var dateParts = item.date.split('-');
-        var year = dateParts[0];
-        var month = dateParts[1];
+        let dateParts = item.date.split('-');
+        let year = dateParts[0];
+        let month = dateParts[1] || '12'; // 월이 없는 경우 12월로 처리
+        let day = dateParts[2] || '31'; // 일이 없는 경우 마지막 날로 처리
+      
+        let sectionKey = year + (dateParts.length > 1 ? '-' + month : '');
         
-        // 월별 데이터 출력
-        if (dateParts.length == 3) {
-          if (month !== lastMonth || year !== lastYear) {
-            monthDiv = document.createElement('div');
-            monthDiv.id = 'section-' + month;
-            monthDiv.innerHTML = `
-              <p>${year}</p>
-              <p>${month}</p>
-            `;
-            calendarDiv.appendChild(monthDiv);
-            lastMonth = month;
-            lastYear = year;
-          }
+        if (!sections[sectionKey]) {
+          // 새로운 섹션 생성
+          let sectionDiv = document.createElement('div');
+          sectionDiv.id = 'section-' + sectionKey;
+          sectionDiv.innerHTML = `
+            <p>${year}</p>
+            ${dateParts.length > 1 ? `<p>${month}</p>` : ''}
+          `;
+          calendarDiv.appendChild(sectionDiv);
       
-          appendData(item, monthDiv);
+          sections[sectionKey] = {
+            div: sectionDiv,
+            lastDay: day
+          };
+        } else if (day > sections[sectionKey].lastDay) {
+          // 섹션 내에서 일자 순으로 정렬
+          sections[sectionKey].lastDay = day;
         }
+      
+        appendData(item, sections[sectionKey].div);
       });
-
-      // 모든 월별 데이터가 출력되면, 연도별 데이터 출력
-      if (lastMonth == 12) {
-        filteredData.forEach(item => {
-          var dateParts = item.date.split('-');
-          var year = dateParts[0];
-      
-          if (dateParts.length == 2 && year !== lastYear) {
-            yearDiv = document.createElement('div');
-            yearDiv.id = 'section-' + year;
-            yearDiv.innerHTML = `
-              <p>${year}</p>
-            `;
-            calendarDiv.appendChild(yearDiv);
-            lastYear = year;
-          }
-      
-          appendData(item, yearDiv);
-        });
-      }
-
-      // 모든 연도별 데이터가 출력되면, 연도만 있는 데이터 출력
-      if (lastYear) {
-        filteredData.forEach(item => {
-          var dateParts = item.date.split('-');
-          var year = dateParts[0];
-      
-          if (dateParts.length == 1 && year !== lastYear) {
-            yearDiv = document.createElement('div');
-            yearDiv.id = 'section-' + year;
-            yearDiv.innerHTML = `
-              <p>${year}</p>
-            `;
-            calendarDiv.appendChild(yearDiv);
-            lastYear = year;
-          }
-      
-          appendData(item, yearDiv);
-        });
-      }
 
       // 데이터 출력 함수
       function appendData(item, parentDiv) {
