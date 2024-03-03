@@ -64,41 +64,45 @@ if (year && season && monthRange) {
         }
       });
 
-      // 연도별 데이터 출력
-      filteredData.forEach(item => {
-        var dateParts = item.date.split('-');
-        var year = dateParts[0];
+      // 모든 월별 데이터가 출력되면, 연도별 데이터 출력
+      if (lastMonth == 12) {
+        filteredData.forEach(item => {
+          var dateParts = item.date.split('-');
+          var year = dateParts[0];
       
-        if (dateParts.length == 2 && year !== lastYear) {
-          yearDiv = document.createElement('div');
-          yearDiv.id = 'section-' + year;
-          yearDiv.innerHTML = `
-            <p>${year}</p>
-          `;
-          calendarDiv.appendChild(yearDiv);
-          lastYear = year;
+          if (dateParts.length == 2 && year !== lastYear) {
+            yearDiv = document.createElement('div');
+            yearDiv.id = 'section-' + year;
+            yearDiv.innerHTML = `
+              <p>${year}</p>
+            `;
+            calendarDiv.appendChild(yearDiv);
+            lastYear = year;
       
-          appendData(item, yearDiv);
-        }
-      });
+            appendData(item, yearDiv);
+          }
+        });
+      }
 
-      // 연도만 있는 데이터 출력
-      filteredData.forEach(item => {
-        var dateParts = item.date.split('-');
-        var year = dateParts[0];
+      // 모든 연도별 데이터가 출력되면, 연도만 있는 데이터 출력
+      if (lastYear) {
+        filteredData.forEach(item => {
+          var dateParts = item.date.split('-');
+          var year = dateParts[0];
       
-        if (dateParts.length == 1 && year !== lastYear) {
-          yearDiv = document.createElement('div');
-          yearDiv.id = 'section-' + year;
-          yearDiv.innerHTML = `
-            <p>${year}</p>
-          `;
-          calendarDiv.appendChild(yearDiv);
-          lastYear = year;
+          if (dateParts.length == 1 && year !== lastYear) {
+            yearDiv = document.createElement('div');
+            yearDiv.id = 'section-' + year;
+            yearDiv.innerHTML = `
+              <p>${year}</p>
+            `;
+            calendarDiv.appendChild(yearDiv);
+            lastYear = year;
       
-          appendData(item, yearDiv);
-        }
-      });
+            appendData(item, yearDiv);
+          }
+        });
+      }
 
       // 데이터 출력 함수
       function appendData(item, parentDiv) {
