@@ -115,22 +115,28 @@ if (year && season && monthRange) {
           var url = item.url || 'Unknown';
           var platform = item.platform || 'Unknown';
           var title = gameData[languageCode]?.title || 'Unknown';
+
+          // yyyy, mm, dd 값 추가
+          var dateParts = item.date.split('-');
+          var yyyy = dateParts[0] || 'Unknown';
+          var mm = dateParts[1] || 'Unknown';
+          var dd = dateParts[2] || 'Unknown';
       
           div.innerHTML = `
-            <a href="https://www.hungbok.com/games?q=${item.url}">
+            <a href="https://www.hungbok.com/games?q=${url}">
               <div class="calendar-item-background">
-                <img src="https://data.hungbok.net/image/games/${item.url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
+                <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
               </div>
               <div class="calendar-item-info">
                 <div class="calendar-item-title">
-                  <p>${gameData[languageCode].title}</p>
+                  <p${title}</p>
                 </div>
                 <div class="calendar-item-date">
-                  <p class="calendar-item-year">${item.date.split('-')[0]}</p>
-                  <p class="calendar-item-month">${item.date.split('-')[1]}</p>
-                  <p class="calendar-item-day">${item.date.split('-')[2]}</p>
+                  <p class="calendar-item-year">${yyyy}</p>
+                  <p class="calendar-item-month">${mm}</p>
+                  <p class="calendar-item-day">${dd}</p>
                 </div>
-                <div class="calendar-item-platform ${item.platform}">
+                <div class="calendar-item-platform ${platform}">
                   <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                   <img class="playstation" src="https://data.hungbok.net/image/icon/playstation.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                   <img class="xbox" src="https://data.hungbok.net/image/icon/xbox.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
