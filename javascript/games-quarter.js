@@ -31,22 +31,36 @@ if (year && season && monthRange) {
       // 언어 코드 결정
       var languageCode = document.body.className || 'en';
 
-      // 선택된 데이터를 #calendar에 출력
-      var calendarDiv = document.getElementById('calendar');
+      // 날짜 형식에 따라 정렬
+      filteredData.sort((a, b) => {
+        let aDateParts = a.date.split('-').map(Number);
+        let bDateParts = b.date.split('-').map(Number);
+      
+        // 월과 일이 없는 경우를 위해 기본값 설정
+        aDateParts[1] = aDateParts[1] || 13; // 월이 없는 경우 13월로 처리
+        aDateParts[2] = aDateParts[2] || 32; // 일이 없는 경우 32일로 처리
+      
+        bDateParts[1] = bDateParts[1] || 13;
+        bDateParts[2] = bDateParts[2] || 32;
+      
+        // 년, 월, 일 순으로 비교
+        for (let i = 0; i < 3; i++) {
+          if (aDateParts[i] !== bDateParts[i]) {
+            return aDateParts[i] - bDateParts[i];
+          }
+        }
+        return 0;
+      });
 
-      // 날짜 순으로 정렬
-      filteredData.sort((a, b) => a.date.localeCompare(b.date));
-      
       let sections = {};
-      let sectionKeys = [];
-      
+
       filteredData.forEach(item => {
         let dateParts = item.date.split('-');
         let year = dateParts[0];
         let month = dateParts[1] || '13'; // 월이 없는 경우 13월로 처리
         let day = dateParts[2] || '32'; // 일이 없는 경우 32일로 처리
       
-        let sectionKey = year + (dateParts.length > 1 ? '-' + month : '');
+        let sectionKey = year + '-' + month;
       
         if (!sections[sectionKey]) {
           // 새로운 섹션 생성
@@ -54,27 +68,14 @@ if (year && season && monthRange) {
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.innerHTML = `
             <p>${year}</p>
-            ${dateParts.length > 1 ? `<p>${month}</p>` : ''}
+            ${month !== '13' ? `<p>${month}</p>` : ''}
           `;
+          calendarDiv.appendChild(sectionDiv);
       
           sections[sectionKey] = {
             div: sectionDiv,
             lastDay: day
           };
-          
-          // 섹션 키 배열에 새로운 키 추가
-          sectionKeys.push(sectionKey);
-          // 섹션 키 배열 정렬
-          sectionKeys.sort((a, b) => a.localeCompare(b));
-          // 적절한 위치에 섹션 추가
-          let index = sectionKeys.indexOf(sectionKey);
-          if (index === 0 || index === sectionKeys.length - 1) {
-            // 첫 섹션 또는 마지막 섹션인 경우
-            calendarDiv.appendChild(sectionDiv);
-          } else {
-            // 중간 섹션인 경우
-            calendarDiv.insertBefore(sectionDiv, sections[sectionKeys[index + 1]].div);
-          }
         } else if (day > sections[sectionKey].lastDay) {
           // 섹션 내에서 일자 순으로 정렬
           sections[sectionKey].lastDay = day;
