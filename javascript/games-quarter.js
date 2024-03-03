@@ -60,6 +60,7 @@ if (year && season && monthRange) {
             lastYear = year;
           }
       
+          console.error('월별 데이터 출력');
           appendData(item, monthDiv);
         }
       });
@@ -69,6 +70,7 @@ if (year && season && monthRange) {
         filteredData.forEach(item => {
           var dateParts = item.date.split('-');
           var year = dateParts[0];
+          console.error('연도별 데이터 출력 1');
       
           if (dateParts.length == 2 && year !== lastYear) {
             yearDiv = document.createElement('div');
@@ -79,6 +81,7 @@ if (year && season && monthRange) {
             calendarDiv.appendChild(yearDiv);
             lastYear = year;
       
+            console.error('연도별 데이터 출력');
             appendData(item, yearDiv);
           }
         });
@@ -89,6 +92,7 @@ if (year && season && monthRange) {
         filteredData.forEach(item => {
           var dateParts = item.date.split('-');
           var year = dateParts[0];
+          console.error('연도만 있는 데이터 출력 1');
       
           if (dateParts.length == 1 && year !== lastYear) {
             yearDiv = document.createElement('div');
@@ -99,6 +103,7 @@ if (year && season && monthRange) {
             calendarDiv.appendChild(yearDiv);
             lastYear = year;
       
+            console.error('연도만 있는 데이터 출력');
             appendData(item, yearDiv);
           }
         });
@@ -153,11 +158,6 @@ if (year && season && monthRange) {
           `;
           parentDiv.appendChild(div);
         })
-        .catch(error => {
-          console.error('Error:', error);
-          // '/games/[url값].json' 파일이 없는 경우
-          $('main > .top-backgrounds').remove();
-        });
       }
 
     })
