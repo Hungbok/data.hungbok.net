@@ -42,6 +42,9 @@ if (year && season && monthRange) {
     
         return aDateParts.join('-').localeCompare(bDateParts.join('-'));
       });
+
+      // 언어 코드 결정
+      var languageCode = document.body.className || 'en';
     
       // 선택된 데이터를 #calendar에 출력
       var calendarDiv = document.getElementById('calendar');
