@@ -217,13 +217,11 @@ if (year && season && monthRange) {
         })
         .catch(error => {
           // '/games/[url값].json' 파일이 없는 경우
-          console.error('Error:', error);
         });
       }
     })
     .catch(error => {
       // 연도에 해당하는 파일이 없거나 다른 오류가 발생한 경우
-      console.error('Error:', error);
       window.addEventListener('load', function() {
         var script = document.createElement('script');
         script.src = '//data.hungbok.net/javascript/error404.js';
@@ -232,7 +230,6 @@ if (year && season && monthRange) {
     });
 } else {
   // 연도나 계절 클래스가 없는 경우
-  console.error('Error:', error);
   window.addEventListener('load', function() {
     var script = document.createElement('script');
     script.src = '//data.hungbok.net/javascript/error404.js';
