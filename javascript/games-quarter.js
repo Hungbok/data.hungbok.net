@@ -245,7 +245,7 @@ function addNavigationButtons() {
   // 연도를 파싱합니다.
   var year = parseInt(yearClass.slice(1));
   
-  // 계절 변환 함수
+  // 계절 변 함수
   function convertSeason(season) {
     switch (season) {
       case 'winter': return '겨울';
@@ -257,8 +257,7 @@ function addNavigationButtons() {
   }
 
   // 제목 생성 부분
-  var title = document.createElement('div');
-  title.className = 'calendar-title';
+  var title = document.createElement('divtitle.className' = 'calendar-title');
   title.textContent = `${year}년 ${convertSeason(seasonClass)} 게임 출시 일정`;
   calendar.insertBefore(title, calendar.firstChild);
 
@@ -288,19 +287,19 @@ function addNavigationButtons() {
   }
 
   // 버튼 생성 부분
-  var nextButton = document.createElement('div');
-  nextButton.className = 'calendar-next'; // 클래스 추가
-  nextButton.onclick = function() { window.location.href = next; };
-  nextButton.textContent = next.split('/').slice(-2).join('년 ') + (seasonClass === 'all' ? '년' : '계절');
-  
-  var prevButton = document.createElement('div');
-  prevButton.className = 'calendar-prev'; // 클래스 추가
+  var prevButton = document.createElement('button');
+  prevButton.className = 'calendar-prev';
   prevButton.onclick = function() { window.location.href = prev; };
-  prevButton.textContent = prev.split('/').slice(-2).join('년 ') + (seasonClass === 'all' ? '년' : '계절');
+  prevButton.textContent = prev.split('/').slice(-2).map((part, i) => i === 1 ? (seasonClass === 'all' ? '' : convertSeason(part)) : part + '년').join(' ');
+  
+  var nextButton = document.createElement('button');
+  nextButton.className = 'calendar-next';
+  nextButton.onclick = function() { window.location.href = next; };
+  nextButton.textContent = next.split('/').slice(-2).map((part, i) => i === 1 ? (seasonClass === 'all' ? '' : convertSeason(part)) : part + '년').join(' ');
   
   // 버튼 추가 부분
-  calendar.insertBefore(nextButton, calendar.firstChild);
   calendar.insertBefore(prevButton, calendar.firstChild);
+  calendar.insertBefore(nextButton, calendar.firstChild);
 }
 
 // 버튼을 추가합니다.
