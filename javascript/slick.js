@@ -3089,21 +3089,23 @@ $(document).ready(function(){
         speed: 500
       });
     });
+
+    function rotateSliders() {
+      var currentSlick = $('.calendar-container').eq(currentSlider).slick('getSlick');
+      
+      if (currentSlick.currentSlide < currentSlick.slideCount - 1) {
+        // 현재 슬라이더를 한 페이지 넘깁니다.
+        $('.calendar-container').eq(currentSlider).slick('slickNext');
+      }
     
-    $('.calendar-container').eq(0).slick('slickPlay');
+      // 다음 슬라이더 인덱스를 계산합니다.
+      currentSlider = (currentSlider + 1) % sliderCount;
     
-    $('.calendar-container').each(function(index) {
-      $(this).on('afterChange', function(event, slick, currentSlide) {
-        if (index === currentSlider) {
-          // 현재 슬라이더 재생 정지
-          $('.calendar-container').eq(currentSlider).slick('slickPause');
+      // 모든 슬라이더가 한 바퀴 도는데 걸리는 시간을 설정합니다.
+      // 이 값을 조절하여 슬라이드가 넘어가는 속도를 조절할 수 있습니다.
+      setTimeout(rotateSliders, 1000);
+    }
     
-          // 다음 슬라이더 인덱스 계산
-          currentSlider = (currentSlider + 1) % sliderCount;
-    
-          // 다음 슬라이더 재생 시작
-          $('.calendar-container').eq(currentSlider).slick('slickPlay');
-        }
-      });
-    });
+    // 처음 슬라이더 순환을 시작합니다.
+    rotateSliders();
 });
