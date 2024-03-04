@@ -146,22 +146,6 @@ if (!y || !m) {
         
             document.getElementById('calendar').innerHTML = calendar;
         }
-
-        var calendarData = data.filter(item => {
-            var dateParts = item.date.split('-');
-            if (dateParts.length === 2) { // 'date' 값이 'yyyy-mm' 형식인 경우
-                item.date += '-32'; // 32일로 처리
-                return true;
-            }
-            return dateParts.length === 3; // 'date' 값이 'yyyy-mm-dd' 형식인 경우
-        });
-    
-        createCalendar(year, month, calendarData); // 'createCalendar' 함수를 호출
-    
-        var remainderData = calendarData.filter(x => new Date(x.date).getDate() === 32); // 32일인 데이터 필터링
-        remainderData.forEach(item => {
-            $("#calendar-remainder").append('<div>' + item.date + ': ' + item.game + '</div>'); // '#calendar-remainder'에 데이터 추가
-        });
         
         function dayOfYear(year, month, day) {
             var now = new Date(year, month, day);
@@ -170,10 +154,28 @@ if (!y || !m) {
             var oneDay = 1000 * 60 * 60 * 24;
             return Math.floor(diff / oneDay); // 수정된 부분
         }
-    
+
         fetch('//data.hungbok.net/data/games/' + y + '.json')
             .then(response => response.json())
-            .then(data => createCalendar(year, month, data));
+            .then(data => {
+                var calendarData = data.filter(item => {
+                    var dateParts = item.date.split('-');
+                    if (dateParts.length === 3) { // 'date' 값이 'yyyy-mm-dd' 형식인 경우
+                        return true;
+                    } else if (dateParts.length === 2) { // 'date' 값이 'yyyy-mm' 형식인 경우
+                        item.date += '-32'; // 32일로 처리
+                        return true;
+                    }
+                    return false; // 'date' 값이 'yyyy' 형식인 경우
+                });
+        
+                createCalendar(year, month, calendarData); // 'createCalendar' 함수를 호출
+        
+                var remainderData = calendarData.filter(x => new Date(x.date).getDate() === 32); // 32일인 데이터 필터링
+                remainderData.forEach(item => {
+                    $("#calendar-remainder").append('<div>' + item.date + ': ' + item.game + '</div>'); // '#calendar-remainder'에 데이터 추가
+                });
+            });
 
         window.addEventListener('load', function() {
             loadAsyncScripts();
