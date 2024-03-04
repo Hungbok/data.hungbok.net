@@ -6,6 +6,14 @@
     margin: 50px 0px 100px;
 }
 
+.calendar-remainder {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    align-items: center;
+    margin: 50px 0px 100px 60px;
+}
+
 .calendar-header, .calendar-week {
     text-align: center;
     display: flex;
