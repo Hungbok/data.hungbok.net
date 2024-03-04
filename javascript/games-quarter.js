@@ -256,13 +256,6 @@ function addNavigationButtons() {
     }
   }
 
-  // 제목 생성 부분
-  var title = document.createElement('div');
-  title.className = 'calendar-title';
-  var titleSeason = seasonClass !== 'all' ? convertSeason(seasonClass) : '';
-  title.textContent = `${year}년 ${titleSeason} 게임 출시 일정`;
-  calendar.insertBefore(title, calendar.firstChild);
-
   // 이전과 다음 계절/연도를 결정합니다.
   var prev, next;
   switch (seasonClass) {
@@ -288,20 +281,27 @@ function addNavigationButtons() {
       break;
   }
 
+  // 제목 생성 부분
+  var title = document.createElement('div');
+  title.className = 'calendar-title';
+  var titleSeason = seasonClass !== 'all' ? convertSeason(seasonClass) : '';
+  title.textContent = `${year}년 ${titleSeason} 게임 출시 일정`;
+  calendar.insertBefore(title, calendar.firstChild);
+
   // 버튼 생성 부분
-  var prevButton = document.createElement('button');
+  var prevButton = document.createElement('div');
   prevButton.className = 'calendar-prev';
   prevButton.onclick = function() { window.location.href = prev; };
-  prevButton.textContent = prev.split('/').slice(-2).map((part, i) => i === 1 ? (seasonClass === 'all' ? '' : convertSeason(part)) : part + '년').join(' ');
+  prevButton.textContent = prev.split('/').slice(-2).map((part, i) => i === 1 && seasonClass !== 'all' ? convertSeason(part) : part).join('년 ') + '년';
   
-  var nextButton = document.createElement('button');
+  var nextButton = document.createElement('div');
   nextButton.className = 'calendar-next';
   nextButton.onclick = function() { window.location.href = next; };
-  nextButton.textContent = next.split('/').slice(-2).map((part, i) => i === 1 ? (seasonClass === 'all' ? '' : convertSeason(part)) : part + '년').join(' ');
+  nextButton.textContent = next.split('/').slice(-2).map((part, i) => i === 1 && seasonClass !== 'all' ? convertSeason(part) : part).join('년 ') + '년';
   
   // 버튼 추가 부분
-  calendar.insertBefore(prevButton, calendar.firstChild);
-  calendar.insertBefore(nextButton, calendar.firstChild);
+  calendar.appendChild(prevButton);
+  calendar.appendChild(nextButton);
 }
 
 // 버튼을 추가합니다.
