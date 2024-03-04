@@ -303,7 +303,7 @@ function addNavigationButtons() {
           var parts = prev.split('/');
           var year = parts[parts.length - 2];
           var season = convertSeason(parts[parts.length - 1]);
-          return '❮ ' + year + '년 ' + (season ? season : '');
+          return '❮ ' + year + (season !== '전체' ? '년 ' + season : ' ' + season) + ' 출시 예정 게임';
       });
   
   var nextButton = $('<div></div>')
@@ -313,7 +313,7 @@ function addNavigationButtons() {
           var parts = next.split('/');
           var year = parts[parts.length - 2];
           var season = convertSeason(parts[parts.length - 1]);
-          return year + '년 ' + (season ? season : '') + ' ❯';
+          return year + (season !== '전체' ? '년 ' + season : ' ' + season) + ' 출시 예정 게임' + ' ❯';
       });
   
   // 버튼 추가 부분
