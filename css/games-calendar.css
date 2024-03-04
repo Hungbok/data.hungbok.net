@@ -63,6 +63,10 @@
     position: relative;
 }
 
+.calendar-day.today {
+    outline: 2.5px solid var(--text-3);
+}
+
 .calendar-background {
     position: absolute;
     left: 0;

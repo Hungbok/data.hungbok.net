@@ -235,3 +235,10 @@ if (!y || !m) {
     });
 }
 
+$('.calendar-day').on('mousedown', function() {
+    $(this).find('.calendar-container').trigger('mousedown');
+});
+  
+$('.calendar-day').on('mouseup', function() {
+    $(this).find('.calendar-container').trigger('mouseup');
+});
