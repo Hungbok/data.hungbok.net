@@ -294,24 +294,16 @@ function addNavigationButtons() {
   }
 
   // 버튼 생성 부분
-  var prevButton = $('<div></div>')
-    .addClass('calendar-prev')
-    .click(function() { window.location.href = prev; })
-    .text(function() {
-        var parts = prev.split('/').slice(-2);
-        var season = convertSeason(parts[1]);
-        return '❮ ' + parts[0] + '년' + (season ? ' ' + season : '') + '게임 출시 일정';
-  });
-
-  var nextButton = $('<div></div>')
-    .addClass('calendar-next')
-    .click(function() { window.location.href = next; })
-    .text(function() {
-        var parts = next.split('/').slice(-2);
-        var season = convertSeason(parts[1]);
-        return parts[0] + '년' + (season ? ' ' + season : '') + '게임 출시 일정' + ' ❯';
-  });
-
+  var prevButton = $('<button></button>')
+      .addClass('calendar-prev')
+      .click(function() { window.location.href = prev; })
+      .text('❮ ' + prev.split('/').slice(-2, -1)[0] + '년');
+  
+  var nextButton = $('<button></button>')
+      .addClass('calendar-next')
+      .click(function() { window.location.href = next; })
+      .text(next.split('/').slice(-2, -1)[0] + '년 ❯');
+  
   // 버튼 추가 부분
   $(calendar).append(prevButton, nextButton);
 }
