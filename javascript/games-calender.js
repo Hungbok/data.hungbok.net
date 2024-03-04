@@ -17,6 +17,9 @@ function loadScript(src) {
 var urlParams = new URLSearchParams(window.location.search);
 var y = urlParams.get('y');
 var m = urlParams.get('m');
+var date = m ? new Date(y + "-" + m) : new Date();
+var month = date.getMonth();
+var year = date.getFullYear();
 
 if (!y || !m) {
     var today = new Date();
@@ -58,9 +61,6 @@ if (!y || !m) {
     '</section>');
 } else {
     m = ("0" + m).slice(-2); // 두 자리로 맞춤
-    var date = m ? new Date(y + "-" + m) : new Date();
-    var month = date.getMonth();
-    var year = date.getFullYear();
 
     fetch(`//data.hungbok.net/data/games/${y}.json`) // 해당 연도 파일 확인
     .then(response => {
@@ -85,7 +85,7 @@ if (!y || !m) {
             // 년, 월만 있는 데이터를 #calendar-remainder에 출력
             var remainder = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
-                                             isNaN(new Date(x.date).getDate()));
+                                             new Date(x.date).getDate() === 32);
             var remainderHtml = "";
             remainder.forEach(item => {
                 var title = item.title;
@@ -115,7 +115,7 @@ if (!y || !m) {
                     var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                                  new Date(x.date).getMonth() === month &&
                                                  new Date(x.date).getDate() === day &&
-                                                 !isNaN(new Date(x.date).getDate()));  // 년, 월, 일이 모두 있는 데이터만 필터링
+                                                 new Date(x.date).getDate() !== 32);  // 년, 월, 일이 모두 있는 데이터만 필터링
                     calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
                         var platform = item.platform;
@@ -138,7 +138,7 @@ if (!y || !m) {
                 var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
                                              new Date(x.date).getDate() === day &&
-                                             !isNaN(new Date(x.date).getDate()));  // 년, 월, 일이 모두 있는 데이터만 필터링
+                                             new Date(x.date).getDate() !== 32);  // 년, 월, 일이 모두 있는 데이터만 필터링
                 calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                 items.forEach(item => {
                     var platform = item.platform;
@@ -170,8 +170,8 @@ if (!y || !m) {
         }
 
         fetch('//data.hungbok.net/data/games/' + y + '.json')
-            .then(response => response.json())
-            .then(data => createCalendar(year, month, data));
+        .then(response => response.json())
+        .then(data => createCalendar(year, month, data));
 
         window.addEventListener('load', function() {
             loadAsyncScripts();
