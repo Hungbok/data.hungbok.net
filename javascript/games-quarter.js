@@ -221,20 +221,16 @@ if (year && season && monthRange) {
       }
     })
     .catch(error => {
+      var script = document.createElement('script');
+      script.src = '//data.hungbok.net/javascript/error404.js';
+      document.head.appendChild(script);
       // 연도에 해당하는 파일이 없거나 다른 오류가 발생한 경우
-      window.addEventListener('load', function() {
-        var script = document.createElement('script');
-        script.src = '//data.hungbok.net/javascript/error404.js';
-        document.head.appendChild(script);
-      });
     });
 } else {
+  var script = document.createElement('script');
+  script.src = '//data.hungbok.net/javascript/error404.js';
+  document.head.appendChild(script);
   // 연도나 계절 클래스가 없는 경우
-  window.addEventListener('load', function() {
-    var script = document.createElement('script');
-    script.src = '//data.hungbok.net/javascript/error404.js';
-    document.head.appendChild(script);
-  });
 }
 
 $(document).ready(function() {
