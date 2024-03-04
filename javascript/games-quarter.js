@@ -269,16 +269,26 @@ function addNavigationButtons() {
       next = `../${year+1}/winter`;
       break;
   }
-
-  // 버튼을 생성하고 #calendar 요소에 추가합니다.
-  var prevButton = document.createElement('div');
+  
+  // 버튼 생성 부분
+  var prevButton = document.createElement('button');
+  prevButton.className = 'calendar-prev'; // 클래스 추가
   prevButton.onclick = function() { window.location.href = prev; };
   prevButton.textContent = prev.split('/').slice(-2).join('년 ') + (seasonClass === 'all' ? '년' : '계절');
-  calendar.insertBefore(prevButton, calendar.firstChild);
 
-  var nextButton = document.createElement('div');
+  var nextButton = document.createElement('button');
+  nextButton.className = 'calendar-next'; // 클래스 추가
   nextButton.onclick = function() { window.location.href = next; };
   nextButton.textContent = next.split('/').slice(-2).join('년 ') + (seasonClass === 'all' ? '년' : '계절');
+
+  // 제목 생성 부분
+  var title = document.createElement('div');
+  title.className = 'calendar-title';
+  title.textContent = `${year}년 ${seasonClass !== 'all' ? seasonClass : ''} 게임 출시 일정`;
+  calendar.insertBefore(title, calendar.firstChild);
+  
+  // 버튼 추가 부분
+  calendar.insertBefore(prevButton, calendar.firstChild);
   calendar.insertBefore(nextButton, calendar.firstChild);
 }
 
