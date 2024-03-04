@@ -296,27 +296,37 @@ function addNavigationButtons() {
   }
 
   if (seasonClass === 'all') {
-  // 버튼 생성 부분
-  var prevButton = $('<div></div>')
-      .addClass('calendar-prev')
-      .click(function() { window.location.href = prev; })
-      .text('❮ ' + prev.split('/').slice(-2, -1)[0] + '년');  
-  
-  var nextButton = $('<div></div>')
-      .addClass('calendar-next')
-      .click(function() { window.location.href = next; })
-      .text(next.split('/').slice(-2, -1)[0] + '년 ❯');  
+    // 버튼 생성 부분
+    var prevButton = $('<div></div>')
+    .addClass('calendar-prev')
+    .click(function() { window.location.href = prev; })
+    .text('❮ ' + prev.split('/')[1] + '년');
+    
+    var nextButton = $('<div></div>')
+    .addClass('calendar-next')
+    .click(function() { window.location.href = next; })
+    .text(next.split('/')[1] + '년 ❯'); 
   } else {
     // 계절이 'winter', 'spring', 'summer', 'autumn'일 때의 버튼 생성
     var prevButton = $('<div></div>')
       .addClass('calendar-prev')
       .click(function() { window.location.href = prev; })
-      .text('❮ ' + prev.split('/').slice(-2, -1)[0] + '년');
+      .text(function() {
+        var parts = prev.split('/');
+        var year = parts[parts.length - 2];
+        var season = convertSeason(parts[parts.length - 1]);
+        return '❮ ' + year + '년 ' + (season ? season : '');
+      });
   
     var nextButton = $('<div></div>')
       .addClass('calendar-next')
       .click(function() { window.location.href = next; })
-      .text(next.split('/').slice(-2, -1)[0] + '년 ❯');
+      .text(function() {
+          var parts = next.split('/');
+          var year = parts[parts.length - 2];
+          var season = convertSeason(parts[parts.length - 1]);
+          return year + '년 ' + (season ? season : '') + ' ❯';
+      });
   }
   
   // 버튼 추가 부분
