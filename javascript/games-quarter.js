@@ -244,17 +244,6 @@ function addNavigationButtons() {
 
   // 연도를 파싱합니다.
   var year = parseInt(yearClass.slice(1));
-  
-  // 계절 변 함수
-  function convertSeason(season) {
-    switch (season) {
-      case 'winter': return '겨울';
-      case 'spring': return '봄';
-      case 'summer': return '여름';
-      case 'autumn': return '가을';
-      default: return '';
-    }
-  }
 
   // 이전과 다음 계절/연도를 결정합니다.
   var prev, next;
@@ -287,24 +276,42 @@ function addNavigationButtons() {
   var titleSeason = seasonClass !== 'all' ? convertSeason(seasonClass) : '';
   title.textContent = `${year}년 ${titleSeason} 게임 출시 일정`;
   calendar.insertBefore(title, calendar.firstChild);
+  
+  // 계절 변환 함수
+  function convertSeason(season) {
+    switch (season) {
+      case 'winter':
+        return '겨울';
+      case 'spring':
+        return '봄';
+      case 'summer':
+        return '여름';
+      case 'autumn':
+        return '가을';
+      default:
+        return '';
+    }
+  }
 
   // 버튼 생성 부분
   var prevButton = $('<div></div>')
-      .addClass('calendar-prev')
-      .click(function() { window.location.href = prev; })
-      .text(function() {
-          var parts = prev.split('/').slice(-2);
-          return '❮ ' + parts[0] + '년' + (parts[1] !== 'all' ? ' ' + convertSeason(parts[1]) : '');
-      });
-  
+    .addClass('calendar-prev')
+    .click(function() { window.location.href = prev; })
+    .text(function() {
+        var parts = prev.split('/').slice(-2);
+        var season = convertSeason(parts[1]);
+        return '❮ ' + parts[0] + '년' + (season ? ' ' + season : '');
+  });
+
   var nextButton = $('<div></div>')
-      .addClass('calendar-next')
-      .click(function() { window.location.href = next; })
-      .text(function() {
-          var parts = next.split('/').slice(-2);
-          return parts[0] + '년' + (parts[1] !== 'all' ? ' ' + convertSeason(parts[1]) : '') + ' ❯';
-      });
-  
+    .addClass('calendar-next')
+    .click(function() { window.location.href = next; })
+    .text(function() {
+        var parts = next.split('/').slice(-2);
+        var season = convertSeason(parts[1]);
+        return parts[0] + '년' + (season ? ' ' + season : '') + ' ❯';
+  });
+
   // 버튼 추가 부분
   $(calendar).append(prevButton, nextButton);
 }
