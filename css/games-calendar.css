@@ -6,7 +6,7 @@
     margin: 50px 0px 100px;
 }
 
-.calendar-remainder {
+#calendar-remainder {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
