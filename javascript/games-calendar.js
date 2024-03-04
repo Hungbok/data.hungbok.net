@@ -102,8 +102,8 @@ if (!y || !m) {
                     calendar += "<div class='calendar-day'></div>";
                 } else {
                     var day = i - firstDay + 1;
-                    var todayItems = getItem(year, month, day, data);
-                    calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, todayItems);
+                    var Items = getItem(year, month, day, data);
+                    calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, Items);
                     var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                                  new Date(x.date).getMonth() === month &&
                                                  new Date(x.date).getDate() === day);
@@ -126,8 +126,8 @@ if (!y || !m) {
                     calendar += "<div class='calendar-week'>" + weekOfYear + "</div>";
                 }
                 var day = i - firstDay + 1;
-                var todayItems = getItem(year, month, day, data);
-                calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, todayItems);
+                var Items = getItem(year, month, day, data);
+                calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, Items);
                 var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
                                              new Date(x.date).getDate() === day);
