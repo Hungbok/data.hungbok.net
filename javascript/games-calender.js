@@ -68,10 +68,17 @@ if (!y || !m) {
         return response.json() // 파일이 존재하면 json 데이터 반환
     })
     .then(data => {
+        var urlParams = new URLSearchParams(window.location.search);
+        var y = urlParams.get('y');
+        var m = urlParams.get('m');
+        var date = m ? new Date(y + "-" + m) : new Date();
+        var month = date.getMonth();
+        var year = date.getFullYear();
+
         function createCalendar(year, month, data) {
             var firstDay = (new Date(year, month)).getDay();
             var daysInMonth = 32 - new Date(year, month, 32).getDate();
-        
+
             var prevYear = month === 0 ? year - 1 : year;
             var nextYear = month === 11 ? year + 1 : year;
             var prevMonth = month === 0 ? 11 : month - 1;
@@ -81,18 +88,6 @@ if (!y || !m) {
         
             var firstDayOfYear = (new Date(year, 0, 1)).getDay();
             var weekOfYear = Math.ceil((dayOfYear(year, month, 1) + firstDayOfYear) / 7); // 수정된 부분
-            
-            // 년, 월만 있는 데이터를 #calendar-remainder에 출력
-            var remainder = data.filter(x => new Date(x.date).getFullYear() === year &&
-                                             new Date(x.date).getMonth() === month &&
-                                             new Date(x.date).getDate() === 32);
-            var remainderHtml = "";
-            remainder.forEach(item => {
-                var title = item.title;
-                var image = item.image;
-                remainderHtml += (title ? " (" + title + ")" : "") + (image ? " <img src='" + image + "'/>" : "") + "<br>";
-            });
-            document.getElementById('calendar-remainder').innerHTML = remainderHtml;
         
             var calendar = "<div class='calendar-title'>" + year + '년 ' + (month + 1) + '월' + " 게임 출시 일정</div>" +
                            "<div class='calendar-prev' onclick='window.location.href=\"?y=" + prevYear + "&m=" + prevMonthFormatted + "\"'>❮ " + prevYear + "년 " + prevMonthFormatted + "월 게임 출시 일정</div> " +
@@ -112,11 +107,8 @@ if (!y || !m) {
                     calendar += "<div class='calendar-day'></div>";
                 } else {
                     var day = i - firstDay + 1;
-                    var items = data.filter(x => new Date(x.date).getFullYear() === year &&
-                                                 new Date(x.date).getMonth() === month &&
-                                                 new Date(x.date).getDate() === day &&
-                                                 new Date(x.date).getDate() !== 32);  // 년, 월, 일이 모두 있는 데이터만 필터링
-                    calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
+                    var items = getItem(year, month, day, data);
+                    calendar += "<div class='calendar-day'><div class='calendar-number'>" + generateDayHtml(day, items) + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
                         var platform = item.platform;
                         var url = item.url;
@@ -135,11 +127,8 @@ if (!y || !m) {
                     calendar += "<div class='calendar-week'>" + weekOfYear + "</div>";
                 }
                 var day = i - firstDay + 1;
-                var items = data.filter(x => new Date(x.date).getFullYear() === year &&
-                                             new Date(x.date).getMonth() === month &&
-                                             new Date(x.date).getDate() === day &&
-                                             new Date(x.date).getDate() !== 32);  // 년, 월, 일이 모두 있는 데이터만 필터링
-                calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
+                var items = getItem(year, month, day, data);
+                calendar += "<div class='calendar-day'><div class='calendar-number'>" + generateDayHtml(day, items) + "일</div><div class='calendar-container'>";
                 items.forEach(item => {
                     var platform = item.platform;
                     var url = item.url;
@@ -160,18 +149,52 @@ if (!y || !m) {
         
             document.getElementById('calendar').innerHTML = calendar;
         }
+
+        function getItem(year, month, day, data) {
+            return data.filter(x => new Date(x.date).getFullYear() === year &&
+                                    new Date(x.date).getMonth() === month &&
+                                    new Date(x.date).getDate() === day &&
+                                    !isNaN(new Date(x.date).getDate()) &&
+                                    new Date(x.date).getDate() !== 32);
+        }
         
+        function generateDayHtml(day, items) {
+            var dayHtml = day;
+            items.forEach(item => {
+                var title = item.title;
+                var image = item.image;
+                dayHtml += (title ? " (" + title + ")" : "") + (image ? " <img src='" + image + "'/>" : "");
+            });
+            return dayHtml;
+        }
+
         function dayOfYear(year, month, day) {
             var now = new Date(year, month, day);
             var start = new Date(year, 0, 0);
             var diff = now - start;
             var oneDay = 1000 * 60 * 60 * 24;
-            return Math.floor(diff / oneDay); // 수정된 부분
+            return Math.floor(diff / oneDay);
+        }
+
+        function setRemainder(year, month, data) {
+            var remainder = data.filter(x => new Date(x.date).getFullYear() === year &&
+                                             new Date(x.date).getMonth() === month &&
+                                             new Date(x.date).getDate() === 32);
+            var remainderHtml = "";
+            remainder.forEach(item => {
+                var title = item.title;
+                var image = item.image;
+                remainderHtml += (title ? " (" + title + ")" : "") + (image ? " <img src='" + image + "'/>" : "") + "<br>";
+            });
+            document.getElementById('calendar-remainder').innerHTML = remainderHtml;
         }
 
         fetch('//data.hungbok.net/data/games/' + y + '.json')
-        .then(response => response.json())
-        .then(data => createCalendar(year, month, data));
+            .then(response => response.json())
+            .then(data => {
+                createCalendar(year, month, data);
+                setRemainder(year, month, data);
+            });
 
         window.addEventListener('load', function() {
             loadAsyncScripts();
