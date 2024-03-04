@@ -100,7 +100,7 @@
     filter: blur(5px) brightness(0.75);
 }
 
-.calender-item-info {
+.calendar-item-info {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,7 +116,7 @@
     transition: all 0.5s;
 }
 
-.calendar-item:hover > .calender-item-info {
+.calendar-item:hover > .calendar-item-info {
     visibility: visible;
     opacity: 1;
 }
