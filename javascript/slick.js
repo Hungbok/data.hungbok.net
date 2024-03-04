@@ -3073,15 +3073,37 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 4000,
     });
-    $('.calendar-container').slick({
+    var sliderCount = $('.calendar-container').length;
+    var currentSlider = 0;
+    
+    $('.calendar-container').each(function(index) {
+      $(this).slick({
+        autoplay: false,
         arrows: true,
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: true,
         dots: true,
-        autoplay: true,
         autoplaySpeed: 5000,
         speed: 500
+      });
+    });
+    
+    $('.calendar-container').eq(0).slick('slickPlay');
+    
+    $('.calendar-container').each(function(index) {
+      $(this).on('afterChange', function(event, slick, currentSlide) {
+        if (index === currentSlider) {
+          // 현재 슬라이더 재생 정지
+          $('.calendar-container').eq(currentSlider).slick('slickPause');
+    
+          // 다음 슬라이더 인덱스 계산
+          currentSlider = (currentSlider + 1) % sliderCount;
+    
+          // 다음 슬라이더 재생 시작
+          $('.calendar-container').eq(currentSlider).slick('slickPlay');
+        }
+      });
     });
 });
