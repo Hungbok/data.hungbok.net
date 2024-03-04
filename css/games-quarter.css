@@ -39,6 +39,31 @@
     background: url(//data.hungbok.net/image/icon/down.svg) no-repeat center / 20px 20px;
 }
 
+.calendar-title {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 25px 0px;
+}
+
+.calendar-prev, .calendar-next {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.calendar-prev:hover, .calendar-next:hover {
+    background: var(--background-8);
+}
+
 #calendar > div {
     max-width: 1000px;
     margin-left: auto;
