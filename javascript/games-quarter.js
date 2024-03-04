@@ -249,24 +249,24 @@ function addNavigationButtons() {
   var prev, next;
   switch (seasonClass) {
     case 'all':
-      prev = `../${year-1}`;
-      next = `../${year+1}`;
+      prev = `./${year-1}`;
+      next = `./${year+1}`;
       break;
     case 'winter':
-      prev = `../../${year-1}/autumn`;
-      next = `../../${year}/spring`;
+      prev = `../${year-1}/autumn`;
+      next = `../${year}/spring`;
       break;
     case 'spring':
-      prev = `../../${year}/winter`;
-      next = `../../${year}/summer`;
+      prev = `../${year}/winter`;
+      next = `../${year}/summer`;
       break;
     case 'summer':
-      prev = `../../${year}/spring`;
-      next = `../../${year}/autumn`;
+      prev = `../${year}/spring`;
+      next = `../${year}/autumn`;
       break;
     case 'autumn':
-      prev = `../../${year}/summer`;
-      next = `../../${year+1}/winter`;
+      prev = `../${year}/summer`;
+      next = `../${year+1}/winter`;
       break;
   }
 
