@@ -58,7 +58,7 @@ if (!y || !m) {
     '</section>');
 } else {
     m = ("0" + m).slice(-2); // 두 자리로 맞춤
-    var date = new Date(y + "-" + m);
+    var date = m ? new Date(y + "-" + m) : new Date();
     var month = date.getMonth();
     var year = date.getFullYear();
 
@@ -81,7 +81,7 @@ if (!y || !m) {
         
             var firstDayOfYear = (new Date(year, 0, 1)).getDay();
             var weekOfYear = Math.ceil((dayOfYear(year, month, 1) + firstDayOfYear) / 7); // 수정된 부분
-
+            
             // 년, 월만 있는 데이터를 #calendar-remainder에 출력
             var remainder = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
@@ -114,7 +114,8 @@ if (!y || !m) {
                     var day = i - firstDay + 1;
                     var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                                  new Date(x.date).getMonth() === month &&
-                                                 new Date(x.date).getDate() === day);
+                                                 new Date(x.date).getDate() === day &&
+                                                 !isNaN(new Date(x.date).getDate()));  // 년, 월, 일이 모두 있는 데이터만 필터링
                     calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
                         var platform = item.platform;
@@ -136,7 +137,8 @@ if (!y || !m) {
                 var day = i - firstDay + 1;
                 var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
-                                             new Date(x.date).getDate() === day);
+                                             new Date(x.date).getDate() === day &&
+                                             !isNaN(new Date(x.date).getDate()));  // 년, 월, 일이 모두 있는 데이터만 필터링
                 calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                 items.forEach(item => {
                     var platform = item.platform;
@@ -166,7 +168,7 @@ if (!y || !m) {
             var oneDay = 1000 * 60 * 60 * 24;
             return Math.floor(diff / oneDay); // 수정된 부분
         }
-    
+
         fetch('//data.hungbok.net/data/games/' + y + '.json')
             .then(response => response.json())
             .then(data => createCalendar(year, month, data));
