@@ -3099,13 +3099,16 @@ $(document).ready(function(){
 
     function rotateSliders() {
         var currentSlick = calendarSliders[currentSlider].slick('getSlick');
-      
-        if (currentSlick.currentSlide < currentSlick.slideCount - 1) {
-            // 현재 슬라이더를 한 페이지 넘깁니다.
-            calendarSliders[currentSlider].slick('slickNext');
-        } else {
-            // 현재 슬라이더가 마지막 페이지에 도달했으므로 첫 페이지로 돌아갑니다.
-            calendarSliders[currentSlider].slick('slickGoTo', 0);
+
+        // 사용자가 현재 슬라이더 위에 마우스를 올려놓지 않았고, 슬라이더가 상호작용 중이 아닐 때만 슬라이드를 넘깁니다.
+        if (!calendarSliders[currentSlider].is(":hover") && !currentSlick.animating) {
+            if (currentSlick.currentSlide < currentSlick.slideCount - 1) {
+                // 현재 슬라이더를 한 페이지 넘깁니다.
+                calendarSliders[currentSlider].slick('slickNext');
+            } else {
+                // 현재 슬라이더가 마지막 페이지에 도달했으므로 첫 페이지로 돌아갑니다.
+                calendarSliders[currentSlider].slick('slickGoTo', 0);
+            }
         }
       
         // 다음 슬라이더 인덱스를 계산합니다.
@@ -3113,7 +3116,7 @@ $(document).ready(function(){
       
         // 모든 슬라이더가 한 바퀴 도는데 걸리는 시간을 설정합니다.
         // 이 값을 조절하여 슬라이드가 넘어가는 속도를 조절할 수 있습니다.
-        setTimeout(rotateSliders, 1000);
+        setTimeout(rotateSliders, 2000);
     }
       
     // 처음 슬라이더 순환을 시작합니다.

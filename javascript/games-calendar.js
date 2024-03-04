@@ -145,6 +145,27 @@ if (!y || !m) {
             calendar += "</div>";
         
             document.getElementById('calendar').innerHTML = calendar;
+            
+            var today = new Date();
+            
+            for (var i = 0; i < 7; i++) {
+                if (i < firstDay) {
+                    calendar += "<div class='calendar-day'></div>";
+                } else {
+                    var day = i - firstDay + 1;
+                    calendar += createDayCell(year, month, day, today, data);
+                }
+            }
+        
+            for (var i = 7; i < daysInMonth + firstDay; i++) {
+                var day = i - firstDay + 1;
+                calendar += createDayCell(year, month, day, today, data);
+            }
+        }
+        
+        function createDayCell(year, month, day, today, data) {
+            var items = getItem(year, month, day, data);
+            return "<div class='calendar-day" + (isToday(year, month, day, today) ? " today" : "") + "'>" + generateDayHtml(day, items) + "</div>";
         }
         
         function dayOfYear(year, month, day) {
