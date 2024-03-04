@@ -88,6 +88,8 @@ if (!y || !m) {
                            "<div class='calendar'>" +
                            "<div class='calendar-header'></div><div class='calendar-header'>일</div><div class='calendar-header'>월</div><div class='calendar-header'>화</div><div class='calendar-header'>수</div><div class='calendar-header'>목</div><div class='calendar-header'>금</div><div class='calendar-header'>토</div>";
         
+            var today = new Date();
+
             for (var i = 0; i < 7; i++) { 
                 if (i === 0 || i % 7 === 0) { // 수정된 부분
                     weekOfYear = Math.ceil((dayOfYear(year, month, i - firstDay + 1) + firstDayOfYear) / 7); // 수정된 부분
@@ -103,7 +105,7 @@ if (!y || !m) {
                     var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                                  new Date(x.date).getMonth() === month &&
                                                  new Date(x.date).getDate() === day);
-                    calendar += "<div class='calendar-day'><div class='calendar-background'></div><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
+                    calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'><div class='calendar-background'></div><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
                         var platform = item.platform;
                         var url = item.url;
@@ -125,7 +127,7 @@ if (!y || !m) {
                 var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
                                              new Date(x.date).getDate() === day);
-                calendar += "<div class='calendar-day'><div class='calendar-background'></div><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
+                calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'><div class='calendar-background'></div><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                 items.forEach(item => {
                     var platform = item.platform;
                     var url = item.url;
@@ -145,32 +147,6 @@ if (!y || !m) {
             calendar += "</div>";
         
             document.getElementById('calendar').innerHTML = calendar;
-            
-            var today = new Date();
-            
-            for (var i = 0; i < 7; i++) {
-                if (i < firstDay) {
-                    calendar += "<div class='calendar-day'></div>";
-                } else {
-                    var day = i - firstDay + 1;
-                    var items = getItem(year, month, day, data);
-                    calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, items);
-                }
-            }
-        
-            for (var i = 7; i < daysInMonth + firstDay; i++) {
-                var day = i - firstDay + 1;
-                var items = getItem(year, month, day, data);
-                calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, items);
-            }
-        }
-        
-        function getItem(year, month, day, data) {
-            return data.filter(x => new Date(x.date).getFullYear() === year &&
-                                    new Date(x.date).getMonth() === month &&
-                                    new Date(x.date).getDate() === day &&
-                                    !isNaN(new Date(x.date).getDate()) &&
-                                    new Date(x.date).getDate() !== 32);
         }
         
         function dayOfYear(year, month, day) {
