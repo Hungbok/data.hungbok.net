@@ -289,21 +289,24 @@ function addNavigationButtons() {
   calendar.insertBefore(title, calendar.firstChild);
 
   // 버튼 생성 부분
-  var prevButton = document.createElement('div');
-  prevButton.className = 'calendar-prev';
-  prevButton.onclick = function() { window.location.href = prev; };
-  var prevSeason = prev.split('/').slice(-1)[0] !== 'all' ? ' ' + convertSeason(prev.split('/').slice(-1)[0]) : '';
-  prevButton.textContent = '❮ ' + prev.split('/').slice(-2, -1)[0] + '년' + prevSeason;
+  var prevButton = $('<div></div>')
+      .addClass('calendar-prev')
+      .click(function() { window.location.href = prev; })
+      .text(function() {
+          var parts = prev.split('/').slice(-2);
+          return '❮ ' + parts[0] + '년' + (parts[1] !== 'all' ? ' ' + convertSeason(parts[1]) : '');
+      });
   
-  var nextButton = document.createElement('div');
-  nextButton.className = 'calendar-next';
-  nextButton.onclick = function() { window.location.href = next; };
-  var nextSeason = next.split('/').slice(-1)[0] !== 'all' ? ' ' + convertSeason(next.split('/').slice(-1)[0]) : '';
-  nextButton.textContent = next.split('/').slice(-2, -1)[0] + '년' + nextSeason + ' ❯';
+  var nextButton = $('<div></div>')
+      .addClass('calendar-next')
+      .click(function() { window.location.href = next; })
+      .text(function() {
+          var parts = next.split('/').slice(-2);
+          return parts[0] + '년' + (parts[1] !== 'all' ? ' ' + convertSeason(parts[1]) : '') + ' ❯';
+      });
   
   // 버튼 추가 부분
-  calendar.appendChild(prevButton);
-  calendar.appendChild(nextButton);
+  $(calendar).append(prevButton, nextButton);
 }
 
 // 버튼을 추가합니다.
