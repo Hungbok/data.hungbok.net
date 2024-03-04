@@ -288,7 +288,7 @@ function addNavigationButtons() {
         return '여름';
       case 'autumn':
         return '가을';
-      default:
+      case 'all':
         return '';
     }
   }
