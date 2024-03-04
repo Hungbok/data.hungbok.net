@@ -271,14 +271,14 @@ function addNavigationButtons() {
   }
 
   // 버튼을 생성하고 #calendar 요소에 추가합니다.
-  var prevButton = document.createElement('button');
+  var prevButton = document.createElement('div');
   prevButton.onclick = function() { window.location.href = prev; };
-  prevButton.textContent = 'Previous';
+  prevButton.textContent = prev.split('/').slice(-2).join('년 ') + (seasonClass === 'all' ? '년' : '계절');
   calendar.insertBefore(prevButton, calendar.firstChild);
 
-  var nextButton = document.createElement('button');
+  var nextButton = document.createElement('div');
   nextButton.onclick = function() { window.location.href = next; };
-  nextButton.textContent = 'Next';
+  nextButton.textContent = next.split('/').slice(-2).join('년 ') + (seasonClass === 'all' ? '년' : '계절');
   calendar.insertBefore(nextButton, calendar.firstChild);
 }
 
