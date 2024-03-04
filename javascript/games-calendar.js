@@ -103,7 +103,7 @@ if (!y || !m) {
                     var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                                  new Date(x.date).getMonth() === month &&
                                                  new Date(x.date).getDate() === day);
-                    calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
+                    calendar += "<div class='calendar-day'><div class='calendar-background'></div><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
                         var platform = item.platform;
                         var url = item.url;

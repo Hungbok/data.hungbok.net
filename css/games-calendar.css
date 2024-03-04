@@ -63,7 +63,7 @@
     position: relative;
 }
 
-.calendar-number {
+.calendar-background {
     position: absolute;
     left: 0;
     top: 0;
@@ -72,6 +72,19 @@
     text-align: left;
     padding: 10px;
     background-color: var(--background-9);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.calendar-day:hover .calendar-background {
+    background-color: var(--background-7);
+}
+
+.calendar-number {
+    position: absolute;
     pointer-events: none;
     -ms-user-select: none;
     -moz-user-select: -moz-none;
@@ -80,15 +93,6 @@
     -webkit-touch-callout: none;
     -webkit-user-drag: none;
     user-select: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.calendar-day:hover .calendar-number {
-    background-color: var(--background-7);
 }
 
 .calendar-image {
