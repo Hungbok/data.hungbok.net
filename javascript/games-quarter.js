@@ -237,9 +237,12 @@ $(document).ready(function() {
       var contents = $('.elevator-contents');
       var currentScroll = $(window).scrollTop();
       var currentIndex = 0;
+      var closest = Infinity;
 
       contents.each(function(index) {
-          if($(this).offset().top - 90 <= currentScroll) {
+          var distance = Math.abs(currentScroll - $(this).offset().top + 90);
+          if(distance < closest) {
+              closest = distance;
               currentIndex = index;
           }
       });
