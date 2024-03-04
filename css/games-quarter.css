@@ -18,7 +18,7 @@
     background-color: var(--background-8);
     border-radius: 10px;
     color: transparent;
-    line-height: 40px;
+    line-height: 30px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -31,11 +31,11 @@
 }
 
 .elevator-up {
-    background: url(//data.hungbok.net/image/icon/up.svg) no-repeat center / 30px 30px;
+    background: url(//data.hungbok.net/image/icon/up.svg) no-repeat center / 20px 20px;
 }
 
 .elevator-down {
-    background: url(//data.hungbok.net/image/icon/down.svg) no-repeat center / 30px 30px;
+    background: url(//data.hungbok.net/image/icon/down.svg) no-repeat center / 20px 20px;
 }
 
 #calendar > div {
