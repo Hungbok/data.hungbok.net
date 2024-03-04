@@ -17,9 +17,6 @@ function loadScript(src) {
 var urlParams = new URLSearchParams(window.location.search);
 var y = urlParams.get('y');
 var m = urlParams.get('m');
-var date = m ? new Date(y + "-" + m) : new Date();
-var month = date.getMonth();
-var year = date.getFullYear();
 
 if (!y || !m) {
     var today = new Date();
@@ -61,6 +58,9 @@ if (!y || !m) {
     '</section>');
 } else {
     m = ("0" + m).slice(-2); // 두 자리로 맞춤
+    var date = new Date(y + "-" + m);
+    var month = date.getMonth();
+    var year = date.getFullYear();
 
     fetch(`//data.hungbok.net/data/games/${y}.json`) // 해당 연도 파일 확인
     .then(response => {
@@ -68,17 +68,10 @@ if (!y || !m) {
         return response.json() // 파일이 존재하면 json 데이터 반환
     })
     .then(data => {
-        var urlParams = new URLSearchParams(window.location.search);
-        var y = urlParams.get('y');
-        var m = urlParams.get('m');
-        var date = m ? new Date(y + "-" + m) : new Date();
-        var month = date.getMonth();
-        var year = date.getFullYear();
-
         function createCalendar(year, month, data) {
             var firstDay = (new Date(year, month)).getDay();
             var daysInMonth = 32 - new Date(year, month, 32).getDate();
-
+        
             var prevYear = month === 0 ? year - 1 : year;
             var nextYear = month === 11 ? year + 1 : year;
             var prevMonth = month === 0 ? 11 : month - 1;
@@ -107,8 +100,10 @@ if (!y || !m) {
                     calendar += "<div class='calendar-day'></div>";
                 } else {
                     var day = i - firstDay + 1;
-                    var items = getItem(year, month, day, data);
-                    calendar += "<div class='calendar-day'><div class='calendar-number'>" + generateDayHtml(day, items) + "일</div><div class='calendar-container'>";
+                    var items = data.filter(x => new Date(x.date).getFullYear() === year &&
+                                                 new Date(x.date).getMonth() === month &&
+                                                 new Date(x.date).getDate() === day);
+                    calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                     items.forEach(item => {
                         var platform = item.platform;
                         var url = item.url;
@@ -127,8 +122,10 @@ if (!y || !m) {
                     calendar += "<div class='calendar-week'>" + weekOfYear + "</div>";
                 }
                 var day = i - firstDay + 1;
-                var items = getItem(year, month, day, data);
-                calendar += "<div class='calendar-day'><div class='calendar-number'>" + generateDayHtml(day, items) + "일</div><div class='calendar-container'>";
+                var items = data.filter(x => new Date(x.date).getFullYear() === year &&
+                                             new Date(x.date).getMonth() === month &&
+                                             new Date(x.date).getDate() === day);
+                calendar += "<div class='calendar-day'><div class='calendar-number'>" + day + "일</div><div class='calendar-container'>";
                 items.forEach(item => {
                     var platform = item.platform;
                     var url = item.url;
@@ -150,51 +147,33 @@ if (!y || !m) {
             document.getElementById('calendar').innerHTML = calendar;
         }
 
-        function getItem(year, month, day, data) {
-            return data.filter(x => new Date(x.date).getFullYear() === year &&
-                                    new Date(x.date).getMonth() === month &&
-                                    new Date(x.date).getDate() === day &&
-                                    !isNaN(new Date(x.date).getDate()) &&
-                                    new Date(x.date).getDate() !== 32);
-        }
+        var calendarData = data.filter(item => {
+            var dateParts = item.date.split('-');
+            if (dateParts.length === 2) { // 'date' 값이 'yyyy-mm' 형식인 경우
+                item.date += '-32'; // 32일로 처리
+                return true;
+            }
+            return dateParts.length === 3; // 'date' 값이 'yyyy-mm-dd' 형식인 경우
+        });
+    
+        createCalendar(year, month, calendarData); // 'createCalendar' 함수를 호출
+    
+        var remainderData = calendarData.filter(x => new Date(x.date).getDate() === 32); // 32일인 데이터 필터링
+        remainderData.forEach(item => {
+            $("#calendar-remainder").append('<div>' + item.date + ': ' + item.game + '</div>'); // '#calendar-remainder'에 데이터 추가
+        });
         
-        function generateDayHtml(day, items) {
-            var dayHtml = day;
-            items.forEach(item => {
-                var title = item.title;
-                var image = item.image;
-                dayHtml += (title ? " (" + title + ")" : "") + (image ? " <img src='" + image + "'/>" : "");
-            });
-            return dayHtml;
-        }
-
         function dayOfYear(year, month, day) {
             var now = new Date(year, month, day);
             var start = new Date(year, 0, 0);
             var diff = now - start;
             var oneDay = 1000 * 60 * 60 * 24;
-            return Math.floor(diff / oneDay);
+            return Math.floor(diff / oneDay); // 수정된 부분
         }
-
-        function setRemainder(year, month, data) {
-            var remainder = data.filter(x => new Date(x.date).getFullYear() === year &&
-                                             new Date(x.date).getMonth() === month &&
-                                             new Date(x.date).getDate() === 32);
-            var remainderHtml = "";
-            remainder.forEach(item => {
-                var title = item.title;
-                var image = item.image;
-                remainderHtml += (title ? " (" + title + ")" : "") + (image ? " <img src='" + image + "'/>" : "") + "<br>";
-            });
-            document.getElementById('calendar-remainder').innerHTML = remainderHtml;
-        }
-
+    
         fetch('//data.hungbok.net/data/games/' + y + '.json')
             .then(response => response.json())
-            .then(data => {
-                createCalendar(year, month, data);
-                setRemainder(year, month, data);
-            });
+            .then(data => createCalendar(year, month, data));
 
         window.addEventListener('load', function() {
             loadAsyncScripts();
