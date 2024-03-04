@@ -167,7 +167,7 @@ if (!y || !m) {
     
             var remainderData = data.filter(item => {
                 var dateParts = item.date.split('-');
-                return dateParts.length === 2; // 'date' 값이 'yyyy-mm' 형식인 데이터만 필터링
+                return dateParts.length === 2 && dateParts[1] === month; // 'date' 값이 'yyyy-mm' 형식이고, mm 값이 매개변수 m과 동일한 데이터만 필터링
             });
     
             remainderData.forEach(item => {
