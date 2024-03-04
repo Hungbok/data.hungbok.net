@@ -69,7 +69,7 @@ if (year && season && monthRange) {
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.className = 'elevator-contents';
           sectionDiv.innerHTML = `
-            <h2>${year}년 ${month !== '13' ? month + '월' : '기타'}</h2>
+            <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
           calendarDiv.appendChild(sectionDiv);
     
@@ -232,6 +232,58 @@ if (year && season && monthRange) {
   document.head.appendChild(script);
   // 연도나 계절 클래스가 없는 경우
 }
+
+function addNavigationButtons() {
+  // #calendar 요소와 그 클래스를 가져옵니다.
+  var calendar = document.getElementById('calendar');
+  var calendarClasses = calendar.className.split(' ');
+
+  // 연도와 계절 클래스를 찾습니다.
+  var yearClass = calendarClasses.find(c => c.startsWith('y'));
+  var seasonClass = calendarClasses.find(c => c === 'all' || c === 'winter' || c === 'spring' || c === 'summer' || c === 'autumn');
+
+  // 연도를 파싱합니다.
+  var year = parseInt(yearClass.slice(1));
+
+  // 이전과 다음 계절/연도를 결정합니다.
+  var prev, next;
+  switch (seasonClass) {
+    case 'all':
+      prev = `../${year-1}`;
+      next = `../${year+1}`;
+      break;
+    case 'winter':
+      prev = `../../${year-1}/autumn`;
+      next = `../../${year}/spring`;
+      break;
+    case 'spring':
+      prev = `../../${year}/winter`;
+      next = `../../${year}/summer`;
+      break;
+    case 'summer':
+      prev = `../../${year}/spring`;
+      next = `../../${year}/autumn`;
+      break;
+    case 'autumn':
+      prev = `../../${year}/summer`;
+      next = `../../${year+1}/winter`;
+      break;
+  }
+
+  // 버튼을 생성하고 #calendar 요소에 추가합니다.
+  var prevButton = document.createElement('button');
+  prevButton.onclick = function() { window.location.href = prev; };
+  prevButton.textContent = 'Previous';
+  calendar.insertBefore(prevButton, calendar.firstChild);
+
+  var nextButton = document.createElement('button');
+  nextButton.onclick = function() { window.location.href = next; };
+  nextButton.textContent = 'Next';
+  calendar.insertBefore(nextButton, calendar.firstChild);
+}
+
+// 버튼을 추가합니다.
+addNavigationButtons();
 
 $(document).ready(function() {
   $(document).on('click', '.elevator-up, .elevator-down', function() {
