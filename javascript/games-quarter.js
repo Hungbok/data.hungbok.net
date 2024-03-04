@@ -257,8 +257,10 @@ function addNavigationButtons() {
   }
 
   // 제목 생성 부분
-  var title = document.createElement('divtitle.className' = 'calendar-title');
-  title.textContent = `${year}년 ${convertSeason(seasonClass)} 게임 출시 일정`;
+  var title = document.createElement('div');
+  title.className = 'calendar-title';
+  var titleSeason = seasonClass !== 'all' ? convertSeason(seasonClass) : '';
+  title.textContent = `${year}년 ${titleSeason} 게임 출시 일정`;
   calendar.insertBefore(title, calendar.firstChild);
 
   // 이전과 다음 계절/연도를 결정합니다.
