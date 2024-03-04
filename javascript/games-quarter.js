@@ -218,80 +218,80 @@ if (year && season && monthRange) {
         .catch(error => {
           console.error('Error:', error);
           // '/games/[url값].json' 파일이 없는 경우
-          $('main > .top-backgrounds').remove();
         });
       }
     })
     .catch(error => {
       console.error('Error:', error);
       // 연도에 해당하는 파일이 없거나 다른 오류가 발생한 경우
-      $('body > main > .section').remove();
-      $('body > main > .top-backgrounds').remove();
-      $("body > main").append('<section id="unavailable" class="errorpage">'+
-          '<div class="error-404-container">'+
-              '<div class="error-404-content">'+
-                  '<div class="error-404-title" data-lang="title">페이지가 길을 잃었습니다...</div>'+
-                  '<div class="error-404-subtitle" data-lang="title">페이지가 없거나 이동 혹은 삭제되었습니다.<br>주소를 다시 한번 확인해주세요.</div>'+
-                  '<div class="error-404-subtitle previous" data-lang="title"></div>'+
-                  '<a class="error-404-back" onclick="window.history.back()">'+
-                      '<p>이전 페이지</p>'+
-                  '</a>'+
-                  '<div class="error-404-subtitle middle" data-lang="title">혹은</div>'+
-                  '<a class="error-404-home" href="https://www.hungbok.com">'+
-                      '<p>메인</p>'+
-                  '</a>'+
-                  '<div class="error-404-subtitle next" data-lang="title">으로 돌아가기</div>'+
-                  '<div class="error-404-subtitle" data-lang="title">다른 문제가 있나요?</div>'+
-                  '<a class="error-404-help" href="https://help.hungbok.com/contact">'+
-                      '<p>문의하기</p>'+
-                  '</a>'+
-              '</div>'+
-              '<div class="error-404-lang-selecter">'+
-                  '<div data-lang="subtitle"></div>'+
-                  '<div id="select_lang">'+
-                      '<div class="lang-option" data-lang="en" data-value="en" selected></div>'+
-                      '<div class="lang-option" data-lang="ja" data-value="ja"></div>'+
-                      '<div class="lang-option" data-lang="ko" data-value="ko"></div>'+
-                  '</div>'+
-              '</div>'+
-              '<div class="error-404-background">404</div>'+
-          '</div>'+
-      '</section>');
+      // body에서 클래스명을 가져옵니다
+      var classList = document.body.className.split(/\s+/);
+      var langCode = null;
+
+      // 클래스 중에서 2자리 언어 코드를 찾습니다
+      for (var i = 0; i < classList.length; i++) {
+          if (classList[i].length === 2) {
+              langCode = classList[i];
+              break;
+          }
+      }
+
+      // 언어 코드에 따라 적절한 스크립트를 로드합니다
+      var script = document.createElement('script');
+
+      switch (langCode) {
+          case 'en':
+              script.src = '//data.hungbok.net/javascript/en/error404.js';
+              break;
+          case 'ko':
+              script.src = '//data.hungbok.net/javascript/ko/error404.js';
+              break;
+          case 'ja':
+              script.src = '//data.hungbok.net/javascript/ja/error404.js';
+              break;
+          default:
+              script.src = '//data.hungbok.net/javascript/en/error404.js';
+              break;
+      }
+
+      // 스크립트를 문서에 추가합니다
+      document.head.appendChild(script);
     });
 } else {
+  console.error('Error:', error);
   // 연도나 계절 클래스가 없는 경우
-  $('body > main > .section').remove();
-  $('body > main > .top-backgrounds').remove();
-  $("body > main").append('<section id="unavailable" class="errorpage">'+
-      '<div class="error-404-container">'+
-          '<div class="error-404-content">'+
-              '<div class="error-404-title" data-lang="title">페이지가 길을 잃었습니다...</div>'+
-              '<div class="error-404-subtitle" data-lang="title">페이지가 없거나 이동 혹은 삭제되었습니다.<br>주소를 다시 한번 확인해주세요.</div>'+
-              '<div class="error-404-subtitle previous" data-lang="title"></div>'+
-              '<a class="error-404-back" onclick="window.history.back()">'+
-                  '<p>이전 페이지</p>'+
-              '</a>'+
-              '<div class="error-404-subtitle middle" data-lang="title">혹은</div>'+
-              '<a class="error-404-home" href="https://www.hungbok.com">'+
-                  '<p>메인</p>'+
-              '</a>'+
-              '<div class="error-404-subtitle next" data-lang="title">으로 돌아가기</div>'+
-              '<div class="error-404-subtitle" data-lang="title">다른 문제가 있나요?</div>'+
-              '<a class="error-404-help" href="https://help.hungbok.com/contact">'+
-                  '<p>문의하기</p>'+
-              '</a>'+
-          '</div>'+
-          '<div class="error-404-lang-selecter">'+
-              '<div data-lang="subtitle"></div>'+
-              '<div id="select_lang">'+
-                  '<div class="lang-option" data-lang="en" data-value="en" selected></div>'+
-                  '<div class="lang-option" data-lang="ja" data-value="ja"></div>'+
-                  '<div class="lang-option" data-lang="ko" data-value="ko"></div>'+
-              '</div>'+
-          '</div>'+
-          '<div class="error-404-background">404</div>'+
-      '</div>'+
-  '</section>');
+  // body에서 클래스명을 가져옵니다
+  var classList = document.body.className.split(/\s+/);
+  var langCode = null;
+
+  // 클래스 중에서 2자리 언어 코드를 찾습니다
+  for (var i = 0; i < classList.length; i++) {
+      if (classList[i].length === 2) {
+          langCode = classList[i];
+          break;
+      }
+  }
+
+  // 언어 코드에 따라 적절한 스크립트를 로드합니다
+  var script = document.createElement('script');
+
+  switch (langCode) {
+      case 'en':
+          script.src = '//data.hungbok.net/javascript/en/error404.js';
+          break;
+      case 'ko':
+          script.src = '//data.hungbok.net/javascript/ko/error404.js';
+          break;
+      case 'ja':
+          script.src = '//data.hungbok.net/javascript/ja/error404.js';
+          break;
+      default:
+          script.src = '//data.hungbok.net/javascript/en/error404.js';
+          break;
+  }
+
+  // 스크립트를 문서에 추가합니다
+  document.head.appendChild(script);
 }
 
 $(document).ready(function() {
