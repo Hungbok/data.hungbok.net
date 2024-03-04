@@ -3077,35 +3077,45 @@ $(document).ready(function(){
     var currentSlider = 0;
     
     $('.calendar-container').each(function(index) {
-      $(this).slick({
-        autoplay: false,
-        arrows: true,
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: true,
-        dots: true,
-        autoplaySpeed: 5000,
-        speed: 500
-      });
+        $(this).slick({
+            autoplay: false,
+            arrows: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            dots: true,
+            autoplaySpeed: 5000,
+            speed: 500
+        });
+  
+        // 페이지가 2개 이상인 슬라이더만 sliders 배열에 추가합니다.
+        if ($(this).slick('getSlick').slideCount > 1) {
+            sliders.push($(this));
+        }
     });
 
     function rotateSliders() {
-      var currentSlick = $('.calendar-container').eq(currentSlider).slick('getSlick');
+        var currentSlick = sliders[currentSlider].slick('getSlick');
       
-      if (currentSlick.currentSlide < currentSlick.slideCount - 1) {
-        // 현재 슬라이더를 한 페이지 넘깁니다.
-        $('.calendar-container').eq(currentSlider).slick('slickNext');
-      }
-    
-      // 다음 슬라이더 인덱스를 계산합니다.
-      currentSlider = (currentSlider + 1) % sliderCount;
-    
-      // 모든 슬라이더가 한 바퀴 도는데 걸리는 시간을 설정합니다.
-      // 이 값을 조절하여 슬라이드가 넘어가는 속도를 조절할 수 있습니다.
-      setTimeout(rotateSliders, 1000);
+        if (currentSlick.currentSlide < currentSlick.slideCount - 1) {
+            // 현재 슬라이더를 한 페이지 넘깁니다.
+            sliders[currentSlider].slick('slickNext');
+        } else {
+            // 현재 슬라이더가 마지막 페이지에 도달했으므로 첫 페이지로 돌아갑니다.
+            sliders[currentSlider].slick('slickGoTo', 0);
+        }
+      
+        // 다음 슬라이더 인덱스를 계산합니다.
+        currentSlider = (currentSlider + 1) % sliders.length;
+      
+        // 모든 슬라이더가 한 바퀴 도는데 걸리는 시간을 설정합니다.
+        // 이 값을 조절하여 슬라이드가 넘어가는 속도를 조절할 수 있습니다.
+        setTimeout(rotateSliders, 1000);
     }
     
     // 처음 슬라이더 순환을 시작합니다.
-    rotateSliders();
+    if (sliders.length > 0) {
+        rotateSliders();
+    }
 });
