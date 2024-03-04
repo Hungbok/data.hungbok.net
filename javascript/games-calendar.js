@@ -171,15 +171,17 @@ if (!y || !m) {
             });
     
             remainderData.forEach(item => {
-                $("#calendar-remainder").append("<a class='calendar-item' href='https://www.hungbok.com/games?q=" + item.url + "'>"+
-                    "<img class='calendar-image' src='https://data.hungbok.net/image/games/" + item.url + "/hb_thumbnail.jpg' onerror='this.src=`//data.hungbok.net/image/hb/hb_error_vertical.svg`;'/>"+
-                    "<div class='calendar-item-info'>"+
-                        "<p class='calendar-item-title'>"+
-                            "<img class='calendar-image' src='https://data.hungbok.net/image/games/" + item.url + "/hb_logo.png' onerror='this.src=`//data.hungbok.net/image/hb/hb_error.svg`;'/>"+
-                        "</p>"+
-                        "<p class='calendar-item-text " + item.platform + "'></p>"+
-                    "</div>"+
-                "</a>"); // '#calendar-remainder'에 데이터 추가
+                $("#calendar-remainder").append("<div class='calendar-day'>"+
+                    "<a class='calendar-item' href='https://www.hungbok.com/games?q=" + item.url + "'>"+
+                        "<img class='calendar-image' src='https://data.hungbok.net/image/games/" + item.url + "/hb_thumbnail.jpg' onerror='this.src=`//data.hungbok.net/image/hb/hb_error_vertical.svg`;'/>"+
+                        "<div class='calendar-item-info'>"+
+                            "<p class='calendar-item-title'>"+
+                                "<img class='calendar-image' src='https://data.hungbok.net/image/games/" + item.url + "/hb_logo.png' onerror='this.src=`//data.hungbok.net/image/hb/hb_error.svg`;'/>"+
+                            "</p>"+
+                            "<p class='calendar-item-text " + item.platform + "'></p>"+
+                        "</div>"+
+                    "</a>"+
+                "</div>"); // '#calendar-remainder'에 데이터 추가
             });
         });
 
