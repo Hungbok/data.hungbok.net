@@ -81,6 +81,18 @@ if (!y || !m) {
         
             var firstDayOfYear = (new Date(year, 0, 1)).getDay();
             var weekOfYear = Math.ceil((dayOfYear(year, month, 1) + firstDayOfYear) / 7); // 수정된 부분
+
+            // 년, 월만 있는 데이터를 #calendar-remainder에 출력
+            var remainder = data.filter(x => new Date(x.date).getFullYear() === year &&
+                                             new Date(x.date).getMonth() === month &&
+                                             isNaN(new Date(x.date).getDate()));
+            var remainderHtml = "";
+            remainder.forEach(item => {
+                var title = item.title;
+                var image = item.image;
+                remainderHtml += (title ? " (" + title + ")" : "") + (image ? " <img src='" + image + "'/>" : "") + "<br>";
+            });
+            document.getElementById('calendar-remainder').innerHTML = remainderHtml;
         
             var calendar = "<div class='calendar-title'>" + year + '년 ' + (month + 1) + '월' + " 게임 출시 일정</div>" +
                            "<div class='calendar-prev' onclick='window.location.href=\"?y=" + prevYear + "&m=" + prevMonthFormatted + "\"'>❮ " + prevYear + "년 " + prevMonthFormatted + "월 게임 출시 일정</div> " +
