@@ -71,6 +71,8 @@ if (!y || !m) {
         function createCalendar(year, month, data) {
             var firstDay = (new Date(year, month)).getDay();
             var daysInMonth = 32 - new Date(year, month, 32).getDate();
+            
+            var today = new Date();
         
             var prevYear = month === 0 ? year - 1 : year;
             var nextYear = month === 11 ? year + 1 : year;
@@ -100,6 +102,8 @@ if (!y || !m) {
                     calendar += "<div class='calendar-day'></div>";
                 } else {
                     var day = i - firstDay + 1;
+                    var todayItems = getItem(year, month, day, data);
+                    calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, todayItems);
                     var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                                  new Date(x.date).getMonth() === month &&
                                                  new Date(x.date).getDate() === day);
@@ -122,6 +126,8 @@ if (!y || !m) {
                     calendar += "<div class='calendar-week'>" + weekOfYear + "</div>";
                 }
                 var day = i - firstDay + 1;
+                var todayItems = getItem(year, month, day, data);
+                calendar += "<div class='calendar-day" + (today.getFullYear() === year && today.getMonth() === month && today.getDate() === day ? " today" : "") + "'>" + generateDayHtml(day, todayItems);
                 var items = data.filter(x => new Date(x.date).getFullYear() === year &&
                                              new Date(x.date).getMonth() === month &&
                                              new Date(x.date).getDate() === day);
@@ -145,27 +151,6 @@ if (!y || !m) {
             calendar += "</div>";
         
             document.getElementById('calendar').innerHTML = calendar;
-            
-            var today = new Date();
-            
-            for (var i = 0; i < 7; i++) {
-                if (i < firstDay) {
-                    calendar += "<div class='calendar-day'></div>";
-                } else {
-                    var day = i - firstDay + 1;
-                    calendar += createDayCell(year, month, day, today, data);
-                }
-            }
-        
-            for (var i = 7; i < daysInMonth + firstDay; i++) {
-                var day = i - firstDay + 1;
-                calendar += createDayCell(year, month, day, today, data);
-            }
-        }
-        
-        function createDayCell(year, month, day, today, data) {
-            var items = getItem(year, month, day, data);
-            return "<div class='calendar-day" + (isToday(year, month, day, today) ? " today" : "") + "'>" + generateDayHtml(day, items) + "</div>";
         }
         
         function dayOfYear(year, month, day) {
