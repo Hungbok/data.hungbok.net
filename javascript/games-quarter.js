@@ -292,12 +292,14 @@ function addNavigationButtons() {
   var prevButton = document.createElement('div');
   prevButton.className = 'calendar-prev';
   prevButton.onclick = function() { window.location.href = prev; };
-  prevButton.textContent = '❮ ' + prev.split('/').slice(-2).map((part, i) => i === 0 ? part + '년' : seasonClass !== 'all' ? convertSeason(part) : '').join(' ');
+  var prevSeason = prev.split('/').slice(-1)[0] !== 'all' ? ' ' + convertSeason(prev.split('/').slice(-1)[0]) : '';
+  prevButton.textContent = '❮ ' + prev.split('/').slice(-2, -1)[0] + '년' + prevSeason;
   
   var nextButton = document.createElement('div');
   nextButton.className = 'calendar-next';
   nextButton.onclick = function() { window.location.href = next; };
-  nextButton.textContent = next.split('/').slice(-2).map((part, i) => i === 0 ? part + '년' : seasonClass !== 'all' ? convertSeason(part) : '').join(' ') + ' ❯';
+  var nextSeason = next.split('/').slice(-1)[0] !== 'all' ? ' ' + convertSeason(next.split('/').slice(-1)[0]) : '';
+  nextButton.textContent = next.split('/').slice(-2, -1)[0] + '년' + nextSeason + ' ❯';
   
   // 버튼 추가 부분
   calendar.appendChild(prevButton);
