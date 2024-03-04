@@ -276,33 +276,17 @@ function addNavigationButtons() {
   var titleSeason = seasonClass !== 'all' ? convertSeason(seasonClass) : '';
   title.textContent = `${year}년 ${titleSeason} 게임 출시 일정`;
   calendar.insertBefore(title, calendar.firstChild);
-  
-  // 계절 변환 함수
-  function convertSeason(season) {
-    switch (season) {
-      case 'winter':
-        return '겨울';
-      case 'spring':
-        return '봄';
-      case 'summer':
-        return '여름';
-      case 'autumn':
-        return '가을';
-      case 'all':
-        return '';
-    }
-  }
 
   // 버튼 생성 부분
-  var prevButton = $('<button></button>')
+  var prevButton = $('<div></div>')
       .addClass('calendar-prev')
       .click(function() { window.location.href = prev; })
-      .text('❮ ' + prev.split('/').slice(-2, -1)[0] + '년');
+      .text('❮ ' + prev.split('/')[1] + '년');
   
-  var nextButton = $('<button></button>')
+  var nextButton = $('<div></div>')
       .addClass('calendar-next')
       .click(function() { window.location.href = next; })
-      .text(next.split('/').slice(-2, -1)[0] + '년 ❯');
+      .text(next.split('/')[1] + '년 ❯');
   
   // 버튼 추가 부분
   $(calendar).append(prevButton, nextButton);
