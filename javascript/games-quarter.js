@@ -233,25 +233,26 @@ if (year && season && monthRange) {
 }
 
 $(document).ready(function() {
-    var currentIndex = 0;
+  $(document).on('click', '.elevator-up, .elevator-down', function() {
+      var contents = $('.elevator-contents');
+      var currentScroll = $(window).scrollTop();
+      var currentIndex = 0;
 
-    $(document).on('click', '.elevator-up', function() {
-        var contents = $('.elevator-contents');
-        if(currentIndex > 0) {
-            currentIndex -= 1;
-        }
-        $('html, body').animate({
-            scrollTop: $(contents[currentIndex]).offset().top - 90
-        }, 500);
-    });
+      contents.each(function(index) {
+          if($(this).offset().top - 90 <= currentScroll) {
+              currentIndex = index;
+          }
+      });
 
-    $(document).on('click', '.elevator-down', function() {
-        var contents = $('.elevator-contents');
-        if(currentIndex < contents.length - 1) {
-            currentIndex += 1;
-        }
-        $('html, body').animate({
-            scrollTop: $(contents[currentIndex]).offset().top - 90
-        }, 500);
-    });
+      if($(this).hasClass('elevator-up') && currentIndex > 0) {
+          currentIndex -= 1;
+      } else if($(this).hasClass('elevator-down') && currentIndex < contents.length - 1) {
+          currentIndex += 1;
+      }
+
+      contents = $('.elevator-contents');  // Update the contents list
+      $('html, body').animate({
+          scrollTop: $(contents[currentIndex]).offset().top - 90
+      }, 500);
+  });
 });

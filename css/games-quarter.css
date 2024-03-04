@@ -27,7 +27,7 @@
     transition: all 0.5s;
 }
 
-.elevator div {
+.elevator div:hover {
     background-color: var(--background-6);
 }
 
