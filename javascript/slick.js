@@ -3080,6 +3080,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         draggable: true,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         speed: 500
     });
 });

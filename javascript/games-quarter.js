@@ -274,7 +274,7 @@ function addNavigationButtons() {
   var title = document.createElement('div');
   title.className = 'calendar-title';
   var titleSeason = seasonClass !== 'all' ? convertSeason(seasonClass) : '';
-  title.textContent = `${year}년 ${titleSeason} 게임 출시 일정`;
+  title.textContent = `${year}년 ${titleSeason} 출시 예정 게임`;
   calendar.insertBefore(title, calendar.firstChild);
   
   // 계절 변환 함수

@@ -249,15 +249,24 @@
     aspect-ratio: 200 / 300;
     border-radius: 10px;
     display: inline-block;
-    overflow: hidden;
     box-shadow: 0px 0px 2.5px var(--absolute-10);
     position: relative;
     margin: 0px 5px;
+    transform: scale(1.5);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+.slick-active {
+    z-index: 10;
+}
+
+.calendar-day:hover .slick-slide {
+    overflow: hidden;
+    transform: scale(1);
 }
 
 .slick-slide > div {
