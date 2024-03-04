@@ -158,23 +158,17 @@ if (!y || !m) {
         fetch('//data.hungbok.net/data/games/' + y + '.json')
         .then(response => response.json())
         .then(data => {
-            console.log('데이터 로드 완료:', data); // 데이터 로드 확인
-    
             var calendarData = data.filter(item => {
                 var dateParts = item.date.split('-');
                 return dateParts.length === 3; // 'date' 값이 'yyyy-mm-dd' 형식인 데이터만 필터링
             });
     
-            console.log('달력 데이터:', calendarData); // 달력 데이터 확인
-    
             createCalendar(year, month, calendarData); // 'createCalendar' 함수를 호출
     
             var remainderData = data.filter(item => {
                 var dateParts = item.date.split('-');
-                return dateParts.length === 2; // 'date' 값이 'yyyy-mm' 형식인 데이터만 필터링
+                return dateParts.length === 2 && item.date === `${y}-${m}`; // 'date' 값이 'yyyy-mm' 형식이고, URL 매개변수와 일치하는 데이터만 필터링
             });
-    
-            console.log('#calendar-remainder 데이터:', remainderData); // '#calendar-remainder' 데이터 확인
     
             remainderData.forEach(item => {
                 $("#calendar-remainder").append("<div class='calendar-day'>"+
