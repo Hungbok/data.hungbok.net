@@ -300,7 +300,7 @@ function addNavigationButtons() {
     .text(function() {
         var parts = prev.split('/').slice(-2);
         var season = convertSeason(parts[1]);
-        return '❮ ' + parts[0] + '년' + (season ? ' ' + season : '');
+        return '❮ ' + parts[0] + '년' + (season ? ' ' + season : '') + '게임 출시 일정';
   });
 
   var nextButton = $('<div></div>')
@@ -309,7 +309,7 @@ function addNavigationButtons() {
     .text(function() {
         var parts = next.split('/').slice(-2);
         var season = convertSeason(parts[1]);
-        return parts[0] + '년' + (season ? ' ' + season : '') + ' ❯';
+        return parts[0] + '년' + (season ? ' ' + season : '') + '게임 출시 일정' + ' ❯';
   });
 
   // 버튼 추가 부분
