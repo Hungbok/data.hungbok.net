@@ -216,7 +216,6 @@ if (year && season && monthRange) {
   
           div.innerHTML = template;
           parentDiv.appendChild(div);
-          updateChapterLinks();
         })
         .catch(error => {
           // '/games/[url값].json' 파일이 없는 경우
@@ -365,7 +364,7 @@ $(document).ready(function() {
           scrollTop: $(contents[currentIndex]).offset().top - 90
       }, 500);
   });
-
+  
   // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data와 chapter-text 속성 값을 가져와서 .chapter 에 <div>[chapter-text 값]</div> 형식으로 순서대로 출력하는 함수
   function updateChapterLinks() {
       $('.chapter').empty();
@@ -387,4 +386,7 @@ $(document).ready(function() {
           scrollTop: target.offset().top
       }, 1000);
   });
+
+  // 1초마다 updateChapterLinks 함수를 호출하여 .chapter-contents 요소들이 추가되었는지 확인
+  setInterval(updateChapterLinks, 1000);
 });
