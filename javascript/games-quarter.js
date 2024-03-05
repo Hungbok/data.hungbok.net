@@ -221,7 +221,6 @@ if (year && season && monthRange) {
           // '/games/[url값].json' 파일이 없는 경우
         });
       }
-      updateChapterLinks();
     })
     .catch(error => {
       var script = document.createElement('script');
@@ -377,7 +376,6 @@ $(document).ready(function() {
           }
       });
   }
-  updateChapterLinks();
 
   // .chapter-link 클릭 시 해당 요소로 스크롤 이동
   $('.chapter').on('click', '.chapter-link', function() {
@@ -388,3 +386,5 @@ $(document).ready(function() {
       }, 1000);
   });
 });
+
+updateChapterLinks();
