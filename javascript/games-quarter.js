@@ -363,24 +363,41 @@ $(document).ready(function() {
           scrollTop: $(contents[currentIndex]).offset().top - 90
       }, 500);
   });
-
+  
   // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data 속성 값을 가져와서 .chapter 에 <div>[chapter-data 값]</div> 형식으로 순서대로 출력
   function updateChapterLinks() {
-      $('.chapter').empty();  // 기존에 있던 링크들을 제거
+      $('.chapter').empty();
       $('.chapter-contents').each(function() {
           var chapterData = $(this).attr('chapter-data');
-          $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterData + '</div>');
+          if(chapterData) {
+              $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterData + '</div>');
+          }
       });
   }
   updateChapterLinks();
 
   // .chapter-link 클릭 시 해당 요소로 스크롤 이동
-  // 이벤트 위임 방식을 사용하여, 동적으로 생성된 요소에도 이벤트를 적용
   $('.chapter').on('click', '.chapter-link', function() {
       var link = $(this).data('link');
       var target = $('.chapter-contents[chapter-data="' + link + '"]');
       $('html, body').animate({
           scrollTop: target.offset().top
       }, 1000);
+  });
+
+  // Mutation Observer 설정
+  var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+          if (mutation.type === 'childList' || mutation.type === 'attributes') {
+              updateChapterLinks();
+          }
+      });
+  });
+
+  // body에 대한 변화 감지 설정
+  observer.observe(document.body, {
+      attributes: true,
+      childList: true,
+      subtree: true
   });
 });
