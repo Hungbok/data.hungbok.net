@@ -67,9 +67,8 @@ if (year && season && monthRange) {
           // 새로운 섹션 생성
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
-          sectionDiv.className = 'elevator-contents';
-          sectionDiv.className = 'chapter-contents'; // 클래스 추가
-          sectionDiv.dataset.chapter = `${year}년 ${month}월`; // 속성 추가
+          sectionDiv.className = 'elevator-contents chapter-contents';
+          sectionDiv.dataset.chapter = `${year}년 ${month}월`;
           sectionDiv.innerHTML = `
             <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
@@ -364,14 +363,19 @@ $(document).ready(function() {
           scrollTop: $(contents[currentIndex]).offset().top - 90
       }, 500);
   });
-
+  
   // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data 속성 값을 가져와서 .chapter 에 <div>[chapter-data 값]</div> 형식으로 순서대로 출력
-  $('.chapter-contents').each(function() {
-      var chapterData = $(this).attr('chapter-data');
-      $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterData + '</div>');
-  });
+  function updateChapterLinks() {
+      $('.chapter').empty();  // 기존에 있던 링크들을 제거
+      $('.chapter-contents').each(function() {
+          var chapterData = $(this).attr('chapter-data');
+          $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterData + '</div>');
+      });
+  }
+  updateChapterLinks();
 
   // .chapter-link 클릭 시 해당 요소로 스크롤 이동
+  // 이벤트 위임 방식을 사용하여, 동적으로 생성된 요소에도 이벤트를 적용
   $('.chapter').on('click', '.chapter-link', function() {
       var link = $(this).data('link');
       var target = $('.chapter-contents[chapter-data="' + link + '"]');
