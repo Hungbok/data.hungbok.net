@@ -68,7 +68,8 @@ if (year && season && monthRange) {
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.className = 'elevator-contents chapter-contents';
-          sectionDiv.setAttribute('chapter-data', `${year}년 ${month}월`);
+          sectionDiv.setAttribute('chapter-data', `chapter-${year}-${month}`);
+          sectionDiv.setAttribute('chapter-text', `${year}년 ${month}월`);
           sectionDiv.innerHTML = `
             <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
@@ -364,11 +365,12 @@ $(document).ready(function() {
       }, 500);
   });
   
-  // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data 속성 값을 가져와서 .chapter 에 <div>[chapter-data 값]</div> 형식으로 순서대로 출력
+  // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data와 chapter-text 속성 값을 가져와서 .chapter 에 <div>[chapter-text 값]</div> 형식으로 순서대로 출력
   $('.chapter-contents').each(function() {
       var chapterData = $(this).attr('chapter-data');
-      if(chapterData) {
-          $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterData + '</div>');
+      var chapterText = $(this).attr('chapter-text');
+      if(chapterData && chapterText) {
+          $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterText + '</div>');
       }
   });
 
