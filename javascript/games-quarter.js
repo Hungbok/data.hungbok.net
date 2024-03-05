@@ -68,8 +68,8 @@ if (year && season && monthRange) {
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.className = 'elevator-contents';
-          monthDiv.className = 'chapter-contents'; // 클래스 추가
-          monthDiv.dataset.chapter = `${year}년 ${month}월`; // 속성 추가
+          sectionDiv.className = 'chapter-contents'; // 클래스 추가
+          sectionDiv.dataset.chapter = `${year}년 ${month}월`; // 속성 추가
           sectionDiv.innerHTML = `
             <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
