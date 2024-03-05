@@ -384,20 +384,4 @@ $(document).ready(function() {
           scrollTop: target.offset().top
       }, 1000);
   });
-
-  // Mutation Observer 설정
-  var observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-          if (mutation.type === 'childList' || mutation.type === 'attributes') {
-              updateChapterLinks();
-          }
-      });
-  });
-
-  // body에 대한 변화 감지 설정
-  observer.observe(document.body, {
-      attributes: true,
-      childList: true,
-      subtree: true
-  });
 });
