@@ -221,6 +221,7 @@ if (year && season && monthRange) {
           // '/games/[url값].json' 파일이 없는 경우
         });
       }
+      updateChapterLinks();
     })
     .catch(error => {
       var script = document.createElement('script');
@@ -385,23 +386,5 @@ $(document).ready(function() {
       $('html, body').animate({
           scrollTop: target.offset().top - 90
       }, 1000);
-  });
-
-  // Mutation Observer 설정
-  var observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-          if (mutation.type === 'childList' || mutation.type === 'attributes') {
-              updateChapterLinks();
-          }
-      });
-  });
-
-  // .chapter-contents 요소에 대한 변화 감지 설정
-  $('.chapter-contents').each(function() {
-      observer.observe(this, {
-          attributes: true,
-          childList: true,
-          subtree: true
-      });
   });
 });
