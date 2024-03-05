@@ -383,10 +383,25 @@ $(document).ready(function() {
       var link = $(this).data('link');
       var target = $('.chapter-contents[chapter-data="' + link + '"]');
       $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 90
       }, 1000);
   });
 
-  // 1초마다 updateChapterLinks 함수를 호출하여 .chapter-contents 요소들이 추가되었는지 확인
-  setInterval(updateChapterLinks, 1000);
+  // Mutation Observer 설정
+  var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+          if (mutation.type === 'childList' || mutation.type === 'attributes') {
+              updateChapterLinks();
+          }
+      });
+  });
+
+  // .chapter-contents 요소에 대한 변화 감지 설정
+  $('.chapter-contents').each(function() {
+      observer.observe(this, {
+          attributes: true,
+          childList: true,
+          subtree: true
+      });
+  });
 });
