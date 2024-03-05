@@ -216,6 +216,7 @@ if (year && season && monthRange) {
   
           div.innerHTML = template;
           parentDiv.appendChild(div);
+          updateChapterLinks();
         })
         .catch(error => {
           // '/games/[url값].json' 파일이 없는 경우
@@ -364,15 +365,19 @@ $(document).ready(function() {
           scrollTop: $(contents[currentIndex]).offset().top - 90
       }, 500);
   });
-  
-  // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data와 chapter-text 속성 값을 가져와서 .chapter 에 <div>[chapter-text 값]</div> 형식으로 순서대로 출력
-  $('.chapter-contents').each(function() {
-      var chapterData = $(this).attr('chapter-data');
-      var chapterText = $(this).attr('chapter-text');
-      if(chapterData && chapterText) {
-          $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterText + '</div>');
-      }
-  });
+
+  // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data와 chapter-text 속성 값을 가져와서 .chapter 에 <div>[chapter-text 값]</div> 형식으로 순서대로 출력하는 함수
+  function updateChapterLinks() {
+      $('.chapter').empty();
+      $('.chapter-contents').each(function() {
+          var chapterData = $(this).attr('chapter-data');
+          var chapterText = $(this).attr('chapter-text');
+          if(chapterData && chapterText) {
+              $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterText + '</div>');
+          }
+      });
+  }
+  updateChapterLinks();
 
   // .chapter-link 클릭 시 해당 요소로 스크롤 이동
   $('.chapter').on('click', '.chapter-link', function() {
