@@ -68,6 +68,8 @@ if (year && season && monthRange) {
           let sectionDiv = document.createElement('div');
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.className = 'elevator-contents';
+          monthDiv.className = 'chapter-contents'; // 클래스 추가
+          monthDiv.dataset.chapter = `${year}년 ${month}월`; // 속성 추가
           sectionDiv.innerHTML = `
             <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
@@ -361,5 +363,20 @@ $(document).ready(function() {
       $('html, body').animate({
           scrollTop: $(contents[currentIndex]).offset().top - 90
       }, 500);
+  });
+
+  // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data 속성 값을 가져와서 .chapter 에 <div>[chapter-data 값]</div> 형식으로 순서대로 출력
+  $('.chapter-contents').each(function() {
+      var chapterData = $(this).attr('chapter-data');
+      $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterData + '</div>');
+  });
+
+  // .chapter-link 클릭 시 해당 요소로 스크롤 이동
+  $('.chapter').on('click', '.chapter-link', function() {
+      var link = $(this).data('link');
+      var target = $('.chapter-contents[chapter-data="' + link + '"]');
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 1000);
   });
 });
