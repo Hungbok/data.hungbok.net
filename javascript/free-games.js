@@ -24,6 +24,31 @@ function filterData(type) {
     loadMoreData();
 }
 
+let filterPlatform = ''; // 플랫폼 필터 상태를 저장하는 변수입니다. 초기값은 빈 문자열입니다.
+
+// 플랫폼에 따라 데이터를 필터링하는 함수
+function filterPlatform(platform) {
+    filterPlatform = platform; // 필터링할 플랫폼을 설정합니다.
+    let itemElements = document.querySelectorAll('.item-container'); // 아이템을 적용할 요소를 선택합니다.
+
+    itemElements.forEach(element => {
+        let from = element.getAttribute('from'); // from 속성 값을 가져옵니다.
+
+        // 필터링할 플랫폼의 데이터만 보이게 합니다.
+        if (from !== filterPlatform) {
+            element.style.display = 'none';
+        } else {
+            element.style.display = '';
+        }
+    });
+}
+
+// 플랫폼 필터 버튼에 클릭 이벤트 핸들러를 추가합니다.
+document.getElementById('platformFilterBtn').addEventListener('click', function() {
+    filterPlatform = this.getAttribute('data-platform'); // 버튼의 data-platform 속성 값을 가져와 필터링할 플랫폼으로 설정합니다.
+    filterByPlatform(); // 플랫폼에 따라 데이터를 필터링하는 함수를 호출합니다.
+});
+
 let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니다. 초기값은 false입니다.
 
 // 만료된 데이터를 제외하는 함수
@@ -83,9 +108,12 @@ window.onscroll = function() {
     if (scrollPosition + windowHeight >= totalPageHeight - 500) {
         // 여기에 데이터를 생성하는 코드를 추가합니다.
         loadMoreData();
-        // 새롭게 추가된 데이터에 대해 만료된 데이터를 제외하는 함수를 호출합니다.
+        // 새롭게 추가된 데이터에 대해 필터링하는 함수를 호출합니다.
         if (filterExpired) {
             filterByDate();
+        }
+        if (filterPlatform) {
+            filterByPlatform();
         }
     }
 };
