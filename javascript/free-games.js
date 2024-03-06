@@ -43,6 +43,31 @@ function filterData(type) {
     loadMoreData();
 }
 
+// 타이머 생성 함수
+function createTimer(timerContainer, endTime) {
+    const targetTime = new Date(endTime.replace(/-/g, '/'));
+    const timerInterval = setInterval(function() {
+        const now = new Date();
+        const difference = targetTime - now;
+        let formattedTime;
+        if (difference > 0) {
+            const seconds = Math.floor(difference / 1000) % 60;
+            const minutes = Math.floor(difference / 1000 / 60) % 60;
+            const hours = Math.floor(difference / 1000 / 60 / 60) % 24;
+            const days = Math.floor(difference / 1000 / 60 / 60 / 24);
+            if (days > 0) {
+                formattedTime = `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            } else {
+                formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        } else {
+            clearInterval(timerInterval);
+            formattedTime = "00:00:00";
+        }
+        timerContainer.textContent = formattedTime;
+    }, 1000);
+}
+
 // 무한 스크롤 기능
 function loadMoreData() {
     let end = start + limit;
@@ -64,6 +89,9 @@ function loadMoreData() {
             <img class="item-background" src="${item.image}">
         `;
         document.getElementById('dataContainer').appendChild(div);
+
+        createTimer(div.querySelector('.start'), item.start);
+        createTimer(div.querySelector('.end'), item.end);
     });
 }
 
@@ -73,16 +101,3 @@ window.addEventListener('scroll', () => {
         loadMoreData();
     }
 });
-
-// 타이머 설정
-setInterval(function() {
-    document.querySelectorAll('.timer-container').forEach(function(timer) {
-        const setTime = new Date(timer.getAttribute('settime').replace(/-/g, '/'));
-        const now = new Date();
-        const difference = setTime - now;
-        const hours = difference > 0 ? Math.floor(difference / 1000 / 60 / 60) : 0;
-        const minutes = difference > 0 ? Math.floor(difference / 1000 / 60 % 60) : 0;
-        const seconds = difference > 0 ? Math.floor(difference / 1000 % 60) : 0;
-        timer.textContent = `${hours}:${minutes}:${seconds}`;
-    });
-}, 1000);
