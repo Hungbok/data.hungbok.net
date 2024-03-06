@@ -376,6 +376,9 @@ window.addEventListener('load', function() {
         }
     });
 
+    // 첫 번째 .chapter-link에 .active 추가
+    $('.chapter .chapter-link:first').addClass('active');
+
     // .chapter-link 클릭 시 해당 요소로 스크롤 이동
     $('.chapter').on('click', '.chapter-link', function() {
         var link = $(this).data('link');
@@ -389,7 +392,7 @@ window.addEventListener('load', function() {
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
         $('.chapter-contents').each(function() {
-            var top = $(this).offset().top - 100; // 10 is the padding from the top
+            var top = $(this).offset().top - 10; // 10 is the padding from the top
             var bottom = top + $(this).height();
             if (scrollPos >= top && scrollPos <= bottom) {
                 var chapterData = $(this).attr('chapter-data');
@@ -408,7 +411,7 @@ window.addEventListener('load', function() {
                 var link = prevLink.data('link');
                 var target = $('.chapter-contents[chapter-data="' + link + '"]');
                 $('html, body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - 90
                 }, 1000);
             }
         }
@@ -423,7 +426,7 @@ window.addEventListener('load', function() {
                 var link = nextLink.data('link');
                 var target = $('.chapter-contents[chapter-data="' + link + '"]');
                 $('html, body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - 90
                 }, 1000);
             }
         }
