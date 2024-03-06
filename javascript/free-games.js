@@ -45,13 +45,10 @@ function loadMoreData() {
             <img class="item-background" src="${item.image}">
         `;
         document.getElementById('dataContainer').appendChild(div);
+
+        // 타이머를 시작합니다.
+        startTimer();
     });
-
-    // 각 아이템을 생성하고 추가한 후
-    document.getElementById('dataContainer').appendChild(div);
-
-    // 타이머를 시작합니다.
-    startTimer();
 }
 
 // 스크롤 이벤트
@@ -61,14 +58,23 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// 서버 시간 표시 함수
-function displayServerTime() {
+// 서버 시간과 로컬 시간 표시 함수
+function displayTime() {
     let now = new Date(); // 현재 시간을 받아옵니다.
-    let utcTime = now.toISOString().slice(0,19).replace('T', '-'); // ISO 형식으로 변환하고, 원하는 형태로 가공합니다.
-    document.getElementById('serverTime').textContent = utcTime; // HTML 요소에 표시합니다.
+
+    // 컴퓨터의 로컬 시간을 UTC 형식으로 변환합니다.
+    let localTime = now.toISOString().slice(0,19).replace('T', ' ');
+
+    // UTC+09:00 기준의 서버 시간을 계산하고 UTC 형식으로 변환합니다.
+    let serverTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (9 * 60 * 60 * 1000));
+    serverTime = serverTime.toISOString().slice(0,19).replace('T', ' ');
+
+    // HTML 요소에 시간을 표시합니다.
+    document.getElementById('serverTime').textContent = serverTime + ' UTC+09:00'; // 서버 시간을 표시합니다.
+    document.getElementById('localTime').textContent = localTime + ' Local'; // 로컬 시간을 표시합니다.
 }
 
-setInterval(displayServerTime, 100); // 1초마다 함수를 반복 실행하여 시간을 업데이트합니다.
+setInterval(displayTime, 1000); // 1초마다 함수를 반복 실행하여 시간을 업데이트합니다.
 
 // 타이머 기능
 function startTimer() {
