@@ -15,7 +15,11 @@ fetch('//data.hungbok.net/data/free-games.json')
 // 필터링 기능
 function filterData(type) {
     start = 0;
-    filteredData = data.filter(item => item.type === type);
+    if (type === 'all') {
+        filteredData = [...data];
+    } else {
+        filteredData = data.filter(item => item.type === type);
+    }
     document.getElementById('dataContainer').innerHTML = '';
     loadMoreData();
 }
@@ -28,7 +32,18 @@ function loadMoreData() {
 
     slicedData.forEach(item => {
         let div = document.createElement('div');
-        div.innerHTML = `<h2>${item.title}</h2><p>${item.content}</p><p>${item.date}</p><p>${item.type}</p>`;
+        div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
+        div.innerHTML = `
+            <a class="image" href="${item.url}">
+                <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
+            </a>
+            <h1>${item.title}</h1>
+            <h3>${item.content}</h3>
+            <div class="timer-container start" settime="${item.start}"></div>
+            <div class="timer-container end" settime="${item.end}"></div>
+            <a href="${item.link}" target="_blank"></a>
+            <img class="background" src="${item.image}">
+        `;
         document.getElementById('dataContainer').appendChild(div);
     });
 }

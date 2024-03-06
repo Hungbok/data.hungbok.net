@@ -2,13 +2,37 @@
     {
         "title": "제목1",
         "content": "내용1",
-        "date": "2024-01-01",
-        "type": "game"
+        "type": "games",
+        "from": "",
+        "esd": "",
+        "start": "2024-01-02-01-00-00",
+        "end": "2024-01-02-01-00-00",
+        "link": "",
+        "url": "",
+        "image": ""
     },
     {
         "title": "제목2",
         "content": "내용2",
-        "date": "2024-01-02",
-        "type": "bundle"
+        "type": "bundle",
+        "from": "",
+        "esd": "",
+        "start": "2024-01-02-01-00-00",
+        "end": "2024-01-02-01-00-00",
+        "link": "",
+        "url": "",
+        "image": ""
+    },
+    {
+        "title": "제목2",
+        "content": "내용2",
+        "type": "subscription",
+        "from": "",
+        "esd": "",
+        "start": "2024-01-02-01-00-00",
+        "end": "2024-01-02-01-00-00",
+        "link": "",
+        "url": "",
+        "image": ""
     }
 ]
