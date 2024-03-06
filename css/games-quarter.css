@@ -51,6 +51,7 @@
     transform: translate(0%, -50%);
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .chapter-link {
@@ -67,6 +68,8 @@
     display: inline-block;
     margin: 0;
     color: var(--text-6);
+    vertical-align: middle;
+    line-height: 24px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -86,6 +89,7 @@
 .chapter-link:after {
     content: "•";
     margin: 5px;
+    vertical-align: middle;
 }
 
 .calendar-title {
@@ -176,8 +180,8 @@ div#calendar > div > div {
     padding: 10px;
     z-index: 10;
     bottom: -100%;
-    background: var(--hungbok);
-    color: #222222;
+    background: var(--background-10-opacity-75);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     border-radius: 10px 10px 0 0;
@@ -227,7 +231,6 @@ div#calendar > div > div {
     left: 0;
     transform: translate(0px, 0px);
     position: relative;
-    filter: grayscale(1) brightness(0.125);
     opacity: 0.25;
 }
 
