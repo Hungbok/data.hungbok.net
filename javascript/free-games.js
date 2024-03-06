@@ -76,7 +76,11 @@ function createAndAppendItem(item) {
 
 // 스크롤이 화면 가장 아래에 닿았을 때 데이터를 추가로 생성하는 함수
 window.onscroll = function() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    const scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+    const totalPageHeight = document.body.scrollHeight;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    if (scrollPosition + windowHeight >= totalPageHeight - 500) {
         // 여기에 데이터를 생성하는 코드를 추가합니다.
         loadMoreData();
         // 새롭게 추가된 데이터에 대해 만료된 데이터를 제외하는 함수를 호출합니다.
