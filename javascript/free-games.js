@@ -1,5 +1,5 @@
-let data = []; // 로드된 모든 데이터를 저장하는 변수입니다.
-let filteredData = []; // 필터링된 데이터를 저장하는 변수입니다.
+let data = [];
+let filteredData = [];
 let start = 0;
 let limit = 5;
 
@@ -12,33 +12,17 @@ fetch('//data.hungbok.net/data/free-games.json')
     loadMoreData();
 });
 
-let filterDataType = 'all'; // 데이터 필터 상태를 저장하는 변수입니다. 초기값은 'all'입니다.
-let filterPlatformType = ''; // 플랫폼 필터 상태를 저장하는 변수입니다. 초기값은 빈 문자열입니다.
-
-// 데이터를 불러오는 함수
-function fetchData() {
-    // 여기에서는 데이터를 불러오는 코드를 가정합니다.
-    data = ...;
-
-    applyFilters(); // 필터링을 적용합니다.
-}
-
-// 데이터와 플랫폼에 따라 데이터를 필터링하는 함수
-function applyFilters() {
-    if (filterDataType === 'all' && !filterPlatformType) {
+// 필터링 기능
+function filterData(type) {
+    start = 0;
+    if (type === 'all') {
         filteredData = [...data];
-    } else if (filterDataType === 'all') {
-        filteredData = data.filter(item => item.from === filterPlatformType);
-    } else if (!filterPlatformType) {
-        filteredData = data.filter(item => item.type === filterDataType);
     } else {
-        filteredData = data.filter(item => item.type === filterDataType && item.from === filterPlatformType);
+        filteredData = data.filter(item => item.type === type);
     }
-
     document.getElementById('dataContainer').innerHTML = '';
-    loadMoreData(); // 필터링된 데이터를 로드합니다.
+    loadMoreData();
 }
-
 
 let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니다. 초기값은 false입니다.
 
@@ -99,12 +83,9 @@ window.onscroll = function() {
     if (scrollPosition + windowHeight >= totalPageHeight - 500) {
         // 여기에 데이터를 생성하는 코드를 추가합니다.
         loadMoreData();
-        // 새롭게 추가된 데이터에 대해 필터링하는 함수를 호출합니다.
+        // 새롭게 추가된 데이터에 대해 만료된 데이터를 제외하는 함수를 호출합니다.
         if (filterExpired) {
             filterByDate();
-        }
-        if (filterPlatform) {
-            filterByPlatform();
         }
     }
 };
@@ -118,18 +99,6 @@ function loadMoreData() {
     slicedData.forEach(item => {
         createAndAppendItem(item);
     });
-}
-
-// 필터링 버튼의 onclick 이벤트
-function filterData(dataType) {
-    filterDataType = dataType; // 필터링할 데이터를 설정합니다.
-    applyFilters(); // 필터링을 적용합니다.
-}
-
-// 플랫폼에 따라 필터링하는 버튼의 onclick 이벤트
-function filterPlatform(platformType) {
-    filterPlatformType = platformType; // 필터링할 플랫폼을 설정합니다.
-    applyFilters(); // 필터링을 적용합니다.
 }
 
 // 서버 시간과 로컬 시간 표시 함수
