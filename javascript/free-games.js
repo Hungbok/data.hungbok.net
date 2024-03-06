@@ -24,10 +24,12 @@ function filterData(type) {
     loadMoreData();
 }
 
+let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니다. 초기값은 false입니다.
+
 // 만료된 데이터를 제외하는 함수
 function filterByDate() {
     let now = new Date();
-    let timerElements = document.querySelectorAll('.timer-container'); // 타이머를 적용할 요소를 선택합니다.
+    let timerElements = document.querySelectorAll('.timer-container.end'); // end 타이머를 적용할 요소를 선택합니다.
 
     timerElements.forEach(element => {
         let setTime = element.getAttribute('settime'); // settime 속성 값을 가져옵니다.
@@ -36,15 +38,20 @@ function filterByDate() {
         // setTime 값이 yyyy-mm-dd-hh-mm-ss 형식이므로, Date 객체를 이 형식에 맞게 생성합니다.
         let endDate = new Date(setTimeArray[0], setTimeArray[1] - 1, setTimeArray[2], setTimeArray[3], setTimeArray[4], setTimeArray[5]);
 
-        // 만료된 데이터를 제외합니다.
-        if (endDate < now) {
+        // 만료 필터가 활성화된 경우에만 만료된 데이터를 제외합니다.
+        if (filterExpired && endDate < now) {
             element.parentElement.style.display = 'none';
+        } else {
+            element.parentElement.style.display = '';
         }
     });
 }
 
 // 필터 버튼에 클릭 이벤트 핸들러를 추가합니다.
-document.getElementById('dateFilterBtn').addEventListener('click', filterByDate);
+document.getElementById('dateFilterBtn').addEventListener('click', function() {
+    filterExpired = !filterExpired; // 만료 필터 상태를 토글합니다.
+    filterByDate(); // 만료된 데이터를 제외하는 함수를 호출합니다.
+});
 
 // 아이템을 생성하고 추가하는 함수
 function createAndAppendItem(item) {
@@ -67,6 +74,18 @@ function createAndAppendItem(item) {
     startTimer();
 }
 
+// 스크롤이 화면 가장 아래에 닿았을 때 데이터를 추가로 생성하는 함수
+window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // 여기에 데이터를 생성하는 코드를 추가합니다.
+        loadMoreData();
+        // 새롭게 추가된 데이터에 대해 만료된 데이터를 제외하는 함수를 호출합니다.
+        if (filterExpired) {
+            filterByDate();
+        }
+    }
+};
+
 // 무한 스크롤 기능
 function loadMoreData() {
     let end = start + limit;
@@ -77,13 +96,6 @@ function loadMoreData() {
         createAndAppendItem(item);
     });
 }
-
-// 스크롤 이벤트
-window.addEventListener('scroll', () => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        loadMoreData();
-    }
-});
 
 // 서버 시간과 로컬 시간 표시 함수
 function displayTime() {
