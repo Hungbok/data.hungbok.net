@@ -12,6 +12,10 @@
     position: relative;
 }
 
+.hide-expired .expired {
+    display: none;
+}
+
 .item {
     width: 30%;
     max-width: 350px;

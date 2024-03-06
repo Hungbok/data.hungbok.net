@@ -68,39 +68,22 @@ function updateActiveClass() {
     if (platformBtn) platformBtn.classList.add('active');
 }
 
-let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니다. 초기값은 false입니다.
-
-// 만료된 데이터를 제외하는 함수
-function filterByDate() {
-    let now = new Date();
-    let timerElements = document.querySelectorAll('.timer-container.end'); // end 타이머를 적용할 요소를 선택합니다.
-
-    timerElements.forEach(element => {
-        let setTime = element.getAttribute('settime'); // settime 속성 값을 가져옵니다.
-        let setTimeArray = setTime.split('-'); // '-'로 구분된 setTime 값을 배열로 변환합니다.
-
-        // setTime 값이 yyyy-mm-dd-hh-mm-ss 형식이므로, Date 객체를 이 형식에 맞게 생성합니다.
-        let endDate = new Date(setTimeArray[0], setTimeArray[1] - 1, setTimeArray[2], setTimeArray[3], setTimeArray[4], setTimeArray[5]);
-
-        // 만료 필터가 활성화된 경우에만 만료된 데이터를 제외합니다.
-        if (filterExpired && endDate < now) {
-            element.parentElement.style.display = 'none';
-        } else {
-            element.parentElement.style.display = '';
-        }
-    });
-}
-
 // 필터 버튼에 클릭 이벤트 핸들러를 추가합니다.
 document.getElementById('dateFilterBtn').addEventListener('click', function() {
-    filterExpired = !filterExpired; // 만료 필터 상태를 토글합니다.
-    filterByDate(); // 만료된 데이터를 제외하는 함수를 호출합니다.
+    let dataContainer = document.getElementById('dataContainer');
+    dataContainer.classList.toggle('hide-expired'); // 'hide-expired' 클래스를 토글합니다.
 });
 
 // 아이템을 생성하고 추가하는 함수
 function createAndAppendItem(item) {
+    let now = new Date();
+    let itemEnd = new Date(item.end);
+
+    let isExpired = now > itemEnd; // 만료 여부 판단
+    let expiredClass = isExpired ? 'expired' : ''; // 만료되었다면 'expired' 클래스를, 아니라면 빈 문자열을 할당
+
     let div = document.createElement('div');
-    div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
+    div.className = `item ${item.type} from-${item.from} esd-${item.esd} ${expiredClass}`;
     div.innerHTML = `
         <a class="item-image" href="${item.url}">
             <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
