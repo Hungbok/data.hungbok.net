@@ -24,6 +24,27 @@ function filterData(type) {
     loadMoreData();
 }
 
+// 아이템을 생성하고 추가하는 함수
+function createAndAppendItem(item) {
+    let div = document.createElement('div');
+    div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
+    div.innerHTML = `
+        <a class="item-image" href="${item.url}">
+            <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
+        </a>
+        <h1>${item.title}</h1>
+        <h3>${item.content}</h3>
+        <div class="timer-container start" settime="${item.start}"></div>
+        <div class="timer-container end" settime="${item.end}"></div>
+        <a class="item-link" href="${item.link}" target="_blank"></a>
+        <img class="item-background" src="${item.image}">
+    `;
+    document.getElementById('dataContainer').appendChild(div);
+
+    // 아이템을 추가한 후에 타이머를 시작합니다.
+    startTimer();
+}
+
 // 무한 스크롤 기능
 function loadMoreData() {
     let end = start + limit;
@@ -31,23 +52,7 @@ function loadMoreData() {
     start += limit;
 
     slicedData.forEach(item => {
-        let div = document.createElement('div');
-        div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
-        div.innerHTML = `
-            <a class="item-image" href="${item.url}">
-                <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
-            </a>
-            <h1>${item.title}</h1>
-            <h3>${item.content}</h3>
-            <div class="timer-container start" settime="${item.start}"></div>
-            <div class="timer-container end" settime="${item.end}"></div>
-            <a class="item-link" href="${item.link}" target="_blank"></a>
-            <img class="item-background" src="${item.image}">
-        `;
-        document.getElementById('dataContainer').appendChild(div);
-
-        // 타이머를 시작합니다. 1초 후에 startTimer 함수를 실행하도록 설정합니다.
-        setTimeout(startTimer, 1000);
+        createAndAppendItem(item);
     });
 }
 
