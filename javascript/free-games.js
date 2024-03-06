@@ -46,6 +46,12 @@ function loadMoreData() {
         `;
         document.getElementById('dataContainer').appendChild(div);
     });
+
+    // 각 아이템을 생성하고 추가한 후
+    document.getElementById('dataContainer').appendChild(div);
+
+    // 타이머를 시작합니다.
+    startTimer();
 }
 
 // 스크롤 이벤트
@@ -63,3 +69,33 @@ function displayServerTime() {
 }
 
 setInterval(displayServerTime, 100); // 1초마다 함수를 반복 실행하여 시간을 업데이트합니다.
+
+// 타이머 기능
+function startTimer() {
+    let timerElements = document.querySelectorAll('.timer-container'); // 타이머를 적용할 요소를 선택합니다.
+
+    timerElements.forEach(element => { // 각 요소에 대해 반복합니다.
+        let setTime = element.getAttribute('settime'); // settime 속성 값을 가져옵니다.
+        let endDate = new Date(setTime.replace(/-/g, '/')); // settime 값을 Date 객체로 변환합니다.
+
+        let interval = setInterval(function() { // setInterval 함수로 1초마다 반복합니다.
+            let now = new Date(); // 현재 시간을 가져옵니다.
+            let distance = endDate - now; // 남은 시간을 계산합니다.
+
+            // 시간, 분, 초를 계산합니다.
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // 요소에 남은 시간을 표시합니다.
+            element.textContent = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // 남은 시간이 없으면 타이머를 멈춥니다.
+            if (distance < 0) {
+                clearInterval(interval);
+                element.textContent = "EXPIRED";
+            }
+        }, 100);
+    });
+}
