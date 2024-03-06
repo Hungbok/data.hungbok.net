@@ -1,3 +1,15 @@
+#dataContainer {
+    margin: auto;
+    width: auto;
+    max-width: 1300px;
+    min-height: 465.44px;
+    display: flex;
+    flex-flow: wrap;
+    place-content: center;
+    align-items: stretch;
+    position: relative;
+}
+
 .item {
     width: 30%;
     max-width: 350px;
@@ -6,7 +18,6 @@
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    display: none;
     transition: all 0.5s ease 0s;
 }
 
