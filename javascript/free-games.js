@@ -105,8 +105,18 @@ function startTimer() {
             let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // 요소에 남은 시간을 표시합니다.
-            element.textContent = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            // 시간, 분, 초를 항상 두 자리 숫자로 표시합니다.
+            hours = hours.toString().padStart(2, '0');
+            minutes = minutes.toString().padStart(2, '0');
+            seconds = seconds.toString().padStart(2, '0');
+
+            // 남은 시간이 24시간 미만인 경우에는 'hh:mm:ss' 형식으로, 그 이상인 경우에는 'dd:hh:mm:ss' 형식으로 표시합니다.
+            if (days > 0) {
+                days = days.toString().padStart(2, '0');
+                element.textContent = `${days}:${hours}:${minutes}:${seconds}`;
+            } else {
+                element.textContent = `${hours}:${minutes}:${seconds}`;
+            }
 
             // 남은 시간이 없으면 타이머를 멈춥니다.
             if (distance < 0) {
