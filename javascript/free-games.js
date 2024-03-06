@@ -54,3 +54,12 @@ window.addEventListener('scroll', () => {
         loadMoreData();
     }
 });
+
+// 서버 시간 표시 함수
+function displayServerTime() {
+    let now = new Date(); // 현재 시간을 받아옵니다.
+    let utcTime = now.toISOString().slice(0,19).replace('T', '-'); // ISO 형식으로 변환하고, 원하는 형태로 가공합니다.
+    document.getElementById('serverTime').textContent = utcTime; // HTML 요소에 표시합니다.
+}
+
+setInterval(displayServerTime, 100); // 1초마다 함수를 반복 실행하여 시간을 업데이트합니다.
