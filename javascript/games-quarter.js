@@ -69,7 +69,7 @@ if (year && season && monthRange) {
           sectionDiv.id = 'section-' + sectionKey;
           sectionDiv.className = 'elevator-contents chapter-contents';
           sectionDiv.setAttribute('chapter-data', `chapter-${year}-${month}`);
-          sectionDiv.setAttribute('chapter-text', `${year}년 ${month}월`);
+          sectionDiv.setAttribute('chapter-text', `${year}년 ${month !== '13' ? month + '월' : ''}`);
           sectionDiv.innerHTML = `
             <h2>${year}년 ${month !== '13' ? month + '월' : ''}</h2>
           `;
