@@ -78,7 +78,10 @@ document.getElementById('dateFilterBtn').addEventListener('click', function() {
 // 아이템을 생성하고 추가하는 함수
 function createAndAppendItem(item) {
     let now = new Date();
-    let itemEnd = new Date(item.end);
+
+    // 'yyyy-mm-dd-hh-mm-ss' 형식의 문자열을 Date 객체로 변환
+    let parts = item.end.split('-');
+    let itemEnd = new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
 
     let isExpired = now > itemEnd; // 만료 여부 판단
     let expiredClass = isExpired ? 'expired' : ''; // 만료되었다면 'expired' 클래스를, 아니라면 빈 문자열을 할당
