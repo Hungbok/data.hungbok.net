@@ -125,15 +125,33 @@
     display: none;
 }
 
-#dateFilterBtn.active,
-.filterDataBtn.active,
-.filterPlatformBtn.active {
-    background-color: #ffffff;
-    color: #000000;
+#dateFilterBtn,
+.filterDataBtn,
+.filterPlatformBtn {
+    margin: 10px;
+    padding: 5px 10px;
+    min-width: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #dateFilterBtn:hover,
 .filterDataBtn:hover,
 .filterPlatformBtn:hover {
     background-color: #222222;
+}
+
+#dateFilterBtn.active,
+.filterDataBtn.active,
+.filterPlatformBtn.active {
+    background-color: #ffffff;
+    color: #000000;
 }
