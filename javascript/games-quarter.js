@@ -384,4 +384,18 @@ window.addEventListener('load', function() {
             scrollTop: target.offset().top - 90
         }, 1000);
     });
+    
+    // 스크롤 이벤트
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop();
+        $('.chapter-contents').each(function() {
+            var top = $(this).offset().top - 10; // 10 is the padding from the top
+            var bottom = top + $(this).height();
+            if (scrollPos >= top && scrollPos <= bottom) {
+                var chapterData = $(this).attr('chapter-data');
+                $('.chapter-link').removeClass('active');
+                $('.chapter-link[data-link="' + chapterData + '"]').addClass('active');
+            }
+        });
+    });
 });
