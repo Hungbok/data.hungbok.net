@@ -90,7 +90,10 @@ function startTimer() {
 
     timerElements.forEach(element => { // 각 요소에 대해 반복합니다.
         let setTime = element.getAttribute('settime'); // settime 속성 값을 가져옵니다.
-        let endDate = new Date(setTime.replace(/-/g, '/')); // settime 값을 Date 객체로 변환합니다.
+        let setTimeArray = setTime.split('-'); // '-'로 구분된 setTime 값을 배열로 변환합니다.
+
+        // setTime 값이 yyyy-mm-dd-hh-mm-ss 형식이므로, Date 객체를 이 형식에 맞게 생성합니다.
+        let endDate = new Date(setTimeArray[0], setTimeArray[1] - 1, setTimeArray[2], setTimeArray[3], setTimeArray[4], setTimeArray[5]);
 
         let interval = setInterval(function() { // setInterval 함수로 1초마다 반복합니다.
             let now = new Date(); // 현재 시간을 가져옵니다.
