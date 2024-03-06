@@ -1,7 +1,7 @@
 let data = [];
 let filteredData = [];
 let start = 0;
-let limit = 10;
+let limit = 5;
 
 // JSON 파일 불러오기
 fetch('//data.hungbok.net/data/free-games.json')
@@ -23,6 +23,28 @@ function filterData(type) {
     document.getElementById('dataContainer').innerHTML = '';
     loadMoreData();
 }
+
+// 만료된 데이터를 제외하는 함수
+function filterByDate() {
+    let now = new Date();
+    let timerElements = document.querySelectorAll('.timer-container'); // 타이머를 적용할 요소를 선택합니다.
+
+    timerElements.forEach(element => {
+        let setTime = element.getAttribute('settime'); // settime 속성 값을 가져옵니다.
+        let setTimeArray = setTime.split('-'); // '-'로 구분된 setTime 값을 배열로 변환합니다.
+
+        // setTime 값이 yyyy-mm-dd-hh-mm-ss 형식이므로, Date 객체를 이 형식에 맞게 생성합니다.
+        let endDate = new Date(setTimeArray[0], setTimeArray[1] - 1, setTimeArray[2], setTimeArray[3], setTimeArray[4], setTimeArray[5]);
+
+        // 만료된 데이터를 제외합니다.
+        if (endDate < now) {
+            element.parentElement.style.display = 'none';
+        }
+    });
+}
+
+// 필터 버튼에 클릭 이벤트 핸들러를 추가합니다.
+document.getElementById('dateFilterBtn').addEventListener('click', filterByDate);
 
 // 아이템을 생성하고 추가하는 함수
 function createAndAppendItem(item) {
