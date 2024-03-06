@@ -4,8 +4,10 @@
     max-width: 1300px;
     min-height: 465.44px;
     display: flex;
-    flex-flow: wrap;
-    place-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     align-items: stretch;
     position: relative;
 }

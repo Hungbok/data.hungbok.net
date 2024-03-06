@@ -51,7 +51,7 @@ function loadMoreData() {
 
     slicedData.forEach(item => {
         let div = document.createElement('div');
-        div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
+        div.className = `item ${item.type} from-${item.from} esd-${item.esd} ${item.started ? 'started' : ''} ${item.ended ? 'ended' : ''}`;
         div.innerHTML = `
             <a class="item-image" href="${item.url}">
                 <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
@@ -80,9 +80,16 @@ setInterval(function() {
         const setTime = new Date(timer.getAttribute('settime').replace(/-/g, '/'));
         const now = new Date();
         const difference = setTime - now;
-        const hours = Math.floor(difference / 1000 / 60 / 60);
+
+        const days = Math.floor(difference / 1000 / 60 / 60 / 24);
+        const hours = Math.floor(difference / 1000 / 60 / 60 % 24);
         const minutes = Math.floor(difference / 1000 / 60 % 60);
         const seconds = Math.floor(difference / 1000 % 60);
-        timer.textContent = `${hours}:${minutes}:${seconds}`;
+
+        if (days > 0) {
+            timer.textContent = `${days}:${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        } else {
+            timer.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        }
     });
 }, 1000);
