@@ -5,8 +5,8 @@
         "type": "games",
         "from": "epicgames",
         "esd": "epicgamesstore",
-        "start": "2024-01-02-01-00-00",
-        "end": "2024-01-02-01-00-00",
+        "start": "2024-03-10-01-00-00",
+        "end": "2024-03-20-01-00-00",
         "link": "https://store.epicgames.com/en-US/p/saints-row",
         "url": "fortnite",
         "image": "//data.hungbok.net/image/games/fortnite/hb_capsule.jpg"
@@ -29,8 +29,8 @@
         "type": "subscription",
         "from": "",
         "esd": "",
-        "start": "2024-01-02-01-00-00",
-        "end": "2024-01-02-01-00-00",
+        "start": "2024-03-02-01-00-00",
+        "end": "2024-03-10-01-00-00",
         "link": "",
         "url": "",
         "image": ""

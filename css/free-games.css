@@ -114,3 +114,7 @@
     z-index: -1;
     pointer-events: none;
 }
+
+.esd-epicgamesstore::after {
+    background-image: url(//media.hungbok.net/image/icon/epicgames.svg);
+}

@@ -7,7 +7,18 @@ let limit = 10;
 fetch('//data.hungbok.net/data/free-games.json')
 .then(response => response.json())
 .then(json => {
-    data = json;
+    data = json.map(item => {
+        const now = new Date();
+        const startTime = new Date(item.start.replace(/-/g, '/'));
+        const endTime = new Date(item.end.replace(/-/g, '/'));
+        if (now >= startTime) {
+            item.started = true;
+        }
+        if (now >= endTime) {
+            item.ended = true;
+        }
+        return item;
+    });
     filteredData = [...data];
     loadMoreData();
 });
@@ -15,10 +26,18 @@ fetch('//data.hungbok.net/data/free-games.json')
 // 필터링 기능
 function filterData(type) {
     start = 0;
+    const filterStarted = document.getElementById('filter-started').checked;
+    const filterEnded = document.getElementById('filter-ended').checked;
     if (type === 'all') {
         filteredData = [...data];
     } else {
         filteredData = data.filter(item => item.type === type);
+    }
+    if (filterStarted) {
+        filteredData = filteredData.filter(item => item.started);
+    }
+    if (filterEnded) {
+        filteredData = filteredData.filter(item => item.ended);
     }
     document.getElementById('dataContainer').innerHTML = '';
     loadMoreData();
@@ -54,3 +73,16 @@ window.addEventListener('scroll', () => {
         loadMoreData();
     }
 });
+
+// 타이머 설정
+setInterval(function() {
+    document.querySelectorAll('.timer-container').forEach(function(timer) {
+        const setTime = new Date(timer.getAttribute('settime').replace(/-/g, '/'));
+        const now = new Date();
+        const difference = setTime - now;
+        const hours = Math.floor(difference / 1000 / 60 / 60);
+        const minutes = Math.floor(difference / 1000 / 60 % 60);
+        const seconds = Math.floor(difference / 1000 % 60);
+        timer.textContent = `${hours}:${minutes}:${seconds}`;
+    });
+}, 1000);
