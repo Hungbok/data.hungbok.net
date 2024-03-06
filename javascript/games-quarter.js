@@ -384,12 +384,12 @@ window.addEventListener('load', function() {
             scrollTop: target.offset().top - 90
         }, 1000);
     });
-    
+
     // 스크롤 이벤트
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
         $('.chapter-contents').each(function() {
-            var top = $(this).offset().top - 10; // 10 is the padding from the top
+            var top = $(this).offset().top - 100; // 10 is the padding from the top
             var bottom = top + $(this).height();
             if (scrollPos >= top && scrollPos <= bottom) {
                 var chapterData = $(this).attr('chapter-data');
@@ -397,5 +397,35 @@ window.addEventListener('load', function() {
                 $('.chapter-link[data-link="' + chapterData + '"]').addClass('active');
             }
         });
+    });
+
+    // up 버튼 클릭 이벤트
+    $('#chapter-up').click(function() {
+        var activeLink = $('.chapter-link.active');
+        if (activeLink.length > 0) {
+            var prevLink = activeLink.prev('.chapter-link');
+            if (prevLink.length > 0) {
+                var link = prevLink.data('link');
+                var target = $('.chapter-contents[chapter-data="' + link + '"]');
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        }
+    });
+
+    // down 버튼 클릭 이벤트
+    $('#chapter-down').click(function() {
+        var activeLink = $('.chapter-link.active');
+        if (activeLink.length > 0) {
+            var nextLink = activeLink.next('.chapter-link');
+            if (nextLink.length > 0) {
+                var link = nextLink.data('link');
+                var target = $('.chapter-contents[chapter-data="' + link + '"]');
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        }
     });
 });

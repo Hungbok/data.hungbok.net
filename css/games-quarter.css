@@ -1,4 +1,5 @@
-.elevator {
+.elevator,
+.chapter-elevator {
     position: fixed;
     z-index: 100;
     max-width: 1050px;
@@ -13,7 +14,8 @@
     pointer-events: none;
 }
 
-.elevator div {
+.elevator div,
+.chapter-elevator div {
     width: 50px;
     cursor: pointer;
     background-color: var(--background-8);
@@ -29,15 +31,18 @@
     transition: all 0.5s;
 }
 
-.elevator div:hover {
+.elevator div:hover,
+.chapter-elevator div:hover {
     background-color: var(--background-6);
 }
 
-.elevator-up {
+.elevator-up,
+#chapter-up {
     background: url(//data.hungbok.net/image/icon/up.svg) no-repeat center / 20px 20px;
 }
 
-.elevator-down {
+.elevator-down,
+#chapter-down {
     background: url(//data.hungbok.net/image/icon/down.svg) no-repeat center / 20px 20px;
 }
 
