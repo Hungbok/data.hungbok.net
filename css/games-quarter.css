@@ -1,22 +1,24 @@
 .elevator {
     position: fixed;
     z-index: 100;
-    max-width: 1050px;
-    width: 100%;
-    left: 50%;
+    width: calc(100% - 20px);
+    left: 0%;
+    top: 50%;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 0px 10px;
     align-items: flex-end;
     gap: 10px;
-    transform: translate(-50%, 0);
+    transform: translate(0%, -50%);
     pointer-events: none;
+    justify-content: space-between;
 }
 
 .elevator div {
-    width: 50px;
+    width: 75px;
     cursor: pointer;
-    background-color: var(--background-8);
+    background-color: var(--background-10-opacity-50);
     border-radius: 10px;
     color: transparent;
     line-height: 30px;
@@ -48,6 +50,7 @@
     top: 50%;
     display: flex;
     height: 500px;
+    margin-right: 10px;
     transform: translate(0%, -50%);
     flex-direction: column;
     justify-content: space-between;
@@ -57,6 +60,11 @@
 .chapter-link {
     cursor: pointer;
     color: var(--text-6);
+    background-color: var(--background-10-opacity-50);
+    border-radius: 10px;
+    pointer-events: auto;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 2.5px var(--absolute-10);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -82,8 +90,8 @@
 }
 
 .chapter-link:hover .chapter-title {
-    transform: translate(-10px, 0px);
     color: var(--text-2);
+    padding: 0px 10px 0px 0px;
 }
 
 .chapter-link:after {
@@ -94,12 +102,12 @@
 
 .chapter-link.active {
     color: var(--text-2);
-    transform: scale(1.125);
 }
 
 .chapter-link.active .chapter-title {
-    transform: translate(-10px, 0px);
     color: var(--text-2);
+    transform: scale(1.125);
+    padding: 0px 5px;
 }
 
 .calendar-title {
