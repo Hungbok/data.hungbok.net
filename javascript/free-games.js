@@ -28,7 +28,7 @@ function filterData(type) {
     start = 0;
     const filterStarted = document.getElementById('filter-started').checked;
     const filterEnded = document.getElementById('filter-ended').checked;
-    if (type === 'all') {
+    if (type === 'all' || type === 'check') {
         filteredData = [...data];
     } else {
         filteredData = data.filter(item => item.type === type);
@@ -80,16 +80,9 @@ setInterval(function() {
         const setTime = new Date(timer.getAttribute('settime').replace(/-/g, '/'));
         const now = new Date();
         const difference = setTime - now;
-
-        const days = Math.floor(difference / 1000 / 60 / 60 / 24);
-        const hours = Math.floor(difference / 1000 / 60 / 60 % 24);
-        const minutes = Math.floor(difference / 1000 / 60 % 60);
-        const seconds = Math.floor(difference / 1000 % 60);
-
-        if (days > 0) {
-            timer.textContent = `${days}:${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-        } else {
-            timer.textContent = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-        }
+        const hours = difference > 0 ? Math.floor(difference / 1000 / 60 / 60) : 0;
+        const minutes = difference > 0 ? Math.floor(difference / 1000 / 60 % 60) : 0;
+        const seconds = difference > 0 ? Math.floor(difference / 1000 % 60) : 0;
+        timer.textContent = `${hours}:${minutes}:${seconds}`;
     });
 }, 1000);
