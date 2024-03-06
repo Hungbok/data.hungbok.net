@@ -22,15 +22,29 @@ function filterData(type) {
     } else {
         filteredData = data.filter(item => item.type === type);
     }
-    filterPlatform(platform); // filterData 함수 내에서 filterPlatform 함수를 호출하여 2차 필터링을 실행합니다.
+    console.log(`현재 필터링된 카테고리: ${type}`); // 필터링된 카테고리 출력
+    document.querySelectorAll('.filterDataBtn').forEach(btn => {
+        btn.classList.remove('active'); // 모든 필터링 버튼에서 'active' 클래스를 제거
+        if (btn.getAttribute('data-type') === type) {
+            btn.classList.add('active'); // 현재 선택된 필터링 버튼에 'active' 클래스를 추가
+        }
+    });
+    filterPlatform(platform); 
 }
 
 // 2차 필터링 기능
 function filterPlatform(platformType) {
-    platform = platformType; // 플랫폼 필터링 상태를 저장합니다.
+    platform = platformType; 
     if (platformType !== 'all') {
         filteredData = filteredData.filter(item => item.from === platformType);
     }
+    console.log(`현재 필터링된 플랫폼: ${platformType}`); // 필터링된 플랫폼 출력
+    document.querySelectorAll('.filterPlatformBtn').forEach(btn => {
+        btn.classList.remove('active'); // 모든 플랫폼 버튼에서 'active' 클래스를 제거
+        if (btn.getAttribute('data-platform') === platformType) {
+            btn.classList.add('active'); // 현재 선택된 플랫폼 버튼에 'active' 클래스를 추가
+        }
+    });
     document.getElementById('dataContainer').innerHTML = '';
     loadMoreData();
 }
