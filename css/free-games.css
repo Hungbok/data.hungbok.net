@@ -125,16 +125,36 @@
     display: none;
 }
 
+.filter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
 #dateFilterBtn,
 .filterDataBtn,
 .filterPlatformBtn {
-    margin: 10px;
-    padding: 5px 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
     min-width: 20px;
     color: #ffffff;
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.filter-content img {
+    max-width: 20px;
+    max-height: 20px;
+    vertical-align: middle;
     text-align: center;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
