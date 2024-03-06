@@ -429,3 +429,7 @@
 .calendar-item-day::after {
     content: "일";
 }
+
+#dataContainer .item a.item-link::after {
+    content: "에서 받기";
+}

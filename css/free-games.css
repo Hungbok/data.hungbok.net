@@ -117,8 +117,52 @@
     pointer-events: none;
 }
 
+.esd-steam::after {
+    background-image: url(//media.hungbok.net/image/icon/steam.svg);
+}
+
 .esd-epicgamesstore::after {
-    background-image: url(//media.hungbok.net/image/icon/epicgames.svg);
+    background-image: url(//media.hungbok.net/image/icon/epicgamesstore.svg);
+}
+
+.esd-gogcom::after {
+    background-image: url(//media.hungbok.net/image/icon/gogcom.svg);
+}
+
+.esd-ubisoft::after {
+    background-image: url(//media.hungbok.net/image/icon/ubisoft.svg);
+}
+
+.esd-xbox::after {
+    background-image: url(//media.hungbok.net/image/icon/xbox.svg);
+}
+
+.esd-humblebundle::after {
+    background-image: url(//media.hungbok.net/image/icon/humblebundle.svg);
+}
+
+.esd-primegaming::after {
+    background-image: url(//media.hungbok.net/image/icon/primegaming.svg);
+}
+
+.esd-playstationplus::after {
+    background-image: url(//media.hungbok.net/image/icon/playstationplus.svg);
+}
+
+.esd-fanatical::after {
+    background-image: url(//media.hungbok.net/image/icon/fanatical.svg);
+}
+
+.esd-humblechoice::after {
+    background-image: url(//media.hungbok.net/image/icon/humblechoice.svg);
+}
+
+.esd-indiegala::after {
+    background-image: url(//media.hungbok.net/image/icon/indiegala.svg);
+}
+
+.esd-itchio::after {
+    background-image: url(//media.hungbok.net/image/icon/itchio.svg);
 }
 
 .hide-expired .expired {
