@@ -12,19 +12,24 @@ fetch('//data.hungbok.net/data/free-games.json')
     loadMoreData();
 });
 
+let platform = 'all'; // 플랫폼을 저장하는 전역 변수를 추가합니다. 초기값은 'all'입니다.
+
 // 필터링 기능
 function filterData(type) {
-    // 필터링 버튼의 active 클래스를 모두 제거합니다.
-    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-
-    // 클릭한 필터링 버튼에 active 클래스를 추가합니다.
-    document.getElementById(`${type}-filter-btn`).classList.add('active');
-
     start = 0;
     if (type === 'all') {
         filteredData = [...data];
     } else {
         filteredData = data.filter(item => item.type === type);
+    }
+    filterPlatform(platform); // filterData 함수 내에서 filterPlatform 함수를 호출하여 2차 필터링을 실행합니다.
+}
+
+// 2차 필터링 기능
+function filterPlatform(platformType) {
+    platform = platformType; // 플랫폼 필터링 상태를 저장합니다.
+    if (platformType !== 'all') {
+        filteredData = filteredData.filter(item => item.from === platformType);
     }
     document.getElementById('dataContainer').innerHTML = '';
     loadMoreData();
@@ -34,12 +39,6 @@ let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니�
 
 // 만료된 데이터를 제외하는 함수
 function filterByDate() {
-    // 필터링 버튼의 active 클래스를 모두 제거합니다.
-    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-
-    // 클릭한 필터링 버튼에 active 클래스를 추가합니다.
-    document.getElementById('date-filter-btn').classList.add('active');
-
     let now = new Date();
     let timerElements = document.querySelectorAll('.timer-container.end'); // end 타이머를 적용할 요소를 선택합니다.
 
