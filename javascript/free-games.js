@@ -12,6 +12,7 @@ fetch('//data.hungbok.net/data/free-games.json')
     loadMoreData();
 });
 
+let platform = 'all'; // 플랫폼을 저장하는 전역 변수를 추가합니다. 초기값은 'all'입니다.
 let type = 'all'; // 타입을 저장하는 전역 변수를 추가합니다. 초기값은 'all'입니다.
 
 // 필터링 기능
