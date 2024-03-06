@@ -57,8 +57,12 @@ function updateActiveClass() {
             btn.classList.remove('active'); // 모든 필터링 버튼에서 'active' 클래스를 제거
         });
     });
-    document.querySelector(`.filterDataBtn[data-type="${type}"]`).classList.add('active');
-    document.querySelector(`.filterPlatformBtn[data-platform="${platform}"]`).classList.add('active');
+    let typeBtn = document.querySelector(`.filterDataBtn[data-type="${type}"]`);
+    let platformBtn = document.querySelector(`.filterPlatformBtn[data-platform="${platform}"]`);
+
+    // 해당 요소가 있을 때만 'active' 클래스를 추가
+    if (typeBtn) typeBtn.classList.add('active');
+    if (platformBtn) platformBtn.classList.add('active');
 }
 
 let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니다. 초기값은 false입니다.
