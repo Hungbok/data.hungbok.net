@@ -46,8 +46,8 @@ function loadMoreData() {
         `;
         document.getElementById('dataContainer').appendChild(div);
 
-        // 타이머를 시작합니다.
-        startTimer();
+        // 타이머를 시작합니다. 1초 후에 startTimer 함수를 실행하도록 설정합니다.
+        setTimeout(startTimer, 1000);
     });
 }
 
@@ -65,13 +65,16 @@ function displayTime() {
     // 컴퓨터의 로컬 시간을 UTC 형식으로 변환합니다.
     let localTime = now.toISOString().slice(0,19).replace('T', ' ');
 
+    // 사용자의 시간대를 얻습니다.
+    let timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
     // UTC+09:00 기준의 서버 시간을 계산하고 UTC 형식으로 변환합니다.
     let serverTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (9 * 60 * 60 * 1000));
     serverTime = serverTime.toISOString().slice(0,19).replace('T', ' ');
 
     // HTML 요소에 시간을 표시합니다.
     document.getElementById('serverTime').textContent = serverTime + ' UTC+09:00'; // 서버 시간을 표시합니다.
-    document.getElementById('localTime').textContent = localTime + ' Local'; // 로컬 시간을 표시합니다.
+    document.getElementById('localTime').textContent = localTime + ' ' + timeZone; // 로컬 시간을 표시합니다.
 }
 
 setInterval(displayTime, 1000); // 1초마다 함수를 반복 실행하여 시간을 업데이트합니다.
