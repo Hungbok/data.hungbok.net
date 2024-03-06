@@ -12,10 +12,6 @@
     position: relative;
 }
 
-.hide-expired .expired {
-    display: none;
-}
-
 .item {
     width: 30%;
     max-width: 350px;
@@ -123,4 +119,21 @@
 
 .esd-epicgamesstore::after {
     background-image: url(//media.hungbok.net/image/icon/epicgames.svg);
+}
+
+.hide-expired .expired {
+    display: none;
+}
+
+#dateFilterBtn.active,
+.filterDataBtn.active,
+.filterPlatformBtn.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#dateFilterBtn:hover,
+.filterDataBtn:hover,
+.filterPlatformBtn:hover {
+    background-color: #222222;
 }
