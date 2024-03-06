@@ -367,6 +367,8 @@ $(document).ready(function() {
 });
 
 window.addEventListener('load', function() {
+    var isScrolling = false; // 스크롤 이동 여부를 확인하는 변수
+
     // .chapter-contents 인 요소들을 모두 찾고, 각 요소의 chapter-data와 chapter-text 속성 값을 가져와서 .chapter 에 <div>[chapter-text 값]</div> 형식으로 순서대로 출력
     $('.chapter-contents').each(function() {
         var chapterData = $(this).attr('chapter-data');
@@ -381,11 +383,15 @@ window.addEventListener('load', function() {
 
     // .chapter-link 클릭 시 해당 요소로 스크롤 이동
     $('.chapter').on('click', '.chapter-link', function() {
+        if (isScrolling) return; // 스크롤 이동 중이면 함수 종료
+        isScrolling = true; // 스크롤 이동 시작
         var link = $(this).data('link');
         var target = $('.chapter-contents[chapter-data="' + link + '"]');
         $('html, body').animate({
             scrollTop: target.offset().top - 90
-        }, 1000);
+        }, 1000, function() {
+            isScrolling = false; // 스크롤 이동 종료
+        });
     });
 
     // 스크롤 이벤트
@@ -404,30 +410,38 @@ window.addEventListener('load', function() {
 
     // up 버튼 클릭 이벤트
     $('#chapter-up').click(function() {
+        if (isScrolling) return; // 스크롤 이동 중이면 함수 종료
         var activeLink = $('.chapter-link.active');
         if (activeLink.length > 0) {
             var prevLink = activeLink.prev('.chapter-link');
             if (prevLink.length > 0) {
+                isScrolling = true; // 스크롤 이동 시작
                 var link = prevLink.data('link');
                 var target = $('.chapter-contents[chapter-data="' + link + '"]');
                 $('html, body').animate({
                     scrollTop: target.offset().top - 90
-                }, 1000);
+                }, 1000, function() {
+                    isScrolling = false; // 스크롤 이동 종료
+                });
             }
         }
     });
 
     // down 버튼 클릭 이벤트
     $('#chapter-down').click(function() {
+        if (isScrolling) return; // 스크롤 이동 중이면 함수 종료
         var activeLink = $('.chapter-link.active');
         if (activeLink.length > 0) {
             var nextLink = activeLink.next('.chapter-link');
             if (nextLink.length > 0) {
+                isScrolling = true; // 스크롤 이동 시작
                 var link = nextLink.data('link');
                 var target = $('.chapter-contents[chapter-data="' + link + '"]');
                 $('html, body').animate({
                     scrollTop: target.offset().top - 90
-                }, 1000);
+                }, 1000, function() {
+                    isScrolling = false; // 스크롤 이동 종료
+                });
             }
         }
     });

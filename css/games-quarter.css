@@ -92,6 +92,16 @@
     vertical-align: middle;
 }
 
+.chapter-link.active {
+    color: var(--text-2);
+    transform: scale(1.125);
+}
+
+.chapter-link.active .chapter-title {
+    transform: translate(-10px, 0px);
+    color: var(--text-2);
+}
+
 .calendar-title {
     position: relative;
     font-size: 50px;
