@@ -1,7 +1,7 @@
 let data = [];
 let filteredData = [];
 let start = 0;
-let limit = 16;
+let limit = 10;
 
 // JSON 파일 불러오기
 fetch('//data.hungbok.net/data/free-games.json')
@@ -13,10 +13,14 @@ fetch('//data.hungbok.net/data/free-games.json')
 });
 
 // 필터링 기능
-function filterData(esd, key) {
+function filterData(type) {
     start = 0;
-    filteredData = data.filter(item => item.esd === esd && item.key === key);
-    document.querySelector('.container').innerHTML = '';
+    if (type === 'all') {
+        filteredData = [...data];
+    } else {
+        filteredData = data.filter(item => item.type === type);
+    }
+    document.getElementById('dataContainer').innerHTML = '';
     loadMoreData();
 }
 
@@ -28,7 +32,7 @@ function loadMoreData() {
 
     slicedData.forEach(item => {
         let div = document.createElement('div');
-        div.className = `item ${item.type} from-${item.from} esd-${item.esd} ${item.started ? 'started' : ''} ${item.ended ? 'ended' : ''}`;
+        div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
         div.innerHTML = `
             <a class="item-image" href="${item.url}">
                 <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
@@ -40,25 +44,13 @@ function loadMoreData() {
             <a class="item-link" href="${item.link}" target="_blank"></a>
             <img class="item-background" src="${item.image}">
         `;
-        document.querySelector('.container').appendChild(div);
-        loadScript('//data.hungbok.net/javascript/free-games-timer.js', function() {
-            console.log('Script loaded for item:', item.title);
-        });
+        document.getElementById('dataContainer').appendChild(div);
     });
 }
 
 // 스크롤 이벤트
 window.addEventListener('scroll', () => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         loadMoreData();
     }
 });
-
-// 스크립트 동적 로딩 함수
-function loadScript(url, callback){
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    script.onload = callback;
-    document.head.appendChild(script);
-}
