@@ -111,10 +111,6 @@ window.onscroll = function() {
     if (scrollPosition + windowHeight >= totalPageHeight - 500) {
         // 여기에 데이터를 생성하는 코드를 추가합니다.
         loadMoreData();
-        // 새롭게 추가된 데이터에 대해 만료된 데이터를 제외하는 함수를 호출합니다.
-        if (filterExpired) {
-            filterByDate();
-        }
     }
 };
 
