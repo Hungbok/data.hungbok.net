@@ -14,6 +14,12 @@ fetch('//data.hungbok.net/data/free-games.json')
 
 // 필터링 기능
 function filterData(type) {
+    // 필터링 버튼의 active 클래스를 모두 제거합니다.
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+
+    // 클릭한 필터링 버튼에 active 클래스를 추가합니다.
+    document.getElementById(`${type}-filter-btn`).classList.add('active');
+
     start = 0;
     if (type === 'all') {
         filteredData = [...data];
@@ -28,6 +34,12 @@ let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니�
 
 // 만료된 데이터를 제외하는 함수
 function filterByDate() {
+    // 필터링 버튼의 active 클래스를 모두 제거합니다.
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+
+    // 클릭한 필터링 버튼에 active 클래스를 추가합니다.
+    document.getElementById('date-filter-btn').classList.add('active');
+
     let now = new Date();
     let timerElements = document.querySelectorAll('.timer-container.end'); // end 타이머를 적용할 요소를 선택합니다.
 
