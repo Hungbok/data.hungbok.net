@@ -30,6 +30,7 @@ function filterData(typeValue) {
     }
     console.log(`현재 필터링된 카테고리: ${type}`); // 필터링된 카테고리 출력
     updateActiveClass();
+    document.getElementById('dataContainer').innerHTML = ''; // 필터링 결과를 담는 컨테이너 초기화
     loadMoreData();
 }
 
@@ -48,6 +49,7 @@ function filterPlatform(platformType) {
     }
     console.log(`현재 필터링된 플랫폼: ${platform}`); // 필터링된 플랫폼 출력
     updateActiveClass();
+    document.getElementById('dataContainer').innerHTML = ''; // 필터링 결과를 담는 컨테이너 초기화
     loadMoreData();
 }
 
