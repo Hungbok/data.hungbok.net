@@ -41,6 +41,41 @@
     background: url(//data.hungbok.net/image/icon/down.svg) no-repeat center / 20px 20px;
 }
 
+.chapter {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    transform: translate(0%, -50%);
+}
+
+.chapter-link {
+    cursor: pointer;
+    color: var(--text-6);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.chapter-link:hover {
+    color: var(--text-2);
+}
+
+.chapter-link:hover .chapter-title {
+    transform: translate(-10px, 0px);
+}
+
+.chapter-link:after {
+    content: "•";
+    margin: 5px;
+}
+
 .calendar-title {
     position: relative;
     font-size: 50px;

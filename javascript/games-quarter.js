@@ -372,7 +372,7 @@ window.addEventListener('load', function() {
         var chapterData = $(this).attr('chapter-data');
         var chapterText = $(this).attr('chapter-text');
         if(chapterData && chapterText) {
-            $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '">' + chapterText + '</div>');
+            $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '"><p class="chapter-title">' + chapterText + '<p></div>');
         }
     });
 
@@ -381,7 +381,7 @@ window.addEventListener('load', function() {
         var link = $(this).data('link');
         var target = $('.chapter-contents[chapter-data="' + link + '"]');
         $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 90
         }, 1000);
     });
 });
