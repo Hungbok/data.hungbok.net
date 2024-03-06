@@ -63,12 +63,24 @@
     transition: all 0.5s;
 }
 
+.chapter-title {
+    display: inline-block;
+    margin: 0;
+    color: var(--text-6);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 .chapter-link:hover {
     color: var(--text-2);
 }
 
 .chapter-link:hover .chapter-title {
     transform: translate(-10px, 0px);
+    color: var(--text-2);
 }
 
 .chapter-link:after {

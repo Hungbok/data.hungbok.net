@@ -372,7 +372,7 @@ window.addEventListener('load', function() {
         var chapterData = $(this).attr('chapter-data');
         var chapterText = $(this).attr('chapter-text');
         if(chapterData && chapterText) {
-            $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '"><p class="chapter-title">' + chapterText + '<p></div>');
+            $('.chapter').append('<div class="chapter-link" data-link="' + chapterData + '"><p class="chapter-title">' + chapterText + '</p></div>');
         }
     });
 
