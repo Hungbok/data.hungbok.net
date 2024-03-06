@@ -34,15 +34,15 @@ function loadMoreData() {
         let div = document.createElement('div');
         div.className = `item ${item.type} from-${item.from} esd-${item.esd}`;
         div.innerHTML = `
-            <a class="image" href="${item.url}">
+            <a class="item-image" href="${item.url}">
                 <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
             </a>
             <h1>${item.title}</h1>
             <h3>${item.content}</h3>
             <div class="timer-container start" settime="${item.start}"></div>
             <div class="timer-container end" settime="${item.end}"></div>
-            <a href="${item.link}" target="_blank"></a>
-            <img class="background" src="${item.image}">
+            <a class="item-link" href="${item.link}" target="_blank"></a>
+            <img class="item-background" src="${item.image}">
         `;
         document.getElementById('dataContainer').appendChild(div);
     });
