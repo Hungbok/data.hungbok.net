@@ -76,6 +76,10 @@
     backdrop-filter: blur(10px);
 }
 
+.item h3 {
+    display: none;
+}
+
 .timer-container {
     font-size: 24px;
     font-weight: bold;
@@ -84,6 +88,10 @@
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+.timer-container.start {
+    display: none;
 }
 
 .item-link {
@@ -218,4 +226,42 @@
 .filterPlatformBtn.active {
     background-color: #ffffff;
     color: #000000;
+}
+
+#dataContainer .item a.item-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#dataContainer .item.games a.item-link {
+    background: linear-gradient(90deg, #e6c300, 60%, #f7e589);
+}
+
+#dataContainer .item.bundle a.item-link {
+    background: url(//media.hungbok.net/image/icon/basket.svg) no-repeat, linear-gradient(90deg, #e67300, 60%, #f4bd85);
+    background-position: calc(100% - 15px) center, center center;
+    background-size: 20px 20px, 100% 100%;
+}
+
+#dataContainer .item.subscription.from-primegaming a.item-link {
+    background: url(//media.hungbok.net/image/icon/primegaming.svg) no-repeat, linear-gradient(90deg, #00e6a1, 60%, #90fddc);
+    background-position: calc(100% - 15px) center, center center;
+    background-size: 20px 20px, 100% 100%;
+}
+
+#dataContainer .item.subscription.from-humblechoice a.item-link {
+    background: url(//media.hungbok.net/image/icon/humblebundle.svg) no-repeat, linear-gradient(90deg, #45e600, 60%, #a5ee86);
+    background-position: calc(100% - 15px) center, center center;
+    background-size: 20px 20px, 100% 100%;
+}
+
+#dataContainer .item.subscription.from-playstationplus a.item-link {
+    background: url(//media.hungbok.net/image/icon/playstationplus_color.svg) no-repeat, linear-gradient(90deg, #00b8e6, 60%, #89e2f8);
+    background-position: calc(100% - 15px) center, center center;
+    background-size: 20px 20px, 100% 100%;
 }
