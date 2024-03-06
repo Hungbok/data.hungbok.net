@@ -12,41 +12,53 @@ fetch('//data.hungbok.net/data/free-games.json')
     loadMoreData();
 });
 
-let platform = 'all'; // 플랫폼을 저장하는 전역 변수를 추가합니다. 초기값은 'all'입니다.
+let type = 'all'; // 타입을 저장하는 전역 변수를 추가합니다. 초기값은 'all'입니다.
 
 // 필터링 기능
-function filterData(type) {
+function filterData(typeValue) {
     start = 0;
-    if (type === 'all') {
+    type = typeValue;
+    if (type === 'all' && platform === 'all') {
         filteredData = [...data];
-    } else {
+    } else if (type === 'all') {
+        filteredData = data.filter(item => item.from === platform);
+    } else if (platform === 'all') {
         filteredData = data.filter(item => item.type === type);
+    } else {
+        filteredData = data.filter(item => item.type === type && item.from === platform);
     }
     console.log(`현재 필터링된 카테고리: ${type}`); // 필터링된 카테고리 출력
-    document.querySelectorAll('.filterDataBtn').forEach(btn => {
-        btn.classList.remove('active'); // 모든 필터링 버튼에서 'active' 클래스를 제거
-        if (btn.getAttribute('data-type') === type) {
-            btn.classList.add('active'); // 현재 선택된 필터링 버튼에 'active' 클래스를 추가
-        }
-    });
-    filterPlatform(platform); 
+    updateActiveClass();
+    loadMoreData();
 }
 
 // 2차 필터링 기능
 function filterPlatform(platformType) {
-    platform = platformType; 
-    if (platformType !== 'all') {
-        filteredData = filteredData.filter(item => item.from === platformType);
+    start = 0;
+    platform = platformType;
+    if (type === 'all' && platform === 'all') {
+        filteredData = [...data];
+    } else if (type === 'all') {
+        filteredData = data.filter(item => item.from === platform);
+    } else if (platform === 'all') {
+        filteredData = data.filter(item => item.type === type);
+    } else {
+        filteredData = data.filter(item => item.type === type && item.from === platform);
     }
-    console.log(`현재 필터링된 플랫폼: ${platformType}`); // 필터링된 플랫폼 출력
-    document.querySelectorAll('.filterPlatformBtn').forEach(btn => {
-        btn.classList.remove('active'); // 모든 플랫폼 버튼에서 'active' 클래스를 제거
-        if (btn.getAttribute('data-platform') === platformType) {
-            btn.classList.add('active'); // 현재 선택된 플랫폼 버튼에 'active' 클래스를 추가
-        }
-    });
-    document.getElementById('dataContainer').innerHTML = '';
+    console.log(`현재 필터링된 플랫폼: ${platform}`); // 필터링된 플랫폼 출력
+    updateActiveClass();
     loadMoreData();
+}
+
+// active class 업데이트
+function updateActiveClass() {
+    ['filterDataBtn', 'filterPlatformBtn'].forEach(className => {
+        document.querySelectorAll(`.${className}`).forEach(btn => {
+            btn.classList.remove('active'); // 모든 필터링 버튼에서 'active' 클래스를 제거
+        });
+    });
+    document.querySelector(`.filterDataBtn[data-type="${type}"]`).classList.add('active');
+    document.querySelector(`.filterPlatformBtn[data-platform="${platform}"]`).classList.add('active');
 }
 
 let filterExpired = false; // 만료 필터 상태를 저장하는 변수입니다. 초기값은 false입니다.
