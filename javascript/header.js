@@ -34,13 +34,13 @@ $(document).ready(function() {
         $("header").append('<section class="section">'+
             '<div class="side-header">'+
                 '<a class="header-button side-panel-icon" onclick="sidepanel()">'+
-                    '<img class="header-button-icon" src="//data.hungbok.net/image/icon/menu.svg">'+
+                    '<img class="header-button-icon" src="//media.hungbok.net/image/icon/menu.svg">'+
                 '</a>'+
                 '<div class="side-panel-contents" id="side-panel-contents">'+
                     '<div class="side-panel-content">'+
                         '<div class="side-panel-top">'+
                             '<a class="header-button side-panel-icon" onclick="sidepanel()">'+
-                                '<img class="header-button-icon" src="//data.hungbok.net/image/icon/close.svg">'+
+                                '<img class="header-button-icon" src="//media.hungbok.net/image/icon/close.svg">'+
                             '</a>'+
                             '<a class="menu-logo" href="/">'+
                                 '<div class="header-title logo">HUNGBOK</div>'+
@@ -105,7 +105,7 @@ $(document).ready(function() {
                 '<div class="site-header">'+
                     '<div class="header-menu logo-container">'+
                         '<a class="menu-logo" href="/">'+
-                            // '<img class="header-logo" src="//data.hungbok.net/image/hb/hb_symbol.svg">'+
+                            // '<img class="header-logo" src="//media.hungbok.net/image/hb/hb_symbol.svg">'+
                             '<div class="header-title logo">HUNGBOK</div>'+
                         '</a>'+
                     '</div>'+
@@ -113,17 +113,17 @@ $(document).ready(function() {
                         '<div class="search">'+
                             '<input type="text" id="search-value" placeholder="" autocomplete="off">'+
                             '<div class="search-icon">'+
-                                '<img src="//data.hungbok.net/image/icon/search.svg">'+
+                                '<img src="//media.hungbok.net/image/icon/search.svg">'+
                             '</div>'+
                         '</div>'+
                         '<div class="search-results"></div>'+
                     '</div>'+
                     '<div class="header-menu header-button-container">'+
                         '<a class="header-button" href="/">'+
-                            '<img class="header-button-icon" src="//data.hungbok.net/image/icon/help.svg">'+
+                            '<img class="header-button-icon" src="//media.hungbok.net/image/icon/help.svg">'+
                         '</a>'+
                         '<a class="header-button language-selecter" onclick="language()">'+
-                            '<img class="header-button-icon" src="//data.hungbok.net/image/icon/language.svg">'+
+                            '<img class="header-button-icon" src="//media.hungbok.net/image/icon/language.svg">'+
                         '</a>'+
                         '<div class="language-lists" id="language-lists">'+
                             '<div class="language-list">'+
@@ -274,10 +274,10 @@ $(document).ready(function() {
                             '</div>'+
                         '</div>'+
                         '<a class="header-button theme-light" onclick="setTheme(`dark`)">'+
-                            '<img class="header-button-icon" src="//data.hungbok.net/image/icon/light_mode.svg">'+
+                            '<img class="header-button-icon" src="//media.hungbok.net/image/icon/light_mode.svg">'+
                         '</a>'+
                         '<a class="header-button theme-dark" onclick="setTheme(`light`)">'+
-                            '<img class="header-button-icon" src="//data.hungbok.net/image/icon/dark_mode.svg">'+
+                            '<img class="header-button-icon" src="//media.hungbok.net/image/icon/dark_mode.svg">'+
                         '</a>'+
                     '</div>'+
                 '</div>'+
