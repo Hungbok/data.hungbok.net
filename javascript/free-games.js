@@ -192,48 +192,59 @@ function startTimer() {
     });
 }
 
-function addClassAtTime(item, className, timeLeft) {
-    setTimeout(() => {
-        item.classList.add(className);
-    }, timeLeft);
-}
+function createTimer(timerContainer, endTime) {
+    var timerInterval;
+    var targetTime = new Date(endTime);
+    var oneMinuteLeftTime = new Date(targetTime.getTime() - 60 * 1000); // 종료 1분 전
+    var oneHourLeftTime = new Date(targetTime.getTime() - 60 * 60 * 1000); // 종료 1시간 전
+    var threeHoursLeftTime = new Date(targetTime.getTime() - 3 * 60 * 60 * 1000); // 종료 3시간 전
+    var sixHoursLeftTime = new Date(targetTime.getTime() - 6 * 60 * 60 * 1000); // 종료 6시간 전
+    var twelveHoursLeftTime = new Date(targetTime.getTime() - 12 * 60 * 60 * 1000); // 종료 12시간 전
+    var oneDayLeftTime = new Date(targetTime.getTime() - 24 * 60 * 60 * 1000); // 종료 24시간 전
 
-document.querySelectorAll('.item').forEach(item => {
-    // '.timer-container.end'의 'settime' 속성을 Date 객체로 변환
-    let parts = item.querySelector('.timer-container.end').getAttribute('settime').split('-');
-    let itemEnd = new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+    function updateTimer() {
+        var currentTime = new Date();
+        var timeDifference = targetTime - currentTime;
 
-    // 남은 시간을 계산
-    let timeLeft = itemEnd - new Date();
+        if (timeDifference <= 0) {
+            clearInterval(timerInterval);
+            timerContainer.textContent = "00:00:00";
+            timerContainer.classList.add('expired');
+        } else {
+            if (currentTime >= oneDayLeftTime) {
+                timerContainer.classList.add('one-day-left');
+            }
+            if (currentTime >= twelveHoursLeftTime) {
+                timerContainer.classList.add('twelve-hours-left');
+            }
+            if (currentTime >= sixHoursLeftTime) {
+                timerContainer.classList.add('six-hours-left');
+            }
+            if (currentTime >= threeHoursLeftTime) {
+                timerContainer.classList.add('three-hours-left');
+            }
+            if (currentTime >= oneHourLeftTime) {
+                timerContainer.classList.add('one-hour-left');
+            }
+            if (currentTime >= oneMinuteLeftTime) {
+                timerContainer.classList.add('one-minute-left');
+            }
 
-    if (timeLeft > 0) {
-        // 각 시간에 해당하는 클래스를 추가
-        if (timeLeft <= 86400000) {
-            item.classList.add('one-day-left');
-            addClassAtTime(item, 'twelve-hours-left', timeLeft - 43200000);
+            var seconds = Math.floor((timeDifference / 1000) % 60);
+            var minutes = Math.floor((timeDifference / 1000 / 60) % 60);
+            var hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+            var formattedTime = days + "일 " + hours.toString().padStart(2, '0') + ":" + 
+                                minutes.toString().padStart(2, '0') + ":" + 
+                                seconds.toString().padStart(2, '0');
+
+            timerContainer.textContent = formattedTime;
         }
-        if (timeLeft <= 43200000) {
-            item.classList.add('twelve-hours-left');
-            addClassAtTime(item, 'six-hours-left', timeLeft - 21600000);
-        }
-        if (timeLeft <= 21600000) {
-            item.classList.add('six-hours-left');
-            addClassAtTime(item, 'three-hours-left', timeLeft - 10800000);
-        }
-        if (timeLeft <= 10800000) {
-            item.classList.add('three-hours-left');
-            addClassAtTime(item, 'one-hour-left', timeLeft - 3600000);
-        }
-        if (timeLeft <= 3600000) {
-            item.classList.add('one-hour-left');
-            addClassAtTime(item, 'one-minute-left', timeLeft - 60000);
-        }
-        if (timeLeft <= 60000) {
-            item.classList.add('one-minute-left');
-        }
-        addClassAtTime(item, 'expired', timeLeft);
-    } else {
-        // 만료된 경우 'expired' 클래스를 추가
-        item.classList.add('expired');
     }
-});
+
+    updateTimer(); // 초기 설정
+
+    // 1초 간격으로 타이머 업데이트
+    timerInterval = setInterval(updateTimer, 1000);
+}
