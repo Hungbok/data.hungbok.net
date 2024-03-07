@@ -243,7 +243,13 @@
 }
 
 #dataContainer .item.bundle a.item-link {
-    background: url(//media.hungbok.net/image/icon/basket.svg) no-repeat, linear-gradient(90deg, #e67300, 60%, #f4bd85);
+    background: url(//media.hungbok.net/image/icon/bag.svg) no-repeat, linear-gradient(90deg, #e67300, 60%, #f4bd85);
+    background-position: calc(100% - 15px) center, center center;
+    background-size: 20px 20px, 100% 100%;
+}
+
+#dataContainer .item.subscription.from-primegaming a.item-link {
+    background: url(//media.hungbok.net/image/icon/primegaming.svg) no-repeat, linear-gradient(90deg, #00e6a1, 60%, #90fddc);
     background-position: calc(100% - 15px) center, center center;
     background-size: 20px 20px, 100% 100%;
 }
