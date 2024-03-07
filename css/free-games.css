@@ -1,8 +1,9 @@
 #dataContainer {
     margin: auto;
     width: auto;
-    max-width: 1300px;
-    min-height: 465.44px;
+    max-width: 1200px;
+    min-height: 430px;
+    gap: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -16,7 +17,7 @@
     width: 30%;
     max-width: 350px;
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -123,6 +124,39 @@
     filter: blur(50px) brightness(0.5);
     z-index: -1;
     pointer-events: none;
+}
+
+.expired {
+    filter: grayscale(0.75) brightness(0.25);
+    opacity: 0.5;
+    text-decoration: line-through;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.item:hover.expired {
+    filter: grayscale(0.25) brightness(0.5);
+    opacity: 1;
+}
+
+.expired::before {
+    font-size: 75px;
+    left: 52.5%;
+    top: 35%;
+    opacity: 1;
+    transform: rotate(340deg) translate(-50%, -50%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.item:hover.expired::before {
+    opacity: 0.25;
 }
 
 .esd-steam::after {

@@ -1,7 +1,7 @@
 let data = [];
 let filteredData = [];
 let start = 0;
-let limit = 5;
+let limit = 16;
 
 // JSON 파일 불러오기
 fetch('//data.hungbok.net/data/free-games.json')
@@ -186,7 +186,7 @@ function startTimer() {
             // 남은 시간이 없으면 타이머를 멈춥니다.
             if (distance < 0) {
                 clearInterval(interval);
-                element.textContent = "EXPIRED";
+                element.textContent = "00:00:00";
             }
         }, 100);
     });

@@ -430,6 +430,10 @@
     content: "일";
 }
 
+#dataContainer .item.expired::before {
+    content: "만료됨";
+}
+
 #dataContainer .item a.item-link::after {
     content: "에서 받기";
 }
