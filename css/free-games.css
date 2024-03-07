@@ -148,6 +148,30 @@
     pointer-events: none;
 }
 
+.one-minute-left .end {
+    color: #b02a37;
+}
+
+.one-hour-left .end {
+    color: #e35d6a;
+}
+
+.three-hours-left .end {
+    color: #ca6510;
+}
+
+.six-hours-left .end {
+    color: #fd9843;
+}
+
+.twelve-hours-left .end {
+    color: #cc9a06;
+}
+
+.one-day-left .end {
+    color: #ffcd39;
+}
+
 .expired {
     filter: grayscale(0.75) brightness(0.25);
     opacity: 0.5;

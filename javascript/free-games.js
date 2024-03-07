@@ -191,3 +191,38 @@ function startTimer() {
         }, 100);
     });
 }
+
+function checkTimeLeft() {
+    let now = new Date();
+
+    // 모든 아이템에 대해
+    document.querySelectorAll('.item').forEach(item => {
+        // '.timer-container.end'의 'settime' 속성을 Date 객체로 변환
+        let parts = item.querySelector('.timer-container.end').getAttribute('settime').split('-');
+        let itemEnd = new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+
+        // 남은 시간에 따른 클래스를 적용
+        let timeLeft = itemEnd - now; // 남은 시간을 밀리초 단위로 계산
+        item.classList.remove('one-minute-left', 'one-hour-left', 'three-hours-left', 'six-hours-left', 'twelve-hours-left', 'one-day-left', 'expired'); // 기존 클래스를 제거
+
+        if (timeLeft <= 0) {
+            item.classList.add('expired'); // 만료된 경우 'expired' 클래스를 추가
+        } else if (timeLeft <= 60000) {
+            item.classList.add('one-minute-left'); // 1분 이내라면 'one-minute-left' 클래스를 추가
+        } else if (timeLeft <= 3600000) {
+            item.classList.add('one-hour-left'); // 1시간 이내라면 'one-hour-left' 클래스를 추가
+        } else if (timeLeft <= 10800000) {
+            item.classList.add('three-hours-left'); // 3시간 이내라면 'three-hours-left' 클래스를 추가
+        } else if (timeLeft <= 21600000) {
+            item.classList.add('six-hours-left'); // 6시간 이내라면 'six-hours-left' 클래스를 추가
+        } else if (timeLeft <= 43200000) {
+            item.classList.add('twelve-hours-left'); // 12시간 이내라면 'twelve-hours-left' 클래스를 추가
+        } else if (timeLeft <= 86400000) {
+            item.classList.add('one-day-left'); // 24시간 이내라면 'one-day-left' 클래스를 추가
+        }
+    });
+}
+
+// 페이지 로딩 후 1분마다 checkTimeLeft 함수를 실행
+setInterval(checkTimeLeft, 100);
+
