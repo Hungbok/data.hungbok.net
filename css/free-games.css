@@ -246,28 +246,24 @@
     background: url(//media.hungbok.net/image/icon/bag.svg) no-repeat, linear-gradient(90deg, #e67300, 60%, #f4bd85);
     background-position: calc(100% - 15px) center, center center;
     background-size: 20px 20px, 100% 100%;
+    padding: 10px 45px 10px 15px;
+}
+
+#dataContainer .item.subscription a.item-link {
+    background: url(//media.hungbok.net/image/icon/credit-card.svg) no-repeat, linear-gradient(90deg, #00e6a1, 60%, #90fddc);
+    background-position: calc(100% - 15px) center, center center;
+    background-size: 20px 20px, 100% 100%;
+    padding: 10px 45px 10px 15px;
 }
 
 #dataContainer .item.subscription.from-primegaming a.item-link {
-    background: url(//media.hungbok.net/image/icon/primegaming.svg) no-repeat, linear-gradient(90deg, #00e6a1, 60%, #90fddc);
-    background-position: calc(100% - 15px) center, center center;
-    background-size: 20px 20px, 100% 100%;
-}
-
-#dataContainer .item.subscription.from-primegaming a.item-link {
-    background: url(//media.hungbok.net/image/icon/primegaming.svg) no-repeat, linear-gradient(90deg, #00e6a1, 60%, #90fddc);
-    background-position: calc(100% - 15px) center, center center;
-    background-size: 20px 20px, 100% 100%;
+    background: url(//media.hungbok.net/image/icon/primegaming_color.svg) no-repeat, linear-gradient(90deg, #00e6a1, 60%, #90fddc);
 }
 
 #dataContainer .item.subscription.from-humblechoice a.item-link {
-    background: url(//media.hungbok.net/image/icon/humblebundle.svg) no-repeat, linear-gradient(90deg, #45e600, 60%, #a5ee86);
-    background-position: calc(100% - 15px) center, center center;
-    background-size: 20px 20px, 100% 100%;
+    background: url(//media.hungbok.net/image/icon/humblechoice_color.svg) no-repeat, linear-gradient(90deg, #45e600, 60%, #a5ee86);
 }
 
 #dataContainer .item.subscription.from-playstationplus a.item-link {
     background: url(//media.hungbok.net/image/icon/playstationplus_color.svg) no-repeat, linear-gradient(90deg, #00b8e6, 60%, #89e2f8);
-    background-position: calc(100% - 15px) center, center center;
-    background-size: 20px 20px, 100% 100%;
 }
