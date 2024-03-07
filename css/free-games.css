@@ -28,6 +28,28 @@
     transition: all 0.5s;
 }
 
+.item::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    padding: 0px 50px;
+    border-radius: 50px;
+    font-size: 175px;
+    font-weight: bold;
+    left: 52.5%;
+    top: 25%;
+    text-wrap: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotate(340deg) translate(-50%, -50%);
+    background-color: black;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 .item::after {
     content: "";
     width: 500px;
