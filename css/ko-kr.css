@@ -446,50 +446,50 @@
     content: "에서 구독하기";
 }
 
-#dataContainer .item.from-steam a.item-link::after {
+#dataContainer .item.from-steam a.item-link::before {
     content: "스팀";
 }
 
-#dataContainer .item.from-epicgamesstore a.item-link::after {
+#dataContainer .item.from-epicgamesstore a.item-link::before {
     content: "에픽게임즈 스토어";
 }
 
-#dataContainer .item.from-gogcom a.item-link::after {
+#dataContainer .item.from-gogcom a.item-link::before {
     content: "GOG.com";
 }
 
-#dataContainer .item.from-ubisoft a.item-link::after {
+#dataContainer .item.from-ubisoft a.item-link::before {
     content: "유비소프트 스토어";
 }
 
-#dataContainer .item.from-xbox a.item-link::after {
+#dataContainer .item.from-xbox a.item-link::before {
     content: "엑스박스 스토어";
 }
 
-#dataContainer .item.from-humblebundle a.item-link::after {
+#dataContainer .item.from-humblebundle a.item-link::before {
     content: "험블번들";
 }
 
-#dataContainer .item.from-primegaming a.item-link::after {
+#dataContainer .item.from-primegaming a.item-link::before {
     content: "프라임 게이밍";
 }
 
-#dataContainer .item.from-playstationplus a.item-link::after {
+#dataContainer .item.from-playstationplus a.item-link::before {
     content: "플레이스테이션 플러스";
 }
 
-#dataContainer .item.from-fanatical a.item-link::after {
+#dataContainer .item.from-fanatical a.item-link::before {
     content: "파나티컬";
 }
 
-#dataContainer .item.from-humblechoice a.item-link::after {
+#dataContainer .item.from-humblechoice a.item-link::before {
     content: "험블초이스";
 }
 
-#dataContainer .item.from-indiegala a.item-link::after {
+#dataContainer .item.from-indiegala a.item-link::before {
     content: "인디갈라";
 }
 
-#dataContainer .item.from-itchio a.item-link::after {
+#dataContainer .item.from-itchio a.item-link::before {
     content: "itch.io";
 }
