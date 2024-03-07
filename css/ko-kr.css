@@ -443,7 +443,7 @@
 }
 
 #dataContainer .item.subscription a.item-link::after {
-    content: "에서 구독하기";
+    content: " 구독하기";
 }
 
 #dataContainer .item.from-steam a.item-link::before {
@@ -455,7 +455,7 @@
 }
 
 #dataContainer .item.from-gogcom a.item-link::before {
-    content: "GOG.com";
+    content: "지오지닷컴";
 }
 
 #dataContainer .item.from-ubisoft a.item-link::before {
@@ -467,7 +467,19 @@
 }
 
 #dataContainer .item.from-humblebundle a.item-link::before {
-    content: "험블번들";
+    content: "험블 번들";
+}
+
+#dataContainer .item.from-fanatical a.item-link::before {
+    content: "파나티컬";
+}
+
+#dataContainer .item.from-indiegala a.item-link::before {
+    content: "인디갈라";
+}
+
+#dataContainer .item.from-itchio a.item-link::before {
+    content: "잇치 닷 아이오";
 }
 
 #dataContainer .item.from-primegaming a.item-link::before {
@@ -478,18 +490,6 @@
     content: "플레이스테이션 플러스";
 }
 
-#dataContainer .item.from-fanatical a.item-link::before {
-    content: "파나티컬";
-}
-
 #dataContainer .item.from-humblechoice a.item-link::before {
-    content: "험블초이스";
-}
-
-#dataContainer .item.from-indiegala a.item-link::before {
-    content: "인디갈라";
-}
-
-#dataContainer .item.from-itchio a.item-link::before {
-    content: "itch.io";
+    content: "험블 초이스";
 }

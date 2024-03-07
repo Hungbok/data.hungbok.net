@@ -111,7 +111,7 @@ window.onscroll = function() {
     const totalPageHeight = document.body.scrollHeight;
     const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-    if (scrollPosition + windowHeight >= totalPageHeight - 100) {
+    if (scrollPosition + windowHeight >= totalPageHeight - 300) {
         // 여기에 데이터를 생성하는 코드를 추가합니다.
         loadMoreData();
     }
