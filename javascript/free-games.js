@@ -208,23 +208,28 @@ document.querySelectorAll('.item').forEach(item => {
 
     if (timeLeft > 0) {
         // 각 시간에 해당하는 클래스를 추가
-        if (timeLeft > 86400000) {
-            addClassAtTime(item, 'one-day-left', timeLeft - 86400000);
-        }
-        if (timeLeft > 43200000) {
+        if (timeLeft <= 86400000) {
+            item.classList.add('one-day-left');
             addClassAtTime(item, 'twelve-hours-left', timeLeft - 43200000);
         }
-        if (timeLeft > 21600000) {
+        if (timeLeft <= 43200000) {
+            item.classList.add('twelve-hours-left');
             addClassAtTime(item, 'six-hours-left', timeLeft - 21600000);
         }
-        if (timeLeft > 10800000) {
+        if (timeLeft <= 21600000) {
+            item.classList.add('six-hours-left');
             addClassAtTime(item, 'three-hours-left', timeLeft - 10800000);
         }
-        if (timeLeft > 3600000) {
+        if (timeLeft <= 10800000) {
+            item.classList.add('three-hours-left');
             addClassAtTime(item, 'one-hour-left', timeLeft - 3600000);
         }
-        if (timeLeft > 60000) {
+        if (timeLeft <= 3600000) {
+            item.classList.add('one-hour-left');
             addClassAtTime(item, 'one-minute-left', timeLeft - 60000);
+        }
+        if (timeLeft <= 60000) {
+            item.classList.add('one-minute-left');
         }
         addClassAtTime(item, 'expired', timeLeft);
     } else {
