@@ -148,31 +148,31 @@
     pointer-events: none;
 }
 
-.one-minute-left .end {
+.timer-container.end.one-minute-left {
     color: #b02a37;
 }
 
-.one-hour-left .end {
+.timer-container.end.one-hour-left {
     color: #e35d6a;
 }
 
-.three-hours-left .end {
+.timer-container.end.three-hours-left {
     color: #ca6510;
 }
 
-.six-hours-left .end {
+.timer-container.end.six-hours-left {
     color: #fd9843;
 }
 
-.twelve-hours-left .end {
+.timer-container.end.twelve-hours-left {
     color: #cc9a06;
 }
 
-.one-day-left .end {
+.timer-container.end.one-day-left {
     color: #ffcd39;
 }
 
-.expired {
+.expired.item {
     filter: grayscale(0.75) brightness(0.25);
     opacity: 0.5;
     text-decoration: line-through;
@@ -183,12 +183,12 @@
     transition: all 0.5s;
 }
 
-.item:hover.expired {
+.expired.item:hover {
     filter: grayscale(0.25) brightness(0.5);
     opacity: 1;
 }
 
-.expired::before {
+.expired.item::before {
     font-size: 75px;
     left: 52.5%;
     top: 35%;
@@ -201,7 +201,7 @@
     transition: all 0.5s;
 }
 
-.item:hover.expired::before {
+.expired.item:hover::before {
     opacity: 0.25;
 }
 
@@ -253,7 +253,7 @@
     background-image: url(//media.hungbok.net/image/icon/itchio.svg);
 }
 
-.hide-expired .expired {
+.hide-expired .item.expired {
     display: none;
 }
 
