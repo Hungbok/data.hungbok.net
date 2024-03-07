@@ -343,3 +343,48 @@
 #dataContainer .item.subscription.from-playstationplus a.item-link {
     background: url(//media.hungbok.net/image/icon/playstationplus_color.svg) no-repeat calc(100% - 15px) center / 20px 20px, linear-gradient(90deg, #00b8e6, 60%, #89e2f8);
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes breath {
+    0%, 100% {
+        transform: scale(1);
+    }
+    6.25%, 93.75% {
+        transform: scale(1.05);
+    }
+    12.5%, 87.5% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(2.5deg);
+    }
+    6.25%, 93.75% {
+        transform: rotate(-2.5deg);
+    }
+    12.5%, 87.5% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bell {
+    0%, 100% {
+        transform: rotate(2.5deg);
+    }
+    25%, 75% {
+        transform: rotate(-2.5deg);
+    }
+    50% {
+        transform: rotate(2.5deg);
+    }
+}
