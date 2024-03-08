@@ -197,6 +197,7 @@
         "title": "Fortnite",
         "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_developer": "Epic Games",
+        "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_publisher": "Epic Games",
         "release": "June 29, 2020",
         "release_date": "<p class='early-access-date' ttt='Windows | macOS | PlayStation 4 | Xbox One'>July 25, 2017</p><p ttt='iOS'>March 9, 2018</p><p ttt='Nintendo Switch'>June 13, 2018</p><p ttt='Android'>August 10, 2018</p><p class='full-release-date'>June 29, 2020</p><p ttt='Xbox Series X|S'>November 10, 2020</p><p ttt='PlayStation 5'>November 12, 2020</p>",
