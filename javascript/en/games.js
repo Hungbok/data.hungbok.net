@@ -38,9 +38,9 @@ $(document).ready(function(){
             var replacement = {
                 '{type}': data.type,
                 '{title}': data['en'].title,
-                '{developer}': data['en'].developer,
+                '{developer}': data.developer,
                 '{info_developer}': data['en'].info_developer,
-                '{publisher}': data['en'].publisher,
+                '{publisher}': data.publisher,
                 '{info_publisher}': data['en'].info_publisher,
                 '{platform}': data.platform,
                 '{release}': data['en'].release,

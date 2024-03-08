@@ -1,5 +1,7 @@
 {
     "type": "games",
+    "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
+    "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
     "platform": "<div class='icon-pc' ttt='PC'></div><div class='icon-playstation' ttt='PlayStation'></div><div class='icon-xbox' ttt='Xbox'></div><div class='icon-nintendo' ttt='Nintendo'></div><div class='icon-mobile' ttt='Mobile'></div>",
     "pc": "<div class='icon-windows' ttt='Windows'></div>",
     "console": "<div class='icon-playstation4' ttt='PlayStation 4'></div><div class='icon-playstation5' ttt='PlayStation 5'></div><div class='icon-xboxone' ttt='Xbox One'></div><div class='icon-xboxseriesxs' ttt='Xbox Series X|S'></div><div class='icon-nintendoswitch' ttt='Nintendo Switch'></div>",
@@ -195,9 +197,7 @@
     "en": {
         "lang": "en",
         "title": "Fortnite",
-        "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_developer": "Epic Games",
-        "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_publisher": "Epic Games",
         "release": "June 29, 2020",
         "release_date": "<p class='early-access-date' ttt='Windows | macOS | PlayStation 4 | Xbox One'>July 25, 2017</p><p ttt='iOS'>March 9, 2018</p><p ttt='Nintendo Switch'>June 13, 2018</p><p ttt='Android'>August 10, 2018</p><p class='full-release-date'>June 29, 2020</p><p ttt='Xbox Series X|S'>November 10, 2020</p><p ttt='PlayStation 5'>November 12, 2020</p>",
@@ -279,9 +279,7 @@
     "ja": {
         "lang": "ja",
         "title": "フォートナイト",
-        "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_developer": "エピックゲームズ",
-        "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_publisher": "エピックゲームズ",
         "release": "2020年6月30日",
         "release_date": "<p class='early-access-date' ttt='Windows | macOS | PlayStation 4 | Xbox One'>2017年7月25日</p><p ttt='iOS'>2018年3月9日</p><p ttt='Nintendo Switch'>2018年6月13日</p><p ttt='Android'>2018年8月10日</p><p class='full-release-date'>2020年6月30日</p><p ttt='Xbox Series X|S'>2020年11月10日</p><p ttt='PlayStation 5'>2020年11月12日</p>",
@@ -363,9 +361,7 @@
     "ko": {
         "lang": "ko",
         "title": "포트나이트",
-        "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_developer": "에픽게임즈",
-        "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
         "info_publisher": "에픽게임즈",
         "release": "2020년 6월 29일",
         "release_date": "<p class='early-access-date' ttt='Windows | macOS | PlayStation 4 | Xbox One'>2017년 7월 25일</p><p ttt='iOS'>2018년 3월 9일</p><p ttt='Nintendo Switch'>2018년 6월 13일</p><p ttt='Android'>2018년 8월 10일</p><p class='full-release-date'>2020년 6월 29일</p><p ttt='Xbox Series X|S'>2020년 11월 10일</p><p ttt='PlayStation 5'>2020년 11월 12일</p>",
