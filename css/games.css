@@ -665,7 +665,8 @@
     margin: 0;
 }
 
-.more-info-item-text.release > div::before {
+.more-info-item-text.release > div::before,
+.more-info-item-text.release > .release-type {
     display: inline-block;
     background-color: var(--text-3);
     color: var(--background-8);
@@ -751,6 +752,7 @@
     margin: 10px;
 }
 
+.more-info-item-text.release > .release-type,
 .more-info-item-text.release > div.early-access-date,
 .more-info-item-text.release > div.full-release-date {
     width: 100%;
