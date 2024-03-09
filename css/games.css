@@ -663,6 +663,10 @@
     margin: 0;
 }
 
+.more-info-item-text.release > div::before {
+    display: block;
+}
+
 .more-info .info-table {
     flex-direction: column;
     flex-wrap: nowrap;
