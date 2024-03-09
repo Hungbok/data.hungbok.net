@@ -834,7 +834,7 @@
     align-items: center;
 }
 
-.opencritic div {
+.opencritic > div {
     padding: 10px;
     border-radius: 5px;
     display: flex;
@@ -848,7 +848,6 @@
 .score-orb {
     position: relative;
     margin: 0;
-    margin-right: 5px;
     display: inline-block;
     vertical-align: text-top;
 }
@@ -872,6 +871,54 @@
     stroke-width: 32;
 }
 
+circle.mighty {
+    fill: #fc430a;
+}
+
+circle.strong {
+    fill: #9e00b4;
+}
+
+circle.fair {
+    fill: #4aa1ce;
+}
+
+circle.weak {
+    fill: #80b06a;
+}
+
+.mighty-start {
+    stop-color: #ffd86f;
+}
+
+.mighty-stop {
+    stop-color: #fc430a;
+}
+
+.strong-start {
+    stop-color: #ff6ec4;
+}
+
+.strong-stop {
+    stop-color: #7873f5;
+}
+
+.fair-start {
+    stop-color: #478c77;
+}
+
+.fair-stop {
+    stop-color: #76c8ff;
+}
+
+.weak-start {
+    stop-color: #80b06a;
+}
+
+.weak-stop {
+    stop-color: #638151;
+}
+
 .inner-orb {
     position: absolute;
     top: 2px;
@@ -889,6 +936,8 @@
 
 .inner-orb p {
     margin: 0;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .platform,
