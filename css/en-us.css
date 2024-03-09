@@ -324,11 +324,11 @@
 }
 
 .early-access-date::before {
-    content: "Early Access | ";
+    content: "Early Access";
 }
 
 .full-release-date::before {
-    content: "Full Release | ";
+    content: "Full Release";
 }
 
 .description-source::before {

@@ -664,7 +664,10 @@
 }
 
 .more-info-item-text.release > div::before {
-    display: block;
+    background-color: var(--text-3);
+    color: var(--background-8);
+    border-radius: 5px;
+    padding: 2.5px 5px;
 }
 
 .more-info .info-table {
@@ -737,7 +740,12 @@
 }
 
 .more-info .release p {
-    margin: 0;
+    margin: 5px 0;
+    text-wrap: balance;
+}
+
+.more-info .release p:first-child {
+    color: var(--text-3);
 }
 
 .more-info .release .release-platform {
