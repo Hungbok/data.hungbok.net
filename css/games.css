@@ -637,6 +637,7 @@
 
 .info-more .popup-content {
     width: 90%;
+    max-width: 1200px;
 }
 
 .more-info-item {
@@ -745,7 +746,7 @@
     grid-column-end: 3;
 }
 
-.more-info .platform .platform-platform {
+.more-info .platform-platform {
     height: auto;
     width: auto;
     margin: 0px;
