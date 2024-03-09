@@ -798,6 +798,7 @@
 }
 
 .reviews {
+    display: flex;
     flex-wrap: wrap;
     height: calc(100% - 20px);
     align-content: space-between;
