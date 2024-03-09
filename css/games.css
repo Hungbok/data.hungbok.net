@@ -794,6 +794,44 @@
     grid-column-end: 2;
 }
 
+.metacritic {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    min-width: 30px;
+    width: calc(100% - 60px);
+    height: 30px;
+    background-position: 10px center, center, center, center, center;
+    background-size: 20px 20px;
+    padding-left: 40px;
+    font-weight: 700;
+}
+
+.metacritic.icon-pc {
+    background-color: #111111;
+}
+
+.metacritic.icon-ps4 {
+    background-color: #013791;
+}
+
+.metacritic.icon-xbo {
+    background-color: #107c11;
+}
+
+.metacritic.icon-nsw {
+    background-color: #e60012;
+}
+
+.metacritic p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .platform,
 .age {
     -ms-user-select: none;
