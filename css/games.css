@@ -674,9 +674,10 @@
     padding: 2.5px 5px;
     vertical-align: text-bottom;
     font-weight: bold;
+    margin: 10px 5px;
 }
 
-.more-info-item-text.system-requirements > .release-type {
+.more-info-item-text.release.system-requirements > .release-type {
     width: calc(50% - 30px);
 }
 
