@@ -676,6 +676,10 @@
     font-weight: bold;
 }
 
+.more-info-item-text.system-requirements > .release-type {
+    width: calc(50% - 30px);
+}
+
 .more-info .info-table {
     flex-direction: column;
     flex-wrap: nowrap;
