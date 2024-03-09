@@ -627,6 +627,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
+    text-align: left;
 }
 
 .more-info-item {
@@ -635,6 +637,15 @@
 
 .more-info-item p {
     margin: 0;
+}
+
+.more-info-item-title {
+    color: var(--text-2);
+    font-weight: bold;
+}
+
+.more-info-item-text {
+    color: var(--text-4);
 }
 
 .more-info .info-table {
