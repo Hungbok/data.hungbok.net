@@ -902,35 +902,38 @@
     stroke-width: 32;
 }
 
-.top-critic-average-100 .score-orb svg,
-.critics-recommend-100 .score-orb svg {
-    transform: rotate(0deg);
-}
+.top-critic-average-100 .score-orb svg, .critics-recommend-100 .score-orb svg { transform: rotate(0deg); }
+.top-critic-average-100 .top-critic-average-circle, .critics-recommend-100 .critics-recommend-circle {stroke-dasharray: 0, 100; }
 
-.top-critic-average-100 .top-critic-average-circle,
-.critics-recommend-100 .critics-recommend-circle {
-    stroke-dasharray: 0, 100;
-}
+.top-critic-average-90 .score-orb svg, .critics-recommend-90 .score-orb svg { transform: rotate(-18deg); }
+.top-critic-average-90 .top-critic-average-circle, .critics-recommend-90 .critics-recommend-circle { stroke-dasharray: 10, 100; }
 
-.top-critic-average-90 .score-orb svg,
-.critics-recommend-90 .score-orb svg {
-    transform: rotate(-18deg);
-}
+.top-critic-average-80 .score-orb svg, .critics-recommend-80 .score-orb svg { transform: rotate(-36deg); }
+.top-critic-average-80 .top-critic-average-circle, .critics-recommend-80 .critics-recommend-circle { stroke-dasharray: 20, 100; }
 
-.top-critic-average-90 .top-critic-average-circle,
-.critics-recommend-90 .critics-recommend-circle {
-    stroke-dasharray: 10, 100;
-}
+.top-critic-average-70 .score-orb svg, .critics-recommend-70 .score-orb svg { transform: rotate(-54deg); }
+.top-critic-average-70 .top-critic-average-circle, .critics-recommend-70 .critics-recommend-circle { stroke-dasharray: 30, 100; }
 
-.top-critic-average-80 .score-orb svg,
-.critics-recommend-80 .score-orb svg {
-    transform: rotate(-36deg);
-}
+.top-critic-average-60 .score-orb svg, .critics-recommend-60 .score-orb svg { transform: rotate(-72deg); }
+.top-critic-average-60 .top-critic-average-circle, .critics-recommend-60 .critics-recommend-circle { stroke-dasharray: 40, 100; }
 
-.top-critic-average-80 .top-critic-average-circle,
-.critics-recommend-80 .critics-recommend-circle {
-    stroke-dasharray: 20, 100;
-}
+.top-critic-average-50 .score-orb svg, .critics-recommend-50 .score-orb svg { transform: rotate(-90deg); }
+.top-critic-average-50 .top-critic-average-circle, .critics-recommend-50 .critics-recommend-circle { stroke-dasharray: 50, 100; }
+
+.top-critic-average-40 .score-orb svg, .critics-recommend-40 .score-orb svg { transform: rotate(-108deg); }
+.top-critic-average-40 .top-critic-average-circle, .critics-recommend-40 .critics-recommend-circle { stroke-dasharray: 60, 100; }
+
+.top-critic-average-30 .score-orb svg, .critics-recommend-30 .score-orb svg { transform: rotate(-126deg); }
+.top-critic-average-30 .top-critic-average-circle, .critics-recommend-30 .critics-recommend-circle { stroke-dasharray: 70, 100; }
+
+.top-critic-average-20 .score-orb svg, .critics-recommend-20 .score-orb svg { transform: rotate(-144deg); }
+.top-critic-average-20 .top-critic-average-circle, .critics-recommend-20 .critics-recommend-circle { stroke-dasharray: 80, 100; }
+
+.top-critic-average-10 .score-orb svg, .critics-recommend-10 .score-orb svg { transform: rotate(-162deg); }
+.top-critic-average-10 .top-critic-average-circle, .critics-recommend-10 .critics-recommend-circle { stroke-dasharray: 90, 100; }
+
+.top-critic-average-0 .score-orb svg, .critics-recommend-0 .score-orb svg { transform: rotate(-180deg); }
+.top-critic-average-0 .top-critic-average-circle, .critics-recommend-0 .critics-recommend-circle { stroke-dasharray: 100, 100; }
 
 .top-critic-average.mighty .top-critic-average-circle {
     fill: #fc430a;
