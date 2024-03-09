@@ -832,11 +832,29 @@
     line-height: 20px;
 }
 
+.metacritic-green {
+    background: #00ce7a;
+    color: black;
+}
+
+.metacritic-yellow {
+    background: #ffbd3f;
+    color: black;
+}
+
+.metacritic-red {
+    background: #ff6874;
+}
+
+.metacritic-none {
+    background: #222222;
+}
+
 .opencritic {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #121212;
+    background-color: #2e2e2e;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
@@ -876,56 +894,86 @@
     border-radius: 50%;
 }
 
-.score-orb svg circle {
+.top-critic-average-circle {
     stroke: #2e2e2e;
     stroke-width: 32;
 }
 
-circle.mighty {
+.top-critic-average-100 .score-orb svg,
+.critics-recommend-100 .score-orb svg {
+    transform: rotate(0deg);
+}
+
+.top-critic-average-100 .top-critic-average-circle,
+.critics-recommend-100 .critics-recommend-circle {
+    stroke-dasharray: 0, 100;
+}
+
+.top-critic-average-90 .score-orb svg,
+.critics-recommend-90 .score-orb svg {
+    transform: rotate(-18deg);
+}
+
+.top-critic-average-90 .top-critic-average-circle,
+.critics-recommend-90 .critics-recommend-circle {
+    stroke-dasharray: 10, 100;
+}
+
+.top-critic-average-80 .score-orb svg,
+.critics-recommend-80 .score-orb svg {
+    transform: rotate(-36deg);
+}
+
+.top-critic-average-80 .top-critic-average-circle,
+.critics-recommend-80 .critics-recommend-circle {
+    stroke-dasharray: 20, 100;
+}
+
+.top-critic-average.mighty .top-critic-average-circle {
     fill: #fc430a;
 }
 
-circle.strong {
+.top-critic-average.strong .top-critic-average-circle {
     fill: #9e00b4;
 }
 
-circle.fair {
+.top-critic-average.fair .top-critic-average-circle {
     fill: #4aa1ce;
 }
 
-circle.weak {
+.top-critic-average.weak .top-critic-average-circle {
     fill: #80b06a;
 }
 
-.mighty-start {
+.critics-recommend.mighty .critics-recommend-start {
     stop-color: #ffd86f;
 }
 
-.mighty-stop {
+.critics-recommend.mighty .critics-recommend-stop {
     stop-color: #fc430a;
 }
 
-.strong-start {
+.critics-recommend.strong .critics-recommend-start {
     stop-color: #ff6ec4;
 }
 
-.strong-stop {
+.critics-recommend.strong .critics-recommend-stop {
     stop-color: #7873f5;
 }
 
-.fair-start {
+.critics-recommend.fair .critics-recommend-start {
     stop-color: #478c77;
 }
 
-.fair-stop {
+.critics-recommend.fair .critics-recommend-stop {
     stop-color: #76c8ff;
 }
 
-.weak-start {
+.critics-recommend.weak .critics-recommend-start {
     stop-color: #80b06a;
 }
 
-.weak-stop {
+.critics-recommend.weak .critics-recommend-stop {
     stop-color: #638151;
 }
 

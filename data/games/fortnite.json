@@ -239,7 +239,7 @@
         "info_developer": "Epic Games",
         "info_publisher": "Epic Games",
         "release": "June 29, 2020",
-        "release_date": "<div class='release-type'>Early Access</div>     <div><p>Windows | macOS | PlayStation 4 | Xbox One</p><p>July 25, 2017</p></div>     <div><p>iOS</p><p>March 9, 2018</p></div>     <div><p>Nintendo Switch</p><p>June 13, 2018</p></div>     <div><p>Android</p><p>August 10, 2018</p></div>     <div class='release-type'>Full Release</div>     <div><p>June 29, 2020</p></div>     <div><p>Xbox Series X|S</p><p>November 10, 2020</p></div>     <div><p>PlayStation 5</p><p>November 12, 2020</p></div>",
+        "release_date": "<div class='release-type'>Early Access</div>     <div><p>Windows | macOS | PlayStation 4 | Xbox One</p><p>July 25, 2017</p></div>     <div><p>iOS</p><p>March 9, 2018</p></div>     <div><p>Nintendo Switch</p><p>June 13, 2018</p></div>     <div><p>Android</p><p>August 10, 2018</p></div>     <div class='release-type'>Full Release</div>     <div><p>Windows | macOS | PlayStation 4 | Xbox One | iOS | Nintendo Switch | Android</p><p>June 29, 2020</p></div>     <div><p>Xbox Series X|S</p><p>November 10, 2020</p></div>     <div><p>PlayStation 5</p><p>November 12, 2020</p></div>",
         "engine": "Unreal Engine",
         "genre": "Survival, Battle Royale, Sandbox",
         "mode": "Single-Player, Multiplayer",
