@@ -176,6 +176,18 @@ $(document).ready(function(){
                 '{opencritic_rating}': data.opencritic_rating,
                 '{top_critic_average}': data.top_critic_average,
                 '{critics_recommend}': data.critics_recommend,
+                '{minimum_os}': data.minimum_os,
+                '{minimum_processor}': data.minimum_processor,
+                '{minimum_memory}': data.minimum_memory,
+                '{minimum_graphics}': data.minimum_graphics,
+                '{minimum_storage}': data.minimum_storage,
+                '{minimum_other}': data.minimum_other,
+                '{recommended_os}': data.recommended_os,
+                '{recommended_processor}': data.recommended_processor,
+                '{recommended_memory}': data.recommended_memory,
+                '{recommended_graphics}': data.recommended_graphics,
+                '{recommended_storage}': data.recommended_storage,
+                '{recommended_other}': data.recommended_other,
             };
             
             // body의 HTML 가져오기

@@ -220,7 +220,19 @@
     "opencritic_rating": "mighty",
     "top_critic_average": "84",
     "critics_recommend": "93",
-    
+    "minimum_os": "Windows 10 64-bit",
+    "minimum_processor": "Core i3-3225 3.3 GHz",
+    "minimum_memory": "8 GB RAM",
+    "minimum_graphics": "Intel HD 4000(PC) | AMD Radeon Vega 8",
+    "minimum_storage": "-",
+    "minimum_other": "-",
+    "recommended_os": "Windows 10/11 64-bit",
+    "recommended_processor": "Core i5-7300U 3.5 GHz | AMD Ryzen 3 3300U",
+    "recommended_memory": "16 GB RAM",
+    "recommended_graphics": "Nvidia GTX 960 | AMD R9 280",
+    "recommended_storage": "-",
+    "recommended_other": "8 GB VRAM | NVMe SSD",
+
     "en": {
         "lang": "en",
         "title": "Fortnite",

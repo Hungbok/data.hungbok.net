@@ -803,12 +803,13 @@
 
 .metacritic {
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    margin: 5px;
     border-radius: 10px;
     min-width: 30px;
-    width: auto;
+    width: calc(25% - 25px);
     height: 30px;
     background-position: 10px center, center, center, center, center;
     padding-left: 50px;
@@ -823,12 +824,20 @@
     margin: 0;
     padding: 10px;
     border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
 }
 
 .opencritic {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
     justify-content: space-around;
     align-items: center;
 }
