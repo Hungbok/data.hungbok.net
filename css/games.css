@@ -739,9 +739,20 @@
 .more-info .release {
     height: auto;
     width: auto;
-    display: grid;
+    display: flex;
     justify-items: start;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.more-info-item-text.release > div {
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.more-info-item-text.release > div.early-access-date,
+.more-info-item-text.release > div.full-release-date {
+    width: 100%;
 }
 
 .more-info .release p {
