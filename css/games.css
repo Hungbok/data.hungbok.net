@@ -664,6 +664,7 @@
 }
 
 .more-info-item-text.release > div::before {
+    display: inline-block;
     background-color: var(--text-3);
     color: var(--background-8);
     border-radius: 5px;
@@ -737,10 +738,11 @@
     width: auto;
     display: grid;
     justify-items: start;
+    gap: 5px;
 }
 
 .more-info .release p {
-    margin: 5px 0;
+    margin: 0;
     text-wrap: balance;
 }
 
