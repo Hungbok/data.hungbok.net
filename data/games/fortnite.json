@@ -180,11 +180,15 @@
 
     "imagecount": "10",
 
-    "videocount": "2",
+    "videocount": "4",
     "videoserver1": "www.youtube.com/embed/",
     "videoid1": "aOAiUwz7Zt8",
     "videoserver2": "www.youtube.com/embed/",
     "videoid2": "MEI63vFCGd0",
+    "videoserver3": "www.youtube.com/embed/",
+    "videoid3": "NIhbK4-ZdKA",
+    "videoserver4": "www.youtube.com/embed/",
+    "videoid4": "HsahlWt7Um0",
 
     "attention": "none",
     "data_import_type_first": "none",
