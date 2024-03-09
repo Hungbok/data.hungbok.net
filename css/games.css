@@ -669,6 +669,8 @@
     color: var(--background-8);
     border-radius: 5px;
     padding: 2.5px 5px;
+    vertical-align: text-bottom;
+    font-weight: bold;
 }
 
 .more-info .info-table {
@@ -738,7 +740,7 @@
     width: auto;
     display: grid;
     justify-items: start;
-    gap: 5px;
+    gap: 10px;
 }
 
 .more-info .release p {
@@ -747,7 +749,7 @@
 }
 
 .more-info .release p:first-child {
-    color: var(--text-3);
+    font-weight: bold;
 }
 
 .more-info .release .release-platform {
