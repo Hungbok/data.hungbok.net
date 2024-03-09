@@ -798,8 +798,9 @@
 }
 
 .reviews {
-    display: flex;
     flex-wrap: wrap;
+    height: calc(100% - 20px);
+    align-content: space-between;
 }
 
 .metacritic {
@@ -869,8 +870,8 @@
 }
 
 .opencritic div img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .score-orb {
@@ -980,10 +981,10 @@
 
 .inner-orb {
     position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
     border-radius: 100%;
     font-weight: 100;
     background-color: #2e2e2e;
@@ -995,12 +996,16 @@
 
 .inner-orb p {
     margin: 0;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 12px;
     top: 50%;
     left: 50%;
     position: relative;
     transform: translate(-50%, -50%);
+}
+
+.critics-recommend .inner-orb p:after {
+    content: "%";
 }
 
 .platform,
