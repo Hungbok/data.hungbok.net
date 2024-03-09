@@ -826,9 +826,69 @@
     border-radius: 5px;
 }
 
+.opencritic {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .opencritic div {
     padding: 10px;
     border-radius: 5px;
+    display: flex;
+}
+
+.opencritic div img {
+    width: 30px;
+    height: 30px;
+}
+
+.score-orb {
+    position: relative;
+    margin: 0;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.outer-orb {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 100%;
+    background-color: #2e2e2e;
+}
+
+.score-orb svg {
+    border-radius: 50%;
+}
+
+.score-orb svg circle {
+    stroke: #2e2e2e;
+    stroke-width: 32;
+}
+
+.inner-orb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 100%;
+    font-weight: 100;
+    background-color: #2e2e2e;
+    text-align: center;
+    color: #fff;
+    line-height: 57px;
+    font-size: 1px;
+}
+
+.inner-orb p {
+    margin: 0;
 }
 
 .platform,
