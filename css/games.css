@@ -642,12 +642,13 @@
 
 .more-info-item {
     width: 100%;
-    max-width: calc(25% - 20px);
+    max-width: calc(33% - 20px);
     margin: 10px;
 }
 
 .more-info-release,
-.more-info-language {
+.more-info-language,
+.more-info-reviews {
     width: 100%;
     max-width: calc(50% - 20px);
     margin: 10px;
@@ -802,18 +803,16 @@
 
 .metacritic {
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 5px 0px;
     border-radius: 10px;
     min-width: 30px;
-    width: calc(50% - 65px);
-    height: 10px;
+    width: auto;
+    height: 30px;
     background-position: 10px center, center, center, center, center;
-    background-size: 20px 20px, cover, cover, cover, cover, cover, cover;
     padding-left: 50px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .metacritic.icon-none {
@@ -938,6 +937,10 @@ circle.weak {
     margin: 0;
     font-size: 16px;
     line-height: 16px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
 }
 
 .platform,
