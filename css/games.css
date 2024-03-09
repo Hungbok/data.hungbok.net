@@ -624,6 +624,17 @@
     overflow-x: hidden;
     overflow-y: scroll;
     max-height: calc(100vh - 380px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.more-info-item {
+    width: 50%;
+}
+
+.more-info-item p {
+    margin: 0;
 }
 
 .more-info .info-table {
