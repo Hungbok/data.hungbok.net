@@ -646,6 +646,7 @@
     margin: 10px;
 }
 
+.more-info-release,
 .more-info-language {
     width: 100%;
     max-width: calc(50% - 20px);
