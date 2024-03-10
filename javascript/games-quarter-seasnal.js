@@ -113,6 +113,8 @@ if (year && season && monthRange) {
           var url = item.url || 'Unknown';
           var platform = item.platform || 'Unknown';
           var title = gameData[languageCode]?.title || 'Unknown';
+          var dev = gameData[languageCode]?.info_developer || 'Unknown';
+          var pub = gameData[languageCode]?.info_publisher || 'Unknown';
 
           // yyyy, mm, dd 값 추가
           var dateParts = item.date.split('-');
@@ -130,8 +132,10 @@ if (year && season && monthRange) {
               <div class="calendar-item-title">
                 <p>${title}</p>
               </div>
-              <div class="calendar-item-date">
-                <p class="calendar-item-year">${yyyy}</p>
+              <div class="calendar-item-company">
+                <p>${dev}</p>
+                <p>•</p>
+                <p>${pub}</p>
               </div>
               <div class="calendar-item-platform ${platform}">
                 <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
@@ -140,6 +144,9 @@ if (year && season && monthRange) {
                 <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
               </div>
             </div>
           </a>`; // dd가 32이고 mm이 13인 경우의 템플릿
@@ -152,8 +159,10 @@ if (year && season && monthRange) {
               <div class="calendar-item-title">
                 <p>${title}</p>
               </div>
-              <div class="calendar-item-date">
-                <p class="calendar-item-year">${yyyy}</p>
+              <div class="calendar-item-company">
+                <p>${dev}</p>
+                <p>•</p>
+                <p>${pub}</p>
               </div>
               <div class="calendar-item-platform ${platform}">
                 <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
@@ -162,6 +171,9 @@ if (year && season && monthRange) {
                 <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
               </div>
             </div>
           </a>`; // mm이 13인 경우의 템플릿
@@ -174,9 +186,10 @@ if (year && season && monthRange) {
               <div class="calendar-item-title">
                 <p>${title}</p>
               </div>
-              <div class="calendar-item-date">
-                <p class="calendar-item-year">${yyyy}</p>
-                <p class="calendar-item-month">${mm}</p>
+              <div class="calendar-item-company">
+                <p>${dev}</p>
+                <p>•</p>
+                <p>${pub}</p>
               </div>
               <div class="calendar-item-platform ${platform}">
                 <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
@@ -185,6 +198,10 @@ if (year && season && monthRange) {
                 <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
+                <p class="calendar-item-month">${mm}</p>
               </div>
             </div>
           </a>`; // dd가 32인 경우의 템플릿
@@ -194,13 +211,13 @@ if (year && season && monthRange) {
               <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
             </div>
             <div class="calendar-item-info">
-              <div class="calendar-item-title">
+              <div class="calendar-item-company">
                 <p>${title}</p>
               </div>
-              <div class="calendar-item-date">
-                <p class="calendar-item-year">${yyyy}</p>
-                <p class="calendar-item-month">${mm}</p>
-                <p class="calendar-item-day">${dd}</p>
+              <div class="calendar-item-title">
+                <p>${dev}</p>
+                <p>•</p>
+                <p>${pub}</p>
               </div>
               <div class="calendar-item-platform ${platform}">
                 <img class="display" src="https://data.hungbok.net/image/icon/display.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
@@ -209,6 +226,11 @@ if (year && season && monthRange) {
                 <img class="nintendo" src="https://data.hungbok.net/image/icon/nintendo.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="phone" src="https://data.hungbok.net/image/icon/phone.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
                 <img class="cloud" src="https://data.hungbok.net/image/icon/cloud.svg" onerror="this.src='//data.hungbok.net/image/hb/hb_error.svg';">
+              </div>
+              <div class="calendar-item-date">
+                <p class="calendar-item-year">${yyyy}</p>
+                <p class="calendar-item-month">${mm}</p>
+                <p class="calendar-item-day">${dd}</p>
               </div>
             </div>
           </a>`; // 그 외의 경우의 템플릿

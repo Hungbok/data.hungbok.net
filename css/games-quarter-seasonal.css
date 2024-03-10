@@ -222,6 +222,14 @@ div#calendar > div > div {
 .calendar-item-title p {
     margin: 0;
     line-height: 24px;
+    font-weight: bold;
+}
+
+.calendar-item-company p {
+    margin: 0;
+    line-height: 24px;
+    display: inline-block;
+    color: #aaaaaa;
 }
 
 .calendar-item-date {
@@ -236,6 +244,7 @@ div#calendar > div > div {
 
 .calendar-item-platform {
     text-align: left;
+    margin: 10px 0;
 }
 
 .calendar-item-platform img {
