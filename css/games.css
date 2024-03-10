@@ -678,7 +678,7 @@
 }
 
 .more-info-item-text.release.system-requirements > .release-type {
-    width: calc(50% - 30px);
+    width: calc(50% - 20px);
 }
 
 .more-info .info-table {
