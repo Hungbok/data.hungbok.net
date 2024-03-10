@@ -171,8 +171,12 @@ div#calendar > div > div {
     max-width: 300px;
     display: inline-block;
     margin: 5px;
-    overflow: hidden;
     position: relative;
+}
+
+.calendar-item-background {
+    display: flex;
+    overflow: hidden;
     border-radius: 10px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -181,12 +185,8 @@ div#calendar > div > div {
     transition: all 0.5s;
 }
 
-.calendar-item:hover {
-    transform: scale(1.05);
-}
-
-.calendar-item-background {
-    display: flex;
+.calendar-item:hover .calendar-item-background {
+    transform: translate(0px, -5px);
 }
 
 .calendar-item-background img {
@@ -196,9 +196,6 @@ div#calendar > div > div {
 .calendar-item-info {
     width: calc(100% - 20px);
     padding: 10px;
-    z-index: 10;
-    bottom: -100%;
-    background: var(--background-10-opacity-75);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
