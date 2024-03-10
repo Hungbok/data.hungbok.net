@@ -212,7 +212,9 @@ div#calendar > div > div {
     bottom: 0px;
 }
 
-.calendar-item-title {
+.calendar-item-title,
+.calendar-item-date,
+.calendar-item-company {
     text-align: left;
 }
 
@@ -227,10 +229,6 @@ div#calendar > div > div {
     line-height: 24px;
     display: inline-block;
     color: #aaaaaa;
-}
-
-.calendar-item-date {
-    text-align: left;
 }
 
 .calendar-item-date p {

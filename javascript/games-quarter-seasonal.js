@@ -211,10 +211,10 @@ if (year && season && monthRange) {
               <img src="https://data.hungbok.net/image/games/${url}/hb_capsule.jpg" onerror="this.onerror=null; this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg'">
             </div>
             <div class="calendar-item-info">
-              <div class="calendar-item-company">
+              <div class="calendar-item-title">
                 <p>${title}</p>
               </div>
-              <div class="calendar-item-title">
+              <div class="calendar-item-company">
                 <p>${dev}</p>
                 <p>•</p>
                 <p>${pub}</p>
