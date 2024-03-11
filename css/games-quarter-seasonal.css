@@ -142,9 +142,10 @@
     margin-right: auto;
     margin-bottom: 90px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 5px;
+    flex-direction: column;
 }
 
 div#calendar > div > h2 {
@@ -200,12 +201,17 @@ div#calendar > div > div {
     transition: all 0.5s;
 }
 
-.calendar-item:hover .calendar-item-background img {
-    transform: scale(1.05);
-}
-
 .calendar-item-background img {
     width: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.calendar-item:hover .calendar-item-background img {
+    transform: scale(1.05);
 }
 
 .calendar-item-info {
