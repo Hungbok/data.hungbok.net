@@ -168,15 +168,9 @@ div#calendar > div > div {
 }
 
 .calendar-item {
-    max-width: 300px;
     display: inline-block;
     margin: 5px;
     position: relative;
-}
-
-.calendar-item-background {
-    display: flex;
-    overflow: hidden;
     border-radius: 10px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -185,8 +179,29 @@ div#calendar > div > div {
     transition: all 0.5s;
 }
 
-.calendar-item:hover .calendar-item-background {
-    transform: translate(0px, -5px);
+.calendar-item:hover {
+    background: var(--background-8);
+}
+
+.calendar-item a {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar-item-background {
+    display: flex;
+    overflow: hidden;
+    max-width: 300px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.calendar-item:hover .calendar-item-background img {
+    transform: scale(1.05);
 }
 
 .calendar-item-background img {
@@ -201,6 +216,7 @@ div#calendar > div > div {
     flex-direction: column;
     border-radius: 10px 10px 0 0;
     font-weight: bold;
+    justify-content: space-evenly;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -214,7 +230,8 @@ div#calendar > div > div {
 
 .calendar-item-title,
 .calendar-item-date,
-.calendar-item-company {
+.calendar-item-company,
+.calendar-item-platform {
     text-align: left;
 }
 
@@ -235,11 +252,6 @@ div#calendar > div > div {
     display: inline-block;
     margin: 0;
     line-height: 21px;
-}
-
-.calendar-item-platform {
-    text-align: left;
-    margin: 10px 0;
 }
 
 .calendar-item-platform img {
