@@ -462,12 +462,24 @@
     content: "지오지닷컴";
 }
 
+#dataContainer .item.from-eaapp a.item-link::before {
+    content: "EA";
+}
+
+#dataContainer .item.from-microsoftstore a.item-link::before {
+    content: "마이크로소프트 스토어";
+}
+
 #dataContainer .item.from-ubisoft a.item-link::before {
     content: "유비소프트 스토어";
 }
 
 #dataContainer .item.from-xbox a.item-link::before {
     content: "엑스박스 스토어";
+}
+
+#dataContainer .item.from-playstationstore a.item-link::before {
+    content: "플레이스테이션 스토어";
 }
 
 #dataContainer .item.from-humblebundle a.item-link::before {

@@ -217,12 +217,24 @@
     background-image: url(//media.hungbok.net/image/icon/gogcom.svg);
 }
 
-.esd-ubisoft::after {
+.esd-microsoftstore::after {
+    background-image: url(//media.hungbok.net/image/icon/microsoftstore.svg);
+}
+
+.esd-eaapp::after {
+    background-image: url(//media.hungbok.net/image/icon/ea.svg);
+}
+
+.esd-ubisoftstore::after {
     background-image: url(//media.hungbok.net/image/icon/ubisoft.svg);
 }
 
-.esd-xbox::after {
+.esd-xboxstore::after {
     background-image: url(//media.hungbok.net/image/icon/xbox.svg);
+}
+
+.esd-playstationstore::after {
+    background-image: url(//media.hungbok.net/image/icon/playstation.svg);
 }
 
 .esd-humblebundle::after {
