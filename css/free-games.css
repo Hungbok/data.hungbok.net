@@ -79,8 +79,10 @@
 }
 
 .item-image img {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 100%;
+    filter: blur(10px);
+    position: absolute;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -88,7 +90,15 @@
     transition: all 0.5s;
 }
 
-.item:hover .item-image img {
+.item-image img:first-child {
+    position: relative;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    filter: unset;
+}
+
+.item:hover .item-image img:first-child {
     transform: scale(1.05);
 }
 

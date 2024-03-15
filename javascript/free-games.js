@@ -91,6 +91,7 @@ function createAndAppendItem(item) {
     div.innerHTML = `
         <a class="item-image" href="${item.url}">
             <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
+            <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
         </a>
         <h1>${item.title}</h1>
         <h3>${item.content}</h3>
