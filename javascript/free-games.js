@@ -89,7 +89,7 @@ function createAndAppendItem(item) {
     let div = document.createElement('div');
     div.className = `item ${item.type} from-${item.from} esd-${item.esd} ${expiredClass}`;
     div.innerHTML = `
-        <a class="item-image" href="${item.url}">
+        <a class="item-image ${item.content}" href="${item.url}">
             <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
             <img src="${item.image}" onerror="this.src='//data.hungbok.net/image/hb/hb_error_horizontal.svg';">
         </a>

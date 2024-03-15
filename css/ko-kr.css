@@ -470,11 +470,11 @@
     content: "마이크로소프트 스토어";
 }
 
-#dataContainer .item.from-ubisoft a.item-link::before {
+#dataContainer .item.from-ubisoftstore a.item-link::before {
     content: "유비소프트 스토어";
 }
 
-#dataContainer .item.from-xbox a.item-link::before {
+#dataContainer .item.from-xboxstore a.item-link::before {
     content: "엑스박스 스토어";
 }
 

@@ -81,7 +81,7 @@
 .item-image img {
     height: auto;
     width: 100%;
-    filter: blur(10px);
+    filter: blur(10px) brightness(0.75) grayscale(0.5);
     position: absolute;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -98,8 +98,26 @@
     filter: unset;
 }
 
-.item:hover .item-image img:first-child {
+.item:hover .item-image img {
     transform: scale(1.05);
+}
+
+.item-image:before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+}
+
+.item-image.jp:before {
+    background: url(//media.hungbok.net/image/flag/jp.svg) no-repeat center;
+}
+
+.item-image.us:before {
+    background: url(//media.hungbok.net/image/flag/us.svg) no-repeat center;
 }
 
 .item h1 {
