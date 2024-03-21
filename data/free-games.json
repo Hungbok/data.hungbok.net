@@ -322,5 +322,29 @@
     "link": "https://www.humblebundle.com/membership/march-2024/warhammerageofsigmar_realmsofruin_ultimate",
     "url": "",
     "image": "//media.hungbok.net/image/free-games/hb_1711038691470.avif"
+  },
+  {
+    "title": "South of the Circle",
+    "content": "",
+    "type": "games",
+    "from": "gogcom",
+    "esd": "gogcom",
+    "start": "2024-01-01-23-00-00",
+    "end": "2020-01-01-00-00-00",
+    "link": "https://www.gog.com/en/game/south_of_the_circle",
+    "url": "",
+    "image": "//media.hungbok.net/image/free-games/hb_1711038691471.jpg"
+  },
+  {
+    "title": "Assassin's Creed Syndicate",
+    "content": "",
+    "type": "games",
+    "from": "ubisoftstore",
+    "esd": "ubisoftconnect",
+    "start": "2023-12-06-01-00-00",
+    "end": "2020-01-01-00-00-00",
+    "link": "https://register.ubisoft.com/acsyndicate",
+    "url": "",
+    "image": "//media.hungbok.net/image/free-games/hb_1711038691472.jpg"
   }
 ]
