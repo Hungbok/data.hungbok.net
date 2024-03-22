@@ -1,5 +1,15 @@
 [
   {
+    "title": "Bethesda Spring Sale",
+    "content": "us",
+    "type": "console",
+    "from": "nintendoeshop",
+    "start": "2024-03-22-01-00-00",
+    "end": "2024-04-09-15-59-59",
+    "link": "https://www.nintendo.com/us/store/sales-and-deals/#bethesda",
+    "image": "//media.hungbok.net/image/sales/hb_1711135870410.avif"
+  },
+  {
     "title": "Battlefield Franchise Sale",
     "content": "",
     "type": "pc",
