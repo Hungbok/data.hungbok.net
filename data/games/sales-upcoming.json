@@ -1,40 +1,10 @@
 [
   {
-    "title": "Holiday Sale",
-    "content": "",
-    "type": "pc",
-    "from": "eaapp",
-    "start": "2023-12-22-03-00-00",
-    "end": "2024-01-05-03-00-00",
-    "link": "https://www.ea.com/sales/holiday-sale",
-    "image": "//media.hungbok.net/image/sales/hb_1711039734475.jpg"
-  },
-  {
-    "title": "Holiday Sale",
-    "content": "",
-    "type": "pc",
-    "from": "battlenet",
-    "start": "2023-12-20-01-00-00",
-    "end": "2024-01-03-03-00-00",
-    "link": "https://shop.battle.net/sale/holiday-sale-2023",
-    "image": "//media.hungbok.net/image/sales/hb_1711039734474.png"
-  },
-  {
-    "title": "Square Enix Publisher Sale",
-    "content": "",
-    "type": "pc",
-    "from": "steam",
-    "start": "2024-03-15-02-00-00",
-    "end": "2024-03-26-02-00-00",
-    "link": "https://store.steampowered.com/curator/1012195/sale/squareenix_publishersale24",
-    "image": "//media.hungbok.net/image/sales/hb_1711053464657.png"
-  },
-  {
     "title": "SPRING SALE!",
     "type": "pc",
     "from": "ubisoftstore",
-    "start": "2024-03-20-10-00-00",
-    "end": "2024-04-04-10-00-00",
+    "start": "2024-03-22-12-30-00",
+    "end": "2024-03-22-12-31-00",
     "link": "https://store.ubisoft.com/spring-sale",
     "image": "//media.hungbok.net/image/sales/hb_1711006164825.avif"
   },
