@@ -1,5 +1,17 @@
 [
   {
+    "title": "Free Play Days (March 21)",
+    "content": "",
+    "type": "subscription",
+    "from": "xboxgamepass",
+    "esd": "xboxstore",
+    "start": "2024-03-21-16-00-00",
+    "end": "2024-04-24-16-00-00",
+    "link": "https://news.xbox.com/free-play-days-dragon-ball-fighterz-battlefield-2042-south-park-the-fractured-but-whole-and-south-park-the-stick-of-truth",
+    "url": "",
+    "image": "//media.hungbok.net/image/free-games/hb_1711179668486.jpg"
+  },
+  {
     "title": "Battlefield 2042",
     "content": "",
     "type": "trials",
