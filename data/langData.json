@@ -28,6 +28,8 @@
         "free_games": "Free Games",
         "games_calendar": "Upcoming Games",
         "books": "Books",
+        "reported": "Report has been received successfully.",
+        "copied": "Copied to clipboard.",
 
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     },
@@ -61,6 +63,8 @@
         "free_games": "無料配布ゲーム",
         "games_calendar": "リリース予定ゲーム",
         "books": "本",
+        "reported": "報告が正常に受け付けられました。",
+        "copied": "クリップボードにコピーされました。",
 
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     },
@@ -94,6 +98,8 @@
         "free_games": "무료 배포 게임",
         "games_calendar": "출시 예정 게임",
         "books": "도서",
+        "reported": "신고가 성공적으로 접수되었습니다.",
+        "copied": "클립보드에 복사되었습니다.",
 
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
