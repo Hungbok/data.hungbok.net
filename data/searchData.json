@@ -11,7 +11,7 @@
         },
         "type": "games",
         "url": "https://www.hungbok.com/games?q=fortnite",
-        "image": "https://data.hungbok.net/image/games/fortnite/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/games/fortnite/hb_capsule.jpg"
     },
     {
         "title": {
@@ -30,7 +30,7 @@
         },
         "type": "games",
         "url": "https://www.hungbok.com/games?q=hitman-world-of-assassination",
-        "image": "https://data.hungbok.net/image/games/hitman-world-of-assassination/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/games/hitman-world-of-assassination/hb_capsule.jpg"
     },
     {
         "title": {
@@ -41,7 +41,7 @@
         },
         "type": "games",
         "url": "https://www.hungbok.com/games?q=werewolf-the-apocalypse-heart-of-the-forest",
-        "image": "https://data.hungbok.net/image/games/werewolf-the-apocalypse-heart-of-the-forest/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/games/werewolf-the-apocalypse-heart-of-the-forest/hb_capsule.jpg"
     },
     {
         "title": {
@@ -58,7 +58,7 @@
         },
         "type": "anime",
         "url": "https://www.hungbok.com/anime?q=boku-dake-ga-inai-machi",
-        "image": "https://data.hungbok.net/image/anime/boku-dake-ga-inai-machi/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/anime/boku-dake-ga-inai-machi/hb_capsule.jpg"
     },
     {
         "title": {
@@ -75,7 +75,7 @@
         },
         "type": "tv",
         "url": "https://www.hungbok.com/tv?q=boku-dake-ga-inai-machi",
-        "image": "https://data.hungbok.net/image/tv/boku-dake-ga-inai-machi/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/tv/boku-dake-ga-inai-machi/hb_capsule.jpg"
     },
     {
         "title": {
@@ -92,7 +92,7 @@
         },
         "type": "movie",
         "url": "https://www.hungbok.com/movie?q=boku-dake-ga-inai-machi",
-        "image": "https://data.hungbok.net/image/movie/boku-dake-ga-inai-machi/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/movie/boku-dake-ga-inai-machi/hb_capsule.jpg"
     },
     {
         "title": {
@@ -141,6 +141,6 @@
         },
         "type": "games",
         "url": "https://www.hungbok.com/games?q=pokemon-legends-z-a",
-        "image": "https://data.hungbok.net/image/games/pokemon-legends-z-a/hb_capsule.jpg"
+        "image": "https://media.hungbok.net/image/games/pokemon-legends-z-a/hb_capsule.jpg"
     }
 ]
