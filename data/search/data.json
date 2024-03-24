@@ -33,7 +33,8 @@
         },
         "subtitle": {
             "ja": "ストテスト",
-            "ko": "스트테스트"
+            "ko": "스트테스트",
+            "ko-3": "스트테스트"
         },
         "type": "games",
         "url": "https://www.hungbok.com/games?q=fortnite",
