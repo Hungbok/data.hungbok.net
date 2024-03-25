@@ -1,1 +1,110 @@
-[]
+[
+    {
+      "title": "Cyberpunk 2077",
+      "content": "",
+      "type": "trials",
+      "from": "xboxstore",
+      "esd": "xboxstore",
+      "start": "2024-03-29-00-00-00",
+      "end": "2024-04-01-15-59-59",
+      "link": "https://www.microsoft.com/store/productid/bx3m8l83bbrw",
+      "published": "2024-03-26-01-14-14",
+      "image": "//media.hungbok.net/image/free-games/hb_1711383253768.png"
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "content": "",
+      "type": "trials",
+      "from": "playstationstore",
+      "esd": "playstationstore",
+      "start": "2024-03-29-00-00-00",
+      "end": "2024-04-01-15-59-59",
+      "link": "https://www.playstation.com/games/cyberpunk-2077",
+      "published": "2024-03-26-01-14-23",
+      "image": "//media.hungbok.net/image/free-games/hb_1711383263210.png"
+    },
+    {
+      "title": "Hollow Knight",
+      "content": "jp",
+      "type": "trials",
+      "from": "nintendoeshop",
+      "esd": "nintendoeshop",
+      "start": "2024-03-25-12-00-00",
+      "end": "2024-03-31-17-59-59",
+      "link": "https://ec.nintendo.com/JP/ja/titles/70010000003209",
+      "published": "2024-03-24-00-46-53",
+      "image": "//media.hungbok.net/image/free-games/hb_1711208813086.jpg"
+    },
+    {
+      "title": "Midnight Ghost Hunt",
+      "content": "",
+      "type": "trials",
+      "from": "steam",
+      "esd": "steam",
+      "start": "2024-03-22-02-00-00",
+      "end": "2024-03-26-02-00-00",
+      "link": "https://store.steampowered.com/app/915810",
+      "published": "2024-03-24-00-12-05",
+      "image": "//media.hungbok.net/image/free-games/hb_1711206725421.jpg"
+    },
+    {
+      "title": "Battlefield™ 2042",
+      "content": "",
+      "type": "trials",
+      "from": "steam",
+      "esd": "steam",
+      "start": "2024-03-22-02-00-00",
+      "end": "2024-03-26-02-00-00",
+      "link": "https://store.steampowered.com/app/1517290",
+      "published": "2024-03-24-00-13-05",
+      "image": "//media.hungbok.net/image/free-games/hb_1711206785375.png"
+    },
+    {
+      "title": "Battlefield™ 2042",
+      "content": "",
+      "type": "trials",
+      "from": "playstationstore",
+      "esd": "playstationstore",
+      "start": "2024-03-21-16-00-00",
+      "end": "2024-03-24-16-00-00",
+      "link": "https://www.playstation.com/games/battlefield-2042",
+      "published": "2024-03-24-00-08-25",
+      "image": "//media.hungbok.net/image/free-games/hb_1711206505114.avif"
+    },
+    {
+      "title": "Battlefield 2042",
+      "content": "",
+      "type": "trials",
+      "from": "xboxstore",
+      "esd": "xboxstore",
+      "start": "2024-03-21-16-00-00",
+      "end": "2024-03-24-16-00-00",
+      "link": "https://www.microsoft.com/store/productid/9nmgp6s6njpr",
+      "published": "2024-03-24-00-07-17",
+      "image": "//media.hungbok.net/image/free-games/hb_1711206437041.jpg"
+    },
+    {
+      "title": "Dragon Ball FighterZ",
+      "content": "",
+      "type": "trials",
+      "from": "xboxstore",
+      "esd": "xboxstore",
+      "start": "2024-03-21-16-00-00",
+      "end": "2024-03-24-16-00-00",
+      "link": "https://www.microsoft.com/store/productid/9p6hkh56d3dh",
+      "published": "2024-03-24-00-17-15",
+      "image": "//media.hungbok.net/image/free-games/hb_1711207034781.jpg"
+    },
+    {
+      "title": "Suika Game",
+      "content": "us",
+      "type": "trials",
+      "from": "nintendoeshop",
+      "esd": "nintendoeshop",
+      "start": "2023-12-15-03-00-00",
+      "end": "2023-12-21-04-59-59",
+      "link": "https://ec.nintendo.com/US/en/titles/70010000074332",
+      "published": "2024-03-25-02-05-35",
+      "image": "//media.hungbok.net/image/free-games/hb_1711299934677.avif"
+    }
+]
