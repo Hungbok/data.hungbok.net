@@ -34,6 +34,41 @@
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     },
 
+    "fr": {
+        "menu_home": "Home",
+        "menu_tv": "TV",
+        "menu_movie": "Movie",
+        "menu_anime": "Anime",
+        "menu_games": "Games",
+        "menu_books": "Books",
+        "about": "About",
+        "news": "News",
+        "tou": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "cookie": "Cookie Policy",
+        "help": "Help",
+        "contact": "Contact Us",
+        "home": "Home",
+        "tv": "TV",
+        "series": "TV Series",
+        "show": "TV Show",
+        "documentary": "Documentary",
+        "movie": "Movie",
+        "movie_anime": "Animated Movie",
+        "anime": "Anime",
+        "onair": "Anime Currently Airing",
+        "anime_calendar": "New Anime",
+        "anime_quarter": "Quarterly Anime",
+        "games": "Games",
+        "free_games": "Free Games",
+        "games_calendar": "Upcoming Games",
+        "books": "Books",
+        "reported": "Report has been Received Successfully.",
+        "copied": "Copied to Clipboard.",
+
+        "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+    },
+
     "ja": {
         "menu_home": "トップ",
         "menu_tv": "テレビ",
