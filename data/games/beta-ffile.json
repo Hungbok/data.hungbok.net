@@ -1,0 +1,32 @@
+[
+    {
+        "title": {},
+        "content": "",
+        "type": "games",
+        "link": {},
+        "url": "beta-ffile",
+        "image": "//media.hungbok.net/contents/image/games/beta-ffile/hb_thumbnail.png",
+        "from": "steam",
+        "esd": "steam",
+        "start": "2024-01-01-00-00-00",
+        "end": "2024-01-01-00-00-00",
+        "en": {
+            "release": "",
+            "genre": "",
+            "plot": "",
+            "engine": ""
+        },
+        "ja": {
+            "release": "",
+            "genre": "",
+            "plot": "",
+            "engine": ""
+        },
+        "kr": {
+            "release": "",
+            "genre": "",
+            "plot": "",
+            "engine": ""
+        }
+    }
+]
