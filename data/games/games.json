@@ -5,6 +5,18 @@
         "type": "games",
         "link": "",
         "url": "beta",
+        "image": "//media.hungbok.net/contents/image/games/beta/hb_background.jpg",
+        "from": "steam",
+        "esd": "steam",
+        "start": "2024-01-01-00-00-00",
+        "end": "2024-01-01-00-00-00"
+    },
+    {
+        "title": "BETATEST",
+        "content": "",
+        "type": "games",
+        "link": "",
+        "url": "beta",
         "image": "//media.hungbok.net/contents/image/games/beta/hb_thumbnail.jpg",
         "from": "steam",
         "esd": "steam",
