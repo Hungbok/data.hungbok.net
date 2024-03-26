@@ -9,6 +9,18 @@
         "type": "games",
         "url": "https://www.hungbok.com/games?q=test",
         "image": "https://media.hungbok.net/image/games/test/hb_capsule.jpg",
+        "published": "2024-03-27-02-01-24"
+    },
+    {
+        "title": {
+            "en": "test"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "https://www.hungbok.com/games?q=test",
+        "image": "https://media.hungbok.net/image/games/test/hb_capsule.jpg",
         "published": "2024-03-27-01-23-15"
     },
     {
