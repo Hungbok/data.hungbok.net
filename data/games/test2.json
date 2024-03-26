@@ -8,7 +8,6 @@
     "console": "",
     "mobile": "",
     "esd": "",
-    
     "age": "",
     "iarc": "",
     "esrb": "",
@@ -21,7 +20,6 @@
     "acb": "",
     "classind": "",
     "appstoreage": "",
-    
     "en_audio": "",
     "en_text": "",
     "id_audio": "",
@@ -86,7 +84,6 @@
     "ja_text": "",
     "ko_audio": "",
     "ko_text": "",
-        
     "social": "",
     "website": "",
     "facebook": "",
@@ -124,7 +121,6 @@
     "wechat": "",
     "qq": "",
     "reddit": "",
-        
     "store": "",
     "steam": "",
     "epicgamesstore": "",
@@ -164,7 +160,6 @@
     "geforcenow": "",
     "xboxcloudgaming": "",
     "stadia": "",
-
     "url": "test",
     "share": "DpnAhhaQ",
     "page": "/games?q=fortnite",
@@ -178,9 +173,7 @@
     "franchise3": "",
     "franchise4": "",
     "franchise5": "",
-
     "imagecount": "5",
-
     "videocount": "1",
     "videoserver1": "www.youtube.com/embed/",
     "videoid1": "aOAiUwz7Zt8",
@@ -190,7 +183,6 @@
     "videoid3": "",
     "videoserver4": "www.youtube.com/embed/",
     "videoid4": "",
-
     "attention": "none",
     "data_import_type_first": "none",
     "data_import_first": "",
@@ -237,7 +229,6 @@
     "recommended_graphics": "",
     "recommended_storage": "",
     "recommended_other": "",
-
     "en": {
         "lang": "en",
         "title": "",
@@ -250,18 +241,24 @@
         "mode": "",
         "franchise": "",
         "learn_more": "Learn More",
-
-        "videotitle1": "",
-        "videotitle2": "",
-        
+        "videotitle1": "Trailer",
+        "videotitle2": "Trailer 2",
+        "videotitle3": "Trailer 3",
+        "videotitle4": "Trailer 4",
+        "videotitle5": "Trailer 5",
+        "videotitle6": "Trailer 6",
+        "videotitle7": "Trailer 7",
+        "videotitle8": "Trailer 8",
+        "videotitle9": "Trailer 9",
+        "videotitle10": "Trailer 10",
         "source": "",
         "update": "",
         "plot": "",
         "descriptioncount": "1",
         "pclass1": "",
         "ptext1": "",
-
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
+    "copyright": "© 2021-2024 HungBok. All Rights Reserved."
 }
 ]
