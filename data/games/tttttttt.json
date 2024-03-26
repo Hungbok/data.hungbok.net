@@ -1,0 +1,29 @@
+[
+    {
+        "type": "games",
+        "developer": "",
+        "publisher": "",
+        "platform": "",
+        "pc": "",
+        "console": "",
+        "mobile": "",
+        "esd": "",
+        "url": "tttttttt",
+        "share": "tttttttt",
+        "page": "/games?q=tttttttt",
+        "logo": "src='//media.hungbok.net/image/games/tttttttt/hb_logo.png",
+        "capsule": "src='//media.hungbok.net/image/games/tttttttt/hb_capsule.jpg",
+        "poster": "src='//media.hungbok.net/image/games/tttttttt/hb_poster.jpg",
+        "thumbnail": "src='//media.hungbok.net/image/games/tttttttt/hb_thumbnail.jpg",
+        "background": "src='//media.hungbok.net/image/games/tttttttt/hb_background.jpg",
+        "videocount": "01",
+        "imagecount": "05",
+        "release": "2024-01-01",
+        "published": "2024-03-27-00-54-40",
+        "en": {
+            "lang": "en",
+            "title": "tttttttt",
+            "plot": "tttttttt"
+        }
+    }
+]
