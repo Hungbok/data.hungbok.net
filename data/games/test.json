@@ -16,6 +16,8 @@
         "poster": "src='//media.hungbok.net/image/bundle/test/hb_poster.jpg",
         "thumbnail": "src='//media.hungbok.net/image/bundle/test/hb_thumbnail.jpg",
         "background": "src='//media.hungbok.net/image/bundle/test/hb_background.jpg",
+        "videocount": "1",
+        "imagecount": "5",
         "release": "2021-02-03",
         "published": "2024-03-26-18-41-36",
         "en": {
