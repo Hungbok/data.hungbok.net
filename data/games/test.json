@@ -1,0 +1,27 @@
+[
+    {
+        "type": "bundle",
+        "developer": "",
+        "publisher": "",
+        "platform": "",
+        "pc": "",
+        "console": "",
+        "mobile": "",
+        "esd": "",
+        "url": "test",
+        "share": "test333",
+        "page": "/bundle?q=test",
+        "logo": "src='//media.hungbok.net/image/bundle/test/hb_logo.png",
+        "capsule": "src='//media.hungbok.net/image/bundle/test/hb_capsule.jpg",
+        "poster": "src='//media.hungbok.net/image/bundle/test/hb_poster.jpg",
+        "thumbnail": "src='//media.hungbok.net/image/bundle/test/hb_thumbnail.jpg",
+        "background": "src='//media.hungbok.net/image/bundle/test/hb_background.jpg",
+        "release": "2021-02-03",
+        "published": "2024-03-26-18-41-36",
+        "en": {
+            "lang": "en",
+            "title": "test111",
+            "plot": "test222"
+        }
+    }
+]
