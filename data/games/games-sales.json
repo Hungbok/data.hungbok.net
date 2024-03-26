@@ -1,5 +1,17 @@
 [
     {
+        "title": {
+            "en": "test111"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "bundle",
+        "url": "https://www.hungbok.com/bundle?q=test",
+        "image": "https://media.hungbok.net/image/bundle/test/hb_capsule.jpg",
+        "published": "2024-03-26-18-41-33"
+    },
+    {
         "title": "test1",
         "content": "test2",
         "type": "games",
