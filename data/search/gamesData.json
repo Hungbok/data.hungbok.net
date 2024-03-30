@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "HITMAN World of Assassination"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "hitman-world-of-assassination",
+        "link": "https://www.hungbok.com/games?q=hitman-world-of-assassination",
+        "image": "https://media.hungbok.net/image/games/hitman-world-of-assassination/hb_capsule.jpg",
+        "published": "2024-03-30-18-19-53"
+    },
+    {
+        "title": {
             "en": "Fortnite"
         },
         "subtitle": {
