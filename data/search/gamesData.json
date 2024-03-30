@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "kimetsu-no-yaiba-mezase-saikyou-taishi",
+        "link": "https://www.hungbok.com/games?q=kimetsu-no-yaiba-mezase-saikyou-taishi",
+        "image": "https://media.hungbok.net/image/games/kimetsu-no-yaiba-mezase-saikyou-taishi/hb_capsule.jpg",
+        "published": "2024-03-31-05-15-48"
+    },
+    {
+        "title": {
             "en": "Stellar Blade"
         },
         "subtitle": {
