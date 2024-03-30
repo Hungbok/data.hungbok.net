@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Pokémon Legends: Z-A"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "pokemon-legends-z-a",
+        "link": "https://www.hungbok.com/games?q=pokemon-legends-z-a",
+        "image": "https://media.hungbok.net/image/games/pokemon-legends-z-a/hb_capsule.jpg",
+        "published": "2024-03-30-20-11-53"
+    },
+    {
+        "title": {
             "en": "Werewolf: The Apocalypse - Heart of the Forest"
         },
         "subtitle": {
