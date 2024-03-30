@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Dota 2"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "dota-2",
+        "link": "https://www.hungbok.com/games?q=dota-2",
+        "image": "https://media.hungbok.net/image/games/dota-2/hb_capsule.jpg",
+        "published": "2024-03-30-09-20-10"
+    },
+    {
+        "title": {
             "en": "Counter-Strike 2"
         },
         "subtitle": {
