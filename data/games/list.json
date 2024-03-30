@@ -1,5 +1,17 @@
 [
     {
+        "title": "Stellar Blade",
+        "type": "games",
+        "url": "stellar-blade",
+        "platform": "pc playstation      ",
+        "release_year": "2024",
+        "release_month": "04",
+        "release_day": "26",
+        "link": "https://www.hungbok.com/games?q=stellar-blade",
+        "image": "https://media.hungbok.net/image/games/stellar-blade/hb_thumbnail.jpg",
+        "published": "2024-03-31-04-33-35"
+    },
+    {
         "title": "Shadow Corridor 2 雨ノ四葩",
         "type": "games",
         "url": "shadow-corridor-2",
