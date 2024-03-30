@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Shadow Corridor 2 雨ノ四葩"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "shadow-corridor-2",
+        "link": "https://www.hungbok.com/games?q=shadow-corridor-2",
+        "image": "https://media.hungbok.net/image/games/shadow-corridor-2/hb_capsule.jpg",
+        "published": "2024-03-30-21-52-03"
+    },
+    {
+        "title": {
             "en": "Fortnite Battle Royale"
         },
         "subtitle": {
