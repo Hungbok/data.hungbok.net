@@ -1,5 +1,17 @@
 [
     {
+        "title": "Fortnite Battle Royale",
+        "type": "games",
+        "url": "fortnite-battle-royale",
+        "platform": "pc playstation xbox nintendo   mobile cloud",
+        "release_year": "2017",
+        "release_month": "09",
+        "release_day": "26",
+        "link": "https://www.hungbok.com/games?q=fortnite-battle-royale",
+        "image": "https://media.hungbok.net/image/games/fortnite-battle-royale/hb_thumbnail.jpg",
+        "published": "2024-03-30-20-26-48"
+    },
+    {
         "title": "Pokémon Legends: Z-A",
         "type": "games",
         "url": "pokemon-legends-z-a",
