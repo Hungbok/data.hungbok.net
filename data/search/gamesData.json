@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Fortnite"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "fortnite",
+        "link": "https://www.hungbok.com/games?q=fortnite",
+        "image": "https://media.hungbok.net/image/games/fortnite/hb_capsule.jpg",
+        "published": "2024-03-30-17-52-12"
+    },
+    {
+        "title": {
             "en": "Dota 2"
         },
         "subtitle": {
