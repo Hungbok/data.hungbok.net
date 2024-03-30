@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Stellar Blade"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "stellar-blade",
+        "link": "https://www.hungbok.com/games?q=stellar-blade",
+        "image": "https://media.hungbok.net/image/games/stellar-blade/hb_capsule.jpg",
+        "published": "2024-03-31-04-33-34"
+    },
+    {
+        "title": {
             "en": "Shadow Corridor 2 雨ノ四葩"
         },
         "subtitle": {
