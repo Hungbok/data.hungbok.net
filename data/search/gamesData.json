@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Fortnite Battle Royale"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "fortnite-battle-royale",
+        "link": "https://www.hungbok.com/games?q=fortnite-battle-royale",
+        "image": "https://media.hungbok.net/image/games/fortnite-battle-royale/hb_capsule.jpg",
+        "published": "2024-03-30-20-26-47"
+    },
+    {
+        "title": {
             "en": "Pokémon Legends: Z-A"
         },
         "subtitle": {
