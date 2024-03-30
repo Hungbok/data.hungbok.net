@@ -15,6 +15,10 @@
         "title": "HITMAN World of Assassination",
         "type": "games",
         "url": "hitman-world-of-assassination",
+        "platform": "pc playstation xbox nintendo    cloud",
+        "release_year": "2021",
+        "release_month": "01",
+        "release_day": "20",
         "link": "https://www.hungbok.com/games?q=hitman-world-of-assassination",
         "image": "https://media.hungbok.net/image/games/hitman-world-of-assassination/hb_thumbnail.jpg",
         "published": "2024-03-30-18-19-54"
@@ -23,6 +27,10 @@
         "title": "Fortnite",
         "type": "games",
         "url": "fortnite",
+        "platform": "pc playstation xbox nintendo   mobile cloud",
+        "release_year": "2017",
+        "release_month": "07",
+        "release_day": "25",
         "link": "https://www.hungbok.com/games?q=fortnite",
         "image": "https://media.hungbok.net/image/games/fortnite/hb_thumbnail.jpg",
         "published": "2024-03-30-18-00-31"
@@ -31,6 +39,10 @@
         "title": "Dota 2",
         "type": "games",
         "url": "dota-2",
+        "platform": "pc       ",
+        "release_year": "2013",
+        "release_month": "07",
+        "release_day": "09",
         "link": "https://www.hungbok.com/games?q=dota-2",
         "image": "https://media.hungbok.net/image/games/dota-2/hb_thumbnail.jpg",
         "published": "2024-03-30-09-20-11"
@@ -39,6 +51,10 @@
         "title": "Counter-Strike 2",
         "type": "games",
         "url": "counter-strike-2",
+        "platform": "pc       ",
+        "release_year": "2023",
+        "release_month": "09",
+        "release_day": "27",
         "link": "https://www.hungbok.com/games?q=counter-strike-2",
         "image": "https://media.hungbok.net/image/games/counter-strike-2/hb_thumbnail.jpg",
         "published": "2024-03-29-11-04-35"
