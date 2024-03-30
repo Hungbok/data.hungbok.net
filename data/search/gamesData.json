@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "SAND LAND"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "sand-land",
+        "link": "https://www.hungbok.com/games?q=sand-land",
+        "image": "https://media.hungbok.net/image/games/sand-land/hb_capsule.jpg",
+        "published": "2024-03-31-05-30-10"
+    },
+    {
+        "title": {
             "en": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!"
         },
         "subtitle": {
