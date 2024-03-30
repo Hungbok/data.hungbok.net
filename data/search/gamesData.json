@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Werewolf: The Apocalypse - Heart of the Forest"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "werewolf-the-apocalypse-heart-of-the-forest",
+        "link": "https://www.hungbok.com/games?q=werewolf-the-apocalypse-heart-of-the-forest",
+        "image": "https://media.hungbok.net/image/games/werewolf-the-apocalypse-heart-of-the-forest/hb_capsule.jpg",
+        "published": "2024-03-30-18-48-03"
+    },
+    {
+        "title": {
             "en": "HITMAN World of Assassination"
         },
         "subtitle": {
