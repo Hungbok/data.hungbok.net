@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Braid, Anniversary Edition"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "braid-anniversary-edition",
+        "link": "https://www.hungbok.com/games?q=braid-anniversary-edition",
+        "image": "https://media.hungbok.net/image/games/braid-anniversary-edition/hb_capsule.jpg",
+        "published": "2024-03-31-07-32-57"
+    },
+    {
+        "title": {
             "en": "SAND LAND"
         },
         "subtitle": {
