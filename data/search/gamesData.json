@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Rocket Racing"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "rocket-racing",
+        "link": "https://www.hungbok.com/games?q=rocket-racing",
+        "image": "https://media.hungbok.net/image/games/rocket-racing/hb_capsule.jpg",
+        "published": "2024-03-31-23-06-27"
+    },
+    {
+        "title": {
             "en": "LEGO Fortnite"
         },
         "subtitle": {
