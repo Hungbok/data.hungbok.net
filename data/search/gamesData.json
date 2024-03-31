@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Dragon's Dogma II"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "dragons-dogma-2",
+        "link": "https://www.hungbok.com/games?q=dragons-dogma-2",
+        "image": "https://media.hungbok.net/image/games/dragons-dogma-2/hb_capsule.jpg",
+        "published": "2024-03-31-22-39-34"
+    },
+    {
+        "title": {
             "en": "Braid, Anniversary Edition"
         },
         "subtitle": {
