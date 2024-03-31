@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Fortnite Festival"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "fortnite-festival",
+        "link": "https://www.hungbok.com/games?q=fortnite-festival",
+        "image": "https://media.hungbok.net/image/games/fortnite-festival/hb_capsule.jpg",
+        "published": "2024-03-31-23-13-02"
+    },
+    {
+        "title": {
             "en": "Rocket Racing"
         },
         "subtitle": {
