@@ -27,10 +27,13 @@
     },
     {
         "title": {
-            "en": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!"
+            "en": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!",
+            "ja": "鬼滅の刃 目指せ！最強隊士！",
+            "ko": "귀멸의 칼날: 도전, 최강의 대원!"
         },
         "subtitle": {
-            "en": ""
+            "en": "",
+            "ko": "귀칼: 도전, 최강의 대원!"
         },
         "type": "games",
         "url": "kimetsu-no-yaiba-mezase-saikyou-taishi",
