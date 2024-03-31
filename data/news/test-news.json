@@ -1,0 +1,18 @@
+[
+    {
+        "type": "anime",
+        "url": "test-news",
+        "link": "first-test-news",
+        "writer": "HungBok",
+        "image": "//media.hungbok.net/contents/image/news/hb_test-news_1711917542336.png",
+        "published": "2024-04-01-05-39-03",
+        "en": {
+            "lang": "en",
+            "title": "테스트 뉴스",
+            "summary": "테스트 뉴스",
+            "content": "<p><h1>테스트 뉴스</h1></p><p></p><p>과연 잘</p><p>나올것인가</p>",
+            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+        },
+        "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+    }
+]
