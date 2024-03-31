@@ -1,5 +1,17 @@
 [
     {
+        "title": "LEGO Fortnite",
+        "type": "games",
+        "url": "lego-fortnite",
+        "platform": "pc playstation xbox nintendo   mobile cloud",
+        "release_year": "2023",
+        "release_month": "12",
+        "release_day": "07",
+        "link": "https://www.hungbok.com/games?q=lego-fortnite",
+        "image": "https://media.hungbok.net/image/games/lego-fortnite/hb_thumbnail.jpg",
+        "published": "2024-03-31-22-55-09"
+    },
+    {
         "title": "Dragon's Dogma II",
         "type": "games",
         "url": "dragons-dogma-2",
