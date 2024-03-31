@@ -14,7 +14,9 @@
     },
     {
         "title": {
-            "en": "SAND LAND"
+            "en": "SAND LAND",
+            "ja": "サンドランド",
+            "ko": "샌드랜드"
         },
         "subtitle": {
             "en": ""
@@ -46,7 +48,9 @@
     },
     {
         "title": {
-            "en": "Stellar Blade"
+            "en": "Stellar Blade",
+            "ja": "ステラーブレイド",
+            "ko": "스텔라 블레이드"
         },
         "subtitle": {
             "en": ""
@@ -59,7 +63,8 @@
     },
     {
         "title": {
-            "en": "Shadow Corridor 2 雨ノ四葩"
+            "en": "Shadow Corridor 2 雨ノ四葩",
+            "ko": "그림자 복도 2 비의 수국"
         },
         "subtitle": {
             "en": ""
@@ -72,10 +77,13 @@
     },
     {
         "title": {
-            "en": "Fortnite Battle Royale"
+            "en": "Fortnite Battle Royale",
+            "ja": "フォートナイト バトルロイヤル",
+            "ko": "포트나이트 배틀로얄"
         },
         "subtitle": {
-            "en": ""
+            "en": "",
+            "ko": "포나 배틀로얄"
         },
         "type": "games",
         "url": "fortnite-battle-royale",
@@ -88,7 +96,45 @@
             "en": "Pokémon Legends: Z-A"
         },
         "subtitle": {
-            "en": ""
+            "en": "Pokémon LEGENDS ZA",
+            "en-2": "Pokémon Z-A",
+            "en-3": "Pokémon ZA",
+            "en-4": "Pokemon LEGENDS Z-A",
+            "en-5": "Pokemon LEGENDS ZA",
+            "en-6": "Pokemon Z-A",
+            "en-7": "Pokemon ZA",
+            "ja": "ポケモンレジェンズゼットエー",
+            "ja-2": "ポケットモンスターレジェンズゼットエー",
+            "ja-3": "ポケモンレジェンズZ-A",
+            "ja-4": "ポケモンレジェンズZA",
+            "ja-5": "ポケットモンスターレジェンズZ-A",
+            "ja-6": "ポケットモンスターレジェンズZA",
+            "ja-7": "ポケモン LEGENDS Z-A",
+            "ja-8": "ポケモン LEGENDS ZA",
+            "ja-9": "ポケットモンスター LEGENDS Z-A",
+            "ja-10": "ポケットモンスター LEGENDS ZA",
+            "ja-11": "ポケモンゼットエー",
+            "ja-12": "ポケットモンスターゼットエー",
+            "ja-13": "ポケモン Z-A",
+            "ja-14": "ポケモン ZA",
+            "ja-15": "ポケットモンスター Z-A",
+            "ja-16": "ポケットモンスター ZA",
+            "ko": "포켓몬 레전드 제트에이",
+            "ko-2": "포켓몬스터 레전드 제트에이",
+            "ko-3": "포켓몬 레전드 Z-A",
+            "ko-4": "포켓몬 레전드 ZA",
+            "ko-5": "포켓몬스터 레전드 Z-A",
+            "ko-6": "포켓몬스터 레전드 ZA",
+            "ko-7": "포켓몬 LEGENDS Z-A",
+            "ko-8": "포켓몬 LEGENDS ZA",
+            "ko-9": "포켓몬스터 LEGENDS Z-A",
+            "ko-10": "포켓몬스터 LEGENDS ZA",
+            "ko-11": "포켓몬 제트에이",
+            "ko-12": "포켓몬스터 제트에이",
+            "ko-13": "포켓몬 Z-A",
+            "ko-14": "포켓몬 ZA",
+            "ko-15": "포켓몬스터 Z-A",
+            "ko-16": "포켓몬스터 ZA"
         },
         "type": "games",
         "url": "pokemon-legends-z-a",
@@ -111,10 +157,18 @@
     },
     {
         "title": {
-            "en": "HITMAN World of Assassination"
+            "en": "HITMAN: World of Assassination",
+            "ko": "히트맨: 암살의 세계"
         },
         "subtitle": {
-            "en": ""
+            "en": "HITMAN World of Assassination",
+            "en-2": "HITMAN 3",
+            "en-3": "HITMAN III",
+            "en-4": "HITMAN Ⅲ",
+            "ko": "히트맨 암살의 세계",
+            "ko-2": "히트맨 3",
+            "ko-3": "히트맨 III",
+            "ko-4": "히트맨 Ⅲ"
         },
         "type": "games",
         "url": "hitman-world-of-assassination",
@@ -124,10 +178,13 @@
     },
     {
         "title": {
-            "en": "Fortnite"
+            "en": "Fortnite",
+            "ja": "フォートナイト",
+            "ko": "포트나이트"
         },
         "subtitle": {
-            "en": ""
+            "en": "",
+            "ko": "포나"
         },
         "type": "games",
         "url": "fortnite",
@@ -137,7 +194,8 @@
     },
     {
         "title": {
-            "en": "Dota 2"
+            "en": "Dota 2",
+            "ko": "도타 2"
         },
         "subtitle": {
             "en": ""
@@ -150,7 +208,8 @@
     },
     {
         "title": {
-            "en": "Counter-Strike 2"
+            "en": "Counter-Strike 2",
+            "ko": "카운터 스트라이크 2"
         },
         "subtitle": {
             "en": ""
