@@ -1,5 +1,17 @@
 [
     {
+        "title": "Fortnite Festival",
+        "type": "games",
+        "url": "fortnite-festival",
+        "platform": "pc playstation xbox nintendo   mobile cloud",
+        "release_year": "2023",
+        "release_month": "12",
+        "release_day": "09",
+        "link": "https://www.hungbok.com/games?q=fortnite-festival",
+        "image": "https://media.hungbok.net/image/games/fortnite-festival/hb_thumbnail.jpg",
+        "published": "2024-03-31-23-13-03"
+    },
+    {
         "title": "Rocket Racing",
         "type": "games",
         "url": "rocket-racing",
