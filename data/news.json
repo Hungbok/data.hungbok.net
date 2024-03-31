@@ -1,6 +1,13 @@
 [
     {
         "type": "games",
+        "url": "wda",
+        "image": "//media.hungbok.net/contents/image/news/hb_wda.png",
+        "link": "https://www.hungbok.com/news?q=wda",
+        "published": "2024-04-01-05-34-29"
+    },
+    {
+        "type": "games",
         "url": "test2222",
         "link": "https://www.hungbok.com/news?q=test2222",
         "published": "2024-04-01-05-10-55"
