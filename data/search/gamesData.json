@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "LEGO Fortnite"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "lego-fortnite",
+        "link": "https://www.hungbok.com/games?q=lego-fortnite",
+        "image": "https://media.hungbok.net/image/games/lego-fortnite/hb_capsule.jpg",
+        "published": "2024-03-31-22-55-08"
+    },
+    {
+        "title": {
             "en": "Dragon's Dogma II"
         },
         "subtitle": {
