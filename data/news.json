@@ -1,5 +1,12 @@
 [
     {
+        "type": "anime",
+        "url": "test-news",
+        "image": "//media.hungbok.net/contents/image/news/hb_test-news_1711917542336.png",
+        "link": "https://www.hungbok.com/news?q=test-news",
+        "published": "2024-04-01-05-39-02"
+    },
+    {
         "type": "games",
         "url": "wda",
         "image": "//media.hungbok.net/contents/image/news/hb_wda.png",
