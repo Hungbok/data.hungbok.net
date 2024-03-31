@@ -272,5 +272,19 @@
             "copyright": "© 2021-2024 HungBok. All Rights Reserved."
         },
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+    },
+    {
+        "type": "games",
+        "url": "test",
+        "link": "test-url",
+        "writer": "HungBok",
+        "published": "2024-04-01-05-09-21",
+        "en": {
+            "lang": "en",
+            "title": "TEST",
+            "content": "본문\n\n본문",
+            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+        },
+        "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
 ]
