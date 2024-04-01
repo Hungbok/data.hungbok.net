@@ -14,13 +14,6 @@
             "content": "<p><p class=\"h1\">Welcome to HungBok Website!</p></p><p></p><p>We will officially start our service today!</p>",
             "copyright": "© 2021-2024 HungBok. All Rights Reserved."
         },
-        "ko": {
-            "lang": "ko",
-            "title": "HungBok 웹사이트에 오신걸 환영합니다!",
-            "summary": "We will officially start our service today!",
-            "content": "<p><p class=\"h1\">Welcome to HungBok Website!</p></p><p></p><p>We will officially start our service today!</p>",
-            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
-        },
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
 ]
