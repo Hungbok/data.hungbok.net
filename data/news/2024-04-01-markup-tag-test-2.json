@@ -1,0 +1,19 @@
+[
+    {
+        "type": "blog",
+        "url": "2024-04-01-markup-tag-test-2",
+        "link": "",
+        "writer": "",
+        "image": "//media.hungbok.net/image/news/hb_markup-tag-test-2_1711936779215.png",
+        "date": "2024-04-01",
+        "published": "2024-04-01-10-59-40",
+        "en": {
+            "lang": "en",
+            "title": "Markup Tag Test 2",
+            "summary": "",
+            "content": "<div>Markup Tag Test</div><div></div><div><p class=\"h1\">Title</p></div><div></div><div><p class=\"bold\">Bold</p></div><div></div><div><p class=\"underbar\">Under Bar</p></div><div></div><div><p class=\"italic\">Italic</p></div><div></div><div><p class=\"strike\">Strike</p></div><div></div><div><p class=\"spoiler\">Spoiler</p></div><div></div><div><div>[b]Bold[/b]Tag</div></div><div></div><div><a href=\"https://www.hungbok.com/news\">Newsroom</a></div>",
+            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+        },
+        "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+    }
+]
