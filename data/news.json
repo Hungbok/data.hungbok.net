@@ -1,5 +1,12 @@
 [
     {
+        "type": "other",
+        "url": "2024-04-01-markup-tag-test",
+        "image": "//media.hungbok.net/image/news/hb_markup-tag-test_1711935890389.png",
+        "link": "https://www.hungbok.com/news?q=2024-04-01-markup-tag-test",
+        "published": "2024-04-01-10-44-50"
+    },
+    {
         "type": "blog",
         "url": "2024-04-01-welcome-to-hungbok-website",
         "image": "//media.hungbok.net/image/news/hb_welcome-to-hungbok-website_1711920990717.png",
