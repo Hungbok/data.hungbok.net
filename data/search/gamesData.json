@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "学園アイドルマスター"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "gakuen-idolmaster",
+        "link": "https://www.hungbok.com/games?q=gakuen-idolmaster",
+        "image": "https://media.hungbok.net/image/games/gakuen-idolmaster/hb_capsule.jpg",
+        "published": "2024-04-02-15-07-51"
+    },
+    {
+        "title": {
             "en": "Rise of the Rōnin"
         },
         "subtitle": {
