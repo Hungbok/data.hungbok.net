@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Test"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "test",
+        "link": "https://www.hungbok.com/games?q=test",
+        "image": "https://media.hungbok.net/image/games/test/hb_capsule.jpg",
+        "published": "2024-04-03-00-30-20"
+    },
+    {
+        "title": {
             "en": "Gakuen iDOLM@STER",
             "ja": "学園アイドルマスター"
         },
