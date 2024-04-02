@@ -1,5 +1,17 @@
 [
     {
+        "title": "test2",
+        "type": "games",
+        "url": "test",
+        "platform": "   nintendo    ",
+        "release_year": "2024",
+        "release_month": "04",
+        "release_day": "04",
+        "link": "https://www.hungbok.com/games?q=test",
+        "image": "https://media.hungbok.net/image/games/test/hb_thumbnail.jpg",
+        "published": "2024-04-03-08-38-59"
+    },
+    {
         "title": "Gakuen iDOLM@STER",
         "type": "games",
         "url": "gakuen-idolmaster",
