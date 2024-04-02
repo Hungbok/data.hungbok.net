@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Rise of the Rōnin"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "rise-of-the-ronin",
+        "link": "https://www.hungbok.com/games?q=rise-of-the-ronin",
+        "image": "https://media.hungbok.net/image/games/rise-of-the-ronin/hb_capsule.jpg",
+        "published": "2024-04-02-14-32-56"
+    },
+    {
+        "title": {
             "en": "Fortnite Festival"
         },
         "subtitle": {
