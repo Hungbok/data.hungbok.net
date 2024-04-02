@@ -1,17 +1,5 @@
 [
     {
-        "title": "TEST2",
-        "type": "games",
-        "url": "test2",
-        "platform": "pc playstation xbox nintendo console arcade mobile cloud",
-        "release_year": "2024",
-        "release_month": "04",
-        "release_day": "04",
-        "link": "https://www.hungbok.com/games?q=test2",
-        "image": "https://media.hungbok.net/image/games/test2/hb_thumbnail.jpg",
-        "published": "2024-04-03-08-26-34"
-    },
-    {
         "title": "Gakuen iDOLM@STER",
         "type": "games",
         "url": "gakuen-idolmaster",
