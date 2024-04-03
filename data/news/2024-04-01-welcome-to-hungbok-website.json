@@ -1,19 +1,27 @@
 [
-    {
-        "type": "blog",
-        "url": "2024-04-01-welcome-to-hungbok-website",
-        "link": "BHMNTZQn",
-        "writer": "HungBok",
-        "image": "//media.hungbok.net/image/news/hb_welcome-to-hungbok-website_1711920990717.png",
-        "date": "2024-03-24",
-        "published": "2024-03-24-07-37-31",
-        "en": {
-            "lang": "en",
-            "title": "Welcome to HungBok Website!",
-            "summary": "We will officially start our service today!",
-            "content": "<div><p class=\"h1\">Welcome to HungBok Website!</p></div><div></div><div>We will officially start our service today!</div><div></div><div><blockquote class='twitter-tweet' align='center' data-theme='dark'><a href='https://twitter.com/HungBokNetwork/status/1771667606073647175'></a></blockquote></div>",
-            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
-        },
-        "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+  {
+    "type": "blog",
+    "url": "2024-04-01-welcome-to-hungbok-website",
+    "link": "BHMNTZQn",
+    "writer": "HungBok",
+    "image": "//media.hungbok.net/image/news/hb_welcome-to-hungbok-website_1711920990717.png",
+    "date": "2024-03-24",
+    "published": "2024-03-24-07-37-31",
+    "en": {
+      "lang": "en",
+      "title": "Welcome to HungBok Website!",
+      "summary": "We will officially start our service today!",
+      "content": "<div><p class=\"h1\">Welcome to HungBok Website!</p></div><div></div><div>We will officially start our service today!</div><div></div><div><blockquote class='twitter-tweet' align='center' data-theme='dark'><a href='https://twitter.com/HungBokNetwork/status/1771667606073647175'></a></blockquote></div>",
+      "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+    },
+    "copyright": "© 2021-2024 HungBok. All Rights Reserved.",
+    "ko": {
+      "lang": "ko",
+      "title": "HungBok 사이트에 오신걸 환영합니다 !",
+      "summary": "오늘부터 정식 서비스를 시작합니다 !",
+      "content": "<div><p class=\"h1\">HungBok 사이트에 오신걸 환영합니다 !</p></div><div></div><div>오늘부터 정식 서비스를 시작합니다 !</div><div></div><div><div class=\"widget-container\"><blockquote class=\"twitter-tweet\" align=\"center\" data-theme=\"dark\" title=\"\"><a href=\"https://twitter.com/HungBokNetwork/status/1771667606073647175\"></a></blockquote></div></div>",
+      "published": "2024-04-03-16-58-00",
+      "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
+  }
 ]
