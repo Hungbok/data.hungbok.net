@@ -1,17 +1,5 @@
 [
     {
-        "title": "TEST ITEM",
-        "type": "games",
-        "url": "test",
-        "platform": "pc       ",
-        "release_year": "",
-        "release_month": "",
-        "release_day": "",
-        "link": "https://www.hungbok.com/games?q=test",
-        "image": "https://media.hungbok.net/image/games/test/hb_thumbnail.jpg",
-        "published": "2024-04-05-01-01-44"
-    },
-    {
         "title": "Gakuen iDOLM@STER",
         "type": "games",
         "url": "gakuen-idolmaster",
