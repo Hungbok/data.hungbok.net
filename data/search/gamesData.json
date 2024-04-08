@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Overwatch 2"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "overwatch-2",
+        "link": "https://www.hungbok.com/games?q=overwatch-2",
+        "image": "https://media.hungbok.net/image/games/overwatch-2/hb_capsule.jpg",
+        "published": "2024-04-08-11-35-21"
+    },
+    {
+        "title": {
             "en": "Gakuen iDOLM@STER",
             "ja": "学園アイドルマスター"
         },
