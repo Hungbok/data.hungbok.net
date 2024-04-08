@@ -1,5 +1,17 @@
 [
     {
+        "title": "Zenless Zone Zero",
+        "type": "games",
+        "url": "zenless-zone-zero",
+        "platform": "pc playstation     mobile ",
+        "release_year": "2024",
+        "release_month": "",
+        "release_day": "",
+        "link": "https://www.hungbok.com/games?q=zenless-zone-zero",
+        "image": "https://media.hungbok.net/image/games/zenless-zone-zero/hb_thumbnail.jpg",
+        "published": "2024-04-08-19-55-13"
+    },
+    {
         "title": "Genshin Impact",
         "type": "games",
         "url": "genshin-impact",
