@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Genshin Impact"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "genshin-impact",
+        "link": "https://www.hungbok.com/games?q=genshin-impact",
+        "image": "https://media.hungbok.net/image/games/genshin-impact/hb_capsule.jpg",
+        "published": "2024-04-08-19-00-34"
+    },
+    {
+        "title": {
             "en": "Honkai: Star Rail"
         },
         "subtitle": {
