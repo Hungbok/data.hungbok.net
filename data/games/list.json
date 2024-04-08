@@ -1,5 +1,17 @@
 [
     {
+        "title": "Genshin Impact",
+        "type": "games",
+        "url": "genshin-impact",
+        "platform": "pc playstation     mobile cloud",
+        "release_year": "2020",
+        "release_month": "09",
+        "release_day": "28",
+        "link": "https://www.hungbok.com/games?q=genshin-impact",
+        "image": "https://media.hungbok.net/image/games/genshin-impact/hb_thumbnail.jpg",
+        "published": "2024-04-08-19-00-35"
+    },
+    {
         "title": "Honkai: Star Rail",
         "type": "games",
         "url": "honkai-star-rail",
