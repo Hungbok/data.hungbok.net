@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Honkai: Star Rail"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "honkai-star-rail",
+        "link": "https://www.hungbok.com/games?q=honkai-star-rail",
+        "image": "https://media.hungbok.net/image/games/honkai-star-rail/hb_capsule.jpg",
+        "published": "2024-04-08-18-54-04"
+    },
+    {
+        "title": {
             "en": "Overwatch 2"
         },
         "subtitle": {
