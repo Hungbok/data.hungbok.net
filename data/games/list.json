@@ -1,5 +1,17 @@
 [
     {
+        "title": "Overwatch 2",
+        "type": "games",
+        "url": "overwatch-2",
+        "platform": "pc playstation xbox nintendo    ",
+        "release_year": "2022",
+        "release_month": "10",
+        "release_day": "04",
+        "link": "https://www.hungbok.com/games?q=overwatch-2",
+        "image": "https://media.hungbok.net/image/games/overwatch-2/hb_thumbnail.jpg",
+        "published": "2024-04-08-11-35-22"
+    },
+    {
         "title": "Gakuen iDOLM@STER",
         "type": "games",
         "url": "gakuen-idolmaster",
