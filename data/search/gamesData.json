@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Zenless Zone Zero"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "zenless-zone-zero",
+        "link": "https://www.hungbok.com/games?q=zenless-zone-zero",
+        "image": "https://media.hungbok.net/image/games/zenless-zone-zero/hb_capsule.jpg",
+        "published": "2024-04-08-19-55-12"
+    },
+    {
+        "title": {
             "en": "Genshin Impact"
         },
         "subtitle": {
