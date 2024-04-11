@@ -1,5 +1,17 @@
 [
     {
+        "title": "Star Wars Outlaws",
+        "type": "games",
+        "url": "star-wars-outlaws",
+        "platform": "pc playstation xbox     ",
+        "release_year": "2024",
+        "release_month": "08",
+        "release_day": "30",
+        "link": "https://www.hungbok.com/games?q=star-wars-outlaws",
+        "image": "https://media.hungbok.net/image/games/star-wars-outlaws/hb_thumbnail.jpg",
+        "published": "2024-04-11-12-33-40"
+    },
+    {
         "title": "Zenless Zone Zero",
         "type": "games",
         "url": "zenless-zone-zero",
