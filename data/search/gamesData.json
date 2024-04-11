@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Star Wars Outlaws"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "star-wars-outlaws",
+        "link": "https://www.hungbok.com/games?q=star-wars-outlaws",
+        "image": "https://media.hungbok.net/image/games/star-wars-outlaws/hb_capsule.jpg",
+        "published": "2024-04-11-12-33-39"
+    },
+    {
+        "title": {
             "en": "Zenless Zone Zero"
         },
         "subtitle": {
