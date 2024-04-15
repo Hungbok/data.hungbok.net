@@ -1,19 +1,27 @@
 [
-    {
-        "type": "games",
-        "url": "2024-04-16-steams-fps-fest-is-on-now",
-        "link": "8xp7AOGT",
-        "writer": "Steam News",
-        "image": "//media.hungbok.net/image/news/hb_steams-fps-fest-is-on-now_1713210508165.jpg",
-        "date": "2024-04-16",
-        "published": "2024-04-16-04-48-29",
-        "en": {
-            "lang": "en",
-            "title": "Steam’s FPS Fest is on now!",
-            "summary": "Hundreds of deals on first-person shooters of all kinds await you on Steam from April 15th through 22nd.",
-            "content": "<div><p class=\"h1\">Hundreds of deals on first-person shooters of all kinds await you on Steam from April 15th through 22nd.</p></div><div><div class=\"video-container\"><iframe src=\"https://www.youtube.com/embed/Cd4ffQlZnnc\" title=\"Steam\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div></div><div>All week, explore discounts and demos on FPS games; just take a look at the official trailer above to see examples of everything from tactical shooters and team combat to games that send you underwater or into the wilderness to dive and hunt.</div><div></div><div>And that’s just scratching the surface! If you’re looking to play a first-person game and shoot with anything from bullets and arrows, to rocks and even water, you’ll likely find it in this fest.</div><div></div><div>Join us now for the <a href=\"https://store.steampowered.com/category/action_fps\">Steam FPS Fest</a>, running through April 22nd at 10am PT.</div>",
-            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
-        },
-        "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+  {
+    "type": "games",
+    "url": "2024-04-16-steams-fps-fest-is-on-now",
+    "link": "8xp7AOGT",
+    "writer": "Steam News",
+    "image": "//media.hungbok.net/image/news/hb_steams-fps-fest-is-on-now_1713210508165.jpg",
+    "date": "2024-04-16",
+    "published": "2024-04-16-04-48-29",
+    "en": {
+      "lang": "en",
+      "title": "Steam’s FPS Fest is on now!",
+      "summary": "Hundreds of deals on first-person shooters of all kinds await you on Steam from April 15th through 22nd.",
+      "content": "<div><p class=\"h1\">Hundreds of deals on first-person shooters of all kinds await you on Steam from April 15th through 22nd.</p></div><div><div class=\"video-container\"><iframe src=\"https://www.youtube.com/embed/Cd4ffQlZnnc\" title=\"Steam\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div></div><div>All week, explore discounts and demos on FPS games; just take a look at the official trailer above to see examples of everything from tactical shooters and team combat to games that send you underwater or into the wilderness to dive and hunt.</div><div></div><div>And that’s just scratching the surface! If you’re looking to play a first-person game and shoot with anything from bullets and arrows, to rocks and even water, you’ll likely find it in this fest.</div><div></div><div>Join us now for the <a href=\"https://store.steampowered.com/category/action_fps\">Steam FPS Fest</a>, running through April 22nd at 10am PT.</div>",
+      "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+    },
+    "copyright": "© 2021-2024 HungBok. All Rights Reserved.",
+    "ko": {
+      "lang": "ko",
+      "title": "Steam FPS 게임 축제가 시작되었습니다!",
+      "summary": "4월 15일부터 22일까지 Steam에서 다양한 할인을 제공하는 수백 가지 1인칭 슈팅 게임을 만나 보세요.",
+      "content": "<div><p class=\"h1\">4월 15일부터 22일까지 Steam에서 다양한 할인을 제공하는 수백 가지 1인칭 슈팅 게임을 만나 보세요.</p></div><div></div><div><div class=\"video-container\"><iframe src=\"https://www.youtube.com/embed/Cd4ffQlZnnc\" title=\"Steam\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div></div><div></div><div>FPS 게임에 제공되는 다양한 할인 및 체험판을 일주일 내내 즐겨 보세요. 전술 슈팅 및 팀 전투 게임부터 수중 또는 야생으로 뛰어들어 사냥을 즐기는 게임까지, 이번 축제에서 만나 볼 수 있는 여러 FPS 게임을 위의 공식 예고편을 통해 살펴보세요.</div><div></div><div>예고편에 소개된 게임 이외에도 수많은 게임이 준비되어 있습니다! 이번 축제에서는 1인칭 시점에서 총알, 화살, 돌멩이, 물 등을 발사하며 플레이할 수 있는 모든 종류의 슈팅 게임을 만나 볼 수 있습니다.</div><div></div><div>4월 22일 오전 10시(태평양 표준시)까지 진행되는 <a href=\"https://store.steampowered.com/category/action_fps\">Steam FPS 게임 축제</a>를 지금 확인해 보세요.</div>",
+      "published": "2024-04-16-04-52-53",
+      "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
+  }
 ]
