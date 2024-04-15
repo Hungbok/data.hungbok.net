@@ -96,6 +96,7 @@
         "data_import_type_third": "none",
         "data_import_third": "",
         "review": "",
+        "rating": "metacritic opencritic appstore googleplay steam epicgames gog microsoft",
         "metacount": "6",
         "metaclass1": "pc",
         "metattt1": "PC",
