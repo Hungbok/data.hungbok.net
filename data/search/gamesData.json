@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "ELDEN RING"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "elden-ring",
+        "link": "https://www.hungbok.com/games?q=elden-ring",
+        "image": "https://media.hungbok.net/image/games/elden-ring/hb_capsule.jpg",
+        "published": "2024-04-23-04-10-51"
+    },
+    {
+        "title": {
             "en": "ELDEN RING Shadow of the Erdtree"
         },
         "subtitle": {
