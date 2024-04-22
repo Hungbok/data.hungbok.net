@@ -1,5 +1,17 @@
 [
     {
+        "title": "Manor Lords",
+        "type": "games",
+        "url": "manor-lords",
+        "platform": "pc  xbox     ",
+        "release_year": "2024",
+        "release_month": "04",
+        "release_day": "26",
+        "link": "https://www.hungbok.com/games?q=manor-lords",
+        "image": "https://media.hungbok.net/image/games/manor-lords/hb_thumbnail.jpg",
+        "published": "2024-04-23-03-22-57"
+    },
+    {
         "title": "The Outlast Trials",
         "type": "games",
         "url": "the-outlast-trials",
