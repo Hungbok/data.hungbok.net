@@ -1,5 +1,17 @@
 [
     {
+        "title": "The Outlast Trials",
+        "type": "games",
+        "url": "the-outlast-trials",
+        "platform": "pc playstation xbox     ",
+        "release_year": "2023",
+        "release_month": "05",
+        "release_day": "19",
+        "link": "https://www.hungbok.com/games?q=the-outlast-trials",
+        "image": "https://media.hungbok.net/image/games/the-outlast-trials/hb_thumbnail.jpg",
+        "published": "2024-04-23-03-04-29"
+    },
+    {
         "title": "Star Wars Outlaws",
         "type": "games",
         "url": "star-wars-outlaws",
