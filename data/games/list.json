@@ -1,5 +1,17 @@
 [
     {
+        "title": "ELDEN RING Shadow of the Erdtree",
+        "type": "games",
+        "url": "elden-ring-shadow-of-the-erdtree",
+        "platform": "pc playstation xbox     ",
+        "release_year": "2024",
+        "release_month": "06",
+        "release_day": "21",
+        "link": "https://www.hungbok.com/games?q=elden-ring-shadow-of-the-erdtree",
+        "image": "https://media.hungbok.net/image/games/elden-ring-shadow-of-the-erdtree/hb_thumbnail.jpg",
+        "published": "2024-04-23-03-55-04"
+    },
+    {
         "title": "Manor Lords",
         "type": "games",
         "url": "manor-lords",
