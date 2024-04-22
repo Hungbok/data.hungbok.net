@@ -1,5 +1,17 @@
 [
     {
+        "title": "ELDEN RING",
+        "type": "games",
+        "url": "elden-ring",
+        "platform": "pc playstation xbox     ",
+        "release_year": "2022",
+        "release_month": "02",
+        "release_day": "25",
+        "link": "https://www.hungbok.com/games?q=elden-ring",
+        "image": "https://media.hungbok.net/image/games/elden-ring/hb_thumbnail.jpg",
+        "published": "2024-04-23-04-10-52"
+    },
+    {
         "title": "ELDEN RING Shadow of the Erdtree",
         "type": "games",
         "url": "elden-ring-shadow-of-the-erdtree",
