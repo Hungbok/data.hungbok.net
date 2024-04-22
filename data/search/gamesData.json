@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "ELDEN RING Shadow of the Erdtree"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "elden-ring-shadow-of-the-erdtree",
+        "link": "https://www.hungbok.com/games?q=elden-ring-shadow-of-the-erdtree",
+        "image": "https://media.hungbok.net/image/games/elden-ring-shadow-of-the-erdtree/hb_capsule.jpg",
+        "published": "2024-04-23-03-55-03"
+    },
+    {
+        "title": {
             "en": "Manor Lords"
         },
         "subtitle": {
