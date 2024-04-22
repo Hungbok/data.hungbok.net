@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Manor Lords"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "manor-lords",
+        "link": "https://www.hungbok.com/games?q=manor-lords",
+        "image": "https://media.hungbok.net/image/games/manor-lords/hb_capsule.jpg",
+        "published": "2024-04-23-03-22-56"
+    },
+    {
+        "title": {
             "en": "The Outlast Trials"
         },
         "subtitle": {
