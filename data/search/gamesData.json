@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "The Outlast Trials"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "the-outlast-trials",
+        "link": "https://www.hungbok.com/games?q=the-outlast-trials",
+        "image": "https://media.hungbok.net/image/games/the-outlast-trials/hb_capsule.jpg",
+        "published": "2024-04-23-03-04-28"
+    },
+    {
+        "title": {
             "en": "Star Wars Outlaws"
         },
         "subtitle": {
