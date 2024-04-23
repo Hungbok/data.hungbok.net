@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Eiyuden Chronicle: Hundred Heroes"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "eiyuden-chronicle-hundred-heroes",
+        "link": "https://www.hungbok.com/games?q=eiyuden-chronicle-hundred-heroes",
+        "image": "https://media.hungbok.net/image/games/eiyuden-chronicle-hundred-heroes/hb_capsule.jpg",
+        "published": "2024-04-23-11-39-07"
+    },
+    {
+        "title": {
             "en": "ELDEN RING"
         },
         "subtitle": {
