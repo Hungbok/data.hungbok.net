@@ -1,8 +1,8 @@
 [
     {
         "type": "games",
-        "developer": "epicgames",
-        "publisher": "epicgames",
+        "developer": "//media.hungbok.net/image/logo/epicgames.svg",
+        "publisher": "//media.hungbok.net/image/logo/epicgames.svg",
         "platform": "pc playstation xbox nintendo   mobile cloud",
         "pc": "windows mac  ",
         "console": " playstation5   playstation4      xboxseriesxs    xboxone   nintendoswitch               ",
