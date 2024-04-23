@@ -1,8 +1,8 @@
 [
     {
         "type": "games",
-        "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
-        "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' onerror='this.remove ? this.remove() : this.removeNode();' loading='lazy'>",
+        "developer": "<img src='//media.hungbok.net/image/logo/epicgames.svg' alt='Epic Games' onerror='logoError(this);' loading='lazy'>",
+        "publisher": "<img src='//media.hungbok.net/image/logo/epicgames.svg' alt='Epic Games' onerror='logoError(this);' loading='lazy'>",
         "platform": "pc playstation xbox nintendo   mobile cloud",
         "pc": "windows mac  ",
         "console": " playstation5   playstation4      xboxseriesxs    xboxone   nintendoswitch               ",
