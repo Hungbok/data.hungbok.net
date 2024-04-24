@@ -1,5 +1,17 @@
 [
     {
+        "title": "Template",
+        "type": "games",
+        "url": "template",
+        "platform": "pc playstation xbox nintendo console arcade mobile cloud",
+        "release_year": "2024",
+        "release_month": "01",
+        "release_day": "01",
+        "link": "https://www.hungbok.com/games?q=template",
+        "image": "https://media.hungbok.net/image/games/template/hb_thumbnail.jpg",
+        "published": "2024-04-24-22-17-11"
+    },
+    {
         "title": "Eiyuden Chronicle: Hundred Heroes",
         "type": "games",
         "url": "eiyuden-chronicle-hundred-heroes",
