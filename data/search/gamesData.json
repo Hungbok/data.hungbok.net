@@ -1,6 +1,19 @@
 [
     {
         "title": {
+            "en": "Template"
+        },
+        "subtitle": {
+            "en": ""
+        },
+        "type": "games",
+        "url": "template",
+        "link": "https://www.hungbok.com/games?q=template",
+        "image": "https://media.hungbok.net/image/games/template/hb_capsule.jpg",
+        "published": "2024-04-24-22-17-09"
+    },
+    {
+        "title": {
             "en": "Eiyuden Chronicle: Hundred Heroes"
         },
         "subtitle": {
