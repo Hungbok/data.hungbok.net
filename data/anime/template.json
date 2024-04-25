@@ -3,6 +3,7 @@
         "type": "tva",
         "animation_production": "src='//media.hungbok.net/image/logo/activision.svg'",
         "production": "src='//media.hungbok.net/image/logo/valve.svg'",
+        "title": "僕だけがいない街",
         "age_check": "adult",
         "age": "18",
         "kmrb": "18",
@@ -249,7 +250,7 @@
         "published": "2024-04-24-22-17-12",
         "en": {
             "lang": "en",
-            "title": "Template",
+            "title": "나만이 없는 거리",
             "animation_production": "Capcom",
             "production": "Epic Games",
             "release": "February 02, 2025",
