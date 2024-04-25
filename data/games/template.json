@@ -64,7 +64,7 @@
         "store_class10": "appstore",
         "store_link10": "#",
         "url": "template",
-        "share": "",
+        "share": "template_shortURL",
         "page": "/games?q=template",
         "logo": "src='//media.hungbok.net/image/games/template/hb_logo.png'",
         "capsule": "src='//media.hungbok.net/image/games/template/hb_capsule.jpg'",
