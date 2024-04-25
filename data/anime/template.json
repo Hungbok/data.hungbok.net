@@ -111,13 +111,8 @@
         "epicount": "10",
         "review": "",
         "rating": "metacritic googletv justwatch rakutenviki rottentomatoes imdb letterboxd tmdb filmarks yahoojapan google eiga douban bilibili myanimelist mydramalist anikore anilist watchapedia kinolights primevideo unext crunchyroll laftel",
-
-    "metasc": "- / 100",
-    "metalink": "https://www.metacritic.com/tv/cyberpunk-edgerunners' class='none rating-star",
-    "metaper": "0%;",
-    "metausersc": "8.9 / 10",
-    "metauserlink": "https://www.metacritic.com/tv/cyberpunk-edgerunners",
-    "metauserper": "89%",
+        "imdblink": "tt5249462",
+        "imdbsc": "8.5",
 
     "tomatosc": "100 / 100",
     "tomatolink": "https://www.rottentomatoes.com/tv/cyberpunk_edgerunners/s01",
@@ -125,10 +120,13 @@
     "tomatousersc": "96 / 100",
     "tomatouserlink": "https://www.rottentomatoes.com/tv/cyberpunk_edgerunners/s01",
     "tomatouserper": "96%",
-
-    "imdbsc": "8.3 / 10",
-    "imdblink": "https://www.imdb.com/title/tt12590266/",
-    "imdbper": "83%",
+        
+    "metasc": "- / 100",
+    "metalink": "https://www.metacritic.com/tv/cyberpunk-edgerunners' class='none rating-star",
+    "metaper": "0%;",
+    "metausersc": "8.9 / 10",
+    "metauserlink": "https://www.metacritic.com/tv/cyberpunk-edgerunners",
+    "metauserper": "89%",
 
     "lettersc": "- / 5",
     "letterlink": "https://letterboxd.com/film/",
