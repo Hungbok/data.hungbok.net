@@ -250,8 +250,8 @@
         "en": {
             "lang": "en",
             "title": "Template",
-            "info_developer": "Capcom",
-            "info_publisher": "Epic Games",
+            "animation_production": "Capcom",
+            "production": "Epic Games",
             "release": "February 02, 2025",
             "release_date": "<div><p>Early Access</p><p ttt='Windows | macOS | PlayStation 4 | Xbox One'>•</p><p>July 25, 2017</p></div>\n<div><p></p><p ttt='Nintendo Switch'>•</p><p>June 13, 2018</p></div>\n<div><p>Full Release</p><p ttt='Nintendo Switch'>•</p><p>June 29, 2020</p></div>",
             "engine": "Engine",
