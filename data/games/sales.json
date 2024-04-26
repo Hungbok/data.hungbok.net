@@ -56,6 +56,17 @@
   },
   {
     "title": "Square Enix Golden Week Sale",
+    "content": "",
+    "type": "pc",
+    "from": "steam",
+    "start": "2024-04-26-02-00-00",
+    "end": "2024-05-09-02-00-00",
+    "link": "https://store.steampowered.com/curator/1012195/sale/goldenweek24",
+    "published": "2024-04-26-21-26-02",
+    "image": "//media.hungbok.net/image/sales/hb_1714134362101.png"
+  },
+  {
+    "title": "Square Enix Golden Week Sale",
     "content": "us",
     "type": "console",
     "from": "nintendoeshop",
