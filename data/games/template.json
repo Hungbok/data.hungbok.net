@@ -3,7 +3,7 @@
         "type": "games",
         "developer": "src='//media.hungbok.net/image/logo/activision.svg'",
         "publisher": "src='//media.hungbok.net/image/logo/valve.svg'",
-        "platform": "pc playstation xbox nintendo console arcade mobile cloud",
+        "platform": "pc playstation xbox nintendo console vr arcade mobile cloud",
         "pc": "windows mac macos linux",
         "console": "playstationvr2 playstation5 playstationvr playstation4pro playstation4 playstationvita playstation3 playstationportable playstation2 playstation1 xboxseriesxs xboxseriesx xboxseriess xboxonex xboxone xbox360 xbox1 nintendoswitch newnintendo3ds wiiu nintendo3ds nintendodsi wii nintendods nintendogamecube gameboyadvance gameboycolor nintendo64 virtualboy superfamicom gameboy familycomputer gameandwatch",
         "mobile": "ios ipados android xboxcloudgaming amazonluna geforcenow stadia",
