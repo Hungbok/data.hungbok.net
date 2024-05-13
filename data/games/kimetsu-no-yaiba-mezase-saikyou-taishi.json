@@ -170,6 +170,16 @@
             "description": "<div>No Data</div>",
             "copyright": "© 2021-2024 HungBok. All Rights Reserved."
         },
+        "ja": {
+            "lang": "ja",
+            "title": "鬼滅の刃 目指せ！最強隊士！",
+            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+        },
+        "ko": {
+            "lang": "ko",
+            "title": "귀멸의 칼날: 도전, 최강의 대원!",
+            "copyright": "© 2021-2024 HungBok. All Rights Reserved."
+        },
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
 ]
