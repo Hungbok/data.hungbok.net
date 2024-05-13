@@ -170,6 +170,14 @@
             "description": "<div>No Data</div>",
             "copyright": "© 2021-2024 HungBok. All Rights Reserved."
         },
+        "ja": {
+            "lang": "ja",
+            "title": "学園アイドルマスター",
+        },
+        "ko": {
+            "lang": "ko",
+            "title": "학원 아이돌 마스터",
+        },
         "copyright": "© 2021-2024 HungBok. All Rights Reserved."
     }
 ]
